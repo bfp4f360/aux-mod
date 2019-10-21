@@ -68,10 +68,15 @@ class CfgVehicles
 			""
 		};
 
-		class EventHandlers {
+		smokeLauncherAngle = 150;
+		smokeLauncherGrenadeCount = 12;
+		smokeLauncherVelocity = 14;
+
+		magazines[] = {"SmokeLauncherMag","SmokeLauncherMag","SmokeLauncherMag","SmokeLauncherMag"};
+		// class EventHandlers {
             
-            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
-        };
+        //     class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
+        // };
 	};
 
 	class macro_new_vehicle(fast_infantry_transport,republic_medic):macro_new_vehicle(fast_infantry_transport,republic)
@@ -93,6 +98,14 @@ class CfgVehicles
 			macro_vehicle_textures\Fast_Infantry_Transport\MEDICALFIT.paa,
 			macro_vehicle_textures\Fast_Infantry_Transport\wheels_medical_fit.paa,
 			""
+		};
+
+		smokeLauncherAngle = 360;
+		smokeLauncherGrenadeCount = 20;
+		smokeLauncherVelocity = 16;
+		magazines[] = {
+			"SmokeLauncherMag",
+			"SmokeLauncherMag"
 		};
 	};
 	
