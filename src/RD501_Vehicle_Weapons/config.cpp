@@ -156,6 +156,20 @@ class CfgMagazines
 		maxLeadSpeed = 300;
 		macro_no_muzzle_impulse
 	};
+
+	class 1000Rnd_Laser_Cannon_EWEBSWBF_REP;
+	class macro_new_mag(laat_ball_turret,200): 1000Rnd_Laser_Cannon_EWEBSWBF_REP
+	{
+		displayName = "Laat Ball Turret Mag";
+		displayNameShort = "Ball Turret Mag";
+		ammo =macro_new_ammo(ball_turret)
+		count = 300;
+		tracersEvery = 1;
+		initSpeed = 1036;
+		maxLeadSpeed = 300;
+		muzzleImpulseFactor = 0;
+		scope = 1;
+	};
 	
 };
 
@@ -275,12 +289,12 @@ class CfgAmmo
 	class macro_new_ammo(laat_cannon): TurboLaser_Laserx2//TurboLaser_Laserx2//SW_SpeederBikeCanon_Ammo//swop_bywingCannonammo//LAAT_Laser
 	{
 	
-		explosive = 0.90;
+		explosive = 0.30;
 		hit = 500;
 		indirectHit =300;
 		indirectHitRange = 6;
-		caliber = 24.0;
-		timeToLive=5;	
+		caliber = .0;
+		timeToLive=9;	
 		ACE_caliber=1;
 		//explosionEffects = "SWOP_LaserExploSmall";
 		//effectFly = "SWOP_blueLaserEffect";
@@ -301,14 +315,42 @@ class CfgAmmo
 	class swop_bywingCannonammo;
 	class macro_new_ammo(voltic):swop_bywingCannonammo
 	{
-		hit = 200;
+		hit = 400;
 		indirectHit = 150;
 		indirectHitRange = 6;
-		explosive = 0.5;
+		explosive = 0.2;
 		caliber = 9;
 		aiAmmoUsageFlags = "64 + 128 + 256 + 512";
 		allowAgainstInfantry = 1;
 		
+	};
+
+	class macro_new_ammo(ball_turret):TurboLaser_Laserx2//SW_SpeederBikeCanon_Ammo//Vwing_ammo
+	{
+		hit = 225;
+		timeToLive = 5;
+		indirectHit = 20;
+		indirectHitRange = 6;
+		explosive = 0.2;
+		caliber = 6;
+		ACE_caliber=0;
+		tracerScale = 1;
+		aiAmmoUsageFlags = "64 + 128 + 256 + 512";
+		allowAgainstInfantry = 1;
+	
+		model = "\SWOP_Main\Effects\Tracer\Lasergreen";
+		
+	
+		cost = 1;
+	
+		CraterEffects = "ExploAmmoLaserCrater";
+		CraterWaterEffects = "ImpactEffectsWaterHE";
+		ExplosionEffects ="SWOP_LaserExploSmallblue2";
+		soundHit1[] = {"SWOP_Main\FlyBy\impactosheavy\impactosheavy1.ogg", 1.2, 1, 50};
+		soundHit2[] = {"SWOP_Main\FlyBy\impactosheavy\impactosheavy2.ogg", 1.2, 1, 50};
+		soundHit3[] = {"SWOP_Main\FlyBy\impactosheavy\impactosheavy3.ogg", 1.2, 1, 50};
+		soundHit4[] = {"SWOP_Main\FlyBy\impactosheavy\impactosheavy4.ogg", 1.2, 1, 50};
+		multiSoundHit[] = {"soundHit1", 0.25, "soundHit2", 0.25, "soundHit3", 0.25, "soundHit4", 0.25};
 	};
 
 	
