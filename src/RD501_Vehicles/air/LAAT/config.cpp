@@ -111,8 +111,14 @@ class CfgVehicles
 				#include "common_copilot.hpp"
 			};
 
-			class GunnerTurret1:GunnerTurret1{};
-			class GunnerTurret2:GunnerTurret2{};
+			class GunnerTurret1:GunnerTurret1
+			{
+				#include "ball_turret_weapons.hpp"
+			};
+			class GunnerTurret2:GunnerTurret2
+			{
+				#include "ball_turret_weapons.hpp"
+			};
 			class CargoTurret_01:CargoTurret_01{};
 			class CargoTurret_02:CargoTurret_02{};
 			class CargoTurret_03:CargoTurret_03{};
@@ -185,8 +191,14 @@ class CfgVehicles
 				#include "common_copilot.hpp"
 			};
 			
-			class GunnerTurret1:GunnerTurret1{};
-			class GunnerTurret2:GunnerTurret2{};
+			class GunnerTurret1:GunnerTurret1
+			{
+				#include "ball_turret_weapons.hpp"
+			};
+			class GunnerTurret2:GunnerTurret2
+			{
+				#include "ball_turret_weapons.hpp"
+			};
 		};
 	};
 
