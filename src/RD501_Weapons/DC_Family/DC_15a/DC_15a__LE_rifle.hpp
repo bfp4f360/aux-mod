@@ -27,8 +27,8 @@ class macro_new_weapon(DC,15a_LE):SWOP_DC15ABlasterRifle_mod1 // RD501_DC_15a_ba
 	modes[] = {"Single","close","short","medium"};
 	muzzles[] = {"this"};
 
-	magazineWell[] += {macro_new_magwell(DC_15a_energy)};
-	magazines[] = {macro_new_mag(DC15a_LE,15)};
+	//magazineWell[] += {macro_new_magwell(DC_15a_energy)};
+	magazines[] = {macro_new_mag(DC15a_LE,15),macro_new_mag(DC15a_High,15)};
 	class Single:Single
 	{
 		reloadTime = DC15A_reloadtime_single/2

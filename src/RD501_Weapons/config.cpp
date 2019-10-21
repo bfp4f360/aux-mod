@@ -171,7 +171,7 @@ class CfgMagazines
 	class SWOP_dc15xBlasterRifle_Mag;
 	class macro_new_mag(DC15x,6): SWOP_dc15xBlasterRifle_Mag
 	{
-		author = "SWOP";
+		author = "RD501";
 		scope = 2;
 		model = "\SW_ExtraWeapons\PICKUPS\power_cell.p3d";
 		picture = "\SW_ExtraWeapons\PICKUPS\UI\icons\powercell_X_ca.paa";
@@ -186,7 +186,7 @@ class CfgMagazines
 
 	class macro_new_mag(DC15s,60): CA_Magazine
 	{
-		author = "SWOP";
+		author = "RD501";
 		scope = 2;
 		model = "\SW_ExtraWeapons\PICKUPS\energy_cell.p3d";
 		picture = "\SW_ExtraWeapons\PICKUPS\UI\icons\energycell_X_ca.paa";
@@ -204,7 +204,7 @@ class CfgMagazines
 	class SWOP_DC15ABlasterRifle_Mag;
 	class macro_new_mag(DC15a_Med,30): SWOP_DC15ABlasterRifle_Mag
 	{
-		author = "SWOP";
+		author = "RD501";
 		scope = 2;
 		model = "\SW_ExtraWeapons\PICKUPS\energy_cell.p3d";
 		picture = "\SW_ExtraWeapons\PICKUPS\UI\icons\energycell_X_ca.paa";
@@ -238,7 +238,7 @@ class CfgMagazines
 
 	class  macro_new_mag(DC15a_box_mag,240): CA_Magazine
 	{
-		author = "SWOP";
+		author = "RD501";
 		scope = 2;
 		model = "\SW_ExtraWeapons\PICKUPS\energy_cell.p3d";
 		picture = "\SW_ExtraWeapons\PICKUPS\UI\icons\energycell_X_ca.paa";
@@ -366,19 +366,20 @@ class CfgMagazines
 
 	class macro_new_mag(DC15a_LE,15): CA_Magazine
 	{
-		author = "SWOP";
+		author = "RD501";
 		scope = 2;
 		model = "\SW_ExtraWeapons\PICKUPS\energy_cell.p3d";
 		picture = "\SW_ExtraWeapons\PICKUPS\UI\icons\energycell_X_ca.paa";
-		displayName = "15Rnd DC-15LE High Energy";
+		displayName = "15Rnd DC-15 LE Mag";
 		ammo = macro_new_ammo(dc15_LE)
 		tracersEvery = 1;
 		//count = 10;
 		count = 15;
-		descriptionShort = "15Rnd DC-15LE High Energy";
+		descriptionShort = "15Rnd DC-15 LE Mag";
 		mass = 20;
 		initSpeed = 1200;
 	};
+
 
 	class SWOP_DC15SAPistol_Mag;
 	class macro_new_mag(DC15_razor_blade,9): SWOP_DC15SAPistol_Mag
@@ -684,8 +685,9 @@ class CfgAmmo
 
 	class macro_new_ammo(dc15_LE): SWOP_DC15ABlasterRifle_Full_Ammo
 	{
+	
 		//hit = 15;
-		hit = 20;
+		hit = 33;
 		waterFriction = -0.001;//
 		indirectHit = 0.5;
 		indirectHitRange = 0.4;
