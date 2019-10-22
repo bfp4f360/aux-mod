@@ -138,7 +138,7 @@ class CfgVehicles
 	class macro_jumppackClass(neutral,titan_mkI):macro_jumppackClass(neutral,base)
 	{
 		scope=2;
-		displayname= "[Jumppack] Titan Mk.I";
+		displayname= "[Jumppack] Titan Mk.II";
 		hiddenSelections[] = {"Camo1"};
 		hiddenSelectionsTextures[] = {"RD501_Jumppack\textures\cdv21_501_v2.paa"};
 		macro_energyCap=100;

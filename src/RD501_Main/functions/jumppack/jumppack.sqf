@@ -7,6 +7,7 @@
  	[] spawn compile preprocessFileLineNumbers 'macro_mod_script_path\jumppack\jumppack.sqf';
 };
 
+//This is our jump func
 macro_grp_fnc_name(jumppack,jump) = {
 	params[["_unit",player,[player]],["_f_velo",0,[0]],["_v_velo",0,[0]],["_dir_angle",0,[0]],["_use_dir",false,[false]]];
 
@@ -114,6 +115,7 @@ macro_grp_fnc_name(jumppack,jump) = {
 	_unit spawn macro_grp_fnc_name(jumppack,remove_effects);
 };
 
+//remove effects
 macro_grp_fnc_name(jumppack,remove_effects)= {
 	
 	params["_unit"];
@@ -137,6 +139,7 @@ macro_grp_fnc_name(jumppack,remove_effects)= {
 	_unit setVariable ["RD501_jumppack_effects",[],true];
 };
 
+//this formats the current energy passed
 macro_grp_fnc_name(jumppack,show_current_energy) = {
 	
 	params["_curr_energy","_total_energy"];
@@ -156,6 +159,7 @@ macro_grp_fnc_name(jumppack,show_current_energy) = {
 	[format["Energy Left: <t color='%5'>%1</t>/%2" +"<br />"+ "Percent: <t color='%5'>%3%4</t>",_curr_energy,_total_energy,_energy_ratio*100,"%",_thres_color], ""] call ace_common_fnc_displayTextPicture;
 };
 
+//Formats energy
 macro_grp_fnc_name(jumppack,show_energy_recharge) = {
 	params["_curr_energy","_new_energy","_total_energy"];
 	_old_ratio=_curr_energy/_total_energy;
@@ -185,10 +189,12 @@ macro_grp_fnc_name(jumppack,show_energy_recharge) = {
 	[format["Energy: <t color='%5'>%1</t>/%2" +"<br />"+ "Percent: <t color='%5'>%3%4</t>",_new_energy,_total_energy,_thres*100,"%",_thres_color], ""] call ace_common_fnc_displayTextPicture;
 };
 
+//Add the script to handle when loadout cahnges
 macro_grp_fnc_name(jumppack,add_cba_player_loadout_EH) = {
 	_id_loadout_cba_eh = ["loadout",macro_grp_fnc_name(jumppack,handle_loadout_change)] call CBA_fnc_addPlayerEventHandler;
 };
 
+//add effect
 macro_grp_fnc_name(jumppack,add_particle_effects) = {
 	params
 	[
@@ -205,6 +211,7 @@ macro_grp_fnc_name(jumppack,add_particle_effects) = {
 	[_unit,_effect_position] spawn (call compile _effect_script_name);
 };
 
+//Our recharge script
 macro_grp_fnc_name(jumppack,add_cba_per_frame) = {
 
 	params["_unit"];
@@ -250,7 +257,7 @@ macro_grp_fnc_name(jumppack,add_cba_per_frame) = {
 			_energy_to_add=_recharge_value*(time-_time_since_last_call);
 
 			//Get current energy and max
-			_curr_energy=_unit getVariable["RD501_jumppack_energy",0];
+			_curr_energy=(unitBackpack _unit) getVariable["RD501_jumppack_energy",0];
 			_energy_capacity= _unitBackpackClass call macro_grp_fnc_name(jumppack,get_energy_capacity);
 			if(_energy_capacity<0) exitwith{
 				
@@ -265,7 +272,7 @@ macro_grp_fnc_name(jumppack,add_cba_per_frame) = {
 			};
 
 			//update new energy and last rechage time
-			_unit setVariable["RD501_jumppack_energy",_new_energy,true];
+			(unitBackpack _unit) setVariable["RD501_jumppack_energy",_new_energy,true];
 			_unit setVariable["RD501_jumppack_last_call_time",time,true];
 			[_curr_energy,_new_energy,_energy_capacity] spawn macro_grp_fnc_name(jumppack,show_energy_recharge);
 
@@ -357,7 +364,7 @@ macro_grp_fnc_name(jumppack,decide_jump) = {
 
 	//If not enough energy,no jump
 	_jumppack_jump_index=_unit getVariable["RD501_jumppack_selected_jump",0];
-	_current_energy=_unit getVariable["RD501_jumppack_energy",0];
+	_current_energy=(unitBackpack _unit) getVariable["RD501_jumppack_energy",0];
 	_selected_jump=_jumppack_data select _jumppack_jump_index;
 	_cost=(_selected_jump select 1) select 2;
 	if(_cost>_current_energy ) exitwith 
@@ -388,7 +395,7 @@ macro_grp_fnc_name(jumppack,decide_jump) = {
 	};
 
 	_new_consumed_energy=_current_energy-_cost;
-	_unit setVariable ["RD501_jumppack_energy",_new_consumed_energy,true];
+	(unitBackpack _unit) setVariable ["RD501_jumppack_energy",_new_consumed_energy,true];
 
 	//get energy cap and new consumed energy
 	_energy_capacity= _unitBackpackClass call macro_grp_fnc_name(jumppack,get_energy_capacity);
@@ -418,7 +425,7 @@ macro_grp_fnc_name(jumppack,handle_loadout_change) = {
 
 	//if different, update classname and set energy to 0. Also set last recharge time to false so that rehcarge can handle and selected jump reset.
 	player setVariable ["RD501_jumppack_backpack_class",current_backpack,true];
-	player setVariable ["RD501_jumppack_energy",0,true];
+	//player setVariable ["RD501_jumppack_energy",0,true];
 	player setVariable["RD501_jumppack_last_call_time",false,true];
 	player setVariable["RD501_jumppack_selected_jump",0,true];
 };
@@ -444,7 +451,7 @@ macro_grp_fnc_name(jumppack,set_jumptype) = {
 	_new_selected_jump=(_jumppack_data select _new_index);
 	_jump_name=_new_selected_jump select 0;
 	_jump_cost=(_new_selected_jump select 1) select 2;
-	hint parseText format ["name: %1 <br />Cost: <t color='#00FFFF'>%2</t><br />Current Energy:<t color='#aaff00'>%3</t>",_jump_name,_jump_cost,_unit getVariable["RD501_jumppack_energy",0]];
+	hint parseText format ["name: %1 <br />Cost: <t color='#00FFFF'>%2</t><br />Current Energy:<t color='#aaff00'>%3</t>",_jump_name,_jump_cost,(unitBackpack _unit) getVariable["RD501_jumppack_energy",0]];
 };
 
 //set to 100% energy on existing arsenal
@@ -460,7 +467,7 @@ macro_grp_fnc_name(jumppack,arsenal_closed) = {
 
 	_energy_capacity= _unit_backpack call macro_grp_fnc_name(jumppack,get_energy_capacity);
 
-	_unit setVariable ["RD501_jumppack_energy",_energy_capacity,true];
+	(unitBackpack _unit) setVariable ["RD501_jumppack_energy",_energy_capacity,true];
 	[_energy_capacity,_energy_capacity] call macro_grp_fnc_name(jumppack,show_current_energy);
 	_unit setVariable ["RD501_do_energy_recharge",true,true];
 };
