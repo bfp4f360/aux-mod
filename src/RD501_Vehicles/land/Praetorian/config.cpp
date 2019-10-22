@@ -90,6 +90,10 @@ class CfgVehicles
 		side = 0;
 		editorPreview = "";
 		author = "RD501";
+
+		faction = macro_cis_faction
+		editorSubcategory = macro_editor_cat(AA)
+		vehicleClass = macro_editor_vehicle_type(AA)
 		//faction = "RD501FactionOpfor";
 		hiddenSelectionsTextures[] = 
 		{
