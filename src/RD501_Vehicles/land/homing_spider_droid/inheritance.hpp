@@ -7,7 +7,7 @@ class StaticMGWeapon:StaticWeapon
 
 class SpiderOG:StaticMGWeapon
 {
-	scope=0;
+	//scope=0;
 	class Turrets:Turrets
 	{
 		class MainTurret;

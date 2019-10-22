@@ -95,7 +95,7 @@ class CfgVehicles
 		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio = 1;
 
-		maximumLoad = 800;
+		maximumLoad = 750;
 
 	};
 
