@@ -5,10 +5,7 @@ class macro_new_weapon(DC,15a_base):SWOP_DC15ABlasterRifle // RD501_DC_15a_base
     scope=0;
     scopeArsenal=0;
 
-    class Secondary:Secondary
-    {
-        class Single;
-    };
+  
     dlc = "RD501";
 
     author= "RD501";
@@ -63,12 +60,12 @@ class macro_new_weapon(DC,15a_base):SWOP_DC15ABlasterRifle // RD501_DC_15a_base
 
 };
 
-class macro_new_weapon(DC,15a):macro_new_weapon(DC,15a_base)
+class macro_new_weapon(DC,15a_rifle):macro_new_weapon(DC,15a_base)
 {
     displayname = "DC-15A Rifle";
     scope=2;
     scopeArsenal=2;
-    baseWeapon = macro_new_weapon(DC,15a);
+    baseWeapon = macro_new_weapon(DC,15a_rifle);
     // class Secondary:Secondary
     // {
 

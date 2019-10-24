@@ -122,7 +122,7 @@ class CfgWeapons
 		NEW_501_Lumanated_Visor_Helm(euler,Euler,Euler.paa)//mod
 		//NEW_501_Lumanated_Visor_Helm(klein,Klein,Klein.paa)//myn,shit ass hoe
 		NEW_501_Lumanated_Visor_Helm(legia,Legia,Legia.paa)//1st
-		NEW_501_Lumanated_Visor_Helm(player,Player,Player.paa)
+		NEW_501_Inf_Helm(player,Player,Player.paa)
 		NEW_501_Lumanated_Visor_Helm(point,Point,Point.paa)//1st
 		NEW_501_Lumanated_Visor_Helm(pompano,Pompano,Pompano.paa)//2nd
 		NEW_501_Lumanated_Visor_Helm(roasted_helm,Gayax,Gayax.paa)//zeta

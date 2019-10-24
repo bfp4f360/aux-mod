@@ -18,10 +18,10 @@ class CfgPatches
 		units[]={};
 		weapons[]={
 			macro_new_weapon(DC,15a_base),
-			macro_new_weapon(DC,15a),
-			macro_new_weapon(DC,15a_gl),
+			macro_new_weapon(DC,15a_rifle),
+			macro_new_weapon(DC,15a_gl_rifle),
 			macro_new_weapon(DC,15a_LE),
-			macro_new_weapon(DC,15a_mod_0)
+			macro_new_weapon(DC,15a_mod_0_rifle)
 		};
 	};
 };

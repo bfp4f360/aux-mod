@@ -1,10 +1,10 @@
-class macro_new_weapon(DC,15a_mod_0):SWOP_DC15ABlasterRifle_mod0
+class macro_new_weapon(DC,15a_mod_0_rifle):SWOP_DC15ABlasterRifle_mod0
 {
 	weaponPoolAvailable = 1;
 	displayname = "DC-15A Mod-0 LSW Rifle";
 	scope=2;
 	scopeArsenal=2;
-	baseWeapon = macro_new_weapon(DC,15a_mod_0);
+	baseWeapon = macro_new_weapon(DC,15a_mod_0_rifle);
 
 	dlc = "RD501";
 

@@ -1,18 +1,14 @@
-class macro_new_weapon(DC,15a_gl):SWOP_DC15AGL // RD501_DC_15a_base
+class macro_new_weapon(DC,15a_gl_rifle):SWOP_DC15AGL // RD501_DC_15a_base
 {
 	weaponPoolAvailable = 1;
 	scope=2;
 	scopeArsenal=2;
 	displayname = "DC-15A GL Rifle";
 
-	class Secondary:Secondary
-	{
-		class Single;
-	};
 	dlc = "RD501";
 
 	author= "RD501";
-	baseWeapon = macro_new_weapon(DC,15a_gl);
+	baseWeapon = macro_new_weapon(DC,15a_gl_rifle);
 
 	DC_Family_Flashlight
 
