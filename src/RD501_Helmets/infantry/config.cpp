@@ -47,7 +47,7 @@ class CfgWeapons
 		NEW_501_Inf_Helm(bjorn,Bjorn,Bjorn.paa)
 		NEW_501_Inf_Helm(boozy,Boozy,Boozy.paa)
 		NEW_501_Inf_Helm(corey,Corey,Corey.paa)
-		NEW_501_Inf_Helm(courtney,Courtney,Courtney.paa)
+		
 		//NEW_50x1_Inf_Helm(crisis_alt,Alt Crisis,helmcrisis.paa)
 		NEW_501_Inf_Helm(crusie,Crusie,Cruisie.paa)
 		NEW_501_Inf_Helm(cursed,Cursed,Cursed.paa)
@@ -116,6 +116,7 @@ class CfgWeapons
 	//Lumanated Visor, Alphabetically, Ascending order
 		NEW_501_Lumanated_Visor_Helm(andromeda,Andromeda,Andromeda.paa)//3rd
 		//NEW_501_Lumanated_Visor_Helm(coward,Coward,Coward.paa)//4th,dumbfucker
+		NEW_501_Lumanated_Visor_Helm(courtney,Courtney,Courtney.paa)
 		NEW_501_Lumanated_Visor_Helm(crisis2,Crisis,Crisis.paa)//2nd
 		NEW_501_Lumanated_Visor_Helm(csm_odin,CS-M Odin,Odin_CSM.paa)//battalion
 		NEW_501_Lumanated_Visor_Helm(euler,Euler,Euler.paa)//mod

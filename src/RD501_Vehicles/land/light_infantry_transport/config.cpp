@@ -88,7 +88,7 @@ class CfgVehicles
 		{
 			macro_vehicle_textures\Tempest\Rep_Temp_Ext.paa,
 			"",
-			"",
+			"a3\static_f_jets\aaa_system_01\data\aaa_system_01_co.paa",
 			macro_vehicle_textures\Tempest\REP_Temp_Cover.paa
 		};
 	};

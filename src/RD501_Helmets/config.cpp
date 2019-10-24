@@ -25,16 +25,16 @@ class CfgWeapons
 	//pilots
 	class macro_new_helmet(pilot,base): itemCore//RD501_501st_Pilot_Base
 	{
-		scope = 0;
+		scope = 2;
 		author = "RD501";
 		weaponPoolAvailable = 1;       
 		ace_hearing_protection = 0.85; 		
 		ace_hearing_lowerVolume = 0.6;    
-		displayName = "[]Clone pilot helmet (501st legion)";
+		displayName = "Clone pilot helmet (501st legion)";
 		picture = "\SWOP_clones\data\helmets\ico\ico_pilot.paa";
 		//model = "SWOP_clones\helmet\CloneHelmetPilot.p3d";
 
-		model = "\501st_helmets\AB\AB_helm_lum.p3d";	
+		model = "\501st_helmets\AB\AB_helmet_p1.p3d";	
 		hiddenSelections[] = {
 			"camo1",
 			"mat"
@@ -53,7 +53,7 @@ class CfgWeapons
 		class ItemInfo: HeadgearItem
 		{
 			mass = 30;
-			uniformmodel = "\501st_helmets\AB\AB_helm_lum.p3d";//"SWOP_clones\helmet\CloneHelmetPilot.p3d";
+			uniformmodel = "\501st_helmets\AB\AB_helmet_p1.p3d";//"SWOP_clones\helmet\CloneHelmetPilot.p3d";
 			modelSides[] = {6};
 			hiddenSelections[] = {
 				"camo1",
@@ -73,6 +73,8 @@ class CfgWeapons
 				};
 			};
 		};
+
+		subItems[] = {macro_new_weapon(nvg_integrated,pilot_test),"G_B_Diving"};
 	};
 
 	class macro_new_helmet(pilot,lum_base): macro_new_helmet(pilot,base)
@@ -84,6 +86,7 @@ class CfgWeapons
 			"",
 			"\501st_Helmets\AB\data\white_glow.rvmat"//"swop_clones\data\helmpilot.rvmat"//  \501st_Helmets\AB\data\white_glow.rvmat
 		};
+		subItems[] = {macro_new_weapon(nvg_integrated,pilot_test),"G_B_Diving"};
 	}
 
 

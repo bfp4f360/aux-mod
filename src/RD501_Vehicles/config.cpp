@@ -149,6 +149,36 @@ class Extended_Init_EventHandlers
         };
         
     };
+
+    class macro_new_vehicle(delta,7a_Mk2)
+    {
+        class set_mass
+        {
+             init = [_this select 0,10200] spawn macro_fnc_name(set_mass);
+
+        };
+        
+    };
+
+    class macro_new_vehicle(delta,7b_Mk2)
+    {
+        class set_mass
+        {
+             init = [_this select 0,10200] spawn macro_fnc_name(set_mass);
+
+        };
+        
+    };
+
+    class macro_new_vehicle(eta,lime_Mk2)
+    {
+        class set_mass
+        {
+             init = [_this select 0,15000] spawn macro_fnc_name(set_mass);
+
+        };
+        
+    };
     
     class macro_new_vehicle(turret_ATTE,Stomper)
     {

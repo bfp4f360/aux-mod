@@ -489,6 +489,10 @@ class CfgAmmo
 		model = "\GeonFighter\LaserGeon.p3d";
 		fuseDistance = 3;
 
+		explosive = 0.0001;
+		deflecting = 5;
+		caliber = 5;
+
 		ace_frag_enabled = 0;
 		ace_frag_force = 0;
 		ace_frag_classes[] = {""};
