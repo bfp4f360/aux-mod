@@ -1,6 +1,6 @@
     class macro_new_ammo(saber_tx130): TurboLaser_Laserx2
 	{	
-		hit = 425;
+		hit = 725;
 		indirectHit = 100;
 		indirectHitRange = 6;
 		explosive = 0.1;
@@ -67,8 +67,8 @@
 	
 	class macro_new_ammo(atte):ATTE_Laser
 	{
-		hit = 1400;
-		indirectHit = 300;
+		hit = 1600;
+		indirectHit = 400;
 		indirectHitRange = 15;
 		visibleFire = 42;
 		audibleFire = 42;

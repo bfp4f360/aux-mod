@@ -83,7 +83,7 @@ class CfgWeapons
 
 	class macro_new_helmet(pilot,royal_krayt): macro_new_helmet(pilot,king_krayt)
 	{
-			displayName = "Clone pilot helmet (501st legion) Royal Krayt";
+		displayName = "Clone pilot helmet (501st legion) Royal Krayt";
 		hiddenSelectionsTextures[] = {macro_custom_helmet_textures\aviation\pilots\purple.paa};
 	}
 

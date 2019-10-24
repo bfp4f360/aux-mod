@@ -1,7 +1,7 @@
 class ItemInfo: ItemInfo
 {
     mass = 30;
-    uniformmodel = "\501st_helmets\AB\AB_helm_lum.p3d";//"SWOP_clones\helmet\CloneHelmetPilot.p3d";
+    uniformmodel = "\501st_helmets\AB\AB_helmet_p1.p3d";//"SWOP_clones\helmet\CloneHelmetPilot.p3d";
     modelSides[] = {6};
     hiddenSelections[] = {
         "camo1",
