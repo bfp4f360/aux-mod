@@ -1,3 +1,5 @@
+#include "../../config_macros.hpp"
+
 // Created by Rexi to make things move
 params[
 	["_vic",objNull,[player]]
@@ -15,4 +17,9 @@ if (isServer) then {
 	_aidrive setUnitPos "down";
 	_aidrive setBehaviour "CARELESS";
 	[_aidrive, true] remoteExec ["hideObjectGlobal", 0];
+	_vic addEventHandler ["Killed", {
+		params ["_unit", "_killer", "_instigator", "_useEffects"];
+			[_unit] spawn macro_fnc_name(remove_attached_objects)
+			
+	}];
 };

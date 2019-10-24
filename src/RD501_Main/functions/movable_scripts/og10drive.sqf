@@ -1,3 +1,5 @@
+#include "../../config_macros.hpp"
+
 // Created by Rexi to make things move
 //edited by namenai
 params[
@@ -20,4 +22,10 @@ if (isServer) then {
 
 	_ai_unit setSpeedMode "LIMITED";
 	_ai_unit forceWalk true;
+
+	_vic addEventHandler ["Killed", {
+		params ["_unit", "_killer", "_instigator", "_useEffects"];
+			[_unit] spawn macro_fnc_name(remove_attached_objects)
+			
+	}];
 };
