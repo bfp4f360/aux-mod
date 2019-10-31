@@ -299,15 +299,15 @@ class CfgInGameUI
 	class FLIRModeNames
 	{
 		FLIRModeName[] = {
-			"WHOT",
+			"WHOT",//0
 			"BHOT",
-			"GHOT",
+			"GHOT",//2
 			"BHOT",
-			"OHOT",
+			"OHOT",//4
 			"BHOT",
-			"WHOT",
+			"WHOT",//6
 			"RAINBOW",
-			"YHOT"
+			"YHOT"//8
 		};
 	};
 };
