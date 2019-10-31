@@ -39,9 +39,20 @@ class CfgWeapons
 	NEW_501_Pilot_HELM(aspect,Aspect,pilots\aspect.paa)
 	NEW_501_Pilot_HELM(casskun,Casskun,pilots\casskun.paa)
 	NEW_501_Pilot_HELM(dylan,Dylan,pilots\Dylanhelmet.paa)
+
+	class macro_new_helmet(pilot,erlien): macro_new_helmet(pilot,base)
+	{
+		scope = 2;
+		author = "RD501";
+		displayName = Clone pilot helmet (501st 'Erlien');
+		//hiddenSelectionsTextures[] = {macro_custom_helmet_textures##\aviation\##texture};
+		subItems[] = {macro_new_weapon(nvg_integrated,pilot_erlien),"G_B_Diving"};
+	};
+
 	NEW_501_Pilot_HELM(exose,Exose,pilots\Exose.paa)
 	NEW_501_Pilot_HELM(jackson,Jackson,pilots\Jackson.paa)
 	NEW_501_Pilot_HELM(jaisus,Jaisus,pilots\Jaisus.paa)
+	//NEW_501_Pilot_HELM(keryl,Keryl,pilots\keryl.paa)
 	NEW_501_Pilot_HELM(kitty,Kitty,pilots\kitty.paa)
 	NEW_501_Pilot_HELM(koop,Koop,pilots\Koop.paa)
 	NEW_501_Pilot_HELM(kushiban,Kushiban,pilots\Kushiban.paa)

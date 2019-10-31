@@ -148,8 +148,11 @@ class CfgVehicles
 		respawnWeapons[] = {"RD501_Aqua_A180_Rifle","Throw","Put"};
 		backpack = "";
 		uniformClass = macro_new_uniform_class(civ,aqua_MonCal);
-		//magazines[] = {"RD501_Aqua_A180_Mag","RD501_Aqua_A180_Mag","RD501_Aqua_A180_Mag","RD501_Aqua_A180_Mag","RD501_Aqua_A180_Mag","RD501_Aqua_A180_Mag","RD501_Aqua_A180_Mag","RD501_Aqua_A180_Mag","RD501_Aqua_A180_Mag","RD501_Aqua_A180_Mag"};
-		//weapons[] = {"RD501_Aqua_A180_Rifle","Throw","Put"};
+		magazines[] = {
+			macro_new_mag(DC15_underwater,40),macro_new_mag(DC15_underwater,40),macro_new_mag(DC15_underwater,40),
+			macro_new_mag(DC15_underwater,40),macro_new_mag(DC15_underwater,40),macro_new_mag(DC15_underwater,40),macro_new_mag(DC15_underwater,40),
+			macro_new_mag(DC15_underwater,40),macro_new_mag(DC15_underwater,40),macro_new_mag(DC15_underwater,40)};
+		weapons[] = {macro_new_weapon(DC,15s),"Throw","Put"};
 		linkedItems[] = {macro_new_weapon(equipment,Water_Filtration),"g_diving","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
 
 		class EventHandlers : DefaultEventhandlers {}

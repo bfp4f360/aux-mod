@@ -59,7 +59,7 @@ class cfgWeapons
 		author= "RD501";
 		baseWeapon = macro_new_weapon(DC,15s);
 
-		magazines[]={macro_new_mag(DC15s,60)};
+		magazines[]={macro_new_mag(DC15s,60),macro_new_mag(DC15_underwater,40)};
 
 		ACE_Overheating_Dispersion = DC15a_Overheat_Dispersion
 		ACE_Overheating_SlowdownFactor = DC15a_Overheat_SlowdownFactor
@@ -123,7 +123,7 @@ class cfgWeapons
 		displayName="DC-15s Carbine Shield";
     	scope=2;
 		scopeArsenal=2;
-
+		canShootInWater = 1;
 		magazines[]={macro_new_mag(DC15s,60)};
 		dlc = "RD501";
 

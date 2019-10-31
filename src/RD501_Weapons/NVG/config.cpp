@@ -52,6 +52,15 @@ class cfgWeapons
 
 	};
 
+	class macro_new_weapon(nvg_integrated,pilot_erlien): macro_new_weapon(nvg_integrated,pilot)
+	{
+		scope = 1;
+		visionMode[] = {"Normal", "NVG", "TI"};
+		thermalMode[] = {4,8};
+		modelOptics = "";
+
+	};
+
 
 	class macro_new_weapon(nvg_integrated,infantry): Integrated_NVG_TI_1_F
 	{

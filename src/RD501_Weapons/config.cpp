@@ -423,6 +423,25 @@ class CfgMagazines
 		descriptionShort = "Type: Smoke Grenade - Blue<br />Rounds: 1<br />Used in: Hand";
 		displayName = "[]M18 Smoke Grenade (Yeet)";
 	};
+
+	 
+
+	class macro_new_mag(DC15_underwater,40): CA_Magazine
+	{
+		author = "RD501";
+		scope = 2;
+		model = "\SW_ExtraWeapons\PICKUPS\energy_cell.p3d";
+		picture = "\SW_ExtraWeapons\PICKUPS\UI\icons\energycell_X_ca.paa";
+		displayName = "40Rnd Republic Aqua Rounds";
+		ammo = macro_new_ammo(dc15_underwater)
+		tracersEvery = 1;
+		type = 16;
+		count = 6400;
+		descriptionShort = "40Rnd Republic Aqua Rounds";
+		//mass = 15;
+		mass = 20;
+		initSpeed = 310;
+	};
 	
 };
 
@@ -537,6 +556,21 @@ class CfgAmmo
 		explosive = 0.1;//.4
 		caliber = 2;//5
 		timeToLive = 4;
+	};
+
+	class macro_new_ammo(dc15_underwater):macro_new_ammo(dc15s_carbine)
+	{
+		waterFriction = -0.001;//
+		hit = 7;
+		indirectHit = 0.1;
+		indirectHitRange = 0.2;
+		explosive = 0.1;//.4
+		caliber = 2;//5
+		timeToLive = 4;
+		waterFriction = -0.01;
+		effectFly = "AmmoUnderwater";
+		nvgOnly = 1;
+		aiAmmoUsageFlags = "64 + 32";
 	};
 
 	class macro_new_ammo(dc15a_med):SWOP_DC15ABlasterRifle_Ammo
