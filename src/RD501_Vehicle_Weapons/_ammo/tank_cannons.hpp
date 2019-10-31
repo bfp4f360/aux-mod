@@ -1,8 +1,8 @@
     class macro_new_ammo(saber_tx130): TurboLaser_Laserx2
 	{	
-		hit = 725;
+		hit = 750;
 		indirectHit = 100;
-		indirectHitRange = 6;
+		indirectHitRange = 3;
 		explosive = 0.1;
 
 		explosionSoundEffect = "DefaultExplosion";

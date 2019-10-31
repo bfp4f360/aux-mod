@@ -181,12 +181,12 @@ class CfgWeapons
 			recoil = "empty";
 			weaponSoundEffect = "DefaultRifle";
 			soundContinuous = 0;
-			reloadTime = 5;
+			reloadTime = 2;
 			magazineReloadTime = 10;//6;
 			autoReload = 1;
 			ballisticsComputer = 1;
 			canLock = 2;
-			autoFire = 0;
+			autoFire = 1;
 			dispersion=0.0001;
 		};
 		class close: player
