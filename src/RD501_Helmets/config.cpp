@@ -46,7 +46,7 @@ class CfgWeapons
 		hiddenSelectionsMaterials[]=
 		{
 			"",
-			/"swop_clones\data\helmpilot.rvmat"//  \501st_Helmets\AB\data\white_glow.rvmat
+			"swop_clones\data\helmpilot.rvmat"//  \501st_Helmets\AB\data\white_glow.rvmat
 		};
 
 

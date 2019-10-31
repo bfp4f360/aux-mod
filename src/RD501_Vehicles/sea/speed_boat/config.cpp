@@ -57,6 +57,10 @@ class CfgVehicles
 	class macro_new_vehicle(speedboat,opfor):Boat_Armed_01_minigun_base_F
 	{
 		displayName = "Speedboat CIS";
+		scope=2;
+		faction = macro_cis_faction
+		// editorSubcategory = macro_editor_cat(tank)
+		// vehicleClass = macro_editor_vehicle_type(tank)
 		class Turrets: Turrets
 		{
 			class FrontTurret: FrontTurret
@@ -64,8 +68,8 @@ class CfgVehicles
 			};
 			class RearTurret: RearTurret
 			{
-				weapons[] = {"LMG_Minigun"};
-				magazines[] = {"2000Rnd_762x51_Belt_T_Red"};
+				weapons[] = {"cannon_portableun"};
+				magazines[] = {"1000Rnd_Laser_Cannon_EWEBSWBF_REP","1000Rnd_Laser_Cannon_EWEBSWBF_REP","1000Rnd_Laser_Cannon_EWEBSWBF_REP"};
 				
 			};
 		};
