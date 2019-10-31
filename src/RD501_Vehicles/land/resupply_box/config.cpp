@@ -111,12 +111,15 @@ class CfgVehicles
 		vehicleClass = "Ammo";
 		editorCategory = macro_editor_cat(suppplies)
 		editorSubcategory = macro_editor_cat(resupply)
-		ace_maxWeightCarry = 20000;	
+		ACE_maxWeightCarry = 20000;	
+		ACE_maxWeightDrag = 20000;
 			class TransportItems
             {
                 #include "medical_small_items.hpp"				
             };
-		class EventHandlers :DefaultEventhandlers{};
+		class EventHandlers :DefaultEventhandlers{
+			init ="ACE_maxWeightCarry = 20000;ACE_maxWeightDrag = 20000;";
+		};
 			
 	};
 
@@ -156,7 +159,11 @@ class CfgVehicles
         	#include "ammo_small_weap.hpp"
         };
 
-		class EventHandlers :DefaultEventhandlers{};
+		
+
+		class EventHandlers :DefaultEventhandlers{
+			init ="ACE_maxWeightCarry = 20000;ACE_maxWeightDrag = 20000;";
+		};
 		
 	};
 
