@@ -424,7 +424,7 @@ macro_grp_fnc_name(jumppack,handle_loadout_change) = {
 	if(saved_backpack isEqualTo current_backpack) exitwith {};
 
 	//if different, update classname and set energy to 0. Also set last recharge time to false so that rehcarge can handle and selected jump reset.
-	player setVariable ["RD501_jumppack_backpack_class",current_backpack,true];
+	//player setVariable ["RD501_jumppack_backpack_class",current_backpack,true];
 	//player setVariable ["RD501_jumppack_energy",0,true];
 	player setVariable["RD501_jumppack_last_call_time",false,true];
 	player setVariable["RD501_jumppack_selected_jump",0,true];

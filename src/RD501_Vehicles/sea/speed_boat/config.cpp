@@ -25,7 +25,8 @@ class CfgPatches
 		requiredVersion=0.1;
 		units[]=
 		{
-			macro_new_vehicle(speedboat,opfor)
+			macro_new_vehicle(speedboat,cis),
+			macro_new_vehicle(speedboat,republic)
 		};
 		weapons[]=
 		{
@@ -40,12 +41,12 @@ class DefaultEventhandlers ;
 class CfgVehicles
 {
 
-	class Boat_F;
-	class Boat_Armed_01_base_F:Boat_F
+	class Boat_Armed_01_base_F;
+	class Boat_Armed_01_minigun_base_F:Boat_Armed_01_base_F
 	{
 		class Turrets;
 	}
-	class Boat_Armed_01_minigun_base_F:Boat_Armed_01_base_F
+	class B_Boat_Armed_01_minigun_F:Boat_Armed_01_minigun_base_F
 	{
 		class Turrets:Turrets
 		{
@@ -54,17 +55,45 @@ class CfgVehicles
 		}
 	};
 
-	class macro_new_vehicle(speedboat,opfor):Boat_Armed_01_minigun_base_F
+	class macro_new_vehicle(speedboat,cis):B_Boat_Armed_01_minigun_F
 	{
 		displayName = "Speedboat CIS";
+		_generalMacro = macro_new_vehicle(speedboat,cis)
 		scope=2;
 		faction = macro_cis_faction
 		// editorSubcategory = macro_editor_cat(tank)
 		// vehicleClass = macro_editor_vehicle_type(tank)
+		side=0;
+		crew = "SWOP_CIS_droid_crew";
 		class Turrets: Turrets
 		{
 			class FrontTurret: FrontTurret
 			{
+				weapons[] = {"Cannon_EWEBSWBFgun"};
+				magazines[] = {"1000Rnd_Laser_Cannon_EWEBSWBF","1000Rnd_Laser_Cannon_EWEBSWBF","1000Rnd_Laser_Cannon_EWEBSWBF"};
+			};
+			class RearTurret: RearTurret
+			{
+				weapons[] = {"Cannon_EWEBSWBFgun"};
+				magazines[] = {"1000Rnd_Laser_Cannon_EWEBSWBF","1000Rnd_Laser_Cannon_EWEBSWBF","1000Rnd_Laser_Cannon_EWEBSWBF"};
+				
+			};
+		};
+	};
+
+	class macro_new_vehicle(speedboat,republic):macro_new_vehicle(speedboat,cis)
+	{
+		displayName = "Speedboat Republic";
+		_generalMacro = macro_new_vehicle(speedboat,republic)
+		faction = macro_republic_faction
+		side=1;
+		crew = "SWOP_L501P1_Fives";
+		class Turrets: Turrets
+		{
+			class FrontTurret: FrontTurret
+			{
+				weapons[] = {"cannon_portableun"};
+				magazines[] = {"1000Rnd_Laser_Cannon_EWEBSWBF_REP","1000Rnd_Laser_Cannon_EWEBSWBF_REP","1000Rnd_Laser_Cannon_EWEBSWBF_REP"};
 			};
 			class RearTurret: RearTurret
 			{
@@ -73,5 +102,5 @@ class CfgVehicles
 				
 			};
 		};
-	};
+	}
 };

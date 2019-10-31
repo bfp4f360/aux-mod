@@ -329,6 +329,9 @@ class CfgVehicles
 	{
 		side = 1;
 		displayName = "Laser Cannons (Blufor)";
+		faction = macro_republic_faction
+		editorSubcategory = macro_editor_cat(AA)
+		vehicleClass = macro_editor_vehicle_type(AA)
 		//faction = "RD501Faction";
 		hiddenSelectionsTextures[] = 
 		{
