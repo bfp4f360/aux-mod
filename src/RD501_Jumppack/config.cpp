@@ -135,7 +135,7 @@ class CfgVehicles
 
 	};
 
-	class macro_jumppackClass(neutral,titan_mkI):macro_jumppackClass(neutral,base)
+	class macro_jumppackClass(neutral,titan_mkII):macro_jumppackClass(neutral,base)
 	{
 		scope=2;
 		displayname= "[Jumppack] Titan Mk.II";
@@ -159,6 +159,16 @@ class CfgVehicles
 		tf_hasLRradio = 1;
 
 	};
+
+	class macro_jumppackClass(neutral,titan_mkMCCCXXXVII):macro_jumppackClass(neutral,titan_mkII)
+	{
+		displayname= "[Jumppack] Titan Mk.MCCCXXXVII";
+		macro_rechargeRate=30;
+		macro_types_of_jumps = 
+		{
+			{"Short Jump",{1337,7,1,0,1,1}}
+		};
+	}
 
 	class macro_jumppackClass(neutral,501st):macro_jumppackClass(neutral,cdv_21)
 	{

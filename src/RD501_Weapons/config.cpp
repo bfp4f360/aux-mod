@@ -436,7 +436,7 @@ class CfgMagazines
 		ammo = macro_new_ammo(dc15_underwater)
 		tracersEvery = 1;
 		type = 16;
-		count = 6400;
+		count = 40;
 		descriptionShort = "40Rnd Republic Aqua Rounds";
 		//mass = 15;
 		mass = 20;

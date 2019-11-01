@@ -194,12 +194,15 @@ class CfgVehicles
 		faction = macro_cis_faction
 		editorSubcategory = macro_editor_cat(B1_lowpoly)
 		
-		uniformClass="JPB_Droid_Uni";
+		uniformClass=macro_new_uniform_class(opfor,B1_low_poly);
 
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {
 			macro_low_poly_b1_textures\Droid.paa	
 		};
+
+		backpack = "SWOP_B_Droid_backpack";
+
 		Items[]=
 		{
 			"FirstAidKit"
@@ -208,8 +211,10 @@ class CfgVehicles
 		{
 			"FirstAidKit"
 		};
+		//linkeditems[] = {"SWOP_STbron", "ItemGPS", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"};
 		linkeditems[]=
 		{
+			"SWOP_STbron",
 			"ItemGPS",
 			"ItemMap",
 			"ItemCompass",
@@ -218,6 +223,7 @@ class CfgVehicles
 		};
 		respawnlinkeditems[]=
 		{
+			"SWOP_STbron",
 			"ItemGPS",
 			"ItemMap",
 			"ItemCompass",
@@ -588,7 +594,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {
 			macro_low_poly_b1_textures\Blue.paa
 		};
-		uniformClass="JPB_Droid_Blue_Uni";
+		uniformClass=macro_new_uniform_class(opfor,B1_low_poly_blue);
 	};
 	class macro_new_unit_class(opfor,B1_low_poly_green): macro_new_unit_class(opfor,B1_low_poly)
 	{
@@ -596,7 +602,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {
 			macro_low_poly_b1_textures\Green.paa
 		};
-		uniformClass="RD501_Droid_Green_Uni";
+		uniformClass=macro_new_uniform_class(opfor,B1_low_poly_green);
 	};
 	class macro_new_unit_class(opfor,B1_low_poly_red): macro_new_unit_class(opfor,B1_low_poly)
 	{
@@ -604,7 +610,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {
 			macro_low_poly_b1_textures\Red.paa
 		};
-		uniformClass="JPB_Droid_Red_Uni";
+		uniformClass=macro_new_uniform_class(opfor,B1_low_poly_red);
 	};
 	class macro_new_unit_class(opfor,B1_low_poly_yellow): macro_new_unit_class(opfor,B1_low_poly)
 	{
@@ -612,7 +618,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {
 			macro_low_poly_b1_textures\Yellow.paa
 		};
-		uniformClass="JPB_Droid_Yellow_Uni";
+		uniformClass=macro_new_uniform_class(opfor,B1_low_poly_yellow);
 	};
 	class macro_new_unit_class(opfor,B1_low_poly_headless): macro_new_unit_class(opfor,B1_low_poly)
 	{
@@ -621,7 +627,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {
 			macro_low_poly_b1_textures\Droid.paa
 		};
-		uniformClass="JPB_Droid_Headless_Uni";
+		uniformClass=macro_new_uniform_class(opfor,B1_low_poly_blue);
 	};
 	class macro_new_unit_class(opfor,B1_low_poly_blue_headless): macro_new_unit_class(opfor,B1_low_poly_headless)
 	{
@@ -629,7 +635,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {
 			macro_low_poly_b1_textures\Blue.paa
 		};
-		uniformClass="JPB_Droid_Blue_Headless_Uni";
+		uniformClass=macro_new_uniform_class(opfor,B1_low_poly_headless_blue);
 	};
 
 	//fancy units
@@ -819,7 +825,7 @@ class CfgVehicles
 			"SWOP_BCCKtermimploder_G",
 			"SWOP_BCCKtermimploder_G"
 		};
-		uniformClass="RD501_Droid_Green_Uni";
+		uniformClass=macro_new_uniform_class(opfor,B1_low_poly_green);
 	};
 	
 };
