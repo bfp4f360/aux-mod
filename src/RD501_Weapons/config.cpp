@@ -501,7 +501,7 @@ class CfgAmmo
 
 	class  macro_new_ammo(GL_AT): G_40mm_HE
 	{
-		hit = 300;
+		hit = 350;
 		indirectHit = 0;
 		indirectHitRange = .1;
 		timeToLive =30;

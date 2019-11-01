@@ -7,7 +7,7 @@
 		displayNameShort = "White Flare";
 		picture = "\A3\Weapons_F\Data\UI\gear_UGL_Flare_CA.paa";
 		model = "\A3\Weapons_F\Ammo\UGL_Flare";
-		ammo = macro_new_ammo(40mm_white,3);
+		ammo = macro_new_ammo(40mm_white);
 		initSpeed = 80;
 		count = 3;
 		nameSound = "";
@@ -63,10 +63,10 @@
 	{
 		author = "Bohemia Interactive";
 		displayName = "Flare 3 Rounds (Blue)";
-		ammo = macro_new_ammo(40mm_bluen);
+		ammo = macro_new_ammo(40mm_blue);
 		picture = "\A3\Weapons_F\Data\UI\gear_UGL_Flare_yelow_CA.paa";
-		descriptionShort = "Type: Flare - Yellow<br />Rounds: 1<br />Used in: EGLM, 3GL";
-		displayNameShort = "Yellow Flare";
+		descriptionShort = "Type: Flare - Blue<br />Rounds: 1<br />Used in: EGLM, 3GL";
+		displayNameShort = "Blue Flare";
 	};
 
 
@@ -76,8 +76,8 @@
 		displayName = "Flare 3 Rounds (Cyan)";
 		ammo = macro_new_ammo(40mm_cyan);
 		picture = "\A3\Weapons_F\Data\UI\gear_UGL_Flare_yelow_CA.paa";
-		descriptionShort = "Type: Flare - Yellow<br />Rounds: 1<br />Used in: EGLM, 3GL";
-		displayNameShort = "Yellow Flare";
+		descriptionShort = "Type: Flare - Cyan<br />Rounds: 1<br />Used in: EGLM, 3GL";
+		displayNameShort = "Cyan Flare";
 	};
 
 	class macro_new_mag(40mm_Purple,3): macro_new_mag(40mm_white,3)
@@ -86,6 +86,6 @@
 		displayName = "Flare 3 Rounds (Purple)";
 		ammo = macro_new_ammo(40mm_purple);
 		picture = "\A3\Weapons_F\Data\UI\gear_UGL_Flare_yelow_CA.paa";
-		descriptionShort = "Type: Flare - Yellow<br />Rounds: 1<br />Used in: EGLM, 3GL";
-		displayNameShort = "Yellow Flare";
+		descriptionShort = "Type: Flare - Purple<br />Rounds: 1<br />Used in: EGLM, 3GL";
+		displayNameShort = "Purple Flare";
 	};

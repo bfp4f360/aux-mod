@@ -21,7 +21,9 @@ class macro_new_weapon(DC,15a_gl_rifle):SWOP_DC15AGL // RD501_DC_15a_base
 
 	canShootInWater = 1;
 	magazineWell[] += {macro_new_magwell(DC_15a_energy)};
-	magazines[] = {};
+	magazines[] = {"DCStun_Mag"};
+	
+	muzzles[] = {"this", "EGLM"};
 	class Single:Single
 	{
 		reloadTime = DC15A_reloadtime_single
