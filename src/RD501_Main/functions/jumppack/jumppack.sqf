@@ -59,7 +59,7 @@ macro_grp_fnc_name(jumppack,jump) = {
 	_unit setVariable ["RD501_jumppack_last_jumptime", time,true];
 	_damage = damage _unit;
 
-	player spawn macro_grp_fnc_name(jumppack,add_particle_effects);
+	//player spawn macro_grp_fnc_name(jumppack,add_particle_effects);
 	//w8 till landed
 	sleep 0.1;
 	waitUntil 

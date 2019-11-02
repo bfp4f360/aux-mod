@@ -79,7 +79,7 @@
 	#define macro_lvl1_req macro_patch_name(particle_effects),RD501_patch_Airborne_Helmet_Model,RD501_patch_VenatorMK2
 	#define macro_lvl2_req macro_patch_name(weapons),macro_patch_name(jumppack),macro_patch_name(helmets),macro_patch_name(vehicle_weapons),macro_patch_name(stretcher_model)
 	#define macro_lvl3_req macro_patch_name(units),macro_patch_name(vehicles),macro_patch_name(zeus),macro_patch_name(low_poly_droid_models),macro_patch_name(stretcher)
-	#define macro_lvl4_req macro_patch_name(low_poly_droids_config)
+	#define macro_lvl4_req macro_patch_name(low_poly_droids_config),macro_patch_name(laat_variants)
 	#define macro_lvl5_req macro_patch_name(legacy_classnames)
 	#define macro_end_patches macro_lvl5_req
 
