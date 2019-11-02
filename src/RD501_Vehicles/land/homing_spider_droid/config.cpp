@@ -65,7 +65,21 @@ class CfgVehicles
 					macro_new_weapon(spider,homing)
 				};
 				magazines[] = {
-					macro_new_mag(homing_spider,10)
+					macro_new_mag(homing_spider,10), macro_new_mag(homing_spider,10),
+					macro_new_mag(homing_spider,10), macro_new_mag(homing_spider,10),
+					macro_new_mag(homing_spider,10), macro_new_mag(homing_spider,10),
+					macro_new_mag(homing_spider,10), macro_new_mag(homing_spider,10),
+
+					macro_new_mag(homing_spider,10), macro_new_mag(homing_spider,10),
+					macro_new_mag(homing_spider,10), macro_new_mag(homing_spider,10),
+					macro_new_mag(homing_spider,10), macro_new_mag(homing_spider,10),
+					macro_new_mag(homing_spider,10), macro_new_mag(homing_spider,10),
+
+					macro_new_mag(homing_spider,10), macro_new_mag(homing_spider,10),
+					macro_new_mag(homing_spider,10), macro_new_mag(homing_spider,10),
+					macro_new_mag(homing_spider,10), macro_new_mag(homing_spider,10),
+					macro_new_mag(homing_spider,10), macro_new_mag(homing_spider,10),
+
 				};
 				minElev = -30;
 				maxElev = 30;

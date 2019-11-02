@@ -230,7 +230,7 @@
 			};
 			class _xx_SWOP_DC15ABlasterRifle_mod0_RD501
 			{
-				weapon = macro_new_weapon(DC,15a_mod_0)
+				weapon = macro_new_weapon(DC,15a_mod_0_rifle)
 				count = 1;
 			};
 			class _xx_SWOP_Z6Blaster

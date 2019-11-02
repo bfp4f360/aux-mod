@@ -84,7 +84,7 @@ class CfgVehicles
 		smokeLauncherAngle = 360;
 		forceInGarage = 1;
 
-		//hiddenSelectionsMaterials[] = {"rd501_vehicles\textures\laat\g1.rvmat","rd501_vehicles\textures\laat\g2.rvmat"};
+		//hiddenSelectionsMaterials[] = {"RD501_Laat\textures\laat\g1.rvmat","RD501_Laat\textures\laat\g2.rvmat"};
 		
 
 		//typing hard
@@ -202,8 +202,6 @@ class CfgVehicles
 		};
 	};
 
-
-
 	class macro_new_vehicle(laat,cargo_Mk2):swop_LAAT_cargo
 	{
 		scope=2;
@@ -281,7 +279,7 @@ class CfgVehicles
 
 	
 
-	//mk4 reskins
+	//mk4 reskins (with swop skins)
 	reskined_laat_mk4_full_path(spec_ops,Spec Op,LAAT\textures\gunship_2_d.paa,LAAT\textures\gunship_1_spec.paa)
 
 	reskined_laat_mk4_full_path(muunilinst,Muunilinst,LAAT\textures\gunship_2_arc_d.paa,LAAT\textures\gunship_1_arc_d.paa)
@@ -290,17 +288,17 @@ class CfgVehicles
 
 
 	//mk3 reskins
-	reskined_laat_mk3(red_krayt,Red Krayt,krayt_red\LaatKraytBodyRed.paa,krayt_red\LaatKraytWingRed.paa)
+	// reskined_laat_mk3(red_krayt,Red Krayt,krayt_red\LaatKraytBodyRed.paa,krayt_red\LaatKraytWingRed.paa)
 
-	reskined_laat_mk3(blue_krayt,Blue Krayt,krayt_blue\LaatKraytBodyBlue.paa,krayt_blue\LaatKraytWingBlue.paa)
+	// reskined_laat_mk3(blue_krayt,Blue Krayt,krayt_blue\LaatKraytBodyBlue.paa,krayt_blue\LaatKraytWingBlue.paa)
 
-	reskined_laat_mk3(medic_krayt,Medic Krayt,medic_red\redMedicLaatBody.paa,medic_red\redMedicLaatWing.paa)
+	// reskined_laat_mk3(medic_krayt,Medic Krayt,medic_red\redMedicLaatBody.paa,medic_red\redMedicLaatWing.paa)
 
-	reskined_laat_mk3(stealth_blue_krayt,Stealth Blue Krayt,krayt_black_blue\LaatKraytBodyBlackBlue.paa,krayt_black_blue\LaatKraytWingBlackBlue.paa)
+	// reskined_laat_mk3(stealth_blue_krayt,Stealth Blue Krayt,krayt_black_blue\LaatKraytBodyBlackBlue.paa,krayt_black_blue\LaatKraytWingBlackBlue.paa)
 
-	reskined_laat_mk3(stealth_red_krayt,Stealth Red Krayt,krayt_black_red\LaatKraytBodyBlackRed.paa,krayt_black_red\LaatKraytWingBlackRed.paa)
+	// reskined_laat_mk3(stealth_red_krayt,Stealth Red Krayt,krayt_black_red\LaatKraytBodyBlackRed.paa,krayt_black_red\LaatKraytWingBlackRed.paa)
 
-	reskined_laat_mk3(stealth_white_krayt,Stealth White Krayt,krayt_black_white\LaatKraytBodyBlackWhite.paa,krayt_black_white\LaatKraytWingBlackWhite.paa)
+	// reskined_laat_mk3(stealth_white_krayt,Stealth White Krayt,krayt_black_white\LaatKraytBodyBlackWhite.paa,krayt_black_white\LaatKraytWingBlackWhite.paa)
 
-	reskined_laat_mk3(ranger_enforcer,Ranger Enforcer,ranger_enforcer_Laat\reBody.paa,ranger_enforcer_Laat\reWing.paa)
+	// reskined_laat_mk3(ranger_enforcer,Ranger Enforcer,ranger_enforcer_Laat\reBody.paa,ranger_enforcer_Laat\reWing.paa)
 };
