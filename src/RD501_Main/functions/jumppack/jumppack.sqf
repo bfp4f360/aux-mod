@@ -60,6 +60,7 @@ macro_grp_fnc_name(jumppack,jump) = {
 	_damage = damage _unit;
 
 	//player spawn macro_grp_fnc_name(jumppack,add_particle_effects);
+	_unit spawn macro_grp_fnc_name(jumppack,add_landing_effects);	
 	//w8 till landed
 	sleep 0.1;
 	waitUntil 
