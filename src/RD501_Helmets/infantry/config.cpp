@@ -115,17 +115,19 @@ class CfgWeapons
 	
 	//Lumanated Visor, Alphabetically, Ascending order
 		NEW_501_Lumanated_Visor_Helm(andromeda,Andromeda,Andromeda.paa)//3rd
-		//NEW_501_Lumanated_Visor_Helm(coward,Coward,Coward.paa)//4th,dumbfucker
 		NEW_501_Lumanated_Visor_Helm(courtney,Courtney,Courtney.paa)
 		NEW_501_Lumanated_Visor_Helm(crisis2,Crisis,Crisis.paa)//2nd
 		NEW_501_Lumanated_Visor_Helm(csm_odin,CS-M Odin,Odin_CSM.paa)//battalion
 		NEW_501_Lumanated_Visor_Helm(euler,Euler,Euler.paa)//mod
-		//NEW_501_Lumanated_Visor_Helm(klein,Klein,Klein.paa)//myn,shit ass hoe
+
+		NEW_501_Lumanated_Visor_Helm(klown,Klown,Klown.paa)
+		NEW_501_Lumanated_Visor_Helm(klownv2,Klowned,Klown_v2.paa)//CS
+
 		NEW_501_Lumanated_Visor_Helm(legia,Legia,Legia.paa)//1st
 		NEW_501_Inf_Helm(player,Player,Player.paa)
 		NEW_501_Lumanated_Visor_Helm(point,Point,Point.paa)//1st
 		NEW_501_Lumanated_Visor_Helm(pompano,Pompano,Pompano.paa)//2nd
-		NEW_501_Lumanated_Visor_Helm(roasted_helm,Gayax,Gayax.paa)//zeta
+		//NEW_501_Lumanated_Visor_Helm(roasted_helm,Gayax,Gayax.paa)//zeta
 		//NEW_501_Lumanated_Visor_Helm(verax,Verax,Verax.paa)//zeta
 
 		
