@@ -109,6 +109,7 @@ class CfgWeapons
 		NEW_501_Inf_Helm(tyler,Tyler,Tyler.paa)
 		NEW_501_Inf_Helm(vampire,Vampire,Vampire.paa)
 		NEW_501_Inf_Helm(vengeance,Vengeance,Vengeance.paa)
+		NEW_501_Inf_Helm(white,White,White.paa)
 		NEW_501_Inf_Helm(young,Young,Young.paa)
 		NEW_501_Inf_Helm(zen,Zen,Zen.paa)
 		NEW_501_Inf_Helm(zeros,Zeros,Zeros.paa)
@@ -127,7 +128,7 @@ class CfgWeapons
 		NEW_501_Inf_Helm(player,Player,Player.paa)
 		NEW_501_Lumanated_Visor_Helm(point,Point,Point.paa)//1st
 		NEW_501_Lumanated_Visor_Helm(pompano,Pompano,Pompano.paa)//2nd
-		//NEW_501_Lumanated_Visor_Helm(roasted_helm,Gayax,Gayax.paa)//zeta
+		NEW_501_Lumanated_Visor_Helm(roasted_helm,Gayax,Gayax.paa)//zeta
 		//NEW_501_Lumanated_Visor_Helm(verax,Verax,Verax.paa)//zeta
 
 		
