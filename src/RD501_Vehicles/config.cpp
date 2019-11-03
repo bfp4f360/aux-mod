@@ -194,7 +194,15 @@ class Extended_Init_EventHandlers
         {
              init = [_this select 0] spawn macro_fnc_name(warden_tow);
         };
-    };
+    };  
+
+    class O_SWOP_AAT_1
+    {
+        class lock_me_in_hamachi
+        {
+            init = [_this select 0] spawn macro_fnc_name(aatInit);
+        }
+    }
 
     
 

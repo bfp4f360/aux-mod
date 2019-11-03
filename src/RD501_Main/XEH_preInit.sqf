@@ -54,8 +54,10 @@ macro_prep_xeh(init\random_sw_civ.sqf,random_starwars_civ)
 macro_prep_xeh(init\force_b2_walk.sqf,force_b2_walk)
 macro_prep_xeh(init\specops.sqf,b1_specop_apply_skill)
 macro_prep_xeh(init\ig88.sqf,ig88_apply_skill)
+macro_prep_xeh(init\b2_armor.sqf,b2_apply_armor)
 macro_prep_xeh(init\magna.sqf,magna_apply_skill)
 macro_prep_xeh(init\jam_sandwich.sqf,apply_jammer)
+macro_prep_xeh(init\aat.sqf,aatInit)
 
 //HUD color
 macro_prep_xeh(hud_color_change.sqf,change_hud_color)

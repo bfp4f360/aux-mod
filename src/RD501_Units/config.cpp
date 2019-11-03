@@ -38,6 +38,10 @@ class Extended_Init_EventHandlers
             init = [_this select 0] spawn macro_fnc_name(force_b2_walk);
 			exclude[]={macro_quote(macro_new_unit_class(opfor,B2_super_droid_Rocket)) };
         };
+		class apply_armor
+		{
+			init = [_this select 0] spawn macro_fnc_name(b2_apply_armor);
+		}
     };
 
     class macro_new_unit_class(opfor,B1_spec_op)

@@ -51,6 +51,7 @@ class CfgVehicles
 	class macro_new_vehicle(droideka,base) :SWOP_Droideka
 	{
 		scope=0;
+		armor = 275;
 		class EventHandlers: DefaultEventhandlers {}; 
 
 		faction = macro_cis_faction
