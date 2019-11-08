@@ -38,6 +38,7 @@ class CfgWeapons
 	NEW_501_AB_HELM(501st_Kryptic_helmet,Kryptic,Kryptic.paa)
 	NEW_501_AB_HELM(501st_Lich_helmet,Lich,Lich.paa)
 	NEW_501_AB_HELM(501st_Lissy_helmet,Lissy,Lissy.paa)
+	NEW_501_AB_HELM(501st_Middle_helmet,Middle,Middle.paa)
 	NEW_501_AB_HELM(501st_Miller_helmet,Miller,Miller.paa)
 	NEW_501_AB_HELM(501st_Navo_helmet,Navo,Navo.paa)
 	NEW_501_AB_HELM(501st_Needles_helmet,Needles,Needles.paa)

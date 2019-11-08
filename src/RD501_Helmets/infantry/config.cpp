@@ -47,6 +47,7 @@ class CfgWeapons
 		NEW_501_Inf_Helm(bjorn,Bjorn,Bjorn.paa)
 		NEW_501_Inf_Helm(boozy,Boozy,Boozy.paa)
 		NEW_501_Inf_Helm(corey,Corey,Corey.paa)
+		NEW_501_Inf_Helm(courtney,Courtney,Courtney.paa)
 		
 		//NEW_50x1_Inf_Helm(crisis_alt,Alt Crisis,helmcrisis.paa)
 		NEW_501_Inf_Helm(crusie,Crusie,Cruisie.paa)
@@ -55,9 +56,11 @@ class CfgWeapons
 		NEW_501_Inf_Helm(deus,Deus,Deus.paa)
 		NEW_501_Inf_Helm(dimitri,Dimitri,Dimitri.paa)
 		NEW_501_Inf_Helm(doug,Doug,Doug.paa)
-		NEW_501_Inf_Helm(drifter,Drifter,Drifter.paa)
+		//NEW_501_Inf_Helm(drifter,Drifter,Drifter.paa)
 		NEW_501_Inf_Helm(dusty,Dusty,Dusty.paa)
 		NEW_501_Inf_Helm(eli,Eli,Eli.paa)
+		NEW_501_Inf_Helm(fancy,Fancy,Fancy.paa)
+		NEW_501_Inf_Helm(garviel,Garviel,Garviel.paa)
 		NEW_501_Inf_Helm(goldarp,Goldarp,Goldarp.paa)
 		NEW_501_Inf_Helm(grandpa,Grandpa,Grandpa.paa)
 		NEW_501_Inf_Helm(jupiter,Jupiter,Jupiter.paa)
@@ -72,6 +75,7 @@ class CfgWeapons
 		NEW_501_Inf_Helm(moist,Moist,Moist.paa)
 		NEW_501_Inf_Helm(money,Money,Money.paa)
 		NEW_501_Inf_Helm(murdock,Murdock,Murdock.paa)
+		NEW_501_Inf_Helm(muzzer,Muzzer,Muzzer.paa)
 		NEW_501_Inf_Helm(nekro,Nekro,Nekro.paa)
 		NEW_501_Inf_Helm(nevermore,Nevermore,Nevermore.paa)
 		NEW_501_Inf_Helm(nightingale,Nightingale,Nightingale.paa)
@@ -116,9 +120,10 @@ class CfgWeapons
 	
 	//Lumanated Visor, Alphabetically, Ascending order
 		NEW_501_Lumanated_Visor_Helm(andromeda,Andromeda,Andromeda.paa)//3rd
-		NEW_501_Lumanated_Visor_Helm(courtney,Courtney,Courtney.paa)
+		NEW_501_Lumanated_Visor_Helm(courtney_v2,Catnee,Courtney.paa)
 		NEW_501_Lumanated_Visor_Helm(crisis2,Crisis,Crisis.paa)//2nd
 		NEW_501_Lumanated_Visor_Helm(csm_odin,CS-M Odin,Odin_CSM.paa)//battalion
+		NEW_501_Lumanated_Visor_Helm(drifter,Drifter,Drifter.paa)//4th
 		NEW_501_Lumanated_Visor_Helm(euler,Euler,Euler.paa)//mod
 
 		NEW_501_Lumanated_Visor_Helm(klown,Klown,Klown.paa)
