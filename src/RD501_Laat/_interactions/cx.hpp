@@ -34,26 +34,26 @@ class ACE_SelfActions: ACE_SelfActions
             displayName="CX Scuba";
             statement="_target setObjectTextureGlobal [0, 'RD501_Laat\textures\laat\Laat501stcx\Laat501stBodyCX_scuba.paa']";
         };
-        class RD501_NoseArt_1st: RD501_NoseArt_None
-        {
-            displayName="1st Platoon";
-            statement="_target setObjectTextureGlobal [0, 'RD501_Laat\textures\laat\Laat501stcx\Laat501stBodyCX_1st.paa']";
-        };
-        class RD501_NoseArt_2nd: RD501_NoseArt_None
-        {
-            displayName="2nd Platoon";
-            statement="_target setObjectTextureGlobal [0, 'RD501_Laat\textures\laat\Laat501stcx\Laat501stBodyCX_2nd.paa']";
-        };
-        class RD501_NoseArt_3rd: RD501_NoseArt_None
-        {
-            displayName="3rd Platoon";
-            statement="_target setObjectTextureGlobal [0, 'RD501_Laat\textures\laat\Laat501stcx\Laat501stBodyCX_3rd.paa']";
-        };
-        class RD501_NoseArt_4th: RD501_NoseArt_None
-        {
-            displayName="4th Platoon";
-            statement="_target setObjectTextureGlobal [0, 'RD501_Laat\textures\laat\Laat501stcx\Laat501stBodyCX_4th.paa']";
-        };
+        // class RD501_NoseArt_1st: RD501_NoseArt_None
+        // {
+        //     displayName="1st Platoon";
+        //     statement="_target setObjectTextureGlobal [0, 'RD501_Laat\textures\laat\Laat501stcx\Laat501stBodyCX_1st.paa']";
+        // };
+        // class RD501_NoseArt_2nd: RD501_NoseArt_None
+        // {
+        //     displayName="2nd Platoon";
+        //     statement="_target setObjectTextureGlobal [0, 'RD501_Laat\textures\laat\Laat501stcx\Laat501stBodyCX_2nd.paa']";
+        // };
+        // class RD501_NoseArt_3rd: RD501_NoseArt_None
+        // {
+        //     displayName="3rd Platoon";
+        //     statement="_target setObjectTextureGlobal [0, 'RD501_Laat\textures\laat\Laat501stcx\Laat501stBodyCX_3rd.paa']";
+        // };
+        // class RD501_NoseArt_4th: RD501_NoseArt_None
+        // {
+        //     displayName="4th Platoon";
+        //     statement="_target setObjectTextureGlobal [0, 'RD501_Laat\textures\laat\Laat501stcx\Laat501stBodyCX_4th.paa']";
+        // };
         // class RD501_NoseArt_Acklay: RD501_NoseArt_None
         // {
         //     displayName="Acklay";

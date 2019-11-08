@@ -28,26 +28,26 @@ class ACE_SelfActions: ACE_SelfActions
             runOnHover=0;
             priority=2.5;
         };				
-        class RD501_NoseArt_1st: RD501_NoseArt_None
-        {
-            displayName="1st Platoon";
-            statement="_target setObjectTextureGlobal [0, 'RD501_Laat\textures\laat\Laat501stcxx\Laat501stBodyCXX_1st.paa']";
-        };
-        class RD501_NoseArt_2nd: RD501_NoseArt_None
-        {
-            displayName="2nd Platoon";
-            statement="_target setObjectTextureGlobal [0, 'RD501_Laat\textures\laat\Laat501stcxx\Laat501stBodyCXX_2nd.paa']";
-        };
-        class RD501_NoseArt_3rd: RD501_NoseArt_None
-        {
-            displayName="3rd Platoon";
-            statement="_target setObjectTextureGlobal [0, 'RD501_Laat\textures\laat\Laat501stcxx\Laat501stBodyCXX_3rd.paa']";
-        };
-        class RD501_NoseArt_4th: RD501_NoseArt_None
-        {
-            displayName="4th Platoon";
-            statement="_target setObjectTextureGlobal [0, 'RD501_Laat\textures\laat\Laat501stcxx\Laat501stBodyCXX_4th.paa']";
-        };
+        // class RD501_NoseArt_1st: RD501_NoseArt_None
+        // {
+        //     displayName="1st Platoon";
+        //     statement="_target setObjectTextureGlobal [0, 'RD501_Laat\textures\laat\Laat501stcxx\Laat501stBodyCXX_1st.paa']";
+        // };
+        // class RD501_NoseArt_2nd: RD501_NoseArt_None
+        // {
+        //     displayName="2nd Platoon";
+        //     statement="_target setObjectTextureGlobal [0, 'RD501_Laat\textures\laat\Laat501stcxx\Laat501stBodyCXX_2nd.paa']";
+        // };
+        // class RD501_NoseArt_3rd: RD501_NoseArt_None
+        // {
+        //     displayName="3rd Platoon";
+        //     statement="_target setObjectTextureGlobal [0, 'RD501_Laat\textures\laat\Laat501stcxx\Laat501stBodyCXX_3rd.paa']";
+        // };
+        // class RD501_NoseArt_4th: RD501_NoseArt_None
+        // {
+        //     displayName="4th Platoon";
+        //     statement="_target setObjectTextureGlobal [0, 'RD501_Laat\textures\laat\Laat501stcxx\Laat501stBodyCXX_4th.paa']";
+        // };
         class RD501_NoseArt_Acklay: RD501_NoseArt_None
         {
             displayName="Acklay";

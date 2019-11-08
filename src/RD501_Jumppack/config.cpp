@@ -160,6 +160,12 @@ class CfgVehicles
 
 	};
 
+	class macro_jumppackClass(neutral,titan_mkIIb):macro_jumppackClass(neutral,titan_mkII)
+	{
+		displayname= "[Jumppack] Titan Mk.II B";
+		hiddenSelectionsTextures[] = {"SWOP_clones\data\spec\Spec2_co.paa"};
+	}
+
 	class macro_jumppackClass(neutral,titan_mkMCCCXXXVII):macro_jumppackClass(neutral,titan_mkII)
 	{
 		displayname= "[Jumppack] Titan Mk.MCCCXXXVII";
