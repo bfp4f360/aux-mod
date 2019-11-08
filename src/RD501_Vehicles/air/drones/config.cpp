@@ -61,6 +61,22 @@ class CfgVehicles
             
             class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
         };
+
+		class Turrets: Turrets
+		{
+			class MainTurret:MainTurret
+			{
+				weapons[] = {"Laserdesignator_mounted","heavyrepeater"};
+				magazines[] = {
+					"Laserbatteries",
+					"SWOP_HeavyRepeater_Mag",
+					"SWOP_HeavyRepeater_Mag",
+					"SWOP_HeavyRepeater_Mag","SWOP_HeavyRepeater_Mag",
+					"SWOP_HeavyRepeater_Mag","SWOP_HeavyRepeater_Mag",
+					"SWOP_HeavyRepeater_Mag","SWOP_HeavyRepeater_Mag"
+				};
+			}
+		}
 	};
 
 	class macro_new_vehicle(drone,Interrogation_Droid): SWOP_interrogationdroid
