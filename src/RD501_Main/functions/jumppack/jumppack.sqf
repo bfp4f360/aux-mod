@@ -364,7 +364,7 @@ macro_grp_fnc_name(jumppack,decide_jump) = {
 	};
 
 	//If not enough energy,no jump
-	_jumppack_jump_index=_unit getVariable["RD501_jumppack_selected_jump",0];
+	_jumppack_jump_index=(unitBackpack _unit) getVariable["RD501_jumppack_selected_jump",0];
 	_current_energy=(unitBackpack _unit) getVariable["RD501_jumppack_energy",0];
 	_selected_jump=_jumppack_data select _jumppack_jump_index;
 	_cost=(_selected_jump select 1) select 2;
@@ -428,7 +428,7 @@ macro_grp_fnc_name(jumppack,handle_loadout_change) = {
 	//player setVariable ["RD501_jumppack_backpack_class",current_backpack,true];
 	//player setVariable ["RD501_jumppack_energy",0,true];
 	player setVariable["RD501_jumppack_last_call_time",false,true];
-	player setVariable["RD501_jumppack_selected_jump",0,true];
+	//(unitBackpack player) setVariable["RD501_jumppack_selected_jump",0,true];
 };
 
 macro_grp_fnc_name(jumppack,set_jumptype) = {
@@ -439,13 +439,13 @@ macro_grp_fnc_name(jumppack,set_jumptype) = {
 
 	_jumppack_data=[(configFile >> "CfgVehicles" >> _unitBackpackClass),"RD501_jumppack_jump_types",[]] call BIS_fnc_returnConfigEntry;
 	_num_jumps=count _jumppack_data;
-	_jumppack_jump_index=_unit getVariable["RD501_jumppack_selected_jump",0];
+	_jumppack_jump_index=(unitBackpack _unit) getVariable["RD501_jumppack_selected_jump",0];
 
 	_a=_jumppack_jump_index+_inc;
 	_b=_num_jumps;
 	_new_index=(_a - (floor(_a/_b))*_b);
 
-	_unit setVariable ["RD501_jumppack_selected_jump",_new_index,true];
+	(unitBackpack _unit) setVariable ["RD501_jumppack_selected_jump",_new_index,true];
 	//[west, "HQ"] sideChat format["%1 %2 %3",_new_index,time,[_jumppack_jump_index+_inc,_num_jumps]];
 
 	//Data for hint

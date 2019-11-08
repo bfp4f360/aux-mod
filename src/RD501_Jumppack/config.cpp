@@ -172,7 +172,7 @@ class CfgVehicles
 		macro_rechargeRate=30;
 		macro_types_of_jumps = 
 		{
-			{"Short Jump",{1337,7,1,0,1,1}}
+			{"LEET Jump",{1337,7,1,0,1,1}}
 		};
 	}
 
