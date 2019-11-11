@@ -31,10 +31,7 @@ class cfgWeapons
 	class Rifle_Long_Base_F;
 	class SWOP_BlasterRifle_Base:Rifle_Long_Base_F
 	{
-		//class Secondary;
 		class WeaponSlotsInfo;
-		// scopeArsenal = 0; 
-		// weaponPoolAvailable=0;
 	};
 
 	class SWOP_DC15ABlasterRifle:SWOP_BlasterRifle_Base
@@ -50,8 +47,6 @@ class cfgWeapons
 		{
 			class CowsSlot;
 		};
-		
-
 	};
 
 	class SWOP_DC15ABlasterRifle_mod0:SWOP_DC15ABlasterRifle
@@ -96,8 +91,6 @@ class cfgWeapons
 
 	class SWOP_DC15ABlasterRifle_mod1: SWOP_DC15ABlasterRifle
 	{
-		// scopeArsenal = 0;
-		// weaponPoolAvailable=0;
 		class Single:Single
 		{
 
