@@ -5,10 +5,10 @@ class macro_new_weapon(DC,15a_LE):SWOP_DC15ABlasterRifle_mod1 // RD501_DC_15a_ba
 	scope=2;
 	scopeArsenal=2;
 
-	class Secondary:Secondary
-	{
-		class Single;
-	};
+	// class Secondary:Secondary
+	// {
+	// 	class Single;
+	// };
 	dlc = "RD501";
 
 	author= "RD501";

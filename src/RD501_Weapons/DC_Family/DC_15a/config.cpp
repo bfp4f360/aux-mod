@@ -45,8 +45,7 @@ class cfgWeapons
 		class Burst;
 		class FullAuto;
 		class Secondary;
-		// scopeArsenal = 0;
-		// weaponPoolAvailable=0;
+
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			class CowsSlot;
@@ -59,22 +58,39 @@ class cfgWeapons
 	{
 		// scopeArsenal = 0;
 		// weaponPoolAvailable=0;
-		class Secondary:Secondary
+		class FullAuto:FullAuto
 		{
-			class Single;
+
+		};
+
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class CowsSlot;
 		};
 	};
 	
 	class SWOP_DC15AGL:SWOP_DC15ABlasterRifle
 	{
-		// scopeArsenal = 0;
-		// weaponPoolAvailable=0;
-		class Secondary:Secondary
+	
+		class Single:Single
 		{
-			class Single;
+
+		}
+		class Burst:Burst
+		{
+
+		}
+		class FullAuto:FullAuto
+		{
+
 		};
 
 		class EGLM;
+
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class CowsSlot;
+		};
 
 	};
 
@@ -82,9 +98,14 @@ class cfgWeapons
 	{
 		// scopeArsenal = 0;
 		// weaponPoolAvailable=0;
-		class Secondary:Secondary
+		class Single:Single
 		{
-			class Single;
+
+		};
+
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class CowsSlot;
 		};
 	}
 

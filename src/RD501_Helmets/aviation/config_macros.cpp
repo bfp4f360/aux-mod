@@ -9,4 +9,13 @@
 		subItems[] = {macro_new_weapon(nvg_integrated,pilot_test),"G_B_Diving"};\
 	};
 
+#define NEW_WARDEN_HELM(classname,displayname,texture)\
+	class macro_new_helmet(warden,classname): macro_new_helmet(warden,501st)\
+	{\
+		scope = 2;\
+		author = "RD501";\
+		displayName = Clone warden helmet (501st '##displayname##');\
+		hiddenSelectionsTextures[] = {macro_custom_helmet_textures##\aviation\##texture};\
+	};
+
 

@@ -38,6 +38,8 @@ class CfgWeapons
 
 	NEW_501_Pilot_HELM(aspect,Aspect,pilots\aspect.paa)
 	NEW_501_Pilot_HELM(casskun,Casskun,pilots\casskun.paa)
+	NEW_501_Pilot_HELM(cxx,CX-X,pilots\cxx.paa)
+	NEW_501_Pilot_HELM(cxc,CX-C,pilots\cxc.paa)
 	NEW_501_Pilot_HELM(dylan,Dylan,pilots\Dylanhelmet.paa)
 
 	class macro_new_helmet(pilot,erlien): macro_new_helmet(pilot,base)
@@ -61,10 +63,10 @@ class CfgWeapons
 	NEW_501_Pilot_HELM(scuba,Scuba,pilots\scuba_helm.paa)
 	NEW_501_Pilot_HELM(zatama,Zatama,pilots\DragonGemHelm.paa)
 
+	//my special helmets :)
 	NEW_501_Pilot_HELM(stealth,Stealth,pilots\stealthPilot.paa)
 	NEW_501_Pilot_HELM(stealth_Krayt,Stealth Lord Krayt,pilots\steathKrayt.paa)
 	//NEW_501_Pilot_HELM(luuce,Luuce,pilots\Luuce.paa)
-
 
 	class macro_new_helmet(pilot,lord_krayt): macro_new_helmet(pilot,base)
 	{
@@ -98,7 +100,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {macro_custom_helmet_textures\aviation\pilots\purple.paa};
 	}
 
-		class macro_new_helmet(pilot,cold_krayt): macro_new_helmet(pilot,king_krayt)
+	class macro_new_helmet(pilot,cold_krayt): macro_new_helmet(pilot,king_krayt)
 	{
 			displayName = "Clone pilot helmet (501st legion) Ice Krayt";
 		hiddenSelectionsTextures[] = {macro_custom_helmet_textures\aviation\pilots\blue.paa};
@@ -106,28 +108,13 @@ class CfgWeapons
 
 	class macro_new_helmet(pilot,angrr_krayt): macro_new_helmet(pilot,king_krayt)
 	{
-			displayName = "Clone pilot helmet (501st legion) Angrr Krayt";
+		displayName = "Clone pilot helmet (501st legion) Angrr Krayt";
 		hiddenSelectionsTextures[] = {macro_custom_helmet_textures\aviation\pilots\red.paa};
 	}
 
-
 	class 212th_Engineer_Helmet_501st;
-	// class macro_new_helmet(warden,501st):212th_Engineer_Helmet_501st
-	// {
-	// 	author="RD501"
-	// 	DisplayName="Clone warden helmet (501st legion 212th)";
-	// 	hiddenSelections[]=
-	// 	{
-	// 		"Camo"
-	// 	};
-	
-	// 	hiddenSelectionsMaterials[] = 
-    //     {
-    //         "RD501_Helmets\_materials\aviation\wardenMaterial.rvmat"
-    //     };
-	// };
 
-	class macro_new_helmet(warden,501st2):212th_Engineer_Helmet_501st
+	class macro_new_helmet(warden,501st):212th_Engineer_Helmet_501st
 	{
 		author="RD501"
 		DisplayName="Clone warden helmet (501st legion Cassie)";
@@ -143,21 +130,13 @@ class CfgWeapons
         {
             "RD501_Helmets\_materials\aviation\wardenMaterial.rvmat"
         };
+		subItems[] = {macro_new_weapon(nvg_integrated,pilot_test),"G_B_Diving"};
 	};
 
-	// class macro_new_helmet(warden,501stv3):212th_Engineer_Helmet_501st
-	// {
-	// 	author="RD501"
-	// 	DisplayName="Clone warden helmet (501st legion swop)";
-	// 	hiddenSelections[]=
-	// 	{
-	// 		"Camo"
-	// 	};
 	
-	// 	hiddenSelectionsMaterials[] = 
-    //     {
-    //         "SWOP_clones\data\helmpilot.rvmat"
-    //     };
-	// };
+	NEW_WARDEN_HELM(wirtimus,Wirtimus,warden\Wirtimus.paa)
+
+
+
 
 };
