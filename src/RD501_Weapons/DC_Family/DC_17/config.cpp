@@ -30,8 +30,7 @@ class cfgWeapons
 	class Pistol_Base_F;
 	class SWOP_DC17Pistol: Pistol_Base_F
 	{
-		weaponPoolAvailable = 0;
-		scopeArsenal=0;
+		
 		class Single;
 	};
 

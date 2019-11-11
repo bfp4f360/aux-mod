@@ -25,14 +25,8 @@ class CfgPatches
 class cfgWeapons 
 {	
 	class launch_RPG32_F;
-	class RocketHH15Clone:launch_RPG32_F
-	{
-		scopeArsenal=0;
-	};
-	class RocketRPS6_F:launch_RPG32_F
-	{
-		scopeArsenal=0;
-	};
+	class RocketHH15Clone;
+	class RocketRPS6_F;
 
 	class macro_new_weapon(hh,15):RocketHH15Clone
 	{

@@ -107,7 +107,7 @@ class cfgWeapons
 	{
 		
 		class FullAuto;
-		weaponPoolAvailable = 0;
+		
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			class CowsSlot;

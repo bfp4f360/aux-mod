@@ -51,8 +51,7 @@ class cfgWeapons
 
 	class SWOP_DC15ABlasterRifle_mod0:SWOP_DC15ABlasterRifle
 	{
-		// scopeArsenal = 0;
-		// weaponPoolAvailable=0;
+		
 		class FullAuto:FullAuto
 		{
 

@@ -32,8 +32,7 @@ class cfgWeapons
 
 	class SWOP_Z6Blaster:SW_Z6_base_F
 	{
-		scope=0;
-		scopeArsenal=0;
+
 		displayName="Z6 Rotary Cannon";
 		class FullAuto1;
 		class FullAuto2;
@@ -107,7 +106,6 @@ class cfgWeapons
 		magazines[] = {};//SWOP_Valken38Xauto_Mag
 		class Single;
 		class FullAuto;
-		scopeArsenal=0;
 		class WeaponSlotsInfo;
 	};
 
@@ -116,7 +114,7 @@ class cfgWeapons
 	{
 		magazines[] = {"SWOP_Valken38Xauto_MagXXD"};
 		baseWeapon = "SWOP_Valken38XAuto_XD";
-		recoil = "Valken_Super_auto_recoil";
+		//recoil = "Valken_Super_auto_recoil";
 		scopeArsenal=2;
 		
 		ACE_Overheating_Dispersion = 0.0;
@@ -126,7 +124,7 @@ class cfgWeapons
 		ACE_overheating_allowSwapBarrel = 1;
 		class Single:Single
 		{
-			dispersion = 0.00001;
+			dispersion = 0.0001;
 			reloadTime = 0.06;
 			class BaseSoundModeType
 			{
