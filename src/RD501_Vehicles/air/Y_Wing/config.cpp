@@ -51,7 +51,7 @@ class CfgVehicles
 	};
 	class swop_ywclones: swop_ywing_base
 	{
-		scope=0
+		
 		class Turrets:Turrets
 		{
 			class MainTurret;
@@ -988,7 +988,7 @@ class CfgVehicles
 
 	class swop_yw: swop_ywing_base
 	{
-		scope=0;
+		
 		class Turrets:Turrets
 		{
 			class MainTurret;

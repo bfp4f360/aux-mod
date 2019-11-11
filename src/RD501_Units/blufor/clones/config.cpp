@@ -365,7 +365,7 @@ class CfgVehicles
     class macro_new_uniform_skin_class(blufor,jesse): SWOP_Clonetrooper_501jesse_F
 	{
 		author = "RD501";
-		scope = 1;
+		scope = 2;
 		model = "SWOP_clones\uniform\cloneBody.p3d";
 		nakedUniform = "U_BasicBody";
 		hiddenSelections[] = {"Camo1"};

@@ -12,11 +12,10 @@
 
 #define macro_new_tie_class(name) vehicle_classname##_##name
 
-#define private_scope_this(classname,base)\
+#define macro_inherit_ace_selfactions(classname,base)\
 	class classname:base\
 	{\
 		class ACE_SelfActions;\
-		scope=0;\
 	};
 
 class CfgPatches
@@ -57,12 +56,12 @@ class CfgVehicles
 	class Plane_Base_F;
 	class Xtiestkr;
 	
-	private_scope_this(swop_tie_stryker,Xtiestkr)
-	private_scope_this(swop_tie_int,Plane_Base_F)
-	private_scope_this(swop_tie,Plane_Base_F)
-	private_scope_this(swop_tiedef,Plane_Base_F)
-	private_scope_this(swop_tieb,Plane_Base_F)
-	private_scope_this(swop_tiex1,Plane_Base_F)
+	macro_inherit_ace_selfactions(swop_tie_stryker,Xtiestkr)
+	macro_inherit_ace_selfactions(swop_tie_int,Plane_Base_F)
+	macro_inherit_ace_selfactions(swop_tie,Plane_Base_F)
+	macro_inherit_ace_selfactions(swop_tiedef,Plane_Base_F)
+	macro_inherit_ace_selfactions(swop_tieb,Plane_Base_F)
+	macro_inherit_ace_selfactions(swop_tiex1,Plane_Base_F)
 	
 	
 
@@ -458,9 +457,9 @@ class CfgVehicles
 	};
 
 	class Xtiefo;
-	private_scope_this(swop_tie_silencer,Plane_Base_F)
-	private_scope_this(swop_tiefo,Xtiefo)
-	private_scope_this(swop_tiefosf,Xtiefo)
+	macro_inherit_ace_selfactions(swop_tie_silencer,Plane_Base_F)
+	macro_inherit_ace_selfactions(swop_tiefo,Xtiefo)
+	macro_inherit_ace_selfactions(swop_tiefosf,Xtiefo)
 	class macro_new_vehicle(TIE,fo) : swop_tiefo
 	{
 

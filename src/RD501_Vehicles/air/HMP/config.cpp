@@ -44,19 +44,9 @@ class CfgVehicles
 {
 	
 
-	class Helicopter_Base_H;
-	class swop_HMP_droidgunship:Helicopter_Base_H
-	{
-		//scope=0;
-		scopeCurator=0;
-		forceInGarage=0;
-	};
-	class swop_HMP_droidgunship_transport:Helicopter_Base_H
-	{
-		//scope=0;
-		scopeCurator=0;
-		forceInGarage=0;
-	};
+	class swop_HMP_droidgunship;
+
+	class swop_HMP_droidgunship_transport;
 
 	class macro_new_vehicle(HMP,gunship):swop_HMP_droidgunship
 	{

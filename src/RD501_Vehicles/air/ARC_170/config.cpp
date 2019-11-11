@@ -53,8 +53,6 @@ class CfgVehicles
 		
 	class swop_arc_t: Xarc
 	{
-		scope=0;
-		scopeCurator=0;
 		class Eventhandlers: DefaultEventhandlers//remove the script that crashes server lol
 		{
 			killed = "_this call (uinamespace getvariable 'BIS_fnc_effectKilled');";

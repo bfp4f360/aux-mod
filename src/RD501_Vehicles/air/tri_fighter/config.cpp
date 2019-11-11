@@ -41,11 +41,7 @@ class CBA_Extended_EventHandlers_base;
 class CfgVehicles
 {
 	class Plane_Base_F;
-	class swop_tridroid:Plane_Base_F
-	{
-		scopeCurator=0;
-		forceInGarage=0;
-	};
+	class swop_tridroid;
 	class macro_new_vehicle(trifighter,MKII) : swop_tridroid
 	{
 		scope = 2;

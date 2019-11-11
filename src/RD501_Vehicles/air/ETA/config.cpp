@@ -56,7 +56,7 @@ class CfgVehicles
 
 	class swop_eta2:Plane_Base_F
 	{
-		scope=0;
+	
 		class EventHandlers
 		{
 			

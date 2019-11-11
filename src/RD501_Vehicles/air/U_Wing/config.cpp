@@ -47,7 +47,7 @@ class CfgVehicles
 	class Swop_Uwing: Heli_Transport_01_base_F
 	{
 		transportSoldier = 20;
-		scopeCurator=0;
+	
 		class ACE_SelfActions;
 
 		#include "../../common/universal_mfd.hpp"

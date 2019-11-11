@@ -42,11 +42,8 @@ class CBA_Extended_EventHandlers_base;
 class CfgVehicles
 {
 	class Plane_Base_F;
-	class swop_vulture:Plane_Base_F
-	{
-		scopeCurator=0;
-		forceInGarage=0;
-	};
+	class swop_vulture;
+	
 	class macro_new_vehicle(vulture,MKII) : swop_vulture
 	{
 		scope = 2;

@@ -58,11 +58,11 @@ class cfgFunctions
 
 		class rd501_test_fnc
 		{
-			class test_fnc
-			{
-				file = "RD501_Main\functions\test_fnc_midnight.sqf";	
-				postinit=1;
-			};
+			// class test_fnc
+			// {
+			// 	file = "RD501_Main\functions\test_fnc_midnight.sqf";	
+			// 	postinit=1;
+			// };
 			class auto_radio_freq
 			{
 				file = "RD501_Main\functions\auto_radio_freq.sqf";	
@@ -74,7 +74,7 @@ class cfgFunctions
 				
 			};//[player,['35.1','35.2','35.3','35.4','35','36','35.5','42','42'] ]call rd501_fnc_enable_arf
 		};
-
+		
 		class the_cleanman
 		{
 			class ya_yeet_man

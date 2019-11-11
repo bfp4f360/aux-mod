@@ -201,7 +201,7 @@ class CfgVehicles
 			macro_low_poly_b1_textures\Droid.paa	
 		};
 
-		backpack = "SWOP_B_Droid_backpack";
+		backpack ="3AS_LPB1_PCK_BSC" //"SWOP_B_Droid_backpack";
 
 		Items[]=
 		{
@@ -704,7 +704,7 @@ class CfgVehicles
 			"MRAWS_HEAT_F",
 			"MRAWS_HEAT_F"
 		};
-		backpack="RD501_InvisBag";//macro_new_backpack_class(factionless,invsible)
+		backpack="3AS_LPB1_PCK_BSC";//"RD501_InvisBag";//macro_new_backpack_class(factionless,invsible)
 	};
 	class macro_new_unit_class(opfor,B1_low_poly_marksmen): macro_new_unit_class(opfor,B1_low_poly_blue)
 	{
