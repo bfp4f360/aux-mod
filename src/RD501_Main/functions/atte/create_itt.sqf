@@ -32,4 +32,4 @@
 	_atte_mens setvehicleammo 0;
 	_atte_mens lockDriver true;
 	[_atte_mens, 20] call ace_cargo_fnc_setSpace;
-	[_atte_mens, true] remoteExec ["hideObjectglobal", 0];
+	//[_atte_mens, true] remoteExec ["hideObjectglobal", 0];

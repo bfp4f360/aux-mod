@@ -644,27 +644,27 @@ class CfgVehicles
 		displayName="B1 Battledroid (Heavy)";
 		weapons[]=
 		{
-			macro_new_weapon(e5,C_aqua)
+			"SWOP_E5C"
 		};
 		respawnWeapons[]=
 		{
-			macro_new_weapon(e5,C_aqua)
+			"SWOP_E5C"
 		};
 		magazines[]=
 		{
-			macro_new_mag(E5c_aqua,90),
-			macro_new_mag(E5c_aqua,90),
-			macro_new_mag(E5c_aqua,90),
-			macro_new_mag(E5c_aqua,90),
-			macro_new_mag(E5c_aqua,90)
+			"SWOP_E5C_Mag",
+			"SWOP_E5C_Mag",
+			"SWOP_E5C_Mag",
+			"SWOP_E5C_Mag",
+			"SWOP_E5C_Mag"
 		};
 		respawnMagazines[]=
 		{
-			macro_new_mag(E5c_aqua,90),
-			macro_new_mag(E5c_aqua,90),
-			macro_new_mag(E5c_aqua,90),
-			macro_new_mag(E5c_aqua,90),
-			macro_new_mag(E5c_aqua,90)
+			"SWOP_E5C_Mag",
+			"SWOP_E5C_Mag",
+			"SWOP_E5C_Mag",
+			"SWOP_E5C_Mag",
+			"SWOP_E5C_Mag"
 		};
 	};
 	class macro_new_unit_class(opfor,B1_low_poly_maaws): macro_new_unit_class(opfor,B1_low_poly_blue)
