@@ -54,7 +54,7 @@ class CfgWeapons
 	NEW_501_Pilot_HELM(exose,Exose,pilots\Exose.paa)
 	NEW_501_Pilot_HELM(jackson,Jackson,pilots\Jackson.paa)
 	NEW_501_Pilot_HELM(jaisus,Jaisus,pilots\Jaisus.paa)
-	NEW_501_Pilot_HELM(keryl,Keryl,pilots\Keryl.paa)
+	//NEW_501_Pilot_HELM(keryl,Keryl,pilots\Keryl.paa)
 	NEW_501_Pilot_HELM(kitty,Kitty,pilots\kitty.paa)
 	NEW_501_Pilot_HELM(koop,Koop,pilots\Koop.paa)
 	NEW_501_Pilot_HELM(kushiban,Kushiban,pilots\Kushiban.paa)

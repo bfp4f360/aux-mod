@@ -656,10 +656,16 @@ class CfgVehicles
 			"SWOP_E5C_Mag",
 			"SWOP_E5C_Mag",
 			"SWOP_E5C_Mag",
+			"SWOP_E5C_Mag",
+			"SWOP_E5C_Mag",
+			"SWOP_E5C_Mag",
 			"SWOP_E5C_Mag"
 		};
 		respawnMagazines[]=
 		{
+			"SWOP_E5C_Mag",
+			"SWOP_E5C_Mag",
+			"SWOP_E5C_Mag",
 			"SWOP_E5C_Mag",
 			"SWOP_E5C_Mag",
 			"SWOP_E5C_Mag",
@@ -686,6 +692,9 @@ class CfgVehicles
 			"SWOP_E5_Mag",
 			"SWOP_E5_Mag",
 			"SWOP_E5_Mag",
+			"SWOP_E5_Mag",
+			"SWOP_E5_Mag",
+			"SWOP_E5_Mag",
 			"MRAWS_HE_F",
 			"MRAWS_HE_F",
 			"MRAWS_HEAT_F",
@@ -693,6 +702,7 @@ class CfgVehicles
 		};
 		respawnMagazines[]=
 		{
+			"SWOP_E5_Mag",
 			"SWOP_E5_Mag",
 			"SWOP_E5_Mag",
 			"SWOP_E5_Mag",
