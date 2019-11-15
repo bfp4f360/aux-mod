@@ -4,7 +4,6 @@ make_me_surrender = {
 
 };
 
-
 wake_me_up = {
     params["_unit"];
 
@@ -18,9 +17,12 @@ wake_me_up = {
 };
 
 
-["SWOP_CIS_droid", "init", {
-    _this call make_me_surrender;
-    _this call wake_me_up;
-},
-true, [], true
-] call CBA_fnc_addClassEventHandler;
+{
+    [_x, "init", {
+        _this call make_me_surrender;
+        _this call wake_me_up;
+    },
+    true, [], true
+    ] call CBA_fnc_addClassEventHandler;
+
+} foreach ["SWOP_CIS_droid","SWOP_CIS_superdroid_B2","RD501_opfor_unit_magna_guard_blackop","RD501_opfor_unit_IG_88"];

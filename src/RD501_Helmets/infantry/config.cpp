@@ -31,15 +31,15 @@ class CfgWeapons
 //calo.drag exod,jan,lichmlissy,lucky,miller navo needdles nobear, raykkan rileyt silent tim
 
 	//ARC, Alphabetically, Ascending order
-		NEW_501_ARC_Helm(Adenn,Adenn,Adenn.paa)
-		NEW_501_ARC_Helm(arc_rto,ARC RTO,Arc_rto.paa)
-		NEW_501_ARC_Helm(beskar,Beskar,Beskar.paa)
-		//NEW_50x1_ARC_Helm(crow,Crow,Crow.paa)
-		NEW_501_ARC_Helm(cyrus,Cyrus,Cyrus.paa)
-		NEW_501_ARC_Helm(delta,Delta,Delta.paa)
-		NEW_501_ARC_Helm(solus,Solus,Solus.paa)
-		NEW_501_ARC_Helm(triton,Triton,Triton.paa)
-		NEW_501_ARC_Helm(verda,Verda,Verda.paa)
+		// NEW_501_ARC_Helm(Adenn,Adenn,Adenn.paa)
+		// NEW_501_ARC_Helm(arc_rto,ARC RTO,Arc_rto.paa)
+		// NEW_501_ARC_Helm(beskar,Beskar,Beskar.paa)
+		// //NEW_50x1_ARC_Helm(crow,Crow,Crow.paa)
+		// NEW_501_ARC_Helm(cyrus,Cyrus,Cyrus.paa)
+		// NEW_501_ARC_Helm(delta,Delta,Delta.paa)
+		// NEW_501_ARC_Helm(solus,Solus,Solus.paa)
+		// NEW_501_ARC_Helm(triton,Triton,Triton.paa)
+		// NEW_501_ARC_Helm(verda,Verda,Verda.paa)
 
 	//Infantry, Alphabetically, Ascending order
 		NEW_501_Inf_Helm(alistair,Alistair,Alistair.paa)
