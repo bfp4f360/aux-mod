@@ -67,7 +67,7 @@
 			};
 		};
 		magazineWell[]={Republic_Universal_Magazine_Well};
-		magazines[]={macro_new_mag(DC15s,100)};
+		magazines[]={macro_new_mag(DC15s,100),macro_new_mag(shotgun_test,2)};
 		displayName="[Stage I] DC15s Carbine";
 		canShootInWater = 1;
 		macro_ace_heating
