@@ -296,7 +296,7 @@ class CfgMagazineWells
 	{
 		Republic_Universal_Magazine[]=
 		{
-			macro_new_mag(Republic_Universal_Magazine,60),
+			macro_new_mag(Republic_Universal_Magazine,30),
 			"DCStun_Mag"
 		};
 	};
@@ -304,8 +304,8 @@ class CfgMagazineWells
 	{
 		Republic_GL_Magazines[]=
 		{
-			macro_new_mag(HE_GL,3),
-			macro_new_mag(AP_GL,2),
+			macro_new_mag(proto_HE_GL,3),
+			macro_new_mag(proto_AP_GL,2),
 
 			macro_new_mag(flare_white,3),
 
@@ -335,33 +335,33 @@ class CfgMagazineWells
 class CfgMagazines
 {	
 	class CA_Magazine;
-	class macro_new_mag(Republic_Universal_Magazine,60): CA_Magazine
+	class macro_new_mag(Republic_Universal_Magazine,30): CA_Magazine
 	{
 		author = "RD501";
 		scope = 2;
 		model = "\SW_ExtraWeapons\PICKUPS\energy_cell.p3d";
 		picture = "\z\acex\addons\field_rations\ui\item_canteen_co.paa";
 		displayName = "60Rnd Republic Universal Magazine";
-		ammo = macro_new_ammo(Republic_Universal_Ammo)
+		ammo = macro_new_ammo(DC_15a);//macro_new_ammo(Republic_Universal_Ammo)
 		tracersEvery = 1;
 		count = 60;
 		descriptionShort = "60Rnd R.U.M";
-		mass = 20;
+		mass = 30;
 		initSpeed = 500;
 	};
 
-	class macro_new_mag(DC15a_standard,30): macro_new_mag(Republic_Universal_Magazine,60)
-	{
-		ammo = macro_new_ammo(DC_15a)
-		initSpeed = 500;
-		displayName = "30Rnd DC-15A Rifle Magazine";
-		descriptionShort = "30rnd Magazine";
-		count = 30;
-		mass = 40;
-		picture = "\SW_ExtraWeapons\PICKUPS\UI\icons\energycell_X_ca.paa";
-	};
+	// class macro_new_mag(DC15a_standard,30): macro_new_mag(Republic_Universal_Magazine,30)
+	// {
+	// 	ammo = macro_new_ammo(DC_15a)
+	// 	initSpeed = 500;
+	// 	displayName = "30Rnd DC-15A Rifle Magazine";
+	// 	descriptionShort = "30rnd Magazine";
+	// 	count = 30;
+	// 	mass = 40;
+	// 	picture = "\SW_ExtraWeapons\PICKUPS\UI\icons\energycell_X_ca.paa";
+	// };
 
-	class macro_new_mag(DC15a_LE,20): macro_new_mag(Republic_Universal_Magazine,60)
+	class macro_new_mag(DC15a_LE,20): macro_new_mag(Republic_Universal_Magazine,30)
 	{
 		ammo = macro_new_ammo(DC_15a_le)
 		initSpeed = 1000;//666.66;
@@ -372,7 +372,18 @@ class CfgMagazines
 		picture = "\SW_ExtraWeapons\PICKUPS\UI\icons\energycell_X_ca.paa";
 	};
 
-	class macro_new_mag(DC15a_mod_0,200): macro_new_mag(Republic_Universal_Magazine,60)
+	class macro_new_mag(DC_15a_le_HE,5): macro_new_mag(Republic_Universal_Magazine,30)
+	{
+		ammo = macro_new_ammo(DC_15a_le_HE)
+		initSpeed = 1000;//666.66;
+		displayName = "20Rnd DC-15A LE HE Magazine";
+		descriptionShort = "20rnd Magazine";
+		count = 5;
+		mass = 90;
+		picture = "\SW_ExtraWeapons\PICKUPS\UI\icons\energycell_X_ca.paa";
+	};
+
+	class macro_new_mag(DC15a_mod_0,200): macro_new_mag(Republic_Universal_Magazine,30)
 	{
 		ammo = macro_new_ammo(DC_15a_mod0)
 		initSpeed = 700;
@@ -383,7 +394,7 @@ class CfgMagazines
 		picture = "\SW_ExtraWeapons\PICKUPS\UI\icons\energycell_X_ca.paa";
 	};
 
-	class macro_new_mag(DC15s,100): macro_new_mag(Republic_Universal_Magazine,60)
+	class macro_new_mag(DC15s,100): macro_new_mag(Republic_Universal_Magazine,30)
 	{
 		ammo = macro_new_ammo(DC_15s)
 		initSpeed = 450;
@@ -394,7 +405,7 @@ class CfgMagazines
 		picture = "\SW_ExtraWeapons\PICKUPS\UI\icons\energycell_X_ca.paa";
 	};
 
-	class macro_new_mag(z6,300): macro_new_mag(Republic_Universal_Magazine,60)
+	class macro_new_mag(z6,300): macro_new_mag(Republic_Universal_Magazine,30)
 	{
 		ammo = macro_new_ammo(z6)
 		initSpeed = 500;
@@ -405,110 +416,10 @@ class CfgMagazines
 		picture = "\SW_CloneWarsWeapons\SW_Z6\UI\SW_Z6-mag.paa";
 	};
 
-	class macro_new_mag(flare_white,3): CA_Magazine
-	{
-		author = "RD501";
-		scope = 2;
-		type = 16;
-		displayName = "Flare 3 Rounds (White)";
-		displayNameShort = "White Flare";
-		picture = "\A3\Weapons_F\Data\UI\gear_UGL_Flare_CA.paa";
-		model = "\A3\Weapons_F\Ammo\UGL_Flare";
-		ammo = macro_new_ammo(40mm_flare_white)
-		initSpeed = 80;
-		count = 3;
-		nameSound = "";
-		descriptionShort = "Type: Flare 3 Rounds - White <br />Rounds: 3";
-		weaponPoolAvailable = 1;
-		mass = 4;
-	};
+	#include "_mags/flares.hpp"
 
-	class macro_new_mag(flare_cir,3): macro_new_mag(flare_white,3)
-	{
-		author = "RD501";
-		displayName = "Flare 3 Rounds (IR)";
-		ammo = macro_new_ammo(40mm_flare_cir)
-		picture = "\A3\Weapons_F\Data\UI\gear_UGL_Flare_purple_CA.paa";
-		descriptionShort = "Type: Flare - IR<br />Rounds: 3<br />";
-		displayNameShort = "IR";
-	};
-
-
-	class macro_new_mag(flare_green,3): macro_new_mag(flare_white,3)
-	{
-		author = "RD501";
-		displayName = "Flare 3 Rounds (Green)";
-		displayNameShort = "Green Flare";
-		ammo = macro_new_ammo(40mm_flare_green)
-		picture = "\A3\Weapons_F\Data\UI\gear_UGL_Flare_Green_CA.paa";
-		descriptionShort = "Type: Flare - Green<br />Rounds: 3<br />";
-	};
-
-
-	class macro_new_mag(flare_red,3): macro_new_mag(flare_white,3)
-	{
-		author = "RD501";
-		displayName = "Flare 3 Rounds (Red)";
-		ammo = macro_new_ammo(40mm_flare_red)
-		picture = "\A3\Weapons_F\Data\UI\gear_UGL_Flare_Red_CA.paa";
-		descriptionShort = "Type: Flare - Red<br />Rounds: 3";
-		displayNameShort = "Red Flare";
-	};
-
-
-	class macro_new_mag(flare_yellow,3): macro_new_mag(flare_white,3)
-	{
-		author = "RD501";
-		displayName = "Flare 3 Rounds (Yellow)";
-		ammo = macro_new_ammo(40mm_flare_yellow)
-		picture = "\A3\Weapons_F\Data\UI\gear_UGL_Flare_yelow_CA.paa";
-		descriptionShort = "Type: Flare - Yellow<br />Rounds: 3";
-		displayNameShort = "Yellow Flare";
-	};
-
-
-	class macro_new_mag(flare_blue,3): macro_new_mag(flare_white,3)
-	{
-		author = "RD501";
-		displayName = "Flare 3 Rounds (Blue)";
-		ammo = macro_new_ammo(40mm_flare_blue)
-		picture = "\A3\Weapons_F\Data\UI\gear_UGL_Flare_yelow_CA.paa";
-		descriptionShort = "Type: Flare - Purple<br />Rounds: 3";
-		displayNameShort = "Blue Flare";
-	};
-
-
-	class macro_new_mag(flare_cyan,3): macro_new_mag(flare_white,3)
-	{
-		author = "RD501";
-		displayName = "Flare 3 Rounds (Cyan)";
-		ammo = macro_new_ammo(40mm_flare_cyan)
-		picture = "\A3\Weapons_F\Data\UI\gear_UGL_Flare_yelow_CA.paa";
-		descriptionShort = "Type: Flare - Cyan<br />Rounds: 3";
-		displayNameShort = "Cyan Flare";
-	};
-
-	class macro_new_mag(flare_purple,3): macro_new_mag(flare_white,3)
-	{
-		author = "RD501";
-		displayName = "Flare 3 Rounds (Purple)";
-		ammo = macro_new_ammo(40mm_flare_purple)
-		picture = "\A3\Weapons_F\Data\UI\gear_UGL_Flare_yelow_CA.paa";
-		descriptionShort = "Type: Flare - Purple<br />Rounds: 3";
-		displayNameShort = "Purple Flare";
-	};
-
-	class macro_new_mag(flare_orange,3): macro_new_mag(flare_white,3)
-	{
-		author = "RD501";
-		displayName = "Flare 3 Rounds (Orange)";
-		ammo = macro_new_ammo(40mm_flare_orange)
-		picture = "\A3\Weapons_F\Data\UI\gear_UGL_Flare_yelow_CA.paa";
-		descriptionShort = "Type: Flare - Orange<br />Rounds: 3";
-		displayNameShort = "Orange Flare";
-	};
-
-	class macro_new_mag(HE_GL,3): CA_Magazine
+	class 1Rnd_HE_Grenade_shell;
+	class macro_new_mag(proto_HE_GL,3): 1Rnd_HE_Grenade_shell
 	{
 		author = "RD501";
 		scope = 2;
@@ -516,15 +427,15 @@ class CfgMagazines
 		displayName = "3Rnd HE DC-15A Grenades";
 		displayNameShort = "3Rnd HE DC-15A";
 		picture = "\A3\Weapons_f\Data\ui\gear_UGL_slug_CA.paa";
-		ammo = macro_new_ammo(40mm_HE_GL)
-		initSpeed = 120;//80;
+		ammo = macro_new_ammo(40mm_HE_GL);
 		count = 3;
+		initSpeed = 80;
 		nameSound = "";
 		descriptionShort = "3Rnd HE DC-15A Grenade";
 		mass = 20;
 	};
 
-	class macro_new_mag(AP_GL,2): CA_Magazine
+	class macro_new_mag(proto_AP_GL,2): 1Rnd_HE_Grenade_shell
 	{
 		author = "RD501";
 		scope = 2;
@@ -533,15 +444,33 @@ class CfgMagazines
 		displayNameShort = "2 Rnd AP DC-15A";
 		picture = "\A3\Weapons_f\Data\ui\gear_UGL_slug_CA.paa";
 		ammo = macro_new_ammo(40mm_AP_GL)
-		initSpeed = 220;//120;
+		initSpeed = 80;//120;
 		count = 2;
 		nameSound = "";
 		descriptionShort = "2Rnd AP DC-15A Grenade";
 		//mass = 30;
 		mass = 15;
 	};
-};
 
+	class 2Rnd_12Gauge_Pellets;
+	class macro_new_mag(shotgun_test,10): 2Rnd_12Gauge_Pellets
+	{
+		author = "RD501";
+		scope = 2;
+		displayName = "12 Gauge 2Rnd Pellets";
+		displayNameShort = "Pellets";
+		descriptionShort = "Pellets";
+		picture = "\a3\Weapons_F_Enoch\MagazineProxies\data\UI\icon_2rnd_12gauge_CA.paa";
+		ammo = macro_new_ammo(shotgun_submunition)
+		initSpeed = 380;
+		count = 10;
+		mass = 6;
+		modelSpecialIsProxy = 1;
+		modelSpecial = "a3\Weapons_F_Enoch\MagazineProxies\mag_12ga_hunter_2rnd";
+		hiddenSelections[] = {"camo", "cap1"};
+		hiddenSelectionsTextures[] = {"\a3\Weapons_F_Enoch\MagazineProxies\data\12GA_Pellets_CO.paa"};
+	};
+};
 
 class CfgAmmo
 {
@@ -551,8 +480,8 @@ class CfgAmmo
 	class G_40mm_HE;
 	class macro_new_ammo(Republic_Universal_Ammo):SWOP_DC15ABlasterRifle_L_Ammo
 	{
-		macro_ammo_no_grav
-		coefGravity=0.1;//0.050000001;
+		macro_ammo_no_fric
+		coefGravity=0.12;//0.050000001;
 		cartridge = "FxCartridge_slug";
 		effectFly = "SWOP_BlueLaserEffect";
 		model="sci_weaponsMain\Data\tracer_blue.p3d";
@@ -560,7 +489,7 @@ class CfgAmmo
 		indirectHitRange = 0.0;
 		explosive = 0.0;
 
-		hit = 15;
+		hit = 22;
 		waterFriction = -0.001;//
 		caliber = 2;
 		tracerScale = 1.1;
@@ -615,16 +544,26 @@ class CfgAmmo
 		
 	};
 
-	class macro_new_ammo(DC_15a):macro_new_ammo(Republic_Universal_Ammo)
-	{
-		hit = 22;
-		//caliber = 3.8;
-	};
+	// class macro_new_ammo(DC_15a):macro_new_ammo(Republic_Universal_Ammo)
+	// {
+	// 	hit = 16;
+	// 	//caliber = 3.8;
+	// };
 
 	class macro_new_ammo(DC_15a_le):macro_new_ammo(Republic_Universal_Ammo)
 	{
 		hit = 40;
 		coefGravity=0.05;	
+	};
+
+	class macro_new_ammo(DC_15a_le_HE):macro_new_ammo(Republic_Universal_Ammo)
+	{
+		hit = 10;
+		coefGravity=0.3;	
+
+		indirectHit = 100.0;
+		indirectHitRange = 5.0;
+		explosive = 1.0;
 	};
 
 	class macro_new_ammo(DC_15a_mod0):macro_new_ammo(Republic_Universal_Ammo)
@@ -636,89 +575,17 @@ class CfgAmmo
 	class macro_new_ammo(DC_15s):macro_new_ammo(Republic_Universal_Ammo)
 	{
 		hit = 6;
-		coefGravity=0.15;
+		coefGravity=0.2;
 		caliber = 1;
 	};
 
 	class macro_new_ammo(z6):macro_new_ammo(Republic_Universal_Ammo)
 	{
-		hit = 14;
-		coefGravity=0.2;
+		hit = 25;
+		coefGravity=0.4;
 	};
 
-	class macro_new_ammo(40mm_flare_white): FlareBase
-	{
-		model = "\A3\Weapons_F\Ammo\UGL_Flare";
-		//lightColor[] = {0.5, 0.5, 0.5, 0.5};
-		lightColor[] = {1, 1, 1 ,1};
-		useFlare = 1;
-		deflecting = 30;
-		smokeColor[] = {1, 1, 1, 1};
-		//brightness = 12;
-		brightness = 1200;
-		size = 3;//1
-		triggerTime = 3;
-		triggerSpeedCoef = 1;
-		audibleFire = 20;
-		//intensity = 40000;
-		intensity  = 1000000;
-		flareSize = 3;//1
-		timeToLive = 120;
-        flareMaxDistance = 300;
-		
-	};
-
-	class macro_new_ammo(40mm_flare_green): macro_new_ammo(40mm_flare_white)
-	{
-		model = "\A3\Weapons_F\Ammo\UGL_Flare";
-		//lightColor[] = {0.25, 0.5, 0.25, 0};
-		lightColor[] = {0, 1, 0, 0};
-	};
-	class macro_new_ammo(40mm_flare_red): macro_new_ammo(40mm_flare_white)
-	{
-		model = "\A3\Weapons_F\Ammo\UGL_Flare";
-		//lightColor[] = {0.5, 0.25, 0.25, 0};
-		lightColor[] = {1, 0, 0, 0};
-	};
-	class macro_new_ammo(40mm_flare_yellow): macro_new_ammo(40mm_flare_white)
-	{
-		model = "\A3\Weapons_F\Ammo\UGL_Flare";
-		//lightColor[] = {0.5, 0.5, 0.25, 0};
-		lightColor[] = {1, 1, 0, 0};
-	};
-	class macro_new_ammo(40mm_flare_cir): macro_new_ammo(40mm_flare_white)
-	{
-		model = "\A3\Weapons_F\Ammo\UGL_Flare";
-		lightColor[] = {0.5, 0.5, 0.25, 0};
-	};
-
-	class macro_new_ammo(40mm_flare_blue): macro_new_ammo(40mm_flare_white)
-	{
-		model = "\A3\Weapons_F\Ammo\UGL_Flare";
-		//lightColor[] = {0.5, 0.5, 0.25, 0};
-		lightColor[] = {0, 0, 1, 0};
-	};
-
-	class macro_new_ammo(40mm_flare_cyan): macro_new_ammo(40mm_flare_white)
-	{
-		model = "\A3\Weapons_F\Ammo\UGL_Flare";
-		//lightColor[] = {0.5, 0.5, 0.25, 0};
-		lightColor[] = {0, 1, 1, 0};
-	};
-
-	class macro_new_ammo(40mm_flare_purple): macro_new_ammo(40mm_flare_white)
-	{
-		model = "\A3\Weapons_F\Ammo\UGL_Flare";
-		//lightColor[] = {0.5, 0.5, 0.25, 0};
-		lightColor[] = {.7, 0, 1, 0};
-	};
-
-	class macro_new_ammo(40mm_flare_orange): macro_new_ammo(40mm_flare_white)
-	{
-		model = "\A3\Weapons_F\Ammo\UGL_Flare";
-		//lightColor[] = {0.5, 0.5, 0.25, 0};
-		lightColor[] = {1, .5, 0, 0};
-	};
+	#include "_ammo/flares.hpp"
 
 	class macro_new_ammo(40mm_HE_GL): G_40mm_HE
 	{
@@ -784,6 +651,31 @@ class CfgAmmo
 		// ace_frag_gurney_k = "1/2";
 		// ace_rearm_caliber = 39;
 	};
+
+	class B_12Gauge_Pellets_Submunition_Deploy;
+	class macro_new_ammo(shotgun_submunition_deploy):B_12Gauge_Pellets_Submunition_Deploy
+	{
+		airFriction = -0.0067;
+		hit = 30;
+		indirectHit = 0;
+		indirectHitRange = 0;
+		typicalSpeed = 360;
+		deflecting = 35;
+	};
+	class B_12Gauge_Pellets_Submunition;
+	class macro_new_ammo(shotgun_submunition): B_12Gauge_Pellets_Submunition
+	{
+		cost = 1;
+		hit = 20;
+		simulationStep = 0.0001;
+		cartridge = "";
+		submunitionAmmo = macro_new_ammo(shotgun_submunition_deploy)
+		submunitionConeType[] = {"poissondisc", 18};
+		submunitionConeAngle = 0.8;
+		triggerSpeedCoef[] = {0.85, 1};
+		triggerTime = 0.001;
+		model = "\SWOP_Main\Effects\Tracer\LaserRed";
+	};
 };
 
 class ImpactPlasma_RD501
@@ -795,7 +687,7 @@ class ImpactPlasma_RD501
 		position[]={0,0,0};
 		intensity=1;
 		interval=1;
-		lifeTime=0.30000001;
+		lifeTime=0.1;
 	};
 	class SparksLight
 	{
@@ -804,7 +696,7 @@ class ImpactPlasma_RD501
 		position[]={0,0,0};
 		intensity=1;
 		interval=1;
-		lifeTime=0.5;
+		lifeTime=0.3;
 	};
 	class ImpactSparks1
 	{
@@ -813,7 +705,7 @@ class ImpactPlasma_RD501
 		position[]={0,0,0};
 		intensity=1;
 		interval=1;
-		lifeTime=0.15;
+		lifeTime=0.1;
 	};
 	// class ImpactSparks2
 	// {
@@ -838,150 +730,11 @@ class ImpactPlasma_RD501
 class CfgCloudlets
 {
 	class Default;
-	class ImpactSparksPlasma1_RD501: Default
-	{
-		interval=0.0008;
-		circleRadius=0;
-		circleVelocity[]={0,0,0};
-		particleShape="\A3\data_f\ParticleEffects\Universal\Universal";
-		particleFSNtieth=16;
-		particleFSIndex=13;
-		particleFSFrameCount=2;
-		particleFSLoop=0;
-		angleVar=360;
-		animationName="";
-		particleType="Billboard";
-		timerPeriod=3;
-		lifeTime=0.5;
-		moveVelocity[]=
-		{
-			"(- inDirX * 2 + surfNormalX / 2) * inSpeed / 300",
-			"( - inDirY * 2 + surfNormalY / 2) * inSpeed / 300",
-			"( - inDirZ * 2 + surfNormalZ / 2) * inSpeed / 300"
-		};
-		rotationVelocity=1;
-		weight=100;
-		volume=0.0099999998;
-		rubbing=0.30000001;
-		size[]={0.12,0};
-		sizeCoef=1;
-		color[]=
-		{
-			{1,0.60000002,0.40000001,-50}
-		};
-		colorCoef[]={1,1,1,1};
-		emissiveColor[]=
-		{
-			{10,6,4,1}
-		};
-		animationSpeed[]={1000};
-		animationSpeedCoef=1;
-		randomDirectionPeriod=0;
-		randomDirectionIntensity=0;
-		onTimerScript="";
-		beforeDestroyScript="";
-		blockAIVisibility=0;
-		bounceOnSurface=0.1;
-		bounceOnSurfaceVar=0.1;
-		lifeTimeVar=.5;
-		position[]={0,0,0};
-		positionVar[]={0.001,0.01,0.01};
-		moveVelocityVar[]={1,1.5,1};
-		rotationVelocityVar=0;
-		sizeVar=0;
-		colorVar[]={0.050000001,0.050000001,0.050000001,5};
-		randomDirectionPeriodVar=0;
-		randomDirectionIntensityVar=0;
-	};
-	class ImpactSparksPlasma2: Default
-	{
-		interval=0.0099999998;
-		circleRadius=0;
-		circleVelocity[]={0,0,0};
-		particleShape="\A3\data_f\ParticleEffects\Universal\Universal";
-		particleFSNtieth=16;
-		particleFSIndex=13;
-		particleFSFrameCount=2;
-		particleFSLoop=0;
-		angleVar=360;
-		animationName="";
-		particleType="Billboard";
-		timerPeriod=3;
-		lifeTime=0.039000001;
-		moveVelocity[]={0,0,0};
-		rotationVelocity=1;
-		weight=1.275;
-		volume=1;
-		rubbing=0;
-		size[]={0.44999999,0.22499999,0};
-		sizeCoef=1;
-		color[]=
-		{
-			{1,0.60000002,0.40000001,-50}
-		};
-		colorCoef[]={1,1,1,1};
-		animationSpeed[]={1000};
-		animationSpeedCoef=1;
-		randomDirectionPeriod=0;
-		randomDirectionIntensity=0;
-		onTimerScript="";
-		beforeDestroyScript="";
-		blockAIVisibility=0;
-		lifeTimeVar=0.02;
-		position[]={0,0,0};
-		positionVar[]={0,0,0};
-		moveVelocityVar[]={0,0,0};
-		rotationVelocityVar=0;
-		sizeVar=0.029999999;
-		colorVar[]={0.050000001,0.050000001,0.050000001,5};
-		randomDirectionPeriodVar=0;
-		randomDirectionIntensityVar=0;
-	};
+	#include "_effects/spark.hpp"
 };
 
 class CfgLights
 {
-	class PlasmaLight
-	{
-		diffuse[]={1,0.60000002,0.40000001};
-		color[]={1,0.60000002,0.40000001};
-		ambient[]={0,0,0,0};
-		brightness=10;
-		size=1;
-		intensity=10000;
-		drawLight=0;
-		blinking=1;
-		class Attenuation
-		{
-			start=0;
-			constant=0;
-			linear=0;
-			quadratic=2.2;
-			hardLimitStart=500;
-			hardLimitEnd=1000;
-		};
-		position[]={0,3.5,0};
-	};
-	class SparksLightPlasma
-	{
-		diffuse[]={1,0.80000001,0.80000001};
-		color[]={1,0.80000001,0.80000001};
-		ambient[]={0,0,0,0};
-		brightness=50;
-		size=1;
-		intensity=1000;
-		drawLight=0;
-		blinking=0;
-		class Attenuation
-		{
-			start=0;
-			constant=0;
-			linear=0;
-			quadratic=1;
-			hardLimitStart=40;
-			hardLimitEnd=80;
-		};
-		position[]={0,0,0};
-	};
+	#include "_lights/spark_lights.hpp"
 };
 

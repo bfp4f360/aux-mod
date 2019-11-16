@@ -41,6 +41,16 @@ class CfgWeapons
 		// NEW_501_ARC_Helm(triton,Triton,Triton.paa)
 		// NEW_501_ARC_Helm(verda,Verda,Verda.paa)
 
+		NEW_501_ARC_Helm(Adenn,Adenn,Phase_2_FIX.paa)
+		NEW_501_ARC_Helm(arc_rto,ARC RTO,Phase_2_FIX.paa)
+		NEW_501_ARC_Helm(beskar,Beskar,Phase_2_FIX.paa)
+		//NEW_50x1_ARC_Helm(crow,Crow,Crow.paa)
+		NEW_501_ARC_Helm(cyrus,Cyrus,Phase_2_FIX.paa)
+		NEW_501_ARC_Helm(delta,Delta,Phase_2_FIX.paa)
+		NEW_501_ARC_Helm(solus,Solus,Phase_2_FIX.paa)
+		NEW_501_ARC_Helm(triton,Triton,Phase_2_FIX.paa)
+		NEW_501_ARC_Helm(verda,Verda,Phase_2_FIX.paa)
+
 	//Infantry, Alphabetically, Ascending order
 		NEW_501_Inf_Helm(alistair,Alistair,Alistair.paa)
 		NEW_501_Inf_Helm(archon,Archon,Archon.paa)

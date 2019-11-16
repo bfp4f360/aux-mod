@@ -7,7 +7,7 @@ make_me_surrender = {
 wake_me_up = {
     params["_unit"];
 
-    _unit addAction ["Bill Cosby", {
+    _unit addAction ["Toggle Concious", {
         params ["_target", "_caller", "_actionId", "_arguments"];
         private _conscious = (_target getVariable ["ACE_isUnconscious", false]);
 
@@ -16,13 +16,30 @@ wake_me_up = {
     }];
 };
 
-
-{
-    [_x, "init", {
+["SWOP_CIS_droid", "init", {
         _this call make_me_surrender;
         _this call wake_me_up;
-    },
-    true, [], true
-    ] call CBA_fnc_addClassEventHandler;
+},
+true, [], true
+] call CBA_fnc_addClassEventHandler;
 
-} foreach ["SWOP_CIS_droid","SWOP_CIS_superdroid_B2","RD501_opfor_unit_magna_guard_blackop","RD501_opfor_unit_IG_88"];
+["SWOP_CIS_superdroid_B2", "init", {
+        _this call make_me_surrender;
+        _this call wake_me_up;
+},
+true, [], true
+] call CBA_fnc_addClassEventHandler;
+
+["RD501_opfor_unit_magna_guard_blackop", "init", {
+        _this call make_me_surrender;
+        _this call wake_me_up;
+},
+true, [], true
+] call CBA_fnc_addClassEventHandler;
+
+["RD501_opfor_unit_IG_88", "init", {
+        _this call make_me_surrender;
+        _this call wake_me_up;
+},
+true, [], true
+] call CBA_fnc_addClassEventHandler;

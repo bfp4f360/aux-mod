@@ -14,7 +14,7 @@
 		picture = "\SW_CloneWarsWeapons\DCrifles\icons\DC15A.paa";
 		muzzles[] = {"this"};
 		magazineWell[]={Republic_Universal_Magazine_Well};
-		magazines[]={macro_new_mag(DC15a_standard,30)};
+		magazines[]={};
 		displayName=  "[Stage I] DC15A Rifle";
 		macro_ace_heating
 		canShootInWater = 1;

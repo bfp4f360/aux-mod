@@ -16,7 +16,7 @@
 		//changes
 		muzzles[] = {"this"};
 		magazineWell[]={Republic_Universal_Magazine_Well};
-		magazines[]={macro_new_mag(DC15a_LE,20)};
+		magazines[]={macro_new_mag(DC15a_LE,20),macro_new_mag(DC_15a_le_HE,5)};
 		//initSpeed = -1.5;
 		picture = "\SW_CloneWarsWeapons\DCrifles\icons\DC15A.paa";
 		displayName="[Stage I] DC15A Long Engagement Rifle v1";

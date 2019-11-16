@@ -49,7 +49,7 @@ ACE_clearJamAction = "ReloadMagazine";
 // gravityFactor = 0;\
 // coefGravity = 0;\
 //ammo
-#define macro_ammo_no_grav \
+#define macro_ammo_no_fric \
 deflecting = 0;\
 airFriction = 0;\
 sideAirFriction = 0;

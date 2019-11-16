@@ -50,7 +50,7 @@ class cfgWeapons
 		picture = "\SW_CloneWarsWeapons\SW_Z6\UI\z6.paa";
 		UiPicture = "\SW_CloneWarsWeapons\SW_Z6\UI\z6.paa";
 		magazineWell[]={Republic_Universal_Magazine_Well};
-		magazines[]={macro_new_mag(z6,300)};
+		magazines[]={macro_new_mag(z6,300),macro_new_mag(shotgun_test,10)};
 		modelOptics="sci_weaponsMain\Data\A3_2d_optic.p3d";
 		class OpticsModes
 		{
