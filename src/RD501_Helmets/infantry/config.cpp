@@ -96,6 +96,7 @@ class CfgWeapons
 		NEW_501_Inf_Helm(osprey,Osprey,Osprey.paa)
 		NEW_501_Inf_Helm(Parrott,Parrott,Parrott.paa)
 		NEW_501_Inf_Helm(peterson,Peterson,Peterson.paa)
+		//NEW_501_Inf_Helm(pipit,Pipit,Pipit.paa)
 		NEW_501_Inf_Helm(pro,Pro,Pro.paa)
 		NEW_501_Inf_Helm(reck,Reck,Reck.paa)
 		NEW_501_Inf_Helm(rexi_v1,Rexi,Rexi.paa)

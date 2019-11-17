@@ -112,6 +112,24 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {macro_custom_helmet_textures\aviation\pilots\red.paa};
 	}
 
+	//gollddd
+	// class macro_new_helmet(pilot,midas_lrayt): macro_new_helmet(pilot,lum_base)
+	// {
+	// 	scope = 2;
+	// 	displayName = "Clone pilot helmet (501st legion) Midas Krayt";
+	// 	hiddenSelectionsTextures[] = {macro_custom_helmet_textures\aviation\pilots\KingKrayt.paa};
+	// 	subItems[] = {macro_new_weapon(nvg_integrated,pilot_test),"G_B_Diving"};
+	// 	#include "memenai.hpp"
+
+	// 	hiddenSelectionsMaterials[]=
+	// 	{
+	// 		"", //RD501_Laat\textures\gold.rvmat
+	// 		"RD501_Helmets\_materials\gold.rvmat",//"\501st_Helmets\AB\data\white_glow.rvmat"//"swop_clones\data\helmpilot.rvmat"//  \501st_Helmets\AB\data\white_glow.rvmat
+	// 	};
+	// };
+
+
+
 	class 212th_Engineer_Helmet_501st;
 
 	class macro_new_helmet(warden,501st):212th_Engineer_Helmet_501st

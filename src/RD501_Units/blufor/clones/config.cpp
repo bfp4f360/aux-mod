@@ -98,6 +98,26 @@ class cfgWeapons
 		};
 	};
 
+	class macro_new_uniform_class(blufor,gold_trooper_v1): SWOP_Clonetrooper_501srtrooper_F_CombatUniform//RD501_Clonetrooper_501Vettrooper_F_CombatUniform
+	{
+		author = "RD501";
+		scope = 2;
+		displayName = "Clonetrooper uniform (501st 'GOLD')";
+		picture = "\SWOP_clones\data\body\icoBODY\Ico_body_501.paa";
+		nakedUniform = "U_BasicBody";
+		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		class ItemInfo: ItemInfo
+		{
+			uniformModel = "-";
+			uniformClass = macro_new_uniform_skin_class(blufor,gold_trooper)
+			Armor = 20;
+			modelSides[] = {6};
+			uniformType = "Neopren";
+			containerClass = "Supply100";
+			mass = 40;
+		};
+	};
+
 	#include "_clone_armor_readjust_base.hpp"
 	#include "_clone_armor_readjust_1.hpp"
 
@@ -326,6 +346,31 @@ class cfgWeapons
 			
 		};
 	};
+
+	class macro_new_uniform_class(blufor,gold_boi): V_RebreatherB
+	{
+		author = "RD501";
+		scope = 2;
+		side = 3;
+		displayName = "Clone Goldilocks";
+		picture = "\SWOP_clones\data\body\icoARMOR\Ico_armor.paa";
+		model = "\SWOP_clones\armor\cloneArmor.p3d";
+		hiddenSelections[] = {"Camo1"};
+		hiddenSelectionsTextures[] = {TEXTUREPATH\Republic\clones\purge_chest.paa};
+		hiddenSelectionsMaterials[]=
+		{
+			"RD501_Laat\textures\gold.rvmat"//"swop_clones\data\helmpilot.rvmat"//  \501st_Helmets\AB\data\white_glow.rvmat
+		};
+		class ItemInfo: VestItem
+		{
+			uniformModel = "\SWOP_clones\armor\cloneArmor.p3d";
+			modelsides[] = {6};
+			macro_rebreather_armor_stuff
+			hiddenSelections[] = {"Camo1"};
+			macro_clone_armor_hitpoints
+			
+		};
+	};
 };
 
 class DefaultEventhandlers;
@@ -400,6 +445,25 @@ class CfgVehicles
 			TEXTUREPATH\Republic\clones\VetTrooper_uniform.paa
 		};
 		class EventHandlers : DefaultEventhandlers {};
+	};
+
+
+	class macro_new_uniform_skin_class(blufor,gold_trooper): SWOP_Clonetrooper_501srtrooper_F
+	{
+		author = "RD501";
+		scope = 1;
+		model = "SWOP_clones\uniform\cloneBody.p3d";
+		nakedUniform = "U_BasicBody";
+		hiddenSelections[] = {"Camo1"};
+		hiddenSelectionsTextures[] = {
+			TEXTUREPATH\Republic\clones\VetTrooper_uniform.paa
+		};
+		class EventHandlers : DefaultEventhandlers {};
+
+		hiddenSelectionsMaterials[]=
+		{
+			"RD501_Laat\textures\gold.rvmat"//"swop_clones\data\helmpilot.rvmat"//  \501st_Helmets\AB\data\white_glow.rvmat
+		};
 	};
 
 
