@@ -9,7 +9,7 @@ class CfgPatches
 	class macro_patch_name(dc_15a)
 	{
 		author=DANKAUTHORS;
-		addonRootClass= macro_patch_name(weapons)
+		addonRootClass= macro_patch_name(weapons);
 		requiredAddons[]=
 		{
 			macro_patch_name(weapons)
@@ -69,11 +69,11 @@ class cfgWeapons
 		class Single:Single
 		{
 
-		}
+		};
 		class Burst:Burst
 		{
 
-		}
+		};
 		class FullAuto:FullAuto
 		{
 

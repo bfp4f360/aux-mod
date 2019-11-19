@@ -37,7 +37,7 @@ class CfgWeapons
 	
 
 	NEW_501_Pilot_HELM(aspect,Aspect,pilots\aspect.paa)
-	NEW_501_Pilot_HELM(casskun,Casskun,pilots\casskun.paa)
+	NEW_501_Pilot_HELM(casskunv2,Casskun v2,pilots\casskun_old.paa)
 	NEW_501_Pilot_HELM(cxx,CX-X,pilots\cxx.paa)
 	NEW_501_Pilot_HELM(cxc,CX-C,pilots\cxc.paa)
 	NEW_501_Pilot_HELM(dylan,Dylan,pilots\Dylanhelmet.paa)
@@ -68,6 +68,20 @@ class CfgWeapons
 	NEW_501_Pilot_HELM(stealth_Krayt,Stealth Lord Krayt,pilots\steathKrayt.paa)
 	//NEW_501_Pilot_HELM(luuce,Luuce,pilots\Luuce.paa)
 
+	class macro_new_helmet(pilot,casskun): macro_new_helmet(pilot,base)
+	{
+		scope = 2;
+		displayName = "Clone pilot helmet (501st legion) Casskun";
+		hiddenSelectionsTextures[] = {macro_custom_helmet_textures\aviation\pilots\casskun.paa};
+		subItems[] = {macro_new_weapon(nvg_integrated,pilot_test),"G_B_Diving"};
+
+		hiddenSelectionsMaterials[]=
+		{
+			"",
+			"\501st_Helmets\AB\data\white_glow.rvmat"//"swop_clones\data\helmpilot.rvmat"//  \501st_Helmets\AB\data\white_glow.rvmat
+		};
+	};
+	 
 	class macro_new_helmet(pilot,lord_krayt): macro_new_helmet(pilot,base)
 	{
 		scope = 2;

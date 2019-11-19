@@ -126,7 +126,7 @@ class CfgMagazines
 	{
 		author = "rd501";
 		model = "\SW_ExtraWeapons\PICKUPS\power_cell.p3d";
-		ammo = macro_new_ammo(z6)
+		ammo = macro_new_ammo(z6);
 		displayName = "400Rnd Z6 Rotary Blaster Magazine";
 		descriptionShort = "400Rnd Z6 Magazine";
 		count = 400;
@@ -176,7 +176,7 @@ class CfgMagazines
 		model = "\SW_ExtraWeapons\PICKUPS\power_cell.p3d";
 		picture = "\SW_ExtraWeapons\PICKUPS\UI\icons\powercell_X_ca.paa";
 		displayName = "6Rnd DC-15X Magazine";
-		ammo =macro_new_ammo(DC15x)
+		ammo =macro_new_ammo(DC15x);
 		tracersEvery = 1;
 		count = 6;
 		descriptionShort = "6Rnd DC15X Magazine";
@@ -191,7 +191,7 @@ class CfgMagazines
 		model = "\SW_ExtraWeapons\PICKUPS\energy_cell.p3d";
 		picture = "\SW_ExtraWeapons\PICKUPS\UI\icons\energycell_X_ca.paa";
 		displayName = "60Rnd DC-15S Carbine Magazine";
-		ammo = macro_new_ammo(dc15s_carbine)
+		ammo = macro_new_ammo(dc15s_carbine);
 		tracersEvery = 1;
 		type = 16;
 		count = 60;
@@ -243,7 +243,7 @@ class CfgMagazines
 		model = "\SW_ExtraWeapons\PICKUPS\energy_cell.p3d";
 		picture = "\SW_ExtraWeapons\PICKUPS\UI\icons\energycell_X_ca.paa";
 		displayName = "240Rnd Box DC-15A Low Energy Rounds";
-		ammo =  macro_new_ammo(dc15a_low)
+		ammo =  macro_new_ammo(dc15a_low);
 		tracersEvery = 1;
 		count =240;
 		descriptionShort = "240Rnd DC15A Low Energy";
@@ -259,7 +259,7 @@ class CfgMagazines
 		model = "\SW_ExtraWeapons\PICKUPS\energy_cell.p3d";
 		picture = "\SW_ExtraWeapons\PICKUPS\UI\icons\energycell_X_ca.paa";
 		displayName = "20Rnd DC17 Magazine.";
-		ammo = macro_new_ammo(dc_17)
+		ammo = macro_new_ammo(dc_17);
 		tracersEvery = 1;
 		type = 16;
 		count = 20;
@@ -276,7 +276,7 @@ class CfgMagazines
 	{
 		scope = 2;
 		displayName = "RPS AT Rocket";
-		ammo = macro_new_ammo(RPS_AT)
+		ammo = macro_new_ammo(RPS_AT);
 		type = "2 *   256";
 		count = 1;
 		picture = "\A3\weapons_f\launchers\nlaw\data\UI\gear_nlaw_rocket_ca.paa";
@@ -297,7 +297,7 @@ class CfgMagazines
 		scope = 2;
 		displayName = "RPS AA Rocket";
 		displayNameShort = "AA";
-		ammo = macro_new_ammo(RPS_AA)
+		ammo = macro_new_ammo(RPS_AA);
 		type = "6 * 		256";
 		picture = "\A3\Weapons_F_beta\Launchers\titan\Data\UI\gear_titan_missile_atl_CA.paa";
 		model = "\A3\Weapons_F_beta\Launchers\titan\titan_missile_atl";
@@ -331,7 +331,7 @@ class CfgMagazines
 		author = "RD501";
 		scope = 2;
 		displayName = "90Rnd E5C-Aqua Magazine";
-		ammo = macro_new_ammo(E5c_Aqua)
+		ammo = macro_new_ammo(E5c_Aqua);
 		tracersEvery = 1;
 		count = 90;
 		descriptionShort = "90Rnd E5-Aqua Magazine";
@@ -342,7 +342,7 @@ class CfgMagazines
 		author = "RD501";
 		scope = 2;
 		displayName = "60Rnd E5-Aqua Magazine";
-		ammo = macro_new_ammo(E5_Aqua)
+		ammo = macro_new_ammo(E5_Aqua);
 		tracersEvery = 1;
 		count = 60;
 		descriptionShort = "60Rnd E5-A Magazine";
@@ -371,7 +371,7 @@ class CfgMagazines
 		model = "\SW_ExtraWeapons\PICKUPS\energy_cell.p3d";
 		picture = "\SW_ExtraWeapons\PICKUPS\UI\icons\energycell_X_ca.paa";
 		displayName = "15Rnd DC-15 LE Mag";
-		ammo = macro_new_ammo(dc15_LE)
+		ammo = macro_new_ammo(dc15_LE);
 		tracersEvery = 1;
 		//count = 10;
 		count = 15;
@@ -388,7 +388,7 @@ class CfgMagazines
 		model = "\SW_ExtraWeapons\PICKUPS\energy_cell.p3d";
 		picture = "\SW_ExtraWeapons\PICKUPS\UI\icons\energycell_X_ca.paa";
 		displayName = "9Rnd DC15-SA Magazine";
-		ammo =macro_new_ammo(DC15_Razor_Blade)
+		ammo =macro_new_ammo(DC15_Razor_Blade);
 		tracersEvery = 1;
 		type = 16;
 		count = 9;
@@ -433,7 +433,7 @@ class CfgMagazines
 		model = "\SW_ExtraWeapons\PICKUPS\energy_cell.p3d";
 		picture = "\SW_ExtraWeapons\PICKUPS\UI\icons\energycell_X_ca.paa";
 		displayName = "40Rnd Republic Aqua Rounds";
-		ammo = macro_new_ammo(dc15_underwater)
+		ammo = macro_new_ammo(dc15_underwater);
 		tracersEvery = 1;
 		type = 16;
 		count = 40;
@@ -470,11 +470,11 @@ class CfgAmmo
 
 	class macro_new_ammo(westar_35):SWOP_DC17_Ammo
 	{
-		hit = pistol_hit_high
+		hit = pistol_hit_high;
 		indirectHit = 0.0;
 		indirectHitRange = 0.0;
 		explosive = 0.0;
-		caliber = pistol_cali_high
+		caliber = pistol_cali_high;
 	};
 
 	class macro_new_ammo(dc_17): SWOP_DC17_Ammo
@@ -485,15 +485,15 @@ class CfgAmmo
 		indirectHitRange = 0.2;
 		explosive = 0.05;
 		caliber = 2.8;//7
-	}
+	};
 	
 	class macro_new_ammo(z6):LaserAmmo_Minigun
 	{
-		hit = mg_hit_high
+		hit = mg_hit_high;
 		indirectHit = 0.0;
 		indirectHitRange = 0.0;
 		explosive = 0.0;
-		caliber = mg_cali_high
+		caliber = mg_cali_high;
 		ACE_caliber = 0;
 	};
 
@@ -567,7 +567,7 @@ class CfgAmmo
 		explosive = 0.1;//.4
 		caliber = 2;//5
 		timeToLive = 4;
-		waterFriction = -0.01;
+	
 		effectFly = "AmmoUnderwater";
 		nvgOnly = 1;
 		aiAmmoUsageFlags = "64 + 32";
@@ -770,7 +770,6 @@ class CfgAmmo
 		timeToLive = 2;
 	};
 
-	class SWOP_dc15xBlasterRifle_Ammo;
 	class valken_38xxd_ammo: SWOP_dc15xBlasterRifle_Ammo
 	{
 		hit = 55;

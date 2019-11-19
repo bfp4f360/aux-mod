@@ -14,7 +14,7 @@ class macro_new_weapon(DC,15a_LE):SWOP_DC15ABlasterRifle_mod1 // RD501_DC_15a_ba
 	author= "RD501";
 	baseWeapon = macro_new_weapon(DC,15a_LE);
 
-	DC_Family_Flashlight
+	//DC_Family_Flashlight
 
 	ACE_Overheating_Dispersion = DC15a_Overheat_Dispersion
 	ACE_Overheating_SlowdownFactor = DC15a_Overheat_SlowdownFactor
@@ -31,7 +31,7 @@ class macro_new_weapon(DC,15a_LE):SWOP_DC15ABlasterRifle_mod1 // RD501_DC_15a_ba
 	magazines[] = {macro_new_mag(DC15a_LE,15),macro_new_mag(DC15a_High,15)};
 	class Single:Single
 	{
-		reloadTime = DC15A_reloadtime_single/2
+		reloadTime = DC15A_reloadtime_single/2;
 		dispersion = DC15A_accuracy/10;
 		recoil = "recoil_single_mx";
 		recoilProne = "recoil_single_prone_mx";

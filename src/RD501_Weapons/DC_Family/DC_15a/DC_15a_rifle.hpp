@@ -11,7 +11,7 @@ class macro_new_weapon(DC,15a_base):SWOP_DC15ABlasterRifle // RD501_DC_15a_base
     author= "RD501";
     baseWeapon = macro_new_weapon(DC,15a_base);
 
-    DC_Family_Flashlight
+    //DC_Family_Flashlight
 
     ACE_Overheating_Dispersion = DC15a_Overheat_Dispersion
     ACE_Overheating_SlowdownFactor = DC15a_Overheat_SlowdownFactor

@@ -28,16 +28,16 @@ class macro_new_weapon(scope,dc_15a_base2):macro_new_weapon(scope,dc_15a_base1)
 class macro_new_weapon(scope,dc_15a_x4):macro_new_weapon(scope,dc_15a_base2)
 {
 	scope=2;
-	displayName="DC-15A LSW x4 Scope"
+	displayName="DC-15A LSW x4 Scope";
 	class ItemInfo:ItemInfo
 	{
 		class OpticsModes:OpticsModes
 		{
 			class Snip:Snip
 			{
-				opticsZoomMin = scope_magnification(4)
-				opticsZoomMax = scope_magnification(1)
-				opticsZoomInit = scope_magnification(1)
+				opticsZoomMin = scope_magnification(4);
+				opticsZoomMax = scope_magnification(1);
+				opticsZoomInit = scope_magnification(1);
 				discreteinitIndex = 0;
 				discretefov[] = {scope_magnification(1),scope_magnification(2),scope_magnification(4)};
 				modelOptics = "Scope\4x_xm8.p3d";

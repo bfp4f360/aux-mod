@@ -11,7 +11,7 @@ class macro_new_weapon(DC,15a_mod_0_rifle):SWOP_DC15ABlasterRifle_mod0
 	author= "RD501";
 
 
-	DC_Family_Flashlight
+	//DC_Family_Flashlight
 
 	ACE_Overheating_Dispersion = DC15a_Overheat_Dispersion
 	ACE_Overheating_SlowdownFactor = DC15a_Overheat_SlowdownFactor

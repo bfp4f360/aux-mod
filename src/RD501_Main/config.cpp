@@ -35,16 +35,16 @@ class cfgFunctions
 			
 			class ATTE_lift
 			{
-				file=CONCAT(macro_mod_script_path,\vehicle_lift\ATTE_Lift.sqf)
+				file= macro_mod_script_path\vehicle_lift\ATTE_Lift.sqf
 			};
 			class Vehicle_lift
 			{
-				file=CONCAT(macro_mod_script_path,\vehicle_lift\Vehicle_Lift.sqf)
+				file=macro_mod_script_path\vehicle_lift\Vehicle_Lift.sqf
 			};
 			
 			class mtt_deploy_droids
 			{
-				file=CONCAT(macro_mod_script_path,\MTT\mtt_deploy_droids.sqf)
+				file=macro_mod_script_path\MTT\mtt_deploy_droids.sqf
 			};
 			
 			

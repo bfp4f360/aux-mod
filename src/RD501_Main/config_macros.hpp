@@ -12,7 +12,7 @@
 	#define ADDON UNDERSCORE_CONCAT(MODNAME,COMPONENT)
 
 	#define UNDERSCORE_CONCAT(var1,var2) ##var1##_##var2
-	#define CONCAT(var1,var2) ##var1##var2
+	// #define CONCAT(var1,var2) ##var1##var2
 	#define ADDON_NICE Research & Development 501
 	#define DANKAUTHORS Namenai, Rexi, Zatama
 

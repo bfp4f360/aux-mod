@@ -56,6 +56,7 @@ class CfgWeapons
 		NEW_501_Inf_Helm(archon,Archon,Archon.paa)
 		NEW_501_Inf_Helm(bjorn,Bjorn,Bjorn.paa)
 		NEW_501_Inf_Helm(boozy,Boozy,Boozy.paa)
+		NEW_501_Inf_Helm(bronson,Bronson,Bronson.paa)
 		NEW_501_Inf_Helm(corey,Corey,Corey.paa)
 		NEW_501_Inf_Helm(courtney,Courtney,Courtney.paa)
 		
@@ -80,6 +81,7 @@ class CfgWeapons
 		NEW_501_Inf_Helm(klown,Klown,Klown.paa)
 		NEW_501_Inf_Helm(klownv2,Klowned,Klown_v2.paa)//CS
 		NEW_501_Inf_Helm(koda,Koda,Koda.paa)
+		NEW_501_Inf_Helm(lantern,Lantern,Lantern.paa)
 		
 		NEW_501_Inf_Helm(mags,Mags,Mags.paa)
 		NEW_501_Inf_Helm(mimic,Mimic,Mimic.paa)
@@ -96,7 +98,7 @@ class CfgWeapons
 		NEW_501_Inf_Helm(osprey,Osprey,Osprey.paa)
 		NEW_501_Inf_Helm(Parrott,Parrott,Parrott.paa)
 		NEW_501_Inf_Helm(peterson,Peterson,Peterson.paa)
-		//NEW_501_Inf_Helm(pipit,Pipit,Pipit.paa)
+		NEW_501_Inf_Helm(pipit,Pipit,Pipit.paa)
 		NEW_501_Inf_Helm(pro,Pro,Pro.paa)
 		NEW_501_Inf_Helm(reck,Reck,Reck.paa)
 		NEW_501_Inf_Helm(rexi_v1,Rexi,Rexi.paa)

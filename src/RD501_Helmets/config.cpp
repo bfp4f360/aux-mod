@@ -107,12 +107,12 @@ class CfgWeapons
 		};
 	
 		hiddenSelectionsTextures[] = {
-			macro_custom_helmet_textures\aviation\pilots\purple.paa
+			macro_custom_helmet_textures\aviation\pilots\LordKrayt.paa
 		};
 		hiddenSelectionsMaterials[]=
 		{
 			"",
-			"\501st_Helmets\AB\data\white_glow.rvmat"//"swop_clones\data\helmpilot.rvmat"//  \501st_Helmets\AB\data\white_glow.rvmat
+			"swop_clones\data\helmpilot.rvmat"//"swop_clones\data\helmpilot.rvmat"//  \501st_Helmets\AB\data\white_glow.rvmat
 		};
 
 
