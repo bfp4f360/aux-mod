@@ -28,8 +28,6 @@ class CfgWeapons
 	NEW_501_AB_HELM(501st_Commander_helmet,AC/DC,Lava.paa)
 	NEW_501_AB_HELM(501st_Trooper_helmet,501st,Trooper.paa)
 
-	
-
 	NEW_501_AB_HELM(501st_Calo_helmet,Calo,Calo.paa)
 	NEW_501_AB_HELM(501st_Dragneel_helmet,Dragneel,Dragneel.paa)
 	NEW_501_AB_HELM(501st_Exod_helmet,Exod,Exod.paa)
@@ -43,7 +41,9 @@ class CfgWeapons
 	NEW_501_AB_HELM(501st_Navo_helmet,Navo,Navo.paa)
 	NEW_501_AB_HELM(501st_Needles_helmet,Needles,Needles.paa)
 	NEW_501_AB_HELM(501st_Nobear_helmet,Nobear,Nobear.paa)
+	NEW_501_AB_HELM(501st_Phantom_helmet,Phantom,Phantom.paa)
 	NEW_501_AB_HELM(501st_Raykan_helmet,Raykan,Raykan.paa)
+	NEW_501_AB_HELM(501st_Ricochet_helmet,Ricochet,Ricochet.paa)
 	NEW_501_AB_HELM(501st_Riley_helmet,Riley,Riley.paa)
 	NEW_501_AB_HELM(501st_Tuff_helmet,Tuff,Tuff.paa)
 	NEW_501_AB_HELM(501st_Viking_helmet,Viking,Viking.paa)

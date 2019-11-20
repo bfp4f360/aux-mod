@@ -137,6 +137,7 @@ class CfgWeapons
 		NEW_501_Inf_Helm(tyler,Tyler,Tyler.paa)
 		NEW_501_Inf_Helm(vampire,Vampire,Vampire.paa)
 		NEW_501_Inf_Helm(vengeance,Vengeance,Vengeance.paa)
+		NEW_501_Inf_Helm(walsh,Walsh,Walsh.paa)
 		NEW_501_Inf_Helm(weaver,Weaver,Weaver.paa)
 		NEW_501_Inf_Helm(white,White,White.paa)
 		NEW_501_Inf_Helm(young,Young,Young.paa)
