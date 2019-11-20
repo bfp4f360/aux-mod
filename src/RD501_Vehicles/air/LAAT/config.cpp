@@ -84,6 +84,8 @@ class CfgVehicles
 		smokeLauncherAngle = 360;
 		forceInGarage = 1;
 
+		slingLoadMemoryPoint = "slingload0";
+
 		//hiddenSelectionsMaterials[] = {"RD501_Laat\textures\laat\g1.rvmat","RD501_Laat\textures\laat\g2.rvmat"};
 		
 
@@ -140,6 +142,8 @@ class CfgVehicles
 		smokeLauncherGrenadeCount = 48;
 		smokeLauncherAngle = 360;
 		forceInGarage = 1;
+
+		slingLoadMemoryPoint = "slingLoad0";
 
 		
 
@@ -209,10 +213,13 @@ class CfgVehicles
 		author="RD501"
 		side=1;
 		crew="SWOP_Clonetrooper_P1";
-		transportSoldier=24;
+		//transportSoldier=24;
 		smokeLauncherGrenadeCount = 48;
 		smokeLauncherAngle = 360;
 		forceInGarage = 1;
+
+		maximumLoad = 5000000000;
+		slingLoadMaxCargoMass = 5000000000;
 
 		#include "flight_model.hpp"
 		// cyclicAsideForceCoef = 1*1;

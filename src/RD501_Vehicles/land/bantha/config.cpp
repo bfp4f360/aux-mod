@@ -98,11 +98,20 @@ class CfgVehicles
 		scope=2;
 		scopeCurator=2;
 
-		displayName="Bantha (501st) Mk.I :)";
+		displayName="Bantha (501st) Mk.I";
 		faction = macro_republic_faction
 		editorSubcategory = macro_editor_cat(APC)
 		vehicleClass = macro_editor_vehicle_type(APC)
-		
+
+		slingLoadCargoMemoryPoints[] = {
+			"wheel_1_1_axis","wheel_1_2_axis","wheel_1_3_axis","wheel_1_4_axis","wheel_1_5_axis",
+			"wheel_2_1_axis","wheel_2_2_axis","wheel_2_3_axis","wheel_2_4_axis","wheel_2_5_axis",
+			"light_l_flare","light_l_flare2",
+			"light_r_flare","light_r_flare2",
+			"commander_turret_axis",
+			"engineeffectl","engineeffectr"
+		};
+		slingLoadCargoMemoryPointsDir[] = {};
 
 		class HitPoints: HitPoints
 		{
