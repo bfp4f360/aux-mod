@@ -658,6 +658,25 @@ class CfgAmmo
 		// ace_rearm_caliber = 39;
 	};
 
+	class  macro_new_ammo(test_sub_deplopy):G_40mm_HE
+	{
+		model = "\SWOP_Main\Effects\Tracer\LaserBlue";
+		effectFly = "SWOP_BlueLaserEffect";
+
+		airFriction = -0.0067;
+		hit = 90;
+		indirectHit = 0;
+		indirectHitRange = 0;
+		typicalSpeed = 360;
+		deflecting = 35;
+
+		indirectHit = 15;
+		indirectHitRange = 1;
+
+		deflecting = 0;
+		fuseDistance = 0;
+	};
+
 	class B_12Gauge_Pellets_Submunition_Deploy;
 	class macro_new_ammo(shotgun_submunition_deploy):B_12Gauge_Pellets_Submunition_Deploy
 	{
@@ -675,7 +694,7 @@ class CfgAmmo
 		hit = 20;
 		simulationStep = 0.0001;
 		cartridge = "";
-		submunitionAmmo = macro_new_ammo(shotgun_submunition_deploy)
+		submunitionAmmo = macro_new_ammo(test_sub_deplopy)//macro_new_ammo(shotgun_submunition_deploy)
 		submunitionConeType[] = {"poissondisc", 6};
 		submunitionConeAngle = 0.8;
 		triggerSpeedCoef[] = {0.85, 1};
