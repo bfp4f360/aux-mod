@@ -46,6 +46,7 @@ class CfgWeapons
 	NEW_501_AB_HELM(501st_Raykan_helmet,Raykan,Raykan.paa)
 	NEW_501_AB_HELM(501st_Riley_helmet,Riley,Riley.paa)
 	NEW_501_AB_HELM(501st_Tuff_helmet,Tuff,Tuff.paa)
+	NEW_501_AB_HELM(501st_Viking_helmet,Viking,Viking.paa)
 
 		
 	

@@ -31,10 +31,11 @@ class CfgWeapons
 //calo.drag exod,jan,lichmlissy,lucky,miller navo needdles nobear, raykkan rileyt silent tim
 
 	//ARC, Alphabetically, Ascending order
+		//old textures
 		// NEW_501_ARC_Helm(Adenn,Adenn,Adenn.paa)
 		// NEW_501_ARC_Helm(arc_rto,ARC RTO,Arc_rto.paa)
 		// NEW_501_ARC_Helm(beskar,Beskar,Beskar.paa)
-		// //NEW_50x1_ARC_Helm(crow,Crow,Crow.paa)
+		// //NEW_501_ARC_Helm(crow,Crow,Crow.paa)
 		// NEW_501_ARC_Helm(cyrus,Cyrus,Cyrus.paa)
 		// NEW_501_ARC_Helm(delta,Delta,Delta.paa)
 		// NEW_501_ARC_Helm(solus,Solus,Solus.paa)
@@ -46,7 +47,7 @@ class CfgWeapons
 		NEW_501_ARC_Helm(beskar,Beskar,Phase_2_FIX.paa)
 		//NEW_50x1_ARC_Helm(crow,Crow,Crow.paa)
 		NEW_501_ARC_Helm(cyrus,Cyrus,Phase_2_FIX.paa)
-		NEW_501_ARC_Helm(delta,Delta,Phase_2_FIX.paa)
+		
 		NEW_501_ARC_Helm(solus,Solus,Phase_2_FIX.paa)
 		NEW_501_ARC_Helm(triton,Triton,Phase_2_FIX.paa)
 		NEW_501_ARC_Helm(verda,Verda,Phase_2_FIX.paa)
@@ -55,6 +56,7 @@ class CfgWeapons
 		NEW_501_Inf_Helm(alistair,Alistair,Alistair.paa)
 		NEW_501_Inf_Helm(archon,Archon,Archon.paa)
 		NEW_501_Inf_Helm(bjorn,Bjorn,Bjorn.paa)
+		NEW_501_Inf_Helm(blade,Blade,Blade.paa)
 		NEW_501_Inf_Helm(boozy,Boozy,Boozy.paa)
 		NEW_501_Inf_Helm(bronson,Bronson,Bronson.paa)
 		NEW_501_Inf_Helm(corey,Corey,Corey.paa)
@@ -65,6 +67,7 @@ class CfgWeapons
 		NEW_501_Inf_Helm(cursed,Cursed,Cursed.paa)
 		NEW_501_Inf_Helm(darkstar,Darkstar,Darkstar.paa)
 		NEW_501_Inf_Helm(del,Del,Del.paa)
+		NEW_501_ARC_Helm(delta,Delta,Delta.paa)
 		NEW_501_Inf_Helm(deus,Deus,Deus.paa)
 		NEW_501_Inf_Helm(dimitri,Dimitri,Dimitri.paa)
 		NEW_501_Inf_Helm(doug,Doug,Doug.paa)
@@ -75,12 +78,16 @@ class CfgWeapons
 		NEW_501_Inf_Helm(garviel,Garviel,Garviel.paa)
 		NEW_501_Inf_Helm(goldarp,Goldarp,Goldarp.paa)
 		NEW_501_Inf_Helm(grandpa,Grandpa,Grandpa.paa)
+		NEW_501_Inf_Helm(habivi,Habivi,Habivi.paa)
 		NEW_501_Inf_Helm(juggernaut,Juggernaut,Juggernaut.paa)
 		NEW_501_Inf_Helm(jupiter,Jupiter,Jupiter.paa)
+		NEW_501_Inf_Helm(kahn,Kahn,Kahn.paa)
 		NEW_501_Inf_Helm(kestrel,Kestrel,Kestrel.paa)
 		NEW_501_Inf_Helm(klown,Klown,Klown.paa)
-		NEW_501_Inf_Helm(klownv2,Klowned,Klown_v2.paa)//CS
+		NEW_501_Inf_Helm(klownv2,Klowned,Klown.paa)//CS //Klown_v2
 		NEW_501_Inf_Helm(koda,Koda,Koda.paa)
+		NEW_501_Inf_Helm(korvus,Korvus,Korvus.paa)
+		
 		NEW_501_Inf_Helm(lantern,Lantern,Lantern.paa)
 		
 		NEW_501_Inf_Helm(mags,Mags,Mags.paa)
@@ -101,6 +108,7 @@ class CfgWeapons
 		NEW_501_Inf_Helm(pipit,Pipit,Pipit.paa)
 		NEW_501_Inf_Helm(pro,Pro,Pro.paa)
 		NEW_501_Inf_Helm(reck,Reck,Reck.paa)
+		NEW_501_Inf_Helm(ranque,Ranque,Ranque.paa)
 		NEW_501_Inf_Helm(rexi_v1,Rexi,Rexi.paa)
 		NEW_501_Inf_Helm(rexi_v2,Rexi #2,Rexi_v2.paa)
 		NEW_501_Inf_Helm(royale,Royale,Royal.paa)
@@ -112,6 +120,7 @@ class CfgWeapons
 		NEW_501_Inf_Helm(shadow,Shadow,Shadow.paa)
 		NEW_501_Inf_Helm(shape,Shape,Shape.paa)
 		NEW_501_Inf_Helm(shade,Shade,Shade.paa)
+		NEW_501_Inf_Helm(silver,Silver,Silver.paa)
 		NEW_501_Inf_Helm(skittles,Skittles,Skittles.paa)
 		NEW_501_Inf_Helm(soviet,Soviet,Soviet.paa)
 		NEW_501_Inf_Helm(spark,Spark,Spark.paa)
@@ -128,6 +137,7 @@ class CfgWeapons
 		NEW_501_Inf_Helm(tyler,Tyler,Tyler.paa)
 		NEW_501_Inf_Helm(vampire,Vampire,Vampire.paa)
 		NEW_501_Inf_Helm(vengeance,Vengeance,Vengeance.paa)
+		NEW_501_Inf_Helm(weaver,Weaver,Weaver.paa)
 		NEW_501_Inf_Helm(white,White,White.paa)
 		NEW_501_Inf_Helm(young,Young,Young.paa)
 		NEW_501_Inf_Helm(zen,Zen,Zen.paa)
@@ -141,8 +151,8 @@ class CfgWeapons
 		NEW_501_Lumanated_Visor_Helm(drifter,Drifter,Drifter.paa)//4th
 		NEW_501_Lumanated_Visor_Helm(euler,Euler,Euler.paa)//mod
 
-		NEW_501_Lumanated_Visor_Helm(klown,Klown,Klown.paa)
-		NEW_501_Lumanated_Visor_Helm(klownv2,Klowned,Klown_v2.paa)//CS
+		// NEW_501_Lumanated_Visor_Helm(klown,Klown,Klown.paa)
+		// NEW_501_Lumanated_Visor_Helm(klownv2,Klowned,Klown_v2.paa)//CS
 
 		NEW_501_Lumanated_Visor_Helm(legia,Legia,Legia.paa)//1st
 		NEW_501_Inf_Helm(player,Player,Player.paa)
