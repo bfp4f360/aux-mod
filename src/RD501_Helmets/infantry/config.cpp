@@ -59,6 +59,7 @@ class CfgWeapons
 		NEW_501_Inf_Helm(blade,Blade,Blade.paa)
 		NEW_501_Inf_Helm(boozy,Boozy,Boozy.paa)
 		NEW_501_Inf_Helm(bronson,Bronson,Bronson.paa)
+		NEW_501_Inf_Helm(chaser,Chaser,Chaser.paa)
 		NEW_501_Inf_Helm(corey,Corey,Corey.paa)
 		NEW_501_Inf_Helm(courtney,Courtney,Courtney.paa)
 		
