@@ -1,4 +1,4 @@
-class ImpactSparksPlasma1_RD501: Default
+class macro_new_cloudlet(impack_spark_plasma): Default
 {
     interval=0.0008;
     circleRadius=0;
@@ -53,7 +53,7 @@ class ImpactSparksPlasma1_RD501: Default
     randomDirectionPeriodVar=0;
     randomDirectionIntensityVar=0;
 };
-class ImpactSparksPlasma2: Default
+class macro_new_cloudlet(impack_spark_plasma_2): Default
 {
     interval=0.0099999998;
     circleRadius=0;

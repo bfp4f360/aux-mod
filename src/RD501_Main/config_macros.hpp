@@ -5,7 +5,8 @@
 	#define StabilizedInAxisY 2
 	#define StabilizedInAxesBoth 3
 
-
+	#define MACRO_AUTHOR "RD501"
+	#define MACRO_AUTHOR_PPL "Namenai"
 	#define MODNAME RD501
 
 //---Basic Functions---
@@ -86,6 +87,11 @@
 	
 
 //---Weapons, Mags, and Ammo
+	
+	#define macro_scope_magnification(zoom) 0.25/zoom
+
+	#define macro_new_scope(scopename) macro_modname##_weapon_scope_##scopename
+
 	#define macro_new_weapon(family,name) MODNAME##_##family##_##name
 
 	#define macro_new_weapon_nofam(name) MODNAME##_##name
@@ -101,6 +107,8 @@
 	#define macro_no_muzzle_impulse muzzleImpulseFactor[] = {0.00, 0.00};
 
 	#define macro_new_recoil(name) MODNAME##_##name##_recoil
+
+
 
 //---Vehicles---
 
