@@ -59,3 +59,13 @@
 	macro_new_mag(40mm_Blue,3),\
 	macro_new_mag(40mm_Cyan,3),\
 	macro_new_mag(40mm_Purple,3)
+
+#define MACRO_GL_flare_rounds_1rnd \
+	macro_new_mag(40mm_white,1),\
+	macro_new_mag(40mm_CIR,1),\
+	macro_new_mag(40mm_Green,1),\
+	macro_new_mag(40mm_Red,1),\
+	macro_new_mag(40mm_Yellow,1),\
+	macro_new_mag(40mm_Blue,1),\
+	macro_new_mag(40mm_Cyan,1),\
+	macro_new_mag(40mm_Purple,31)

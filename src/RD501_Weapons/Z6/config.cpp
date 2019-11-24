@@ -17,11 +17,13 @@ class CfgPatches
 		units[]={};
 		weapons[]={
 			macro_new_weapon_nofam(Z6),
-			"SWOP_Valken38XAuto_XD"
+			"SWOP_Valken38XAuto_XD",
+			macro_new_weapon(chaingun,z6x)
 		};
 	};
 };
 
+class Mode_SemiAuto;
 class cfgWeapons 
 {	
 	class Rifle_Base_F;
@@ -307,5 +309,95 @@ class cfgWeapons
 		};
 
 	};
+
+	class OPTRE_UnguidedLauncher_Base;
+	class OPTRE_M41_SSR:OPTRE_UnguidedLauncher_Base
+	{
+		class Single;
+	};
+	class macro_new_weapon(chaingun,z6x): OPTRE_M41_SSR
+	{
+		baseWeapon = macro_new_weapon(chaingun,z6x);
+		recoil = macro_new_recoil(chaingun);
+		displayName = "Z-6x";
+		magazines[] = {macro_new_mag(chaingun,500)};
+
+		ace_overpressure_priority = 1;
+		ace_overpressure_angle = 0;
+		ace_overpressure_range = 0;
+		ace_overpressure_damage = 0;
+
+		class GunParticles
+		{
+			class effect1
+			{
+				positionName = "muzzleEnd2";
+				directionName = "muzzlePos2";
+				effectName = "";
+			};
+		};
+		
+		class OpticsModes
+		{
+			class StepScope
+			{
+				opticsID = 1;
+				useModelOptics = 1;
+				opticsPPEffects[] = {"OpticsCHAbera1", "OpticsBlur1"};
+				opticsFlare = 0;
+				opticsZoomMin = 0.125;
+				opticsZoomMax = 0.125/2;
+				opticsZoomInit = 0.125;
+				distanceZoomMin = 300;
+				distanceZoomMax = 300;
+				memoryPointCamera = "eye";
+				cameraDir = "look";
+				visionMode[] = {"Normal", "NVG", "Ti"};
+				thermalMode[] = {0, 1};
+				opticsDisablePeripherialVision = 1;
+				discretefov[] = {0.125, 0.125/1.5, 0.125/2};
+				discreteInitIndex = 0;
+			};
+		};
+
+		modes[] = {"Single"};
+		class Single: Single
+		{
+			sounds[] = {"StandardSound"};
+			class BaseSoundModeType
+			{
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				// begin1[] = {"OPTRE_Weapons\Rockets\data\sounds\rocket_1.wss", 2.5, 1, 1500};
+				// soundBegin[] = {"begin1", 1};
+				begin1[] = {"SW_CloneWarsWeapons\SW_Z6\sound\fire1z6.ogg", 0.9, 3, 2000};
+				begin2[] = {"SW_CloneWarsWeapons\SW_Z6\sound\fire1z6.ogg", 0.9, 3, 2000};
+				soundBegin[] = {"begin1", 0.5, "begin2", 0.5};
+
+				// begin1[] = {"SW_CloneWarsWeapons\DC17\DC171.ogg", 1, 3, 1200};
+				// begin2[] = {"SW_CloneWarsWeapons\DC17\DC172.ogg", 1, 3, 1200};
+				// begin3[] = {"SW_CloneWarsWeapons\DC17\DC173.ogg", 1, 3, 1200};
+				// begin4[] = {"SW_CloneWarsWeapons\DC17\DC174.ogg", 1, 3, 1200};
+				// begin5[] = {"SW_CloneWarsWeapons\DC17\DC175.ogg", 1, 3, 1200};
+				// soundBegin[] = {"begin1", 0.2, "begin2", 0.2, "begin3", 0.2, "begin4", 0.2, "begin5", 0.2};
+			};
+			recoil = "recoil_empty";
+			//reloadtime = 1;
+			reloadTime = 0.03;
+			dispersion = 0.0015;
+			autoFire=1;
+			burst = 1;
+			aiRateOfFire = 7;
+			aiRateOfFireDistance = 600;
+			minRange = 10;
+			minRangeProbab = 0.3;
+			midRange = 400;
+			midRangeProbab = 0.8;
+			maxRange = 600;
+			maxRangeProbab = 0.1;
+		};
+	};
+
 };
 

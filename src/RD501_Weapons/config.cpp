@@ -58,6 +58,8 @@ class CfgMagazineWells
 			GL_flare_rounds
 		};
 
+	
+	
 		macro_new_magwell(GL_AP)[]=
 		{
 			macro_new_mag(AT_GL,2)
@@ -79,7 +81,31 @@ class CfgMagazineWells
 			"3Rnd_SmokeOrange_Grenade_shell",
 			"ACE_HuntIR_M203"
 		};
+
+	
 	};
+
+
+	class macro_new_magwell(DC17_GL_Mags)
+	{
+		macro_new_magwell(1rnd_GL_flare)[]=
+		{
+			MACRO_GL_flare_rounds_1rnd
+		};
+
+		macro_new_magwell(1rnd_smoke)[]=
+		{
+			"1Rnd_Smoke_Grenade_shell",
+			"1Rnd_SmokeRed_Grenade_shell",
+			"1Rnd_SmokeGreen_Grenade_shell",
+			"1Rnd_SmokeYellow_Grenade_shell",
+			"1Rnd_SmokePurple_Grenade_shell",
+			"1Rnd_SmokeBlue_Grenade_shell",
+			"1Rnd_SmokeOrange_Grenade_shell",
+			"ACE_HuntIR_M203"
+		};
+	}
+	
 
 	class macro_new_magwell(DC_15a_energy)
 	{
@@ -269,6 +295,16 @@ class CfgMagazines
 		//initSpeed = 110;
 	};
 
+
+	class macro_new_mag(DC17,40): macro_new_mag(DC17,20)
+	{
+		displayName = "40Rnd DC17 Magazine.";
+		tracersEvery = 1;
+		count = 40;
+		descriptionShort = "40Rnd DC17 Magazine";
+		mass = 13;
+	};
+
 	class Titan_AA;
 	class CA_LauncherMagazine;
 
@@ -441,6 +477,23 @@ class CfgMagazines
 		//mass = 15;
 		mass = 20;
 		initSpeed = 310;
+	};
+
+	class RPG32_HE_F;
+	class macro_new_mag(chaingun,500): RPG32_HE_F
+	{
+		dlc = "OPTRE";
+		displayname = "THIS SHOOTS BULLETS REEE";
+		displaynameshort = "HEAT";
+		descriptionshort = "High Explosive Anti Tank<br/>Un-guided";
+		ammo = macro_new_ammo(chaingun);
+		// picture = "\OPTRE_weapons\rockets\icons\rocket.paa";
+		// model = "\OPTRE_Weapons\Rockets\M41_tube.p3d";
+		// modelSpecial = "\OPTRE_Weapons\Rockets\M41_launcher_loaded.p3d";
+		count = 1000;
+		mass = 80;
+		initSpeed = 350;
+		allowedSlots[] = {901, 701};
 	};
 	
 };
@@ -755,7 +808,7 @@ class CfgAmmo
 
 	class macro_new_ammo(DC15_Razor_Blade):SWOP_DC15SA_Ammo
 	{
-		hit = 30;
+		hit = 50;
 		indirectHit = 0.0;
 		indirectHitRange = 0.0;
 		explosive = 0;
@@ -786,6 +839,124 @@ class CfgAmmo
 		model = "\A3\Weapons_f\ammo\smokegrenade_blue_throw";
 		smokeColor[] = {0.1183, 0.1867, 1, 1};
 		effectsSmoke = "smoke_yeet";
+	};
+
+	//LOOK HERE $$$
+	class M_NLAW_AT_F;
+	class macro_new_ammo(chaingun): M_NLAW_AT_F
+	{	
+
+		hit = mg_hit_high;
+		indirectHit = 0.0;
+		indirectHitRange = 0.0;
+		explosive = 0.0;
+		caliber = mg_cali_high;
+		ACE_caliber = 0;
+
+		model = "\SWOP_Main\Effects\Tracer\LaserBlue";
+		// hit =48;//600
+		// caliber = 2;
+		// ACE_caliber = 0;
+		// indirectHit = 2;
+		// indirectHitRange = .1;//2
+		// explosive = 0.5;
+		cost = 500;
+		airFriction = 0;
+		sideairFriction = 0;
+		coefGravity = 0;
+		maxSpeed = 450;//150
+		typicalSpeed = 450;//150
+		initTime = 0.2;
+		thrustTime = 1.6;
+		thrust = 100;
+		fuseDistance = 20;
+		simulationStep = 0.02;
+		timeToLive = 4;
+		//effectsMissile = "missile3";
+		effectsMissile = "";
+		whistleDist = 20;
+		aiAmmoUsageFlags = "64 + 128 + 256 + 512";
+		submunitionAmmo = "";//"ammo_Penetrator_Titan_AT";
+		submunitionDirectionType = "SubmunitionModelDirection";
+		submunitionInitSpeed = 1000;
+		submunitionParentSpeedCoef = 0;
+		submunitionInitialOffset[] = {0, 0, -0.2};
+		triggerOnImpact = 1;
+		deleteParentWhenTriggered = 0;
+		flightProfiles[] = {"Direct"};
+		CraterEffects = "ExploAmmoLaserCrater";
+		explosionEffects = "SWOP_LaserExploSmallblue2";
+		soundHit[] = {"A3\Sounds_F\arsenal\sfx\bullet_hits\concrete_01", 1, 1, 150};
+		soundHit1[] = {"A3\Sounds_F\arsenal\sfx\bullet_hits\concrete_01",1,1,200};
+		soundHit2[] = {"A3\Sounds_F\arsenal\sfx\bullet_hits\concrete_01",1,1,200};
+		soundHit3[] = {"A3\Sounds_F\arsenal\sfx\bullet_hits\concrete_01",1,1,2000};
+		//soundFly[] = {"A3\Sounds_F\arsenal\weapons\Launchers\NLAW\Fly_NLAW", 0.562341, 1.5, 700};
+	
+		effectsSmoke = "";
+		explosionSoundEffect = "";//explosionSoundEffect
+		//soundFly[] = {"A3\Sounds_F\arsenal\weapons\Launchers\NLAW\Fly_NLAW",0.562341,1.5,700};
+		soundFly[] = {"", 1, 1, 50};
+		muzzleEffect = "";//BIS_fnc_effectFiredRocket
+		SoundSetExplosion[] = {""};//RocketsMedium_Exp_SoundSet RocketsMedium_Tail_SoundSet Explosion_Debris_SoundSet
+		
+		class HitEffects
+		{
+			Hit_Foliage_green="SWOP_LaserExploSmallblue2";
+			Hit_Foliage_Dead="SWOP_LaserExploSmallblue2";
+			Hit_Foliage_Green_big="SWOP_LaserExploSmallblue2";
+			Hit_Foliage_Palm="SWOP_LaserExploSmallblue2";
+			Hit_Foliage_Pine="SWOP_LaserExploSmallblue2";
+			hitFoliage="SWOP_LaserExploSmallblue2";
+			hitGlass="SWOP_LaserExploSmallblue2";
+			hitGlassArmored="SWOP_LaserExploSmallblue2";
+			hitWood="SWOP_LaserExploSmallblue2";
+			hitMetal="SWOP_LaserExploSmallblue2";
+			hitMetalPlate="SWOP_LaserExploSmallblue2";
+			hitBuilding="SWOP_LaserExploSmallblue2";
+			hitPlastic="SWOP_LaserExploSmallblue2";
+			hitRubber="SWOP_LaserExploSmallblue2";
+			hitTyre="SWOP_LaserExploSmallblue2";
+			hitConcrete="SWOP_LaserExploSmallblue2";
+			hitMan="SWOP_LaserExploSmallblue2";
+			hitGroundSoft="SWOP_LaserExploSmallblue2";
+			hitGroundRed="SWOP_LaserExploSmallblue2";
+			hitGroundHard="SWOP_LaserExploSmallblue2";
+			hitWater="SWOP_LaserExploSmallblue2";
+			hitVirtual="SWOP_LaserExploSmallblue2";
+			default_mat="SWOP_LaserExploSmallblue2";
+		};
+		class Direct
+		{
+		};
+
+		class CamShakeExplode
+		{
+			power = 1;
+			duration = 1.4;
+			frequency = 20;
+			distance = 1;
+		};
+		class CamShakeHit
+		{
+			power = 1;
+			duration = 0.6;
+			frequency = 20;
+			distance = 1;
+		};
+		class CamShakeFire
+		{
+			power = 1;
+			duration = 1.2;
+			frequency = 20;
+			distance = 1;
+		};
+		class CamShakePlayerFire
+		{
+			power = 1;
+			duration = 0.1;
+			frequency = 20;
+			distance = 1;
+		};
 	};
 	
 
@@ -902,5 +1073,18 @@ class CfgRecoils
 		kickBack[] = {"0.03*0.25", "0.03*0.25"};
 		permanent = "0.1*0.25";
 		temporary = "0.01*0.25";
+	};
+
+	class macro_new_recoil(chaingun): Default
+	{
+
+
+		muzzleOuter[] = {"0.03", "0.6", "0.03", ".06"};
+		muzzleInner[] = {0, 0, 0.01, 0.01};
+		kickBack[] = {"0.01", "0.03"};
+		permanent = "0.01";
+		temporary = "0.01";
+	   	prone		= 0.0;	//coefficient of recoil forces while in prone (this is further multiplied by weapon resting coefficients)
+		
 	};
 };
