@@ -224,6 +224,10 @@ class CfgWeapons
 		scope = 2;
 		displayName = "Clone airborne helmet";
 		model = "\501st_helmets\AB\AB_helmet.p3d";
+
+		ace_hearing_protection = 0.85; 		
+		ace_hearing_lowerVolume = 0.6;    
+
 		hiddenSelections[] = {
 			"camo1",
 			"mat"
