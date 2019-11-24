@@ -491,7 +491,7 @@ class CfgMagazines
 		// model = "\OPTRE_Weapons\Rockets\M41_tube.p3d";
 		// modelSpecial = "\OPTRE_Weapons\Rockets\M41_launcher_loaded.p3d";
 		count = 1000;
-		mass = 80;
+		mass = 70;
 		initSpeed = 350;
 		allowedSlots[] = {901, 701};
 	};

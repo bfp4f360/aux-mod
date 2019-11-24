@@ -115,7 +115,7 @@ class CfgWeapons
 		NEW_501_Inf_Helm(royale,Royale,Royal.paa)
 		NEW_501_Inf_Helm(sam,Sam,Sam.paa)
 		NEW_501_Inf_Helm(schames,Schames,Schames.paa)
-		NEW_501_Inf_Helm(sence,Sence-i,Sence.paa)
+		NEW_501_Inf_Helm(sence,SEnCe-ie,Sence.paa)
 		NEW_501_Inf_Helm(Sergeant,Serge,Sergeant.paa)
 		NEW_501_Inf_Helm(shade,Shade,Shade.paa)
 		NEW_501_Inf_Helm(shadow,Shadow,Shadow.paa)
@@ -153,7 +153,7 @@ class CfgWeapons
 		NEW_501_Lumanated_Visor_Helm(drifter,Drifter,Drifter.paa)//4th
 		NEW_501_Lumanated_Visor_Helm(euler,Euler,Euler.paa)//mod
 
-		// NEW_501_Lumanated_Visor_Helm(klown,Klown,Klown.paa)
+		NEW_501_Lumanated_Visor_Helm(klown,Klown,Klown.paa)
 		// NEW_501_Lumanated_Visor_Helm(klownv2,Klowned,Klown_v2.paa)//CS
 
 		NEW_501_Lumanated_Visor_Helm(legia,Legia,Legia.paa)//1st
