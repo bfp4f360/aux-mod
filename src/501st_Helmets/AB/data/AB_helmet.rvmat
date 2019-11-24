@@ -1,6 +1,6 @@
 class StageTI
 {
-      texture="#(argb,8,8,3)color(0.01,0.01,0.01,0.05,TI)";
+      texture="#(argb,8,8,3)color(0.01,0.01,0.01,0.02,TI)";
 };
 ambient[]={1,1,1,1};
 diffuse[]={1,1,1,1};

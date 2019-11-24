@@ -482,15 +482,15 @@ class CfgMagazines
 	class RPG32_HE_F;
 	class macro_new_mag(chaingun,500): RPG32_HE_F
 	{
-		dlc = "OPTRE";
-		displayname = "THIS SHOOTS BULLETS REEE";
-		displaynameshort = "HEAT";
-		descriptionshort = "High Explosive Anti Tank<br/>Un-guided";
+		dlc = "RD501";
+		displayname = "Z6x 500rnd Mag";
+		displaynameshort = "500rnd Mag";
+		descriptionshort = "Z6x 500rnd mag";
 		ammo = macro_new_ammo(chaingun);
 		// picture = "\OPTRE_weapons\rockets\icons\rocket.paa";
 		// model = "\OPTRE_Weapons\Rockets\M41_tube.p3d";
 		// modelSpecial = "\OPTRE_Weapons\Rockets\M41_launcher_loaded.p3d";
-		count = 1000;
+		count = 500;
 		mass = 70;
 		initSpeed = 350;
 		allowedSlots[] = {901, 701};
@@ -1079,11 +1079,11 @@ class CfgRecoils
 	{
 
 
-		muzzleOuter[] = {"0.03", "0.6", "0.03", ".06"};
-		muzzleInner[] = {0, 0, 0.01, 0.01};
-		kickBack[] = {"0.01", "0.03"};
-		permanent = "0.01";
-		temporary = "0.01";
+		muzzleOuter[] = {"0.06", "0.8", "0.06", ".12"};
+		muzzleInner[] = {0, 0, 0.03, 0.03};
+		kickBack[] = {"0.03", "0.06"};
+		permanent = "0.03";
+		temporary = "0.03";
 	   	prone		= 0.0;	//coefficient of recoil forces while in prone (this is further multiplied by weapon resting coefficients)
 		
 	};
