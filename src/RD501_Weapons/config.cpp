@@ -1079,11 +1079,11 @@ class CfgRecoils
 	{
 
 
-		muzzleOuter[] = {"0.06", "0.8", "0.06", ".12"};
-		muzzleInner[] = {0, 0, 0.03, 0.03};
-		kickBack[] = {"0.03", "0.06"};
-		permanent = "0.03";
-		temporary = "0.03";
+		muzzleOuter[] = {"0.05", "0.7", "0.05", ".10"};
+		muzzleInner[] = {0, 0, 0.02, 0.02};
+		kickBack[] = {"0.03", "0.05"};
+		permanent = "0.02";
+		temporary = "0.02";
 	   	prone		= 0.0;	//coefficient of recoil forces while in prone (this is further multiplied by weapon resting coefficients)
 		
 	};
