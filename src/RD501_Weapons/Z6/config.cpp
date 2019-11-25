@@ -320,12 +320,14 @@ class cfgWeapons
 		baseWeapon = macro_new_weapon(chaingun,z6x);
 		recoil = macro_new_recoil(chaingun);
 		displayName = "Z-6x";
-		magazines[] = {macro_new_mag(chaingun,500)};
+		magazines[] = {macro_new_mag(chaingun_z6x,500)};
 
 		ace_overpressure_priority = 1;
 		ace_overpressure_angle = 0;
 		ace_overpressure_range = 0;
 		ace_overpressure_damage = 0;
+
+		descriptionshort = "Ur mom gay :)";
 
 		class GunParticles
 		{

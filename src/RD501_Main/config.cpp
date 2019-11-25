@@ -116,6 +116,17 @@ class cfgFunctions
 	};
 };
 
+class Extended_Init_EventHandlers 
+{
+    class CAManBase 
+	{
+        class RD501_MedNotif 
+		{
+            init = call macro_fnc_name(add_med_notification);
+        };
+    };
+};
+
 //Run once at a point in time before all the mission units and vehicles have their own init event handlers processed
 class Extended_PreInit_EventHandlers
 {

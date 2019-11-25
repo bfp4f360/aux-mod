@@ -480,13 +480,13 @@ class CfgMagazines
 	};
 
 	class RPG32_HE_F;
-	class macro_new_mag(chaingun,500): RPG32_HE_F
-	{
+	class macro_new_mag(chaingun_z6x,500): RPG32_HE_F
+	{	
 		dlc = "RD501";
 		displayname = "Z6x 500rnd Mag";
 		displaynameshort = "500rnd Mag";
 		descriptionshort = "Z6x 500rnd mag";
-		ammo = macro_new_ammo(chaingun);
+		ammo = macro_new_ammo(chaingun_z6x);
 		// picture = "\OPTRE_weapons\rockets\icons\rocket.paa";
 		// model = "\OPTRE_Weapons\Rockets\M41_tube.p3d";
 		// modelSpecial = "\OPTRE_Weapons\Rockets\M41_launcher_loaded.p3d";
@@ -843,7 +843,7 @@ class CfgAmmo
 
 	//LOOK HERE $$$
 	class M_NLAW_AT_F;
-	class macro_new_ammo(chaingun): M_NLAW_AT_F
+	class macro_new_ammo(chaingun_z6x): M_NLAW_AT_F
 	{	
 
 		hit = mg_hit_high;
@@ -853,13 +853,15 @@ class CfgAmmo
 		caliber = mg_cali_high;
 		ACE_caliber = 0;
 
-		model = "\SWOP_Main\Effects\Tracer\LaserBlue";
+		//model = "\SWOP_Main\Effects\Tracer\LaserBlue";
+		model = "sci_weaponsMain\Data\tracer_blue.p3d";
 		// hit =48;//600
 		// caliber = 2;
 		// ACE_caliber = 0;
 		// indirectHit = 2;
 		// indirectHitRange = .1;//2
 		// explosive = 0.5;
+		effectFly = "SWOP_BlueLaserEffect";
 		cost = 500;
 		airFriction = 0;
 		sideairFriction = 0;
@@ -873,7 +875,7 @@ class CfgAmmo
 		simulationStep = 0.02;
 		timeToLive = 4;
 		//effectsMissile = "missile3";
-		effectsMissile = "";
+		effectsMissile = "SWOP_BlueLaserEffect";
 		whistleDist = 20;
 		aiAmmoUsageFlags = "64 + 128 + 256 + 512";
 		submunitionAmmo = "";//"ammo_Penetrator_Titan_AT";

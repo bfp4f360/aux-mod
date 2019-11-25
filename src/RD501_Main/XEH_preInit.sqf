@@ -62,8 +62,21 @@ macro_prep_xeh(init\aat.sqf,aatInit)
 //HUD color
 macro_prep_xeh(hud_color_change.sqf,change_hud_color)
 
+//showe dmg
 macro_prep_xeh(show_damage_report.sqf,add_show_dmg_report)
 
 //Yeet them out
 call compile preprocessFileLineNumbers 'macro_mod_script_path\add_radio_freq_shower.sqf';
-// #include "_jumppack.hpp"
+
+//Mirrors medical menu thingy
+["RD501_MedNotif_Message",
+        "EDITBOX",
+        [
+                "Message",
+                "Message to show to other players, keep it clean. %1 is used as a placeholder for your name."
+        ],
+        "RD501 Medical Notification",
+        call {profileNamespace getVariable ["RD501_MedNotif_Message", "%1 is asking that you kindly hold still."]}
+ ] call cba_settings_fnc_init;
+ diag_log format["RD501_MedNotif[DEBUG]: %1", "Settings Added"];
+macro_prep_xeh(medical_notification\add_med_notification.sqf,add_med_notification)
