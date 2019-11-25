@@ -66,27 +66,30 @@ class macro_new_ammo(Republic_Universal_Ammo):SWOP_DC15ABlasterRifle_L_Ammo
 
 class macro_new_ammo(DC_15a_le):macro_new_ammo(Republic_Universal_Ammo)
 {
-    hit = 40;
+    hit = 35;
     coefGravity=0.05;	
+    caliber = 1;
 };
 
-class macro_new_ammo(DC_15a_le_HE):G_40mm_HE
-{
-    hit = 10;
-    coefGravity=0.3;	
+// class macro_new_ammo(DC_15a_le_HE):G_40mm_HE
+// {
+//     hit = 10;
+//     coefGravity=0.3;	
 
-    indirectHit = 40.0;
-    indirectHitRange = 3.0;
-    explosive = 1;
-    caliber = 0.0;
-    explosionEffects = "ExploAmmoLaserCannon";
+//     indirectHit = 30.0;
+//     indirectHitRange = 1.0;
+//     explosive = 1;
+//     caliber = 0.0;
+//     explosionEffects = "ExploAmmoLaserCannon";
 
-    deflecting = 5;
-	fuseDistance = 2;
-    airFriction = 0;
-    sideAirFriction = 0;
+//     deflecting = 5;
+// 	fuseDistance = 2;
+//     airFriction = 0;
+//     sideAirFriction = 0;
 
-};
+    
+
+// };
 
 class macro_new_ammo(DC_15a_mod0):macro_new_ammo(Republic_Universal_Ammo)
 {

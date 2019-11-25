@@ -25,6 +25,7 @@ class CfgPatches
 		requiredVersion=0.1;
 		units[]=
 		{
+			macro_new_vehicle(droideka,base),
 			macro_new_vehicle(droideka,camo),
 			macro_new_vehicle(droideka,support),
 			macro_new_vehicle(droideka,normal)
@@ -67,7 +68,7 @@ class CfgVehicles
 		
 	};
 	
-	class macro_new_vehicle(droideka,support) : macro_new_vehicle(droideka,base)
+	class macro_new_vehicle(droideka,support) : macro_new_vehicle(droideka,camo)
 	{
 		scope=2;
 		hiddenSelectionsTextures[] = {"SW_CloneWarsWeapons\Droideka\DroidikasupportOK_co.paa"};
@@ -76,7 +77,7 @@ class CfgVehicles
 	};
 	
 	
-	class macro_new_vehicle(droideka,normal) : macro_new_vehicle(droideka,base)
+	class macro_new_vehicle(droideka,normal) : macro_new_vehicle(droideka,camo)
 	{
 		scope=2;
 		displayName = "Moveable Droideka";
