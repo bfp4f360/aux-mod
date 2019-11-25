@@ -70,16 +70,22 @@ class macro_new_ammo(DC_15a_le):macro_new_ammo(Republic_Universal_Ammo)
     coefGravity=0.05;	
 };
 
-class macro_new_ammo(DC_15a_le_HE):macro_new_ammo(Republic_Universal_Ammo)
+class macro_new_ammo(DC_15a_le_HE):G_40mm_HE
 {
     hit = 10;
     coefGravity=0.3;	
 
-    indirectHit = 60.0;
-    indirectHitRange = 4.0;
-    explosive = 1.0;
-    caliber = 0.5;
+    indirectHit = 40.0;
+    indirectHitRange = 3.0;
+    explosive = 1;
+    caliber = 0.0;
     explosionEffects = "ExploAmmoLaserCannon";
+
+    deflecting = 5;
+	fuseDistance = 2;
+    airFriction = 0;
+    sideAirFriction = 0;
+
 };
 
 class macro_new_ammo(DC_15a_mod0):macro_new_ammo(Republic_Universal_Ammo)

@@ -81,7 +81,7 @@ class CfgVehicles
 		displayName = "H.M.P Transport Mk.I";
 		forceInGarage = 1;
 		maxSpeed=220;
-		armor = 500;
+		armor = 650;
 		armorStructural = 2;
 		armorLights = 1;
 		liftForceCoef = 1;

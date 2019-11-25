@@ -38,7 +38,7 @@ class macro_new_mag(DC15a_LE,20): macro_new_mag(Republic_Universal_Magazine,30)
 class macro_new_mag(DC_15a_le_HE,5): macro_new_mag(Republic_Universal_Magazine,30)
 {
     ammo = macro_new_ammo(DC_15a_le_HE)
-    initSpeed = 1000;//666.66;
+    initSpeed = 400;//666.66;
     displayName = "20Rnd DC-15A LE HE Magazine";
     descriptionShort = "20rnd Magazine";
     count = 5;
