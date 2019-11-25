@@ -87,12 +87,17 @@ class CfgVehicles
 					
 							macro_basic_air_weapons,
 							"SmokeLauncher",
+							macro_new_weapon(saber_gun,mbt),
 							macro_new_weapon(generic,plasma_aircraft_cannon)
 						};
 						magazines[] = {
 						
 							macro_basic_air_mags,
 							"SmokeLauncherMag",
+							macro_new_mag(saber_tx130,10),
+							macro_new_mag(saber_tx130,10),
+							macro_new_mag(saber_tx130,10),
+							macro_new_mag(saber_tx130,10),
 							macro_new_mag(generic_aircraft_cannon_plasma_red,1000),
 							macro_new_mag(generic_aircraft_cannon_plasma_red,1000)
 						};
