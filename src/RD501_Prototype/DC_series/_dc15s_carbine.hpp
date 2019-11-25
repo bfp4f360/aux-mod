@@ -67,7 +67,7 @@
 			};
 		};
 		magazineWell[]={Republic_Universal_Magazine_Well};
-		magazines[]={macro_new_mag(DC15s,100),macro_new_mag(shotgun_test,2)};
+		magazines[]={macro_new_mag(DC15s,100)};
 		displayName="[Stage I] DC15s Carbine";
 		canShootInWater = 1;
 		macro_ace_heating
@@ -78,6 +78,7 @@
 		opticsZoomMin=macro_scope_magnification(4);
 		opticsZoomMax=1.25;
 		opticsZoomInit=macro_scope_magnification(1);
+		muzzles[] = {"this","ShotgunBlast"};
 		class FullAuto:FullAuto
 		{
 			reloadTime = macro_dc15s_rof
@@ -139,6 +140,34 @@
 						volume = "(1-interior/1.4)*houses";
 					};
 				};
+			};
+		};
+
+		class ShotgunBlast: SCI_arifle_DC15S_F
+		{
+			displayName = "DC-15s Super Blast";
+			
+			magazines[] = {macro_new_mag(shotgun_test,2)};
+			
+			modes[] = {"Single"};
+			class Single: Mode_SemiAuto
+			{
+				
+				sounds[] = {"StandardSound"};
+				class StandardSound
+				{
+					soundSetShot[] = {"Msbs65_01_Shotgun_Shot_SoundSet", "Msbs65_01_Shotgun_Tail_SoundSet"};
+				};
+				reloadTime = 0.2;
+				dispersion = 0.01245;
+				minRange = 2;
+				minRangeProbab = 0.95;
+				midRange = 30;
+				midRangeProbab = 0.95;
+				maxRange = 100;
+				maxRangeProbab = 0.3;
+				aiRateOfFire = 1;
+				aiRateOfFireDistance = 30;
 			};
 		};
 

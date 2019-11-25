@@ -18,6 +18,7 @@ class CfgPatches
 	};
 };
 class CowsSlot;
+class Mode_SemiAuto;
 class cfgWeapons 
 {	
 	
@@ -50,7 +51,7 @@ class cfgWeapons
 		picture = "\SW_CloneWarsWeapons\SW_Z6\UI\z6.paa";
 		UiPicture = "\SW_CloneWarsWeapons\SW_Z6\UI\z6.paa";
 		magazineWell[]={Republic_Universal_Magazine_Well};
-		magazines[]={macro_new_mag(z6_proto,300),macro_new_mag(shotgun_test,10)};
+		magazines[]={macro_new_mag(z6_proto,300)};
 		modelOptics="sci_weaponsMain\Data\A3_2d_optic.p3d";
 		class OpticsModes
 		{
@@ -107,6 +108,7 @@ class cfgWeapons
 		recoil = macro_new_recoil(z6)//"recoil_pdw";
 		// initSpeed=-1.2;
 		displayName="[Stage I] Z6 Kanonenjagdpanzer";
+		muzzles[] = {"this","SixBarrleBlast"};
 		class FullAuto1:FullAuto
 		{	
 			class BaseSoundModeType
@@ -135,6 +137,34 @@ class cfgWeapons
 			reloadTime = macro_z6_rof
 		};
 
+		class SixBarrleBlast: SCI_arifle_z6_F
+		{
+			displayName = "Z6 6 Barrel Barrage";
+			
+			magazines[] = {macro_new_mag(shotgun_test,10)};
+			
+			modes[] = {"Single"};
+			class Single: Mode_SemiAuto
+			{
+				
+				sounds[] = {"StandardSound"};
+				class StandardSound
+				{
+					soundSetShot[] = {"Msbs65_01_Shotgun_Shot_SoundSet", "Msbs65_01_Shotgun_Tail_SoundSet"};
+				};
+				reloadTime = 0.2;
+				dispersion = 0.01245;
+				minRange = 2;
+				minRangeProbab = 0.95;
+				midRange = 30;
+				midRangeProbab = 0.95;
+				maxRange = 100;
+				maxRangeProbab = 0.3;
+				aiRateOfFire = 1;
+				aiRateOfFireDistance = 30;
+				autoFire = 1;
+			};
+		};
 		// class overcharge_burst:FullAuto1
 		// {
 

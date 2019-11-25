@@ -25,6 +25,7 @@ class CfgPatches
 	};
 };
 class CowsSlot;
+class Mode_SemiAuto;
 class cfgWeapons 
 {	
 	//swop rifles
