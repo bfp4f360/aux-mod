@@ -183,6 +183,13 @@ class CfgVehicles
 
 	};
 
+	class macro_jumppackClass(neutral,212th):macro_jumppackClass(neutral,cdv_21)
+	{
+		displayName = "[JP] CDV-21 '212th'";
+		hiddenSelectionsTextures[] = {"RD501_Jumppack\textures\212th.paa"};
+
+	};
+
 	class macro_jumppackClass(neutral,ack_1_1):macro_jumppackClass(neutral,cdv_21)
 	{
 		displayName = "[JP] CDV-21 Acklay 1-1";
