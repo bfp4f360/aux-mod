@@ -319,8 +319,8 @@ class cfgWeapons
 	{
 		baseWeapon = macro_new_weapon(chaingun,z6x);
 		recoil = macro_new_recoil(chaingun);
-		displayName = "Z-6x";
-		magazines[] = {macro_new_mag(chaingun_z6x,500)};
+		displayName = "Z-6X";
+		magazines[] = {macro_new_mag(chaingun_z6x,1000)};
 
 		ace_overpressure_priority = 1;
 		ace_overpressure_angle = 0;
@@ -339,10 +339,13 @@ class cfgWeapons
 			};
 		};
 		
+		modelOptics = "Scope\4x_xm8.p3d";
 		class OpticsModes
 		{
+		
 			class StepScope
 			{
+				
 				opticsID = 1;
 				useModelOptics = 1;
 				opticsPPEffects[] = {"OpticsCHAbera1", "OpticsBlur1"};
@@ -357,7 +360,7 @@ class cfgWeapons
 				visionMode[] = {"Normal", "NVG", "Ti"};
 				thermalMode[] = {0, 1};
 				opticsDisablePeripherialVision = 1;
-				discretefov[] = {0.125, 0.125/1.5, 0.125/2};
+				discretefov[] = {0.125, 0.125/4, 0.125/8};
 				discreteInitIndex = 0;
 			};
 		};
