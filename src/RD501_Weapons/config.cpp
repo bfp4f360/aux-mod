@@ -480,20 +480,21 @@ class CfgMagazines
 	};
 
 	class RPG32_HE_F;
-	class macro_new_mag(chaingun_z6x,500): RPG32_HE_F
+	class macro_new_mag(chaingun_z6x,1000): RPG32_HE_F
 	{	
 		dlc = "RD501";
-		displayname = "Z6x 500rnd Mag";
-		displaynameshort = "500rnd Mag";
-		descriptionshort = "Z6x 500rnd mag";
+		displayname = "Z6x 1000rnd Mag";
+		displaynameshort = "1000rnd Mag";
+		descriptionshort = "Z6x 1000rnd mag";
 		ammo = macro_new_ammo(chaingun_z6x);
 		// picture = "\OPTRE_weapons\rockets\icons\rocket.paa";
 		// model = "\OPTRE_Weapons\Rockets\M41_tube.p3d";
 		// modelSpecial = "\OPTRE_Weapons\Rockets\M41_launcher_loaded.p3d";
-		count = 500;
-		mass = 70;
-		initSpeed = 350;
+		count = 1000;
+		mass = 100;
+		initSpeed = 550;
 		allowedSlots[] = {901, 701};
+		tracersEvery = 100;
 	};
 	
 };
@@ -843,64 +844,16 @@ class CfgAmmo
 
 	//LOOK HERE $$$
 	class M_NLAW_AT_F;
-	class macro_new_ammo(chaingun_z6x): M_NLAW_AT_F
-	{	
-
-		hit = mg_hit_high;
+	class ammo_Penetrator_Base;
+	class macro_new_ammo(chaingun_z6x_penetrator): ammo_Penetrator_Base
+	{
+		hit = 30;
 		indirectHit = 0.0;
 		indirectHitRange = 0.0;
 		explosive = 0.0;
 		caliber = mg_cali_high;
 		ACE_caliber = 0;
-
-		//model = "\SWOP_Main\Effects\Tracer\LaserBlue";
-		model = "sci_weaponsMain\Data\tracer_blue.p3d";
-		// hit =48;//600
-		// caliber = 2;
-		// ACE_caliber = 0;
-		// indirectHit = 2;
-		// indirectHitRange = .1;//2
-		// explosive = 0.5;
-		effectFly = "SWOP_BlueLaserEffect";
-		cost = 500;
-		airFriction = 0;
-		sideairFriction = 0;
-		coefGravity = 0;
-		maxSpeed = 450;//150
-		typicalSpeed = 450;//150
-		initTime = 0.2;
-		thrustTime = 1.6;
-		thrust = 100;
-		fuseDistance = 20;
-		simulationStep = 0.02;
-		timeToLive = 4;
-		//effectsMissile = "missile3";
-		effectsMissile = "SWOP_BlueLaserEffect";
-		whistleDist = 20;
-		aiAmmoUsageFlags = "64 + 128 + 256 + 512";
-		submunitionAmmo = "";//"ammo_Penetrator_Titan_AT";
-		submunitionDirectionType = "SubmunitionModelDirection";
-		submunitionInitSpeed = 1000;
-		submunitionParentSpeedCoef = 0;
-		submunitionInitialOffset[] = {0, 0, -0.2};
-		triggerOnImpact = 1;
-		deleteParentWhenTriggered = 0;
-		flightProfiles[] = {"Direct"};
-		CraterEffects = "ExploAmmoLaserCrater";
-		explosionEffects = "SWOP_LaserExploSmallblue2";
-		soundHit[] = {"A3\Sounds_F\arsenal\sfx\bullet_hits\concrete_01", 1, 1, 150};
-		soundHit1[] = {"A3\Sounds_F\arsenal\sfx\bullet_hits\concrete_01",1,1,200};
-		soundHit2[] = {"A3\Sounds_F\arsenal\sfx\bullet_hits\concrete_01",1,1,200};
-		soundHit3[] = {"A3\Sounds_F\arsenal\sfx\bullet_hits\concrete_01",1,1,2000};
-		//soundFly[] = {"A3\Sounds_F\arsenal\weapons\Launchers\NLAW\Fly_NLAW", 0.562341, 1.5, 700};
-	
-		effectsSmoke = "";
-		explosionSoundEffect = "";//explosionSoundEffect
-		//soundFly[] = {"A3\Sounds_F\arsenal\weapons\Launchers\NLAW\Fly_NLAW",0.562341,1.5,700};
-		soundFly[] = {"", 1, 1, 50};
-		muzzleEffect = "";//BIS_fnc_effectFiredRocket
-		SoundSetExplosion[] = {""};//RocketsMedium_Exp_SoundSet RocketsMedium_Tail_SoundSet Explosion_Debris_SoundSet
-		
+		timeToLive = 6;
 		class HitEffects
 		{
 			Hit_Foliage_green="SWOP_LaserExploSmallblue2";
@@ -927,10 +880,79 @@ class CfgAmmo
 			hitVirtual="SWOP_LaserExploSmallblue2";
 			default_mat="SWOP_LaserExploSmallblue2";
 		};
-		class Direct
+		coefGravity = 0.6;
+	};
+	class macro_new_ammo(chaingun_z6x): M_NLAW_AT_F
+	{	
+		hit = 32;
+		indirectHit = 20;
+		indirectHitRange = 0.5;
+		explosive = 0;
+		caliber = 5;
+		ACE_caliber = 0;
+		model = "\SWOP_Main\Effects\Tracer\laserblue";
+		effectFly = "SWOP_BlueLaserEffect";
+		cost = 500;
+		airFriction = 0;
+		sideairFriction = 0;
+		coefGravity = 0;
+		maxSpeed = 1050;
+		typicalSpeed = 1050;
+		initTime = 0.0;
+		thrustTime = 3.4;
+		thrust = 500;
+		fuseDistance = 0;
+		simulationStep = 0.02;
+		timeToLive = 4;
+		effectsMissile = "SWOP_BlueLaserEffect";
+		whistleDist = 20;
+		aiAmmoUsageFlags = "64 + 128 + 256 + 512";
+		submunitionAmmo = macro_new_ammo(chaingun_z6x_penetrator);
+		submunitionDirectionType = "SubmunitionModelDirection";
+		submunitionInitSpeed = 1000;
+		submunitionParentSpeedCoef = 0;
+		submunitionInitialOffset[] = {0,0,-0.2};
+		triggerOnImpact = 1;
+		deleteParentWhenTriggered = 0;
+		flightProfiles[] = {"Direct"};
+		CraterEffects = "ExploAmmoLaserCrater";
+		explosionEffects = "SWOP_LaserExploSmallblue2";
+		soundHit[] = {"A3\Sounds_F\arsenal\sfx\bullet_hits\concrete_01",1,1,150};
+		soundHit1[] = {"A3\Sounds_F\arsenal\sfx\bullet_hits\concrete_01",1,1,200};
+		soundHit2[] = {"A3\Sounds_F\arsenal\sfx\bullet_hits\concrete_01",1,1,200};
+		soundHit3[] = {"A3\Sounds_F\arsenal\sfx\bullet_hits\concrete_01",1,1,2000};
+		effectsSmoke = "SWOP_BlueLaserEffect";
+		explosionSoundEffect = "";
+		soundFly[] = {"",1,1,50};
+		muzzleEffect = "";
+		SoundSetExplosion[] = {""};
+		class HitEffects
 		{
+			Hit_Foliage_green = "SWOP_LaserExploSmallblue2";
+			Hit_Foliage_Dead = "SWOP_LaserExploSmallblue2";
+			Hit_Foliage_Green_big = "SWOP_LaserExploSmallblue2";
+			Hit_Foliage_Palm = "SWOP_LaserExploSmallblue2";
+			Hit_Foliage_Pine = "SWOP_LaserExploSmallblue2";
+			hitFoliage = "SWOP_LaserExploSmallblue2";
+			hitGlass = "SWOP_LaserExploSmallblue2";
+			hitGlassArmored = "SWOP_LaserExploSmallblue2";
+			hitWood = "SWOP_LaserExploSmallblue2";
+			hitMetal = "SWOP_LaserExploSmallblue2";
+			hitMetalPlate = "SWOP_LaserExploSmallblue2";
+			hitBuilding = "SWOP_LaserExploSmallblue2";
+			hitPlastic = "SWOP_LaserExploSmallblue2";
+			hitRubber = "SWOP_LaserExploSmallblue2";
+			hitTyre = "SWOP_LaserExploSmallblue2";
+			hitConcrete = "SWOP_LaserExploSmallblue2";
+			hitMan = "SWOP_LaserExploSmallblue2";
+			hitGroundSoft = "SWOP_LaserExploSmallblue2";
+			hitGroundRed = "SWOP_LaserExploSmallblue2";
+			hitGroundHard = "SWOP_LaserExploSmallblue2";
+			hitWater = "SWOP_LaserExploSmallblue2";
+			hitVirtual = "SWOP_LaserExploSmallblue2";
+			default_mat = "SWOP_LaserExploSmallblue2";
 		};
-
+		class Direct{};
 		class CamShakeExplode
 		{
 			power = 1;
@@ -1081,11 +1103,11 @@ class CfgRecoils
 	{
 
 
-		muzzleOuter[] = {"0.05", "0.7", "0.05", ".10"};
-		muzzleInner[] = {0, 0, 0.02, 0.02};
-		kickBack[] = {"0.03", "0.05"};
-		permanent = "0.02";
-		temporary = "0.02";
+		muzzleOuter[] = {"0.03", "0.4", "0.03", ".06"};
+		muzzleInner[] = {0, 0, 0.01, 0.01};
+		kickBack[] = {"0.02", "0.03"};
+		permanent = "0.013";
+		temporary = "0.013";
 	   	prone		= 0.0;	//coefficient of recoil forces while in prone (this is further multiplied by weapon resting coefficients)
 		
 	};
