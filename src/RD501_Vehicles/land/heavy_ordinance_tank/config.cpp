@@ -87,22 +87,32 @@ class CfgVehicles
 					
 							macro_basic_air_weapons,
 							"SmokeLauncher",
-							macro_new_weapon(saber_gun,mbt),
+						
 							macro_new_weapon(generic,plasma_aircraft_cannon)
 						};
 						magazines[] = {
 						
 							macro_basic_air_mags,
 							"SmokeLauncherMag",
-							macro_new_mag(saber_tx130,10),
-							macro_new_mag(saber_tx130,10),
-							macro_new_mag(saber_tx130,10),
-							macro_new_mag(saber_tx130,10),
+					
 							macro_new_mag(generic_aircraft_cannon_plasma_red,1000),
 							macro_new_mag(generic_aircraft_cannon_plasma_red,1000)
 						};
 					};
 
+					
+
+				};
+		
+				weapons[] = {
+					"mortar_155mm_AMOS",
+					"Cannon_ARCback",
+					"cannon_125mm"
+				};
+				magazines[] = {
+					"32Rnd_155mm_Mo_shells", "4Rnd_155mm_Mo_guided", "6Rnd_155mm_Mo_mine", "2Rnd_155mm_Mo_Cluster", "6Rnd_155mm_Mo_smoke", "2Rnd_155mm_Mo_LG", "6Rnd_155mm_Mo_AT_mine",
+					"500Rnd_Cannon_ARCback",
+					"24Rnd_125mm_APFSDS_T_Red"
 				};
 			};
 		};
