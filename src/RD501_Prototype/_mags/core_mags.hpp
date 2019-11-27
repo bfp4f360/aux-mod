@@ -92,7 +92,7 @@ class macro_new_mag(proto_HE_GL,3): 1Rnd_HE_Grenade_shell
 	picture = "\A3\Weapons_f\Data\ui\gear_UGL_slug_CA.paa";
 	ammo = macro_new_ammo(40mm_HE_GL);
 	count = 3;
-	initSpeed = 80;
+	initSpeed = 85;
 	nameSound = "";
 	descriptionShort = "3Rnd HE DC-15A Grenade";
 	mass = 20;
@@ -107,7 +107,7 @@ class macro_new_mag(proto_AP_GL,2): 1Rnd_HE_Grenade_shell
 	displayNameShort = "2 Rnd AP DC-15A";
 	picture = "\A3\Weapons_f\Data\ui\gear_UGL_slug_CA.paa";
 	ammo = macro_new_ammo(40mm_AP_GL)
-	initSpeed = 80;//120;
+	initSpeed = 85;//120;
 	count = 2;
 	nameSound = "";
 	descriptionShort = "2Rnd AP DC-15A Grenade";

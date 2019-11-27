@@ -131,6 +131,8 @@ class CfgWeapons
 		NEW_501_Inf_Helm(tee,Tee,Tee.paa)
 		NEW_501_Inf_Helm(testie,Testhelmfortesting,Test_helm.paa)
 		NEW_501_Inf_Helm(target,Target,Target.paa)
+		NEW_501_Inf_Helm(tideend,Tideend,Tideend.paa)
+		
 		NEW_501_Inf_Helm(tim,Tim,Tim.paa)
 		NEW_501_Inf_Helm(train,Train,Train.paa)
 		NEW_501_Inf_Helm(tupiks,Tupiks,Tupiks.paa)
@@ -140,7 +142,7 @@ class CfgWeapons
 		NEW_501_Inf_Helm(vengeance,Vengeance,Vengeance.paa)
 		NEW_501_Inf_Helm(walsh,Walsh,Walsh.paa)
 		NEW_501_Inf_Helm(weaver,Weaver,Weaver.paa)
-		//NEW_501_Inf_Helm(white,White,White.paa)
+		NEW_501_Inf_Helm(white,White,White.paa)
 		NEW_501_Inf_Helm(young,Young,Young.paa)
 		NEW_501_Inf_Helm(zen,Zen,Zen.paa)
 		NEW_501_Inf_Helm(zeros,Zeros,Zeros.paa)

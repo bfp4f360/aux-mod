@@ -19,12 +19,12 @@
              init = "[_this select 0,18000] call RD501_Main_fnc_set_mass;[_this select 0] execVM '\Vwing\init.sqf';[_this select 0] execVM '\Vwing\initturbine.sqf';";
         };
     };	
-    class macro_new_vehicle(Y_wing,MkII) {
-        class turret_script {
+    // class macro_new_vehicle(Y_wing,MkII) {
+    //     class turret_script {
             
-            init = [_this select 0,macro_single_quote(macro_new_vehicle(Praetorian_Variant,republic)),[0,14,-1.6]] spawn macro_fnc_name(apply_aircraft_turrets);
-        };
-    };	
+    //         init = [_this select 0,macro_single_quote(macro_new_vehicle(Praetorian_Variant,republic)),[0,14,-1.6]] spawn macro_fnc_name(apply_aircraft_turrets);
+    //     };
+    // };	
 
     class macro_new_vehicle(delta,7a_Mk2) {
         class edit_mass_and_fx
