@@ -49,7 +49,7 @@ class CfgVehicles
 
 	class swop_Vwing:Plane_Base_F
 	{
-		scope=0;
+	
 		class Components;
 		
 	

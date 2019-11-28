@@ -43,9 +43,7 @@ class CfgVehicles
 	class Plane_Base_F;
 	class swop_scimitar:Plane_Base_F
 	{
-		scope=0;
-		scopeCurator=0;
-		forceInGarage=0;
+		
 		class ACE_SelfActions;
 	};
 	class macro_new_vehicle(scimitar,Mk2) : swop_scimitar

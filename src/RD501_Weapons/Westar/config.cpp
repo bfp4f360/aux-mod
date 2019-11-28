@@ -32,7 +32,7 @@ class cfgWeapons
 	};
 	class SWOP_WESTARM5_rifle: SWOP_BlasterRifle_Base
 	{
-		scopeArsenal=0;
+		
 		class OpticsModes;
 		
 		class Single;
@@ -41,7 +41,7 @@ class cfgWeapons
 
 	class SWOP_WESTARM5_GL: SWOP_BlasterRifle_Base
 	{
-		scopeArsenal=0;
+	
 		class OpticsModes;
 
 		class Single;
@@ -56,7 +56,7 @@ class cfgWeapons
 	class Pistol_Base_F;
 	class SWOP_Westar35Pistol: Pistol_Base_F
 	{
-		scopeArsenal=0;
+		
 		class Single;
 	};
 

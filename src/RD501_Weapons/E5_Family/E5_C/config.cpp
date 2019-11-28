@@ -31,7 +31,7 @@ class cfgWeapons
 	
 	class SWOP_E5C: SWOP_BlasterRifle_Base
 	{
-		//scope=0;
+		
 		displayName="E5 C Heavy Blaster";
 		class FullAuto:Mode_FullAuto
 		{

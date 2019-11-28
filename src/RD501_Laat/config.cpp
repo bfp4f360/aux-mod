@@ -49,7 +49,7 @@ class CfgVehicles
 			"RD501_Laat\textures\gold.rvmat"//LAAT\textures\wings.rvmat
 		};
         displayName="LAAT/I MK.III - Gold";
-        class ACE_SelfActions;
+        //class ACE_SelfActions;
     };
 
     class macro_new_vehicle(laat,chrome):macro_new_vehicle(laat,Mk3)
@@ -60,7 +60,29 @@ class CfgVehicles
 			"RD501_Laat\textures\chrome.rvmat",
 			"RD501_Laat\textures\chrome.rvmat"
 		};
-        class ACE_SelfActions;
+        //class ACE_SelfActions;
+    };
+
+	class macro_new_vehicle(laat,shoeshine):macro_new_vehicle(laat,Mk3)
+    {
+        displayName="LAAT/I MK.III - Shoeshine";
+         hiddenSelectionsMaterials[]=
+		{
+			"RD501_Laat\textures\Shoeshine.rvmat",
+			"RD501_Laat\textures\Shoeshine.rvmat"
+		};
+        //class ACE_SelfActions;
+    };
+
+	class macro_new_vehicle(laat,clear):macro_new_vehicle(laat,Mk3)
+    {
+        displayName="LAAT/I MK.III - Clear";
+         hiddenSelectionsMaterials[]=
+		{
+			"RD501_Laat\textures\clear.rvmat",
+			"RD501_Laat\textures\clear.rvmat"
+		};
+        //class ACE_SelfActions;
     };
 
     

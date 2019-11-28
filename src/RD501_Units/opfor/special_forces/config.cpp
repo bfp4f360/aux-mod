@@ -77,7 +77,7 @@ class cfgWeapons
 		{
 			uniformModel = "-";
 			uniformClass = macro_new_uniform_skin_class(opfor,Magna_Blackops)
-			armor = 200;
+			armor = 400;
 			armorStructural = 10;
 			explosionShielding = 0.001;
 			impactDamageMultiplier = 0.1;

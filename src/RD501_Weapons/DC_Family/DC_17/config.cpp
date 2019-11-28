@@ -30,8 +30,7 @@ class cfgWeapons
 	class Pistol_Base_F;
 	class SWOP_DC17Pistol: Pistol_Base_F
 	{
-		weaponPoolAvailable = 0;
-		scopeArsenal=0;
+		
 		class Single;
 	};
 
@@ -50,6 +49,7 @@ class cfgWeapons
 		DC_Family_Flashlight
 
 		magazines[]={macro_new_mag(DC17,20),"DCStun_Mag"};
+		magazineWell[] = {macro_new_magwell(DC17_GL_Mags)};
 
 		ACE_Overheating_Dispersion = DC15a_Overheat_Dispersion
 		ACE_Overheating_SlowdownFactor = DC15a_Overheat_SlowdownFactor
@@ -65,20 +65,21 @@ class cfgWeapons
 		};
 	};
 
-	// class macro_new_weapon(DC,17a):macro_new_weapon(DC,17)
-	// {
-	// 	baseWeapon = macro_new_weapon(DC,17a);
-	// 	displayName="DC-17 OwO?";
-
-	// 	recoil="";
-	// 	recoilProne="";
-	// 	class Single:Single
-	// 	{
-	// 		dispersion =DC17_accuracy;
-	// 		reloadTime = DC17_reloadtime/2;
-	// 		autoFire=1;
-	// 	};
-	// };
+	class macro_new_weapon(DC,17a):macro_new_weapon(DC,17)
+	{
+		baseWeapon = macro_new_weapon(DC,17a);
+		displayName="DC-17a";
+		magazines[]+={ macro_new_mag(DC17,40)};
+		magazineWell[] = {};
+		// recoil="";
+		// recoilProne="";
+		class Single:Single
+		{
+			dispersion =DC17_accuracy;
+			reloadTime = DC17_reloadtime/2;
+			autoFire=1;
+		};
+	};
 
 	class Pistol_Base_F;
 	class SWOP_DC15SAPistol:Pistol_Base_F

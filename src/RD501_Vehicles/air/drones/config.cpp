@@ -49,6 +49,7 @@ class CfgVehicles
 	class macro_new_vehicle(drone,cis_Hover_Droid): swcishoverdroid
 	{
 		scope=2
+		
 		forceInGarage = 1;
 		displayName = "CIS Hover Droid";
 		armor = 0.1;
@@ -57,10 +58,27 @@ class CfgVehicles
 		altNoForce = 1100;
 		LODTurnedIn = -1;
 		hiddenselectionstextures[] = {"SW_CloneWarsWeapons\Recon\hover_droid_diff.paa"};
+		faction = macro_cis_faction
 		class EventHandlers {
             
             class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
         };
+
+		class Turrets: Turrets
+		{
+			class MainTurret:MainTurret
+			{
+				weapons[] = {"Laserdesignator_mounted","heavyrepeater"};
+				magazines[] = {
+					"Laserbatteries",
+					"SWOP_HeavyRepeater_Mag",
+					"SWOP_HeavyRepeater_Mag",
+					"SWOP_HeavyRepeater_Mag","SWOP_HeavyRepeater_Mag",
+					"SWOP_HeavyRepeater_Mag","SWOP_HeavyRepeater_Mag",
+					"SWOP_HeavyRepeater_Mag","SWOP_HeavyRepeater_Mag"
+				};
+			}
+		}
 	};
 
 	class macro_new_vehicle(drone,Interrogation_Droid): SWOP_interrogationdroid
@@ -71,6 +89,8 @@ class CfgVehicles
 		displayName = "Interrogation Droid";
 		altFullForce = 1000;
 		altNoForce = 1100;
+
+		faction = macro_cis_faction
 		
 		class EventHandlers {
             
@@ -86,6 +106,8 @@ class CfgVehicles
 		displayName = "ID10 Droid";
 		altFullForce = 1000;
 		altNoForce = 1100;
+
+		faction = macro_cis_faction
 		class EventHandlers {
             
             class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
@@ -100,6 +122,8 @@ class CfgVehicles
 		displayName = "Rebel ID10 Droid";
 		altFullForce = 1000;
 		altNoForce = 1100;
+
+		faction = macro_rebel_faction
 		class EventHandlers {
             
             class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
@@ -115,6 +139,7 @@ class CfgVehicles
 		displayName = "R-1 Recon Droid";
 		altFullForce = 1000;
 		altNoForce = 1100;
+		faction = macro_republic_faction
 		class EventHandlers {
             
             class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
@@ -127,6 +152,7 @@ class CfgVehicles
 		scope=2
 		forceInGarage = 1;
 		author = "RD501";
+		faction = macro_republic_faction
 		class EventHandlers {
             
             class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};

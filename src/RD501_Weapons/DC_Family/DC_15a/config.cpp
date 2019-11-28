@@ -9,7 +9,7 @@ class CfgPatches
 	class macro_patch_name(dc_15a)
 	{
 		author=DANKAUTHORS;
-		addonRootClass= macro_patch_name(weapons)
+		addonRootClass= macro_patch_name(weapons);
 		requiredAddons[]=
 		{
 			macro_patch_name(weapons)
@@ -31,10 +31,7 @@ class cfgWeapons
 	class Rifle_Long_Base_F;
 	class SWOP_BlasterRifle_Base:Rifle_Long_Base_F
 	{
-		//class Secondary;
 		class WeaponSlotsInfo;
-		// scopeArsenal = 0; 
-		// weaponPoolAvailable=0;
 	};
 
 	class SWOP_DC15ABlasterRifle:SWOP_BlasterRifle_Base
@@ -45,46 +42,62 @@ class cfgWeapons
 		class Burst;
 		class FullAuto;
 		class Secondary;
-		// scopeArsenal = 0;
-		// weaponPoolAvailable=0;
+
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			class CowsSlot;
 		};
-		
-
 	};
 
 	class SWOP_DC15ABlasterRifle_mod0:SWOP_DC15ABlasterRifle
 	{
-		// scopeArsenal = 0;
-		// weaponPoolAvailable=0;
-		class Secondary:Secondary
+		
+		class FullAuto:FullAuto
 		{
-			class Single;
+
+		};
+
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class CowsSlot;
 		};
 	};
 	
 	class SWOP_DC15AGL:SWOP_DC15ABlasterRifle
 	{
-		// scopeArsenal = 0;
-		// weaponPoolAvailable=0;
-		class Secondary:Secondary
+	
+		class Single:Single
 		{
-			class Single;
+
+		};
+		class Burst:Burst
+		{
+
+		};
+		class FullAuto:FullAuto
+		{
+
 		};
 
 		class EGLM;
+
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class CowsSlot;
+		};
 
 	};
 
 	class SWOP_DC15ABlasterRifle_mod1: SWOP_DC15ABlasterRifle
 	{
-		// scopeArsenal = 0;
-		// weaponPoolAvailable=0;
-		class Secondary:Secondary
+		class Single:Single
 		{
-			class Single;
+
+		};
+
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class CowsSlot;
 		};
 	}
 

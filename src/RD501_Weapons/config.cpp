@@ -58,6 +58,8 @@ class CfgMagazineWells
 			GL_flare_rounds
 		};
 
+	
+	
 		macro_new_magwell(GL_AP)[]=
 		{
 			macro_new_mag(AT_GL,2)
@@ -79,7 +81,31 @@ class CfgMagazineWells
 			"3Rnd_SmokeOrange_Grenade_shell",
 			"ACE_HuntIR_M203"
 		};
+
+	
 	};
+
+
+	class macro_new_magwell(DC17_GL_Mags)
+	{
+		macro_new_magwell(1rnd_GL_flare)[]=
+		{
+			MACRO_GL_flare_rounds_1rnd
+		};
+
+		macro_new_magwell(1rnd_smoke)[]=
+		{
+			"1Rnd_Smoke_Grenade_shell",
+			"1Rnd_SmokeRed_Grenade_shell",
+			"1Rnd_SmokeGreen_Grenade_shell",
+			"1Rnd_SmokeYellow_Grenade_shell",
+			"1Rnd_SmokePurple_Grenade_shell",
+			"1Rnd_SmokeBlue_Grenade_shell",
+			"1Rnd_SmokeOrange_Grenade_shell",
+			"ACE_HuntIR_M203"
+		};
+	}
+	
 
 	class macro_new_magwell(DC_15a_energy)
 	{
@@ -126,7 +152,7 @@ class CfgMagazines
 	{
 		author = "rd501";
 		model = "\SW_ExtraWeapons\PICKUPS\power_cell.p3d";
-		ammo = macro_new_ammo(z6)
+		ammo = macro_new_ammo(z6);
 		displayName = "400Rnd Z6 Rotary Blaster Magazine";
 		descriptionShort = "400Rnd Z6 Magazine";
 		count = 400;
@@ -176,7 +202,7 @@ class CfgMagazines
 		model = "\SW_ExtraWeapons\PICKUPS\power_cell.p3d";
 		picture = "\SW_ExtraWeapons\PICKUPS\UI\icons\powercell_X_ca.paa";
 		displayName = "6Rnd DC-15X Magazine";
-		ammo =macro_new_ammo(DC15x)
+		ammo =macro_new_ammo(DC15x);
 		tracersEvery = 1;
 		count = 6;
 		descriptionShort = "6Rnd DC15X Magazine";
@@ -191,7 +217,7 @@ class CfgMagazines
 		model = "\SW_ExtraWeapons\PICKUPS\energy_cell.p3d";
 		picture = "\SW_ExtraWeapons\PICKUPS\UI\icons\energycell_X_ca.paa";
 		displayName = "60Rnd DC-15S Carbine Magazine";
-		ammo = macro_new_ammo(dc15s_carbine)
+		ammo = macro_new_ammo(dc15s_carbine);
 		tracersEvery = 1;
 		type = 16;
 		count = 60;
@@ -243,7 +269,7 @@ class CfgMagazines
 		model = "\SW_ExtraWeapons\PICKUPS\energy_cell.p3d";
 		picture = "\SW_ExtraWeapons\PICKUPS\UI\icons\energycell_X_ca.paa";
 		displayName = "240Rnd Box DC-15A Low Energy Rounds";
-		ammo =  macro_new_ammo(dc15a_low)
+		ammo =  macro_new_ammo(dc15a_low);
 		tracersEvery = 1;
 		count =240;
 		descriptionShort = "240Rnd DC15A Low Energy";
@@ -259,7 +285,7 @@ class CfgMagazines
 		model = "\SW_ExtraWeapons\PICKUPS\energy_cell.p3d";
 		picture = "\SW_ExtraWeapons\PICKUPS\UI\icons\energycell_X_ca.paa";
 		displayName = "20Rnd DC17 Magazine.";
-		ammo = macro_new_ammo(dc_17)
+		ammo = macro_new_ammo(dc_17);
 		tracersEvery = 1;
 		type = 16;
 		count = 20;
@@ -269,6 +295,16 @@ class CfgMagazines
 		//initSpeed = 110;
 	};
 
+
+	class macro_new_mag(DC17,40): macro_new_mag(DC17,20)
+	{
+		displayName = "40Rnd DC17 Magazine.";
+		tracersEvery = 1;
+		count = 40;
+		descriptionShort = "40Rnd DC17 Magazine";
+		mass = 13;
+	};
+
 	class Titan_AA;
 	class CA_LauncherMagazine;
 
@@ -276,7 +312,7 @@ class CfgMagazines
 	{
 		scope = 2;
 		displayName = "RPS AT Rocket";
-		ammo = macro_new_ammo(RPS_AT)
+		ammo = macro_new_ammo(RPS_AT);
 		type = "2 *   256";
 		count = 1;
 		picture = "\A3\weapons_f\launchers\nlaw\data\UI\gear_nlaw_rocket_ca.paa";
@@ -297,7 +333,7 @@ class CfgMagazines
 		scope = 2;
 		displayName = "RPS AA Rocket";
 		displayNameShort = "AA";
-		ammo = macro_new_ammo(RPS_AA)
+		ammo = macro_new_ammo(RPS_AA);
 		type = "6 * 		256";
 		picture = "\A3\Weapons_F_beta\Launchers\titan\Data\UI\gear_titan_missile_atl_CA.paa";
 		model = "\A3\Weapons_F_beta\Launchers\titan\titan_missile_atl";
@@ -331,7 +367,7 @@ class CfgMagazines
 		author = "RD501";
 		scope = 2;
 		displayName = "90Rnd E5C-Aqua Magazine";
-		ammo = macro_new_ammo(E5c_Aqua)
+		ammo = macro_new_ammo(E5c_Aqua);
 		tracersEvery = 1;
 		count = 90;
 		descriptionShort = "90Rnd E5-Aqua Magazine";
@@ -342,7 +378,7 @@ class CfgMagazines
 		author = "RD501";
 		scope = 2;
 		displayName = "60Rnd E5-Aqua Magazine";
-		ammo = macro_new_ammo(E5_Aqua)
+		ammo = macro_new_ammo(E5_Aqua);
 		tracersEvery = 1;
 		count = 60;
 		descriptionShort = "60Rnd E5-A Magazine";
@@ -371,7 +407,7 @@ class CfgMagazines
 		model = "\SW_ExtraWeapons\PICKUPS\energy_cell.p3d";
 		picture = "\SW_ExtraWeapons\PICKUPS\UI\icons\energycell_X_ca.paa";
 		displayName = "15Rnd DC-15 LE Mag";
-		ammo = macro_new_ammo(dc15_LE)
+		ammo = macro_new_ammo(dc15_LE);
 		tracersEvery = 1;
 		//count = 10;
 		count = 15;
@@ -388,7 +424,7 @@ class CfgMagazines
 		model = "\SW_ExtraWeapons\PICKUPS\energy_cell.p3d";
 		picture = "\SW_ExtraWeapons\PICKUPS\UI\icons\energycell_X_ca.paa";
 		displayName = "9Rnd DC15-SA Magazine";
-		ammo =macro_new_ammo(DC15_Razor_Blade)
+		ammo =macro_new_ammo(DC15_Razor_Blade);
 		tracersEvery = 1;
 		type = 16;
 		count = 9;
@@ -433,7 +469,7 @@ class CfgMagazines
 		model = "\SW_ExtraWeapons\PICKUPS\energy_cell.p3d";
 		picture = "\SW_ExtraWeapons\PICKUPS\UI\icons\energycell_X_ca.paa";
 		displayName = "40Rnd Republic Aqua Rounds";
-		ammo = macro_new_ammo(dc15_underwater)
+		ammo = macro_new_ammo(dc15_underwater);
 		tracersEvery = 1;
 		type = 16;
 		count = 40;
@@ -441,6 +477,24 @@ class CfgMagazines
 		//mass = 15;
 		mass = 20;
 		initSpeed = 310;
+	};
+
+	class RPG32_HE_F;
+	class macro_new_mag(chaingun_z6x,1000): RPG32_HE_F
+	{	
+		dlc = "RD501";
+		displayname = "Z6x 1000rnd Mag";
+		displaynameshort = "1000rnd Mag";
+		descriptionshort = "Z6x 1000rnd mag";
+		ammo = macro_new_ammo(chaingun_z6x);
+		// picture = "\OPTRE_weapons\rockets\icons\rocket.paa";
+		// model = "\OPTRE_Weapons\Rockets\M41_tube.p3d";
+		// modelSpecial = "\OPTRE_Weapons\Rockets\M41_launcher_loaded.p3d";
+		count = 1000;
+		mass = 100;
+		initSpeed = 550;
+		allowedSlots[] = {901, 701};
+		tracersEvery = 100;
 	};
 	
 };
@@ -470,11 +524,11 @@ class CfgAmmo
 
 	class macro_new_ammo(westar_35):SWOP_DC17_Ammo
 	{
-		hit = pistol_hit_high
+		hit = pistol_hit_high;
 		indirectHit = 0.0;
 		indirectHitRange = 0.0;
 		explosive = 0.0;
-		caliber = pistol_cali_high
+		caliber = pistol_cali_high;
 	};
 
 	class macro_new_ammo(dc_17): SWOP_DC17_Ammo
@@ -485,15 +539,15 @@ class CfgAmmo
 		indirectHitRange = 0.2;
 		explosive = 0.05;
 		caliber = 2.8;//7
-	}
+	};
 	
 	class macro_new_ammo(z6):LaserAmmo_Minigun
 	{
-		hit = mg_hit_high
+		hit = mg_hit_high;
 		indirectHit = 0.0;
 		indirectHitRange = 0.0;
 		explosive = 0.0;
-		caliber = mg_cali_high
+		caliber = mg_cali_high;
 		ACE_caliber = 0;
 	};
 
@@ -567,7 +621,7 @@ class CfgAmmo
 		explosive = 0.1;//.4
 		caliber = 2;//5
 		timeToLive = 4;
-		waterFriction = -0.01;
+	
 		effectFly = "AmmoUnderwater";
 		nvgOnly = 1;
 		aiAmmoUsageFlags = "64 + 32";
@@ -755,7 +809,7 @@ class CfgAmmo
 
 	class macro_new_ammo(DC15_Razor_Blade):SWOP_DC15SA_Ammo
 	{
-		hit = 30;
+		hit = 50;
 		indirectHit = 0.0;
 		indirectHitRange = 0.0;
 		explosive = 0;
@@ -770,7 +824,6 @@ class CfgAmmo
 		timeToLive = 2;
 	};
 
-	class SWOP_dc15xBlasterRifle_Ammo;
 	class valken_38xxd_ammo: SWOP_dc15xBlasterRifle_Ammo
 	{
 		hit = 55;
@@ -787,6 +840,147 @@ class CfgAmmo
 		model = "\A3\Weapons_f\ammo\smokegrenade_blue_throw";
 		smokeColor[] = {0.1183, 0.1867, 1, 1};
 		effectsSmoke = "smoke_yeet";
+	};
+
+	//LOOK HERE $$$
+	class M_NLAW_AT_F;
+	class ammo_Penetrator_Base;
+	class macro_new_ammo(chaingun_z6x_penetrator): ammo_Penetrator_Base
+	{
+		hit = 30;
+		indirectHit = 0.0;
+		indirectHitRange = 0.0;
+		explosive = 0.0;
+		caliber = mg_cali_high;
+		ACE_caliber = 0;
+		timeToLive = 6;
+		class HitEffects
+		{
+			Hit_Foliage_green="SWOP_LaserExploSmallblue2";
+			Hit_Foliage_Dead="SWOP_LaserExploSmallblue2";
+			Hit_Foliage_Green_big="SWOP_LaserExploSmallblue2";
+			Hit_Foliage_Palm="SWOP_LaserExploSmallblue2";
+			Hit_Foliage_Pine="SWOP_LaserExploSmallblue2";
+			hitFoliage="SWOP_LaserExploSmallblue2";
+			hitGlass="SWOP_LaserExploSmallblue2";
+			hitGlassArmored="SWOP_LaserExploSmallblue2";
+			hitWood="SWOP_LaserExploSmallblue2";
+			hitMetal="SWOP_LaserExploSmallblue2";
+			hitMetalPlate="SWOP_LaserExploSmallblue2";
+			hitBuilding="SWOP_LaserExploSmallblue2";
+			hitPlastic="SWOP_LaserExploSmallblue2";
+			hitRubber="SWOP_LaserExploSmallblue2";
+			hitTyre="SWOP_LaserExploSmallblue2";
+			hitConcrete="SWOP_LaserExploSmallblue2";
+			hitMan="SWOP_LaserExploSmallblue2";
+			hitGroundSoft="SWOP_LaserExploSmallblue2";
+			hitGroundRed="SWOP_LaserExploSmallblue2";
+			hitGroundHard="SWOP_LaserExploSmallblue2";
+			hitWater="SWOP_LaserExploSmallblue2";
+			hitVirtual="SWOP_LaserExploSmallblue2";
+			default_mat="SWOP_LaserExploSmallblue2";
+		};
+		coefGravity = 0.6;
+	};
+	class macro_new_ammo(chaingun_z6x): M_NLAW_AT_F
+	{	
+		hit = 32;
+		indirectHit = 20;
+		indirectHitRange = 0.5;
+		explosive = 0;
+		caliber = 5;
+		ACE_caliber = 0;
+		model = "\SWOP_Main\Effects\Tracer\laserblue";
+		effectFly = "SWOP_BlueLaserEffect";
+		cost = 500;
+		airFriction = 0;
+		sideairFriction = 0;
+		coefGravity = 0;
+		maxSpeed = 1050;
+		typicalSpeed = 1050;
+		initTime = 0.0;
+		thrustTime = 3.4;
+		thrust = 500;
+		fuseDistance = 0;
+		simulationStep = 0.02;
+		timeToLive = 4;
+		effectsMissile = "SWOP_BlueLaserEffect";
+		whistleDist = 20;
+		aiAmmoUsageFlags = "64 + 128 + 256 + 512";
+		submunitionAmmo = macro_new_ammo(chaingun_z6x_penetrator);
+		submunitionDirectionType = "SubmunitionModelDirection";
+		submunitionInitSpeed = 1000;
+		submunitionParentSpeedCoef = 0;
+		submunitionInitialOffset[] = {0,0,-0.2};
+		triggerOnImpact = 1;
+		deleteParentWhenTriggered = 0;
+		flightProfiles[] = {"Direct"};
+		CraterEffects = "ExploAmmoLaserCrater";
+		explosionEffects = "SWOP_LaserExploSmallblue2";
+		soundHit[] = {"A3\Sounds_F\arsenal\sfx\bullet_hits\concrete_01",1,1,150};
+		soundHit1[] = {"A3\Sounds_F\arsenal\sfx\bullet_hits\concrete_01",1,1,200};
+		soundHit2[] = {"A3\Sounds_F\arsenal\sfx\bullet_hits\concrete_01",1,1,200};
+		soundHit3[] = {"A3\Sounds_F\arsenal\sfx\bullet_hits\concrete_01",1,1,2000};
+		effectsSmoke = "SWOP_BlueLaserEffect";
+		explosionSoundEffect = "";
+		soundFly[] = {"",1,1,50};
+		muzzleEffect = "";
+		SoundSetExplosion[] = {""};
+		class HitEffects
+		{
+			Hit_Foliage_green = "SWOP_LaserExploSmallblue2";
+			Hit_Foliage_Dead = "SWOP_LaserExploSmallblue2";
+			Hit_Foliage_Green_big = "SWOP_LaserExploSmallblue2";
+			Hit_Foliage_Palm = "SWOP_LaserExploSmallblue2";
+			Hit_Foliage_Pine = "SWOP_LaserExploSmallblue2";
+			hitFoliage = "SWOP_LaserExploSmallblue2";
+			hitGlass = "SWOP_LaserExploSmallblue2";
+			hitGlassArmored = "SWOP_LaserExploSmallblue2";
+			hitWood = "SWOP_LaserExploSmallblue2";
+			hitMetal = "SWOP_LaserExploSmallblue2";
+			hitMetalPlate = "SWOP_LaserExploSmallblue2";
+			hitBuilding = "SWOP_LaserExploSmallblue2";
+			hitPlastic = "SWOP_LaserExploSmallblue2";
+			hitRubber = "SWOP_LaserExploSmallblue2";
+			hitTyre = "SWOP_LaserExploSmallblue2";
+			hitConcrete = "SWOP_LaserExploSmallblue2";
+			hitMan = "SWOP_LaserExploSmallblue2";
+			hitGroundSoft = "SWOP_LaserExploSmallblue2";
+			hitGroundRed = "SWOP_LaserExploSmallblue2";
+			hitGroundHard = "SWOP_LaserExploSmallblue2";
+			hitWater = "SWOP_LaserExploSmallblue2";
+			hitVirtual = "SWOP_LaserExploSmallblue2";
+			default_mat = "SWOP_LaserExploSmallblue2";
+		};
+		class Direct{};
+		class CamShakeExplode
+		{
+			power = 1;
+			duration = 1.4;
+			frequency = 20;
+			distance = 1;
+		};
+		class CamShakeHit
+		{
+			power = 1;
+			duration = 0.6;
+			frequency = 20;
+			distance = 1;
+		};
+		class CamShakeFire
+		{
+			power = 1;
+			duration = 1.2;
+			frequency = 20;
+			distance = 1;
+		};
+		class CamShakePlayerFire
+		{
+			power = 1;
+			duration = 0.1;
+			frequency = 20;
+			distance = 1;
+		};
 	};
 	
 
@@ -903,5 +1097,18 @@ class CfgRecoils
 		kickBack[] = {"0.03*0.25", "0.03*0.25"};
 		permanent = "0.1*0.25";
 		temporary = "0.01*0.25";
+	};
+
+	class macro_new_recoil(chaingun): Default
+	{
+
+
+		muzzleOuter[] = {"0.03", "0.4", "0.03", ".06"};
+		muzzleInner[] = {0, 0, 0.01, 0.01};
+		kickBack[] = {"0.02", "0.03"};
+		permanent = "0.013";
+		temporary = "0.013";
+	   	prone		= 0.0;	//coefficient of recoil forces while in prone (this is further multiplied by weapon resting coefficients)
+		
 	};
 };

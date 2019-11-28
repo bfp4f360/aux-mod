@@ -42,11 +42,8 @@ class CBA_Extended_EventHandlers_base;
 class CfgVehicles
 {
 	class Plane_Base_F;
-	class swop_vulture:Plane_Base_F
-	{
-		scopeCurator=0;
-		forceInGarage=0;
-	};
+	class swop_vulture;
+	
 	class macro_new_vehicle(vulture,MKII) : swop_vulture
 	{
 		scope = 2;
@@ -94,14 +91,17 @@ class CfgVehicles
 			init = "[_this select 0] execVM '\vulture\init.sqf';[_this select 0] execVM '\vulture\initturbine.sqf';";
 			class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
 		};
+		
 		weapons[] = {
 			macro_basic_air_weapons,
+			"SWOP_Cannon_Vulture", "SWOP_Cannon_Vulture_FAST", "energy_torpedo_w",
 			macro_new_weapon(generic,cis_aircraft_cannon)
 		};
 		magazines[] = {
 			macro_basic_air_mags,
 			macro_new_mag(generic_aircraft_cannon_red,1000),
-			macro_new_mag(generic_aircraft_cannon_red,1000)
+			macro_new_mag(generic_aircraft_cannon_red,1000),
+			"1000Rnd_SWOP_Cannon_Vulture", "1000Rnd_SWOP_Cannon_Vulture", "10Rnd_SWOP_Cannon_Vulture", "10Rnd_SWOP_Cannon_Vulture", "10Rnd_SWOP_Cannon_Vulture", "energy_torpedo_mag"
 		};
 		
 	};

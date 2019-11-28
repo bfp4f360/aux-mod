@@ -27,8 +27,7 @@ class cfgWeapons
 	class SWOP_BlasterRifle_Base;
 	class SWOP_DC19: SWOP_BlasterRifle_Base
 	{
-		weaponPoolAvailable = 0;
-		scopeArsenal=0;
+		
 		class Single;
 	};
 	

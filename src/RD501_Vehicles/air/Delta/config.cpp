@@ -47,7 +47,7 @@ class CfgVehicles
 	class Plane_Base_F;
 	class swop_delta7a:Plane_Base_F
 	{
-		scope=0;
+		
 		class ACE_SelfActions;
 	};
 	class macro_new_vehicle(delta,7a_Mk2):swop_delta7a
@@ -66,7 +66,7 @@ class CfgVehicles
 
 	class swop_delta7b_anakin:swop_delta7a
 	{
-		scope=0;
+		
 		class ACE_SelfActions;
 	};
 

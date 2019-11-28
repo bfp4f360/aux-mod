@@ -1,4 +1,3 @@
-#define COMPONENT b2
 #include "../../RD501_main/config_macros.hpp"
 #include "../_common/common.hpp"
 
@@ -8,7 +7,7 @@ class CfgPatches
 	class macro_patch_name(b2_gun)
 	{
 		author=DANKAUTHORS;
-		addonRootClass= macro_patch_name(weapons)
+		addonRootClass= macro_patch_name(weapons);
 		requiredAddons[]=
 		{
 			macro_patch_name(weapons)
@@ -35,11 +34,11 @@ class cfgWeapons
 	{
 		class Single:Single
 		{
-			dispersion = B2_accuracy
+			dispersion = B2_accuracy;
 		};
 		class FullAuto:FullAuto
 		{
-			dispersion = B2_accuracy
+			dispersion = B2_accuracy;
 		};
 	};
 };
