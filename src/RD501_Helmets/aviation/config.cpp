@@ -165,8 +165,9 @@ class CfgWeapons
 		subItems[] = {macro_new_weapon(nvg_integrated,pilot_test),"G_B_Diving"};
 	};
 
-	
+	NEW_WARDEN_HELM(flog,Flog,warden\Flog.paa)
 	NEW_WARDEN_HELM(wirtimus,Wirtimus,warden\Wirtimus.paa)
+	
 
 
 
