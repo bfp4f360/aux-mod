@@ -76,9 +76,7 @@ class CfgPatches
 class DefaultEventhandlers ;
 class CfgVehicles
 {
-	//O_JM_TX130_1  empire command
-	//O_JM_TX130m1_1 normal
-	//O_JM_TX130m2_1 super
+
 
 	#include "inheritance.hpp"
 	class macro_new_vehicle(AAT,Light_MkII):O_SWOP_AAT_1

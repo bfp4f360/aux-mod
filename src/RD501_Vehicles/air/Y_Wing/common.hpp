@@ -1,7 +1,6 @@
 		vtol=4;
 
-		
-		
+
 		airBrakeFrictionCoef = 80.4;
 		rudderInfluence = 0.9*2;
 
@@ -18,13 +17,27 @@
 				weapons[] = {
 					
 					macro_basic_air_weapons,
-					macro_new_weapon(generic,republic_aircraft_cannon)
+					macro_new_weapon(voltic,y_wing),
+					macro_new_weapon(generic,republic_aircraft_cannon),
+					macro_new_weapon(backflip,aa)
 				};
 				magazines[] = {
 				
 					macro_basic_air_mags,
 					macro_new_mag(generic_aircraft_cannon_green,1000),
-					macro_new_mag(generic_aircraft_cannon_green,1000)
+					macro_new_mag(generic_aircraft_cannon_green,1000),
+					macro_new_mag(voltic,200),
+					macro_new_mag(voltic,200),
+					macro_new_mag(voltic,200),
+					macro_new_mag(voltic,200),
+					macro_new_mag(voltic,200),
+					macro_new_mag(backflip,8),
+					macro_new_mag(backflip,8),
+					macro_new_mag(backflip,8),
+					macro_new_mag(backflip,8),
+					macro_new_mag(backflip,8),
+					macro_new_mag(backflip,8),
+					macro_new_mag(backflip,8)
 				
 				};
 

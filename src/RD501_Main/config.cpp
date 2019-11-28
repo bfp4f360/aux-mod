@@ -35,16 +35,16 @@ class cfgFunctions
 			
 			class ATTE_lift
 			{
-				file=CONCAT(macro_mod_script_path,\vehicle_lift\ATTE_Lift.sqf)
+				file= macro_mod_script_path\vehicle_lift\ATTE_Lift.sqf
 			};
 			class Vehicle_lift
 			{
-				file=CONCAT(macro_mod_script_path,\vehicle_lift\Vehicle_Lift.sqf)
+				file=macro_mod_script_path\vehicle_lift\Vehicle_Lift.sqf
 			};
 			
 			class mtt_deploy_droids
 			{
-				file=CONCAT(macro_mod_script_path,\MTT\mtt_deploy_droids.sqf)
+				file=macro_mod_script_path\MTT\mtt_deploy_droids.sqf
 			};
 			
 			
@@ -58,11 +58,11 @@ class cfgFunctions
 
 		class rd501_test_fnc
 		{
-			class test_fnc
-			{
-				file = "RD501_Main\functions\test_fnc_midnight.sqf";	
-				postinit=1;
-			};
+			// class test_fnc
+			// {
+			// 	file = "RD501_Main\functions\test_fnc_midnight.sqf";	
+			// 	postinit=1;
+			// };
 			class auto_radio_freq
 			{
 				file = "RD501_Main\functions\auto_radio_freq.sqf";	
@@ -74,7 +74,7 @@ class cfgFunctions
 				
 			};//[player,['35.1','35.2','35.3','35.4','35','36','35.5','42','42'] ]call rd501_fnc_enable_arf
 		};
-
+		
 		class the_cleanman
 		{
 			class ya_yeet_man
@@ -114,6 +114,17 @@ class cfgFunctions
 			};
 		};
 	};
+};
+
+class Extended_Init_EventHandlers 
+{
+    class CAManBase 
+	{
+        class RD501_MedNotif 
+		{
+            init = call macro_fnc_name(add_med_notification);
+        };
+    };
 };
 
 //Run once at a point in time before all the mission units and vehicles have their own init event handlers processed

@@ -56,6 +56,50 @@ class CfgWeapons
 		magazineReloadTime = 5;
 	};
 
+	class RocketPods;
+	class Mk82BombLauncher;
+	class macro_new_weapon(bomb,carpet_I) : Mk82BombLauncher
+	{
+		displayName = "Mk 9002/E 'Slagger'";
+		descriptionShort = "Carpet Bomb";
+		author = "RD501";
+
+		magazines[] = {macro_new_mag(carpet_I_bomb_mag,20)};
+		canLock = 2;
+		salvo = 10;
+		magazineReloadTime = 5;
+		ballisticsComputer = 16;
+
+		modes[] = {"BurstSlow"};
+
+		class BurstSlow: RocketPods
+		{
+			displayName = "FullAuto Carpet Mode";
+			textureType = "fullAuto";
+			burst = 1;
+			autoFire = 1;
+			soundContinuous = 0;
+			lockingTargetSound[] = {"A3\Sounds_F\weapons\Rockets\locked_1", 0.562341, 1};
+			lockedTargetSound[] = {"A3\Sounds_F\weapons\Rockets\locked_3", 0.562341, 1.5};
+			sounds[] = {"StandardSound"};
+			class StandardSound
+			{
+				begin1[] = {"A3\Sounds_F\weapons\Rockets\missile_1", 1, 1, 2000};
+				soundBegin[] = {"begin1", 1};
+			};
+			salvo = 2;
+			reloadTime = .4;
+			dispersion = 0.015;
+			aiRateOfFire = 1;
+			aiRateOfFireDistance = 10;
+			minRange = 0;
+			minRangeProbab = 0.01;
+			midRange = 1;
+			midRangeProbab = 0.01;
+			maxRange = 2;
+			maxRangeProbab = 0.01;
+		};
+	}
 
 
 }; 

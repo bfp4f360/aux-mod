@@ -1,5 +1,5 @@
 #include "../config_macros.hpp" 
-
+#include "../../RD501_main/config_macros.hpp"
 class CfgPatches
 {
 	class macro_patch_name(DC_15_proto)
@@ -20,61 +20,26 @@ class CfgPatches
 
 			macro_new_weapon(DC,15s_stageI),
 
-			macro_new_weapon(DC,verision_checker)
+			//macro_new_weapon(DC,verision_checker)
 		};
 	};
 };
 class CowsSlot;
+class Mode_SemiAuto;
 class cfgWeapons 
 {	
 	//swop rifles
-	class Rifle_Long_Base_F;
-	class SWOP_BlasterRifle_Base:Rifle_Long_Base_F
-	{
-		class WeaponSlotsInfo;
-	};
-
-	class SWOP_DC15ABlasterRifle:SWOP_BlasterRifle_Base
-	{
-
-		class Single;
-		class Burst;
-		class FullAuto;
-		class Secondary;
-		
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
-			class CowsSlot;
-		};		
-	};
-
 	//verision checker
-	class macro_new_weapon(DC,verision_checker):SWOP_DC15ABlasterRifle
-	{	
-		weaponPoolAvailable = 1;
-		scope=2;
-		scopeArsenal=2;
-		baseWeapon = macro_new_weapon(DC,verision_checker);
-		displayName = macro_mod_ver
-	};
-
-	// class SWOP_DC15ABlasterRifle_mod0:SWOP_DC15ABlasterRifle
-	// {
-	// 	class Secondary:Secondary
-	// 	{
-	// 		class Single;
-	// 	};
-	// 	class FullAuto;
+	// class macro_new_weapon(DC,verision_checker):SWOP_DC15ABlasterRifle
+	// {	
+	// 	weaponPoolAvailable = 1;
+	// 	scope=2;
+	// 	scopeArsenal=2;
+	// 	baseWeapon = macro_new_weapon(DC,verision_checker);
+	// 	displayName = macro_mod_ver
 	// };
 
-	class SWOP_DC15ABlasterRifle_mod1: SWOP_DC15ABlasterRifle
-	{
-		//scopeArsenal=0;
-		class Secondary:Secondary
-		{
-			class Single;
-		};
-	};
+	
 	
 	//212th dc15x
 	class SCI_dc15x_base;

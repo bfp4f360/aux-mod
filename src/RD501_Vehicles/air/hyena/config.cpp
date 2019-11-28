@@ -40,12 +40,8 @@ class CfgPatches
 class CBA_Extended_EventHandlers_base;
 class CfgVehicles
 {
-	class Plane_Base_F;
-	class swop_hbomber:Plane_Base_F
-	{
-		scopeCurator=0;
-		forceInGarage=0;
-	};
+
+	class swop_hbomber;
 	class macro_new_vehicle(hyena,Mk2) : swop_hbomber
 	{
 		scope = 2;

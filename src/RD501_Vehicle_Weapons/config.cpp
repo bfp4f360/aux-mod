@@ -170,6 +170,19 @@ class CfgMagazines
 		muzzleImpulseFactor = 0;
 		scope = 1;
 	};
+
+	class 2Rnd_Bomb_03_F;
+	class  macro_new_mag(carpet_I_bomb_mag,20): 2Rnd_Bomb_03_F
+	{
+		dlc = "RD501";
+		scope = 2;
+		displayName = "20 Rnd Carpet I Bomb";
+		displayNameShort = "20 Rnd Bomb";
+		count = 20;
+		ammo = macro_new_ammo(carpet_I_bomb);
+		initSpeed = 0;
+		maxLeadSpeed = 1000;
+	};
 	
 };
 
@@ -351,6 +364,23 @@ class CfgAmmo
 		soundHit3[] = {"SWOP_Main\FlyBy\impactosheavy\impactosheavy3.ogg", 1.2, 1, 50};
 		soundHit4[] = {"SWOP_Main\FlyBy\impactosheavy\impactosheavy4.ogg", 1.2, 1, 50};
 		multiSoundHit[] = {"soundHit1", 0.25, "soundHit2", 0.25, "soundHit3", 0.25, "soundHit4", 0.25};
+	};
+
+	class Bo_Mk82;
+	class macro_new_ammo(carpet_I_bomb): Bo_Mk82
+	{
+		model = "OPTRE_weapons\Aircraft\500lb_bomb_fly.p3d";
+		hit = 10000;
+		indirectHit = 10000;
+		indirectHitRange = 30;
+		caliber = 3;
+		explosive = 1;
+		timeToLive = 240;
+		triggerTime=5; 
+		triggerOnImpact=true;
+		//ExplosionEffects = "ProtonbombAmmoExplosionOrangeRD501";//"ProtonbombAmmoExplosionPurpleRD501";//"ProtonbombAmmoExplosionYellowRD501";//"ProtonbombAmmoExplosion";
+		
+		//explosionTime = 20;
 	};
 
 	

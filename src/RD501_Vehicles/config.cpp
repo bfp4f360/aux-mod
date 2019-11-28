@@ -85,7 +85,7 @@ class Extended_Init_EventHandlers
      
     };
 
-    class macro_new_vehicle(droideka,base)
+    class macro_new_vehicle(droideka,camo)
     {
     	class droideka_movable 
         {

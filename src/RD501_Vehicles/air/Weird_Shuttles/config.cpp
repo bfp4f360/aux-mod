@@ -73,7 +73,7 @@ class CfgVehicles
 	
 	class swop_MF: Plane_Base_F
 	{
-		scope=0
+		
 		transportSoldier = 30;
 		class ACE_SelfActions:ACE_SelfActions
 		{		

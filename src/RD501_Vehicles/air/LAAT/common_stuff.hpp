@@ -5,6 +5,9 @@
 	editorSubcategory = macro_editor_cat_air(Republic_heli)
 	vehicleClass = macro_editor_vehicle_type_air(Republic)
 	
+	maximumLoad = 5000000000;
+	slingLoadMaxCargoMass = 5000000000;
+
 	//dmg properties
 		armor=600;
 		crewCrashProtection=0;

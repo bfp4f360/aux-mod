@@ -51,7 +51,7 @@ class CfgVehicles
 	};
 	class swop_ywclones: swop_ywing_base
 	{
-		scope=0
+		
 		class Turrets:Turrets
 		{
 			class MainTurret;
@@ -107,11 +107,13 @@ class CfgVehicles
 		weapons[] = {
 			macro_basic_air_weapons,
 			macro_new_weapon(voltic,y_wing),
-			macro_new_weapon(wynd,a2a),
+			macro_new_weapon(backflip,aa),
 			macro_new_weapon(wynd,agm),
-			macro_new_weapon(wynd,ugm),
-			macro_new_weapon(bomb,cluster),
-			macro_new_weapon(bomb,SDB),
+			//macro_new_weapon(wynd,ugm),
+			 macro_new_weapon(bomb,carpet_I),
+			// macro_new_weapon(bomb,cluster),
+			// macro_new_weapon(bomb,SDB),
+			
 			macro_new_weapon(bomb,LGB)
 		};
 		magazines[] = {
@@ -121,16 +123,24 @@ class CfgVehicles
 			macro_new_mag(voltic,200),
 			macro_new_mag(voltic,200),
 			macro_new_mag(voltic,200),
-			macro_new_mag(a2a,4),
-			macro_new_mag(a2a,4),
+			macro_new_mag(backflip,8),
 			macro_new_mag(agm,6),
-			macro_new_mag(ugm,10),
-			macro_new_mag(cluster_bomb,4),
-			macro_new_mag(cluster_bomb,4),
-			macro_new_mag(cluster_bomb,4),
-			macro_new_mag(sdb_bomb,4),
-			macro_new_mag(sdb_bomb,4),
-			macro_new_mag(sdb_bomb,4),
+			macro_new_mag(agm,6),
+			macro_new_mag(agm,6),
+			macro_new_mag(agm,6),
+			macro_new_mag(agm,6),
+			//macro_new_mag(ugm,10),
+			macro_new_mag(carpet_I_bomb_mag,20),
+			macro_new_mag(carpet_I_bomb_mag,20),
+			macro_new_mag(carpet_I_bomb_mag,20),
+			macro_new_mag(carpet_I_bomb_mag,20),
+			macro_new_mag(carpet_I_bomb_mag,20),
+			// macro_new_mag(cluster_bomb,4),
+			// macro_new_mag(cluster_bomb,4),
+			// macro_new_mag(cluster_bomb,4),
+			// macro_new_mag(sdb_bomb,4),
+			// macro_new_mag(sdb_bomb,4),
+			// macro_new_mag(sdb_bomb,4),
 			macro_new_mag(lgb_bomb,4),
 			macro_new_mag(lgb_bomb,4),
 			macro_new_mag(lgb_bomb,4)
@@ -988,7 +998,7 @@ class CfgVehicles
 
 	class swop_yw: swop_ywing_base
 	{
-		scope=0;
+		
 		class Turrets:Turrets
 		{
 			class MainTurret;

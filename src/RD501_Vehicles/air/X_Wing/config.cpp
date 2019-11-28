@@ -49,7 +49,7 @@ class CfgVehicles
 	
 	class swop_xw:Plane_Base_F
 	{
-		scope=0;
+	
 		class EventHandlers
 		{
 			fired = "_this call (uinamespace getvariable 'BIS_fnc_effectFired');";
@@ -60,22 +60,7 @@ class CfgVehicles
 		class ACE_SelfActions;
 	};
 	
-	class swop_xwf: swop_xw
-	{
-		scope=0
-		class ACE_SelfActions:ACE_SelfActions{
-
-		};
-	};
 	
-	class swop_xwb: swop_xw
-	{
-		scope=0
-		class ACE_SelfActions:ACE_SelfActions{
-
-		};
-	};
-
 	
 	class swop_xwt70:Plane_Base_F
 	{

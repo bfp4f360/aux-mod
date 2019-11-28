@@ -63,29 +63,29 @@ class CfgVehicles
 
 	class swop_aw:Plane_Base_F
 	{
-		//scope=0;
+		
 		class ACE_SelfActions;
 	};
 
 	class swop_awbl:swop_aw
 	{
-		//scope=0;
+		
 		class ACE_SelfActions;
 	};
 	class swop_awrz2:Plane_Base_F
 	{
-		//scope=0;
+		
 		class ACE_SelfActions;
 	};
 
 	class swop_awrz2b:swop_awrz2
 	{
 		class ACE_SelfActions;
-		//scope=0;
+		
 	};
 	class swop_awrz2g:swop_awrz2
 	{
-		//scope=0;
+		
 		class ACE_SelfActions;
 	};
 

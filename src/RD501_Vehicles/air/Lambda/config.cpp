@@ -47,7 +47,7 @@ class CfgVehicles
 	};
 	class swop_lambda: Xarc
 	{
-		scope=0;
+		
 		class ACE_SelfActions;
 		class Turrets:Turrets
 		{

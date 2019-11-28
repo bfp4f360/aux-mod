@@ -30,8 +30,7 @@ class cfgWeapons
 
 	class SWOP_dc15xBlasterRifle: SWOP_BlasterRifle_Base
 	{
-		weaponPoolAvailable = 0;
-		scopeArsenal=0;
+	
 		class OpticsModes;
 
 		class Single;
