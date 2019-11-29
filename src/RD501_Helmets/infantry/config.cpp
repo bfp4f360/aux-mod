@@ -90,6 +90,7 @@ class CfgWeapons
 		NEW_501_Inf_Helm(korvus,Korvus,Korvus.paa)
 		
 		NEW_501_Inf_Helm(lantern,Lantern,Lantern.paa)
+		NEW_501_Inf_Helm(loki,Loki,Loki.paa)
 		
 		NEW_501_Inf_Helm(mags,Mags,Mags.paa)
 		NEW_501_Inf_Helm(mimic,Mimic,Mimic.paa)
