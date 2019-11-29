@@ -31,7 +31,7 @@ class macro_new_mag(DC15a_LE,20): macro_new_mag(Republic_Universal_Magazine,30)
     displayName = "20Rnd DC-15A LE Magazine";
     descriptionShort = "20rnd Magazine";
     count = 20;
-    mass = 70;
+    mass = 30;
     picture = "\SW_ExtraWeapons\PICKUPS\UI\icons\energycell_X_ca.paa";
 };
 
@@ -53,9 +53,10 @@ class macro_new_mag(DC15a_mod_0,200): macro_new_mag(Republic_Universal_Magazine,
     displayName = "200Rnd DC-15A Mod 0 Magazine";
     descriptionShort = "200rnd Magazine";
     count = 200;
-    mass = 70;
+    mass = 40;
     picture = "\SW_ExtraWeapons\PICKUPS\UI\icons\energycell_X_ca.paa";
     tracersEvery = 3;
+    ACE_isBelt = 1;
 };
 
 class macro_new_mag(DC15s,100): macro_new_mag(Republic_Universal_Magazine,30)
@@ -65,9 +66,9 @@ class macro_new_mag(DC15s,100): macro_new_mag(Republic_Universal_Magazine,30)
     displayName = "100Rnd DC-15S Carbine Magazine";
     descriptionShort = "100rnd Magazine";
     count = 100;
-    mass = 20;
+    mass = 30;
     picture = "\SW_ExtraWeapons\PICKUPS\UI\icons\energycell_X_ca.paa";
-    tracersEvery = 3;
+    tracersEvery = 4;
 };
 
 class macro_new_mag(z6_proto,300): macro_new_mag(Republic_Universal_Magazine,30)
@@ -77,9 +78,10 @@ class macro_new_mag(z6_proto,300): macro_new_mag(Republic_Universal_Magazine,30)
     displayName = "300Rnd Z6 Drum";
     descriptionShort = "300rnd Drum";
     count = 300;
-    mass = 90;
+    mass = 50;
     picture = "\SW_CloneWarsWeapons\SW_Z6\UI\SW_Z6-mag.paa";
     tracersEvery = 4;
+    ACE_isBelt = 1;
 };
 
 class macro_new_mag(proto_HE_GL,3): 1Rnd_HE_Grenade_shell
@@ -95,7 +97,7 @@ class macro_new_mag(proto_HE_GL,3): 1Rnd_HE_Grenade_shell
 	initSpeed = 85;
 	nameSound = "";
 	descriptionShort = "3Rnd HE DC-15A Grenade";
-	mass = 20;
+	mass = 15;
 };
 
 class macro_new_mag(proto_AP_GL,2): 1Rnd_HE_Grenade_shell

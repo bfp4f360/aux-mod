@@ -495,6 +495,7 @@ class CfgMagazines
 		initSpeed = 550;
 		allowedSlots[] = {901, 701};
 		tracersEvery = 100;
+		ACE_isBelt = 1;
 	};
 	
 };

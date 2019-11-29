@@ -87,10 +87,10 @@ class cfgWeapons
 					"OpticsBlur5"
 				};
 				opticsDisablePeripherialVision=0.67000002;
-				opticsZoomMin = macro_scope_magnification(6);
+				opticsZoomMin = macro_scope_magnification(4);
 				opticsZoomMax = macro_scope_magnification(1);
-				opticsZoomInit = macro_scope_magnification(6);
-				discretefov[] = {macro_scope_magnification(6)};
+				opticsZoomInit = macro_scope_magnification(4);
+				discretefov[] = {macro_scope_magnification(4)};
 				memoryPointCamera="opticView";
 				visionMode[]=
 				{
@@ -107,7 +107,7 @@ class cfgWeapons
 		macro_ace_heating
 		recoil = macro_new_recoil(z6)//"recoil_pdw";
 		// initSpeed=-1.2;
-		displayName="[Stage I] Z6 Kanonenjagdpanzer";
+		displayName="[Stage I] Z6";
 		muzzles[] = {"this","SixBarrleBlast"};
 		class FullAuto1:FullAuto
 		{	
@@ -139,9 +139,9 @@ class cfgWeapons
 
 		class SixBarrleBlast: SCI_arifle_z6_F
 		{
-			displayName = "Z6 6 Barrel Barrage";
+			displayName = "Z6 Six Barrel Barrage";
 			
-			magazines[] = {macro_new_mag(shotgun_test,10)};
+			magazines[] = {macro_new_mag(shotgun_test,20)};
 			
 			modes[] = {"Single"};
 			class Single: Mode_SemiAuto

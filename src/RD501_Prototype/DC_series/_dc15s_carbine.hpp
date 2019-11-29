@@ -145,7 +145,7 @@
 
 		class ShotgunBlast: SCI_arifle_DC15S_F
 		{
-			displayName = "DC-15s Super Blast";
+			displayName = "DC-15s I.O.N Blast";
 			
 			magazines[] = {macro_new_mag(shotgun_test,2)};
 			

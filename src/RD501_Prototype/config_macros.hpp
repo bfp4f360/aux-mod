@@ -18,7 +18,7 @@ ACE_clearJamAction = "ReloadMagazine";
 #define macro_dc15a_burst_rof 0.08
 #define macro_dc15a_acc 0.0
 
-#define macro_dc15a_mod0_rof_slow 0.15
+#define macro_dc15a_mod0_rof_slow 0.12
 #define macro_dc15a_mod0_rof_fast 0.075
 #define macro_dc15a_mod0_acc 0.00007
 
@@ -74,6 +74,55 @@ class OpticsModes\
 		opticsZoomMax = macro_scope_magnification(1);\
 		opticsZoomInit = macro_scope_magnification(6);\
 		discretefov[] = {macro_scope_magnification(6)};\
+		memoryPointCamera="opticView";\
+		visionMode[]=\
+		{\
+			"Normal",\
+			"NVG"\
+		};\
+		opticsFlare="true";\
+		distanceZoomMin=300;\
+		distanceZoomMax=300;\
+		cameraDir="";\
+		discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000,1100};\
+	};\
+};
+
+
+#define MACRO_MOD0_SCOPE \
+class OpticsModes\
+{\
+	class Ironsights\
+	{\
+		opticsID=1;\
+		useModelOptics=0;\
+		opticsFlare="true";\
+		opticsPPEffects[]=\
+		{\
+		};\
+		opticsDisablePeripherialVision=0.67000002;\
+		opticsZoomMin=macro_scope_magnification(1);\
+		opticsZoomMax=1.1;\
+		opticsZoomInit=0.75;\
+		memoryPointCamera="eye";\
+		visionMode[]={};\
+		distanceZoomMin=100;\
+		distanceZoomMax=100;\
+		discreteDistanceInitIndex = 1;\
+		discreteinitIndex = 0;\
+	};\
+	class Scope: Ironsights\
+	{\
+		opticsID=2;\
+		useModelOptics=1;\
+		opticsPPEffects[]=\
+		{\
+		};\
+		opticsDisablePeripherialVision=0.67000002;\
+		opticsZoomMin = macro_scope_magnification(8);\
+		opticsZoomMax = macro_scope_magnification(1);\
+		opticsZoomInit = macro_scope_magnification(8);\
+		discretefov[] = {macro_scope_magnification(8)};\
 		memoryPointCamera="opticView";\
 		visionMode[]=\
 		{\
