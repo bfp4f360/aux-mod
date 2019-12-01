@@ -326,6 +326,7 @@ class cfgWeapons
 		};
 	};
 
+	//chest
 	class macro_new_uniform_class(blufor,angrr): V_RebreatherB
 	{
 		author = "RD501";
@@ -335,7 +336,7 @@ class cfgWeapons
 		picture = "\SWOP_clones\data\body\icoARMOR\Ico_armor.paa";
 		model = "\SWOP_clones\armor\cloneArmor.p3d";
 		hiddenSelections[] = {"Camo1"};
-		hiddenSelectionsTextures[] = {TEXTUREPATH\Republic\clones\purge_chest.paa};
+		hiddenSelectionsTextures[] = {TEXTUREPATH\Republic\clones\purge\Trooper.paa};
 		class ItemInfo: VestItem
 		{
 			uniformModel = "\SWOP_clones\armor\cloneArmor.p3d";
@@ -374,7 +375,6 @@ class cfgWeapons
 };
 
 class DefaultEventhandlers;
-
 
 class CfgVehicles
 {
@@ -466,48 +466,50 @@ class CfgVehicles
 		};
 	};
 
+	
+
 
 	
 	
-	class SCI_B_Clone_F :B_Soldier_base_F
-	{
-		class HitPoints : HitPoints
-		{
-			class HitAbdomen:HitAbdomen
-			{
-				armor = 16;
-				passThrough = 0.6;
-			};
-			class HitArms:HitArms 
-			{
-				armor = 16;
-				passThrough = 0.6;
-			};
-			class HitBody:HitBody 
-			{	
-				armor = 32;
-				passThrough = 0.6;
-			};
-			class HitChest:HitChest 
-			{
-				armor = 32;
-				passThrough = 0.6;
-			};
-			class HitDiaphragm:HitDiaphragm 
-			{
-				armor = 32;
-				passThrough = 0.6;
-			};
-			class HitNeck:HitNeck 
-			{
-				armor = 8;
-				passThrough = 0.6;
-			};
-			class HitPelvis:HitPelvis
-			{
-				armor = 16;
-				passThrough = 0.6;
-			};
-		};
-	};
+	// class SCI_B_Clone_F :B_Soldier_base_F
+	// {
+	// 	class HitPoints : HitPoints
+	// 	{
+	// 		class HitAbdomen:HitAbdomen
+	// 		{
+	// 			armor = 16;
+	// 			passThrough = 0.6;
+	// 		};
+	// 		class HitArms:HitArms 
+	// 		{
+	// 			armor = 16;
+	// 			passThrough = 0.6;
+	// 		};
+	// 		class HitBody:HitBody 
+	// 		{	
+	// 			armor = 32;
+	// 			passThrough = 0.6;
+	// 		};
+	// 		class HitChest:HitChest 
+	// 		{
+	// 			armor = 32;
+	// 			passThrough = 0.6;
+	// 		};
+	// 		class HitDiaphragm:HitDiaphragm 
+	// 		{
+	// 			armor = 32;
+	// 			passThrough = 0.6;
+	// 		};
+	// 		class HitNeck:HitNeck 
+	// 		{
+	// 			armor = 8;
+	// 			passThrough = 0.6;
+	// 		};
+	// 		class HitPelvis:HitPelvis
+	// 		{
+	// 			armor = 16;
+	// 			passThrough = 0.6;
+	// 		};
+	// 	};
+	// };
 };

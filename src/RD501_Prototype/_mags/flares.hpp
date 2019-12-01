@@ -1,4 +1,4 @@
-#define MACRO_TEXTURE_PATH RD501_Prototype\_textures
+#define MACRO_TEXTURE_PATH \RD501_Prototype\_textures
 
 class macro_new_mag(flare_white,3): CA_Magazine
 {
@@ -7,7 +7,7 @@ class macro_new_mag(flare_white,3): CA_Magazine
     type = 16;
     displayName = "Flare 3 Rounds (White)";
     displayNameShort = "White Flare";
-    picture = MACRO_TEXTURE_PATH\icon\canister\Canister_white.paa
+    picture = MACRO_TEXTURE_PATH\icons\canister\Canister_white.paa
     model = "\A3\Weapons_F\Ammo\UGL_Flare";
     ammo = macro_new_ammo(40mm_flare_white)
     initSpeed = 80;
@@ -23,7 +23,7 @@ class macro_new_mag(flare_cir,3): macro_new_mag(flare_white,3)
     author = "RD501";
     displayName = "Flare 3 Rounds (IR)";
     ammo = macro_new_ammo(40mm_flare_cir)
-    picture = MACRO_TEXTURE_PATH\icon\canister\Canister_purple.paa
+    picture = MACRO_TEXTURE_PATH\icons\canister\Canister_grey_IR.paa
     descriptionShort = "Type: Flare - IR<br />Rounds: 3<br />";
     displayNameShort = "IR";
 };
@@ -34,7 +34,7 @@ class macro_new_mag(flare_green,3): macro_new_mag(flare_white,3)
     displayName = "Flare 3 Rounds (Green)";
     displayNameShort = "Green Flare";
     ammo = macro_new_ammo(40mm_flare_green)
-    picture = MACRO_TEXTURE_PATH\icon\canister\Canister_light_green.paa
+    picture = MACRO_TEXTURE_PATH\icons\canister\Canister_light_green.paa
     descriptionShort = "Type: Flare - Green<br />Rounds: 3<br />";
 };
 
@@ -43,7 +43,7 @@ class macro_new_mag(flare_red,3): macro_new_mag(flare_white,3)
     author = "RD501";
     displayName = "Flare 3 Rounds (Red)";
     ammo = macro_new_ammo(40mm_flare_red)
-    picture = MACRO_TEXTURE_PATH\icon\canister\Canister_red.paa
+    picture = MACRO_TEXTURE_PATH\icons\canister\Canister_red.paa
     descriptionShort = "Type: Flare - Red<br />Rounds: 3";
     displayNameShort = "Red Flare";
 };
@@ -53,7 +53,7 @@ class macro_new_mag(flare_yellow,3): macro_new_mag(flare_white,3)
     author = "RD501";
     displayName = "Flare 3 Rounds (Yellow)";
     ammo = macro_new_ammo(40mm_flare_yellow)
-    picture = MACRO_TEXTURE_PATH\icon\canister\Canister_yellow.paa
+    picture = MACRO_TEXTURE_PATH\icons\canister\Canister_yellow.paa
     descriptionShort = "Type: Flare - Yellow<br />Rounds: 3";
     displayNameShort = "Yellow Flare";
 };
@@ -63,7 +63,7 @@ class macro_new_mag(flare_blue,3): macro_new_mag(flare_white,3)
     author = "RD501";
     displayName = "Flare 3 Rounds (Blue)";
     ammo = macro_new_ammo(40mm_flare_blue)
-    picture = MACRO_TEXTURE_PATH\icon\canister\Canister_blue.paa
+    picture = MACRO_TEXTURE_PATH\icons\canister\Canister_blue.paa
     descriptionShort = "Type: Flare - Blue<br />Rounds: 3";
     displayNameShort = "Blue Flare";
 };
@@ -73,7 +73,7 @@ class macro_new_mag(flare_cyan,3): macro_new_mag(flare_white,3)
     author = "RD501";
     displayName = "Flare 3 Rounds (Cyan)";
     ammo = macro_new_ammo(40mm_flare_cyan)
-    picture = MACRO_TEXTURE_PATH\icon\canister\Canister_cyan.paa
+    picture = MACRO_TEXTURE_PATH\icons\canister\Canister_cyan.paa
     descriptionShort = "Type: Flare - Cyan<br />Rounds: 3";
     displayNameShort = "Cyan Flare";
 };
@@ -83,7 +83,7 @@ class macro_new_mag(flare_purple,3): macro_new_mag(flare_white,3)
     author = "RD501";
     displayName = "Flare 3 Rounds (Purple)";
     ammo = macro_new_ammo(40mm_flare_purple)
-    picture = MACRO_TEXTURE_PATH\icon\canister\Canister_purple.paa
+    picture = MACRO_TEXTURE_PATH\icons\canister\Canister_purple.paa
     descriptionShort = "Type: Flare - Purple<br />Rounds: 3";
     displayNameShort = "Purple Flare";
 };
@@ -93,7 +93,7 @@ class macro_new_mag(flare_orange,3): macro_new_mag(flare_white,3)
     author = "RD501";
     displayName = "Flare 3 Rounds (Orange)";
     ammo = macro_new_ammo(40mm_flare_orange)
-    picture = MACRO_TEXTURE_PATH\icon\canister\Canister_orange.paa
+    picture = MACRO_TEXTURE_PATH\icons\canister\Canister_orange.paa
     descriptionShort = "Type: Flare - Orange<br />Rounds: 3";
     displayNameShort = "Orange Flare";
 };
