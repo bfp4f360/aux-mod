@@ -108,7 +108,7 @@ class cfgWeapons
 		recoil = macro_new_recoil(z6)//"recoil_pdw";
 		// initSpeed=-1.2;
 		displayName="[Stage I] Z6";
-		muzzles[] = {"this","SixBarrleBlast"};
+		muzzles[] = {"this"};//SixBarrleBlast
 		class FullAuto1:FullAuto
 		{	
 			class BaseSoundModeType
@@ -137,34 +137,34 @@ class cfgWeapons
 			reloadTime = macro_z6_rof
 		};
 
-		class SixBarrleBlast: SCI_arifle_z6_F
-		{
-			displayName = "Z6 Six Barrel Barrage";
+		// class SixBarrleBlast: SCI_arifle_z6_F
+		// {
+		// 	displayName = "Z6 Six Barrel Barrage";
 			
-			magazines[] = {macro_new_mag(shotgun_test,20)};
+		// 	magazines[] = {macro_new_mag(shotgun_test,20)};
 			
-			modes[] = {"Single"};
-			class Single: Mode_SemiAuto
-			{
+		// 	modes[] = {"Single"};
+		// 	class Single: Mode_SemiAuto
+		// 	{
 				
-				sounds[] = {"StandardSound"};
-				class StandardSound
-				{
-					soundSetShot[] = {"Msbs65_01_Shotgun_Shot_SoundSet", "Msbs65_01_Shotgun_Tail_SoundSet"};
-				};
-				reloadTime = 0.2;
-				dispersion = 0.01245;
-				minRange = 2;
-				minRangeProbab = 0.95;
-				midRange = 30;
-				midRangeProbab = 0.95;
-				maxRange = 100;
-				maxRangeProbab = 0.3;
-				aiRateOfFire = 1;
-				aiRateOfFireDistance = 30;
-				autoFire = 1;
-			};
-		};
+		// 		sounds[] = {"StandardSound"};
+		// 		class StandardSound
+		// 		{
+		// 			soundSetShot[] = {"Msbs65_01_Shotgun_Shot_SoundSet", "Msbs65_01_Shotgun_Tail_SoundSet"};
+		// 		};
+		// 		reloadTime = 0.2;
+		// 		dispersion = 0.01245;
+		// 		minRange = 2;
+		// 		minRangeProbab = 0.95;
+		// 		midRange = 30;
+		// 		midRangeProbab = 0.95;
+		// 		maxRange = 100;
+		// 		maxRangeProbab = 0.3;
+		// 		aiRateOfFire = 1;
+		// 		aiRateOfFireDistance = 30;
+		// 		autoFire = 1;
+		// 	};
+		// };
 		// class overcharge_burst:FullAuto1
 		// {
 
