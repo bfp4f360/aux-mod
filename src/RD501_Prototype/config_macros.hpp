@@ -137,4 +137,4 @@ class OpticsModes\
 	};\
 };
 
-
+#define MACRO_TEXTURE_PATH \RD501_Prototype\_textures

@@ -3,7 +3,7 @@ class macro_new_mag(Republic_Universal_Magazine,30): CA_Magazine
     author = "RD501";
     scope = 2;
     model = "\SW_ExtraWeapons\PICKUPS\energy_cell.p3d";
-    picture = "\z\acex\addons\field_rations\ui\item_canteen_co.paa";
+    picture =  MACRO_TEXTURE_PATH\icons\rum.paa //"\z\acex\addons\field_rations\ui\item_canteen_co.paa";
     displayName = "60Rnd Republic Universal Magazine";
     ammo =  macro_new_ammo(Republic_Universal_Ammo);//macro_new_ammo(Republic_Universal_Ammo)
     tracersEvery = 1;
@@ -79,7 +79,7 @@ class macro_new_mag(z6_proto,300): macro_new_mag(Republic_Universal_Magazine,30)
     descriptionShort = "300rnd Drum";
     count = 300;
     mass = 50;
-    picture = "\SW_CloneWarsWeapons\SW_Z6\UI\SW_Z6-mag.paa";
+    picture = MACRO_TEXTURE_PATH\icons\z6.paa//"\SW_CloneWarsWeapons\SW_Z6\UI\SW_Z6-mag.paa";
     tracersEvery = 4;
     ACE_isBelt = 1;
 };

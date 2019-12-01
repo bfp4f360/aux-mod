@@ -1,4 +1,4 @@
-#define MACRO_TEXTURE_PATH \RD501_Prototype\_textures
+
 
 class macro_new_mag(flare_white,3): CA_Magazine
 {
