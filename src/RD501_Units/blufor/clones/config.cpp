@@ -120,187 +120,10 @@ class cfgWeapons
 
 	#include "_clone_armor_readjust_base.hpp"
 	#include "_clone_armor_readjust_1.hpp"
-
-
-	//Cadet Training Armour #1
-	class macro_new_uniform_class(blufor,cadet_1): V_RebreatherB
-	{
-		author = "SWOP";
-		scope = 2;
-		side = 3;
-		displayName = "Clonetrooper armor - (Cadet Training Armour #1)";
-		picture = "\SWOP_clones\data\body\icoARMOR\Ico_armor.paa";
-		model = "\SWOP_clones\armor\cloneArmor.p3d";
-		hiddenSelections[] = {"Camo1"};
-		hiddenSelectionsTextures[] = {TEXTUREPATH\Republic\clones\Domino_1_chest.paa};
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\SWOP_clones\armor\cloneArmor.p3d";
-			modelsides[] = {6};
-			macro_rebreather_armor_stuff
-			hiddenSelections[] = {"Camo1"};
-			macro_clone_armor_hitpoints
-			
-		};
-	};
-
-
-
-	//Cadet Training Armour #2
-	class macro_new_uniform_class(blufor,cadet_2) : macro_new_uniform_class(blufor,cadet_1)
-	{
-		displayName = "Clonetrooper armor - (Cadet Training Armour #2)";
-		hiddenSelectionsTextures[] = {TEXTUREPATH\Republic\clones\Domino_2_chest.paa};
-	};
-
-	//Cadet Training Armour #3
-	class macro_new_uniform_class(blufor,cadet_3): macro_new_uniform_class(blufor,cadet_1)
-	{
-		displayName = "Clonetrooper armor - (Cadet Training Armour #3)";
-		hiddenSelectionsTextures[] = {TEXTUREPATH\Republic\clones\Domino_3_chest.paa};
-		
-	};
-
-
-	//Cadet Training Armour #4
-	class macro_new_uniform_class(blufor,cadet_4): macro_new_uniform_class(blufor,cadet_1)
-	{
-		displayName = "Clonetrooper armor - (Cadet Training Armour #4)";
-		hiddenSelectionsTextures[] = {TEXTUREPATH\Republic\clones\Domino_4_chest.paa};
+	#include "_cadet_armor.hpp"
+	#include "_medic_armor.hpp"
+	#include "_rto_armor.hpp"
 	
-	};
-
-
-	//Cadet Training Armour #5
-	class macro_new_uniform_class(blufor,cadet_5): macro_new_uniform_class(blufor,cadet_1)
-	{	
-		displayName = "Clonetrooper armor - (Cadet Training Armour #5)";
-		hiddenSelectionsTextures[] = {TEXTUREPATH\Republic\clones\Domino_5_chest.paa};
-		
-	};
-
-
-	//Cadet Training Armour #6
-	class macro_new_uniform_class(blufor,cadet_6): macro_new_uniform_class(blufor,cadet_1)
-	{
-		displayName = "Clonetrooper armor - (Cadet Training Armour #6)";
-		hiddenSelectionsTextures[] = {TEXTUREPATH\Republic\clones\Domino_6_chest.paa};
-	
-	};
-
-	class macro_new_uniform_class(blufor,501_rto): V_RebreatherB
-	{
-		author = "SWOP";
-		scope = 2;
-		side = 3;
-		displayName = "Clonetrooper armor (501st legion RTO)";
-		picture = "\SWOP_clones\data\body\icoARMOR\Ico_armor.paa";
-		model = "\SWOP_clones\armor\cloneArmor.p3d";
-		hiddenSelections[] = {"Camo1"};
-		hiddenSelectionsTextures[] = {TEXTUREPATH\Republic\clones\RTO.paa};
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\SWOP_clones\armor\cloneArmor.p3d";
-			modelsides[] = {6};
-			macro_rebreather_armor_stuff
-			hiddenSelections[] = {"Camo1"};
-			macro_clone_armor_hitpoints
-			
-		};
-	};
-
-	class macro_new_uniform_class(blufor,501_cms): V_RebreatherB
-	{
-		author = "SWOP";
-		scope = 2;
-		side = 3;
-		displayName = "Clonetrooper armor+kama (501st CM-S)";
-		picture = "\SWOP_clones\data\body\icoARMOR\Ico_armor_kama.paa";
-		model = "\SWOP_clones\armor\cloneArmorKama.p3d";
-		hiddenSelections[] = {"Camo1", "Camo2", "Camo3"};
-		hiddenSelectionsTextures[] = {TEXTUREPATH\Republic\clones\Legion_medic_chest.paa, "SWOP_clones\data\spec\Spec2_co.paa", "SWOP_clones\data\spec\Spec1_co.paa"};
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\SWOP_clones\armor\cloneArmorKama.p3d";
-			modelsides[] = {6};
-			macro_rebreather_armor_stuff
-			hiddenSelections[] = {"Camo1", "Camo2", "Camo3"};
-			macro_clone_armor_hitpoints
-		};
-	};
-
-	class macro_new_uniform_class(blufor,501_medic_pauldron_skirt): V_RebreatherB
-	{
-		author = "SWOP";
-		scope = 2;
-		side = 3;
-		displayName = "Clonetrooper armor+pauldrons Medic (501st legion)";
-		picture = "\SWOP_clones\data\body\icoARMOR\Ico_armor_pauldrons_501.paa";
-		model = "\SWOP_clones\armor\cloneArmorPauldronsARC2.p3d";
-		hiddenSelections[] = {"Camo1", "Camo2", "Camo3"};
-		hiddenSelectionsTextures[] = {TEXTUREPATH\Republic\clones\Legion_medic_chest.paa, "SWOP_clones\data\spec\Spec2_co.paa", "SWOP_clones\data\spec\Spec1_co.paa"};
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\SWOP_clones\armor\cloneArmorPauldronsARC2.p3d";
-			modelsides[] = {6};
-			macro_rebreather_armor_stuff
-			hiddenSelections[] = {"Camo1", "Camo2", "Camo3"};
-			macro_clone_armor_hitpoints
-		};
-	};
-
-	class macro_new_uniform_class(blufor,501_medic_recon): V_RebreatherB
-	{
-		author = "SWOP";
-		scope = 2;
-		side = 3;
-		displayName = "Clonetrooper recon Medic armor (501st legion)";
-		picture = "\SWOP_clones\data\body\icoARMOR\Ico_armor_recon_501.paa";
-		model = "\SWOP_clones\armor\cloneArmorRecon.p3d";
-		hiddenSelections[] = {"Camo1", "Camo2"};
-		hiddenSelectionsTextures[] = {TEXTUREPATH\Republic\clones\Legion_medic_chest.paa, "SWOP_clones\data\spec\Spec1_co.paa"};
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\SWOP_clones\armor\cloneArmorRecon.p3d";
-			macro_rebreather_armor_stuff
-			
-			modelsides[] = {6};
-			
-			hiddenSelections[] = {"Camo1", "Camo2"};
-			macro_clone_armor_hitpoints
-		};
-	};
-
-	class macro_new_uniform_class(blufor,501_rto_recon): macro_new_uniform_class(blufor,501_medic_recon)
-	{
-		displayName = "Clonetrooper recon RTO armor (501st legion)";
-		picture = "\SWOP_clones\data\body\icoARMOR\Ico_armor_recon_501.paa";
-		model = "\SWOP_clones\armor\cloneArmorRecon.p3d";
-		hiddenSelections[] = {"Camo1", "Camo2"};
-		hiddenSelectionsTextures[] = {TEXTUREPATH\Republic\clones\RTO.paa, "SWOP_clones\data\spec\Spec1_co.paa"};
-		
-	};
-
-	class macro_new_uniform_class(blufor,501_rto_pauldron_skirt) : V_RebreatherB
-	{
-		author = "SWOP";
-		scope = 2;
-		side = 3;
-		displayName = "Clonetrooper RTO Recon 2 armor (501st Legion)";
-		picture = "\SWOP_clones\data\body\icoARMOR\Ico_armor_recon.paa";
-		model = "\SWOP_clones\armor\cloneArmorRecon2.p3d";
-		hiddenSelections[] = {"Camo1", "Camo2", "Camo3"};
-		hiddenSelectionsTextures[] = {TEXTUREPATH\Republic\clones\RTO.paa, "SWOP_clones\data\spec\Spec1_co.paa", "SWOP_clones\data\spec\Spec1_co.paa"};
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\SWOP_clones\armor\cloneArmorRecon2.p3d";
-			modelsides[] = {6};
-			macro_rebreather_armor_stuff
-			hiddenSelections[] = {"Camo1", "Camo2", "Camo3"};
-			macro_clone_armor_hitpoints
-		};
-	};
-
 	class SWOP_Clonetrooper_F_CombatUniform: Uniform_Base
 	{
 		author = "RD501";
@@ -326,13 +149,23 @@ class cfgWeapons
 		};
 	};
 
+	class macro_new_uniform_class(blufor,purge_uniform):SWOP_Clonetrooper_F_CombatUniform
+	{
+		displayName = "Clone Purgetrooper Uniform";
+		class ItemInfo: ItemInfo
+		{
+
+			uniformClass = macro_new_uniform_skin_class(blufor,purge_uniform);
+		};
+	}
+
 	//chest
-	class macro_new_uniform_class(blufor,angrr): V_RebreatherB
+	class macro_new_uniform_class(blufor,purge_vest): V_RebreatherB
 	{
 		author = "RD501";
 		scope = 2;
 		side = 3;
-		displayName = "Clone Purgetroope Armor 'Angrr' >:(";
+		displayName = "Clone Purgetrooper Armor";
 		picture = "\SWOP_clones\data\body\icoARMOR\Ico_armor.paa";
 		model = "\SWOP_clones\armor\cloneArmor.p3d";
 		hiddenSelections[] = {"Camo1"};
@@ -406,6 +239,18 @@ class CfgVehicles
 			class HitPelvis;
 		};
 	};
+
+	class macro_new_uniform_skin_class(blufor,purge_uniform): B_Soldier_base_F
+	{
+		author = "RD501";
+		scope = 1;
+		model = "SWOP_clones\uniform\cloneBody.p3d";
+		nakedUniform = "U_BasicBody";
+		hiddenSelections[] = {"Camo1"};
+		hiddenSelectionsTextures[] = {TEXTUREPATH\Republic\clones\purge\Trooper.paa};
+		class EventHandlers :DefaultEventhandlers {};
+	};
+
 	
     class macro_new_uniform_skin_class(blufor,jesse): SWOP_Clonetrooper_501jesse_F
 	{
@@ -466,10 +311,6 @@ class CfgVehicles
 		};
 	};
 
-	
-
-
-	
 	
 	// class SCI_B_Clone_F :B_Soldier_base_F
 	// {

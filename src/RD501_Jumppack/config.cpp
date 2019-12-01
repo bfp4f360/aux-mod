@@ -176,10 +176,19 @@ class CfgVehicles
 		};
 	}
 
+
+	
 	class macro_jumppackClass(neutral,501st):macro_jumppackClass(neutral,cdv_21)
 	{
 		displayName = "[JP] CDV-21 '501st'";
 		hiddenSelectionsTextures[] = {"RD501_Jumppack\textures\cdv21_501.paa"};
+
+	};
+
+	class macro_jumppackClass(neutral,purge):macro_jumppackClass(neutral,cdv_21)
+	{
+		displayName = "[JP] CDV-21 'Purge'";
+		hiddenSelectionsTextures[] = {"RD501_Jumppack\textures\purge.paa"};
 
 	};
 
