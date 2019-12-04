@@ -132,6 +132,7 @@
 			dispersion = macro_dc15a_acc
 			recoil = "recoil_single_mx";
 			recoilProne = "recoil_single_prone_mx";
+			textureType = "dual";
 		};
 		macro_dc15a_rifle_scope
 		class SCI_GL_F:SCI_GL_F
