@@ -852,7 +852,7 @@ class CfgAmmo
 		indirectHit = 0.0;
 		indirectHitRange = 0.0;
 		explosive = 0.0;
-		caliber = mg_cali_high;
+		caliber = 2;
 		ACE_caliber = 0;
 		timeToLive = 6;
 		class HitEffects
@@ -887,9 +887,9 @@ class CfgAmmo
 	{	
 		hit = 32;
 		indirectHit = 20;
-		indirectHitRange = 0.5;
+		indirectHitRange = 0.1;
 		explosive = 0;
-		caliber = 5;
+		caliber = 2;
 		ACE_caliber = 0;
 		model = "\SWOP_Main\Effects\Tracer\laserblue";
 		effectFly = "SWOP_BlueLaserEffect";

@@ -34,89 +34,9 @@ class cfgWeapons
     {
         class ItemInfo;
     };
-	class macro_new_uniform_class(blufor,501_jesse_combat): SWOP_Clonetrooper_501jesse_F_CombatUniform//SWOP_Clonetrooper_501jesse_M_CombatUniform
-	{
-		author = "RD501";
-		scope = 2;
-		displayName = "Clonetrooper uniform (501st 'Medic Jesse')";
-		picture = "\SWOP_clones\data\body\icoBODY\Ico_body_501_jesse.paa";
-		nakedUniform = "U_BasicBody";
-		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
-		class ItemInfo: ItemInfo
-		{
-			uniformModel = "-";
-			uniformClass = macro_new_uniform_skin_class(blufor,jesse);
-			Armor = 20;
-			modelSides[] = {6};
-			uniformType = "Neopren";
-			containerClass = "Supply100";
-			mass = 40;
-		};
-	};
-	
-    class SWOP_Clonetrooper_501srtrooper_F_CombatUniform:Uniform_Base
-    {
-         class ItemInfo;
-    };
-	class macro_new_uniform_class(blufor,501_senior_trooper_combat): SWOP_Clonetrooper_501srtrooper_F_CombatUniform//SWOP_Clonetrooper_501srtrooper_F_CombatUniform
-	{
-		author = "RD501";
-		scope = 2;
-		displayName = "Clonetrooper uniform (501st 'Sr.Trooper')";
-		picture = "\SWOP_clones\data\body\icoBODY\Ico_body_501.paa";
-		nakedUniform = "U_BasicBody";
-		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
-		class ItemInfo: ItemInfo
-		{
-			uniformModel = "-";
-			uniformClass = macro_new_uniform_skin_class(blufor,senior_trooper)
-			Armor = 20;
-			modelSides[] = {6};
-			uniformType = "Neopren";
-			containerClass = "Supply100";
-			mass = 40;
-		};
-	};
-		
-	class macro_new_uniform_class(blufor,501_vet_trooper_combat): SWOP_Clonetrooper_501srtrooper_F_CombatUniform//RD501_Clonetrooper_501Vettrooper_F_CombatUniform
-	{
-		author = "RD501";
-		scope = 2;
-		displayName = "Clonetrooper uniform (501st 'Vet.Trooper')";
-		picture = "\SWOP_clones\data\body\icoBODY\Ico_body_501.paa";
-		nakedUniform = "U_BasicBody";
-		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
-		class ItemInfo: ItemInfo
-		{
-			uniformModel = "-";
-			uniformClass = macro_new_uniform_skin_class(blufor,vet_trooper)
-			Armor = 20;
-			modelSides[] = {6};
-			uniformType = "Neopren";
-			containerClass = "Supply100";
-			mass = 40;
-		};
-	};
 
-	class macro_new_uniform_class(blufor,gold_trooper_v1): SWOP_Clonetrooper_501srtrooper_F_CombatUniform//RD501_Clonetrooper_501Vettrooper_F_CombatUniform
-	{
-		author = "RD501";
-		scope = 2;
-		displayName = "Clonetrooper uniform (501st 'GOLD')";
-		picture = "\SWOP_clones\data\body\icoBODY\Ico_body_501.paa";
-		nakedUniform = "U_BasicBody";
-		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
-		class ItemInfo: ItemInfo
-		{
-			uniformModel = "-";
-			uniformClass = macro_new_uniform_skin_class(blufor,gold_trooper)
-			Armor = 20;
-			modelSides[] = {6};
-			uniformType = "Neopren";
-			containerClass = "Supply100";
-			mass = 40;
-		};
-	};
+	//uniforms
+	#include "_uniforms.hpp"
 
 	#include "_clone_armor_readjust_base.hpp"
 	#include "_clone_armor_readjust_1.hpp"
@@ -124,43 +44,10 @@ class cfgWeapons
 	#include "_medic_armor.hpp"
 	#include "_rto_armor.hpp"
 	
-	class SWOP_Clonetrooper_F_CombatUniform: Uniform_Base
-	{
-		author = "RD501";
-		scope = 2;
-		displayName = "Clonetrooper uniform";
-		picture = "\SWOP_clones\data\body\icoBODY\Ico_body.paa";
-		nakedUniform = "U_BasicBody";
-		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
-		class ItemInfo: UniformItem
-		{
-			uniformModel = "-";
-			uniformClass = "SWOP_Clonetrooper_F";
-			armor = 100;
-			armorStructural = 5;
-			explosionShielding = 0.1;
-			impactDamageMultiplier	= -100; // multiplier for falling damage, doesnt actualy work lol
-			modelSides[] = {6};
-			uniformType = "Neopren";
-			containerClass = "Supply100";
-			mass = 40;
-			
-
-		};
-	};
-
-	class macro_new_uniform_class(blufor,purge_uniform):SWOP_Clonetrooper_F_CombatUniform
-	{
-		displayName = "Clone Purgetrooper Uniform";
-		class ItemInfo: ItemInfo
-		{
-
-			uniformClass = macro_new_uniform_skin_class(blufor,purge_uniform);
-		};
-	}
+	
 
 	//chest
-	class macro_new_uniform_class(blufor,purge_vest): V_RebreatherB
+	class macro_new_vest_class(blufor,purge_vest): V_RebreatherB
 	{
 		author = "RD501";
 		scope = 2;
@@ -181,7 +68,7 @@ class cfgWeapons
 		};
 	};
 
-	class macro_new_uniform_class(blufor,gold_boi): V_RebreatherB
+	class macro_new_vest_class(blufor,gold_boi): V_RebreatherB
 	{
 		author = "RD501";
 		scope = 2;
@@ -203,6 +90,87 @@ class cfgWeapons
 			hiddenSelections[] = {"Camo1"};
 			macro_clone_armor_hitpoints
 			
+		};
+	};
+
+	
+	class macro_new_vest_class(blufor,krayt_vest):V_RebreatherB
+	{
+		
+		author = "RD501";
+		scope = 2;
+		side = 3;
+		displayName = "Clone Pilot - 'Krayt'";
+		picture = "\SWOP_clones\data\body\icoARMOR\Ico_armor.paa";
+		model = "\SWOP_clones\armor\cloneArmorRecon.p3d";
+		hiddenSelections[] = {"Camo1", "Camo2"};
+		hiddenSelectionsTextures[] = {TEXTUREPATH\Republic\clones\krayt\vest_krayt.paa, TEXTUREPATH\Republic\clones\krayt\krayt_spec.paa};
+
+		class ItemInfo: VestItem
+		{
+			uniformModel = "\SWOP_clones\armor\cloneArmorRecon.p3d";
+			containerClass = "Supply70";
+			mass = 20;
+			modelsides[] = {6};
+			vestType = "Rebreather";
+			hiddenSelections[] = {"Camo1", "Camo2"};
+			macro_rebreather_armor_stuff
+			class HitpointsProtectionInfo
+			{
+				class Diaphragm
+				{
+					hitpointName = "HitDiaphragm";
+					armor = 7500;
+					passThrough = 0.4;
+				};
+				class Chest
+				{
+					hitpointName = "HitChest";
+					armor = 7000;
+					passThrough = 0.4;
+				};
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 5000;
+					passThrough = 0.4;
+				};
+				class Pelvis
+				{
+					hitpointName = "HitPelvis";
+					armor = 6700;
+					passThrough = 0.4;
+				};
+				class Neck
+				{
+					hitpointName = "HitNeck";
+					armor = 1000;
+					passThrough = 0.2;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 4000;
+					passThrough = 0.2;
+				};
+				class Body
+				{
+					armor = 4000;
+					hitpointName = "HitBody";
+					passThrough = 0.4;
+				};
+			};
+		};
+		
+	};
+
+	class macro_new_vest_class(blufor,krayt_vest2):macro_new_vest_class(blufor,krayt_vest)
+	{
+		model = "\SWOP_clones\armor\cloneArmorAir.p3d";
+		displayName = "Clone Pilot - 'AirKrayt'";
+		class ItemInfo: ItemInfo
+		{
+			uniformModel = "\SWOP_clones\armor\cloneArmorAir.p3d";
 		};
 	};
 };
@@ -248,6 +216,17 @@ class CfgVehicles
 		nakedUniform = "U_BasicBody";
 		hiddenSelections[] = {"Camo1"};
 		hiddenSelectionsTextures[] = {TEXTUREPATH\Republic\clones\purge\Trooper.paa};
+		class EventHandlers :DefaultEventhandlers {};
+	};
+
+	class macro_new_uniform_skin_class(blufor,krayt_uniform): B_Soldier_base_F
+	{
+		author = "RD501";
+		scope = 1;
+		model = "SWOP_clones\uniform\cloneBody.p3d";
+		nakedUniform = "U_BasicBody";
+		hiddenSelections[] = {"Camo1"};
+		hiddenSelectionsTextures[] = {TEXTUREPATH\Republic\clones\krayt\uniform_krayt.paa};
 		class EventHandlers :DefaultEventhandlers {};
 	};
 
