@@ -19,8 +19,9 @@ ACE_clearJamAction = "ReloadMagazine";
 #define macro_dc15a_acc 0.0
 
 #define macro_dc15a_mod0_rof_slow 0.15
-#define macro_dc15a_mod0_rof_fast 0.075
+#define macro_dc15a_mod0_rof_fast 0.10
 #define macro_dc15a_mod0_acc 0.00007
+#define macro_dc15a_mod0_fast_acc 0.0001
 
 #define macro_dc15a_le_rof 0.3
 #define macro_dc15a_le_acc macro_dc15a_acc

@@ -1,4 +1,4 @@
-class macro_new_uniform_skin_class(opfor,B2_Rocket): SWOP_B2_superdroid
+class macro_new_uniform_skin_class(opfor,B2_Armor): SWOP_B2_superdroid
 {
     hiddenSelections[] = {"Camo1","Camo2","Camo3"};
     hiddenSelectionsTextures[] = {
@@ -6,6 +6,9 @@ class macro_new_uniform_skin_class(opfor,B2_Rocket): SWOP_B2_superdroid
         macro_unit_skin_textures\CIS\B2\rocket\ReskinB2_waist.paa,
         macro_unit_skin_textures\CIS\B2\rocket\ReskinB2_legs.paa
     };
+
+    armor = 22;
+	armorStructural = 30;
 };
 
 class macro_new_uniform_skin_class(opfor,B2_Aqua): SWOP_B2_superdroid

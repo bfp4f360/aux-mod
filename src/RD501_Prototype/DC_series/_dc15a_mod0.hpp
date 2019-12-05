@@ -10,7 +10,7 @@
 		picture = "\SW_CloneWarsWeapons\DCrifles\icons\DC15A.paa";
 		magazineWell[]={Republic_Universal_Magazine_Well};
 		magazines[]={macro_new_mag(DC15a_mod_0,200)};
-		modes[] = {"fullauto"};
+		modes[] = {"fullauto","fastauto"};
 		recoil = macro_new_recoil(dc15a_mod_0)
 		recoilProne = macro_new_recoil(dc15a_mod_0_prone)
 		displayName="[Stage I] DC15A Mod 0 LSD";
@@ -76,11 +76,12 @@
 			dispersion = macro_dc15a_mod0_acc
 			
 		};
-		// class fastauto:fullauto
-		// {
-		// 	reloadTime= macro_dc15a_mod0_rof_fast
-		// 	textureType = "fastAuto";
-		// };
+		class fastauto:fullauto
+		{
+			reloadTime= macro_dc15a_mod0_rof_fast
+			textureType = "fastAuto";
+			dispersion = macro_dc15a_mod0_fast_acc
+		};
 
 		MACRO_MOD0_SCOPE
 	

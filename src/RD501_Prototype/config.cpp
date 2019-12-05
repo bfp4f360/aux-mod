@@ -54,14 +54,14 @@ class CfgRecoils
 
 	class macro_new_recoil(dc15a_mod_0_prone): recoil_default
 	{
-		muzzleOuter[] = {0.05, 0.2, 0.2, 0.2};
+		muzzleOuter[] = {0.04, 0.2, 0.15, 0.2};
 		kickBack[] = {0.01, 0.03};
 		temporary = 0.004;
 	};
 
 	class  macro_new_recoil(dc15a_mod_0): recoil_default
 	{
-		muzzleOuter[] = {0.13, 0.26, 0.24,0.24};
+		muzzleOuter[] = {0.10, 0.24, 0.20,0.24};
 		kickBack[] = {0.015, 0.045};
 		temporary = 0.005;
 		prone		= 1.25;

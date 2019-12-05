@@ -32,7 +32,7 @@ class macro_new_mag(DC15a_LE,20): macro_new_mag(Republic_Universal_Magazine,30)
     descriptionShort = "20rnd Magazine";
     count = 20;
     mass = 30;
-    picture = "\SW_ExtraWeapons\PICKUPS\UI\icons\energycell_X_ca.paa";
+    picture = MACRO_TEXTURE_PATH\icons\LE.paa
 };
 
 // class macro_new_mag(DC_15a_le_HE,5): macro_new_mag(Republic_Universal_Magazine,30)
@@ -54,7 +54,7 @@ class macro_new_mag(DC15a_mod_0,200): macro_new_mag(Republic_Universal_Magazine,
     descriptionShort = "200rnd Magazine";
     count = 200;
     mass = 40;
-    picture = "\SW_ExtraWeapons\PICKUPS\UI\icons\energycell_X_ca.paa";
+    picture = MACRO_TEXTURE_PATH\icons\mod0.paa
     tracersEvery = 3;
     ACE_isBelt = 1;
 };
@@ -67,7 +67,7 @@ class macro_new_mag(DC15s,100): macro_new_mag(Republic_Universal_Magazine,30)
     descriptionShort = "100rnd Magazine";
     count = 100;
     mass = 30;
-    picture = "\SW_ExtraWeapons\PICKUPS\UI\icons\energycell_X_ca.paa";
+    picture = MACRO_TEXTURE_PATH\icons\carbine.paa
     tracersEvery = 4;
 };
 
@@ -91,7 +91,7 @@ class macro_new_mag(proto_HE_GL,3): 1Rnd_HE_Grenade_shell
 	type = 16;
 	displayName = "3Rnd HE DC-15A Grenades";
 	displayNameShort = "3Rnd HE DC-15A";
-	picture = "\A3\Weapons_f\Data\ui\gear_UGL_slug_CA.paa";
+	picture = MACRO_TEXTURE_PATH\icons\HE_GL.paa
 	ammo = macro_new_ammo(40mm_HE_GL);
 	count = 3;
 	initSpeed = 85;
@@ -107,7 +107,7 @@ class macro_new_mag(proto_AP_GL,2): 1Rnd_HE_Grenade_shell
 	type = 16;
 	displayName = "2 Rnd AP DC-15A Grenades";
 	displayNameShort = "2 Rnd AP DC-15A";
-	picture = "\A3\Weapons_f\Data\ui\gear_UGL_slug_CA.paa";
+	picture = MACRO_TEXTURE_PATH\icons\AP_GL.paa
 	ammo = macro_new_ammo(40mm_AP_GL)
 	initSpeed = 85;//120;
 	count = 2;
