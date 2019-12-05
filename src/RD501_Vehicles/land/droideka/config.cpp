@@ -28,7 +28,10 @@ class CfgPatches
 			macro_new_vehicle(droideka,base),
 			macro_new_vehicle(droideka,camo),
 			macro_new_vehicle(droideka,support),
-			macro_new_vehicle(droideka,normal)
+			macro_new_vehicle(droideka,normal),
+			macro_new_vehicle(droideka,TEST),
+			macro_new_vehicle(droideka,TEST2),
+			macro_new_vehicle(droideka,TEST3)
 		};
 		weapons[]=
 		{
@@ -59,6 +62,24 @@ class CfgVehicles
 		faction = macro_cis_faction
 		editorSubcategory = macro_editor_cat(heavy_armored_infantry)
 		vehicleClass = macro_editor_vehicle_type(heavy_armored_infantry)
+
+		class HitPoints
+		{
+			class HitGun
+			{
+				armor = 0.9;
+				material = -1;
+				name = "gun";
+				visual = "autonomous_unhide";
+				passThrough = 0;
+				radius = 0.2;
+			};
+			class HitTurret: HitGun
+			{
+				armor = 0.3;
+			};
+		};
+
 	};
 	class macro_new_vehicle(droideka,camo) : macro_new_vehicle(droideka,base)
 	{
@@ -81,6 +102,83 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName = "Moveable Droideka";
+		
+	};
+
+	class macro_new_vehicle(droideka,TEST) :SWOP_Droideka
+	{
+		scope=2;
+		armor = 900;
+		displayName = "TEST - Ekka 1";
+		class EventHandlers: DefaultEventhandlers {}; 
+
+		faction = macro_cis_faction
+		editorSubcategory = macro_editor_cat(heavy_armored_infantry)
+		vehicleClass = macro_editor_vehicle_type(heavy_armored_infantry)
+
+		class HitPoints
+		{
+			class HitGun
+			{
+				armor = 4;
+				material = -1;
+				name = "gun";
+				visual = "autonomous_unhide";
+				passThrough = 0;
+				radius = 0.2;
+			};
+			class HitTurret: HitGun
+			{
+				armor = 4;
+			};
+		};
+
+	};
+
+	class macro_new_vehicle(droideka,TEST2) :macro_new_vehicle(droideka,TEST)
+	{
+		armor = 500;
+		displayName = "TEST - Ekka 2";
+		scope = 0;
+		class HitPoints
+		{
+			class HitGun
+			{
+				armor = 3;
+				material = -1;
+				name = "gun";
+				visual = "autonomous_unhide";
+				passThrough = 0;
+				radius = 0.2;
+			};
+			class HitTurret: HitGun
+			{
+				armor = 2;
+			};
+		};
+	};
+
+	class macro_new_vehicle(droideka,TEST3) :macro_new_vehicle(droideka,TEST)
+	{
+		armor = 600;
+		displayName = "TEST - Ekka 3";
+		socpe = 0;
+		class HitPoints
+		{
+			class HitGun
+			{
+				armor = 4;
+				material = -1;
+				name = "gun";
+				visual = "autonomous_unhide";
+				passThrough = 0;
+				radius = 0.2;
+			};
+			class HitTurret: HitGun
+			{
+				armor = 3;
+			};
+		};
 		
 	};
 

@@ -26,7 +26,10 @@ class CfgPatches
 		units[]=
 		{
 			macro_new_vehicle(dwarf_spider_droid,MkII),
-			macro_new_vehicle(dwarf_spider_droid,Movable_MkII)
+			macro_new_vehicle(dwarf_spider_droid,Movable_MkII),
+			macro_new_vehicle(dwarf_spider_droid,TEST),
+			macro_new_vehicle(dwarf_spider_droid,TEST2),
+			macro_new_vehicle(dwarf_spider_droid,TEST3)
 		};
 		weapons[]=
 		{
@@ -56,6 +59,22 @@ class CfgVehicles
 		faction = macro_cis_faction
 		editorSubcategory = macro_editor_cat(heavy_armored_infantry)
 		vehicleClass = macro_editor_vehicle_type(heavy_armored_infantry)
+		class HitPoints
+		{
+			class HitGun
+			{
+				armor = 0.9;
+				material = -1;
+				name = "gun";
+				visual = "autonomous_unhide";
+				passThrough = 0;
+				radius = 0.2;
+			};
+			class HitTurret: HitGun
+			{
+				armor = 0.3;
+			};
+		};
 	};
 
 	class macro_new_vehicle(dwarf_spider_droid,Movable_MkII):macro_new_vehicle(dwarf_spider_droid,MkII)
@@ -64,4 +83,81 @@ class CfgVehicles
 		forceInGarage = 0;
 	};
 	
-};
+	class macro_new_vehicle(dwarf_spider_droid,TEST):SpiderDSD
+	{
+		displayName = "TEST - DSD 1";
+
+		scope=2;
+		forceInGarage = 1;
+		class EventHandlers: DefaultEventhandlers {}; 
+
+		faction = macro_cis_faction
+		editorSubcategory = macro_editor_cat(heavy_armored_infantry)
+		vehicleClass = macro_editor_vehicle_type(heavy_armored_infantry)
+
+		armor = 1000;
+		class HitPoints
+		{
+			class HitGun
+			{
+				armor = 4;
+				material = -1;
+				name = "gun";
+				visual = "autonomous_unhide";
+				passThrough = 0;
+				radius = 0.2;
+			};
+			class HitTurret: HitGun
+			{
+				armor = 3;
+			};
+		};
+
+	};
+
+	class macro_new_vehicle(dwarf_spider_droid,TEST2):macro_new_vehicle(dwarf_spider_droid,TEST)
+	{
+		displayName = "TEST - DSD 2";
+		armor = 1000;
+		scope = 0;
+		class HitPoints
+		{
+			class HitGun
+			{
+				armor = 40;
+				material = -1;
+				name = "gun";
+				visual = "autonomous_unhide";
+				passThrough = 0;
+				radius = 0.2;
+			};
+			class HitTurret: HitGun
+			{
+				armor = 30;
+			};
+		};
+	};
+
+	class macro_new_vehicle(dwarf_spider_droid,TEST3):macro_new_vehicle(dwarf_spider_droid,TEST)
+	{
+		displayName = "TEST - DSD 3";
+		armor = 1000;
+		scope = 0;
+		class HitPoints
+		{
+			class HitGun
+			{
+				armor = 4;
+				material = -1;
+				name = "gun";
+				visual = "autonomous_unhide";
+				passThrough = 0;
+				radius = 0.2;
+			};
+			class HitTurret: HitGun
+			{
+				armor = 3;
+			};
+		};
+	};
+};	

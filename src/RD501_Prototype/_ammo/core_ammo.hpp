@@ -9,12 +9,12 @@ class macro_new_ammo(Republic_Universal_Ammo):SWOP_DC15ABlasterRifle_L_Ammo
     indirectHitRange = 0.0;
     explosive = 0.0;
 
-    hit = 22;
+    hit = 27;
     waterFriction = -0.001;//
-    caliber = 2;
+    caliber = 1;
     tracerScale = 1.0;
     tracerStartTime = 0;
-    tracerEndTime = 2;
+    tracerEndTime = 4;
     timeToLive = 4;
 
 
@@ -67,10 +67,10 @@ class macro_new_ammo(Republic_Universal_Ammo):SWOP_DC15ABlasterRifle_L_Ammo
 
 class macro_new_ammo(DC_15a_le):macro_new_ammo(Republic_Universal_Ammo)
 {
-    hit = 35;
+    hit = 75;
     coefGravity=0.05;	
     caliber = 1;
-    tracerScale = 2;
+    tracerScale = 3;
 };
 
 // class macro_new_ammo(DC_15a_le_HE):G_40mm_HE
@@ -95,14 +95,14 @@ class macro_new_ammo(DC_15a_le):macro_new_ammo(Republic_Universal_Ammo)
 
 class macro_new_ammo(DC_15a_mod0):macro_new_ammo(Republic_Universal_Ammo)
 {
-    hit = 9//14;
+    hit = 16;//9//14;
     coefGravity=0.08;
     tracerScale = 0.5;
 };
 
 class macro_new_ammo(DC_15s):macro_new_ammo(Republic_Universal_Ammo)
 {
-    hit = 6;
+    hit = 12;//6;
     coefGravity=0.3;
     caliber = 1;
     tracerScale = 0.5;
@@ -110,7 +110,7 @@ class macro_new_ammo(DC_15s):macro_new_ammo(Republic_Universal_Ammo)
 
 class macro_new_ammo(z6_proto):macro_new_ammo(Republic_Universal_Ammo)
 {
-    hit = 25;
+    hit = 32;
     coefGravity=0.5;
     tracerScale = 2;
 };
