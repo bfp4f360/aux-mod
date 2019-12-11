@@ -82,7 +82,7 @@ class CfgVehicles
 
 	class  macro_jumppackClass(neutral,cdv_21):macro_jumppackClass(neutral,base)
 	{
-		scope=2;
+		scope=0;
 		
 		displayname= "[JP] CDV-21" ;
 		hiddenSelections[] = {"Camo1"};
@@ -117,7 +117,7 @@ class CfgVehicles
 
 	class macro_jumppackClass(neutral,jt21_LTU):macro_jumppackClass(neutral,cdv_21)
 	{
-		scope=2;
+		scope=0;
 		displayname= "[JP] JT-21 LTU";
 		maximumload = 0;
 		macro_energyCap=4;
@@ -137,7 +137,7 @@ class CfgVehicles
 
 	class macro_jumppackClass(neutral,titan_mkII):macro_jumppackClass(neutral,base)
 	{
-		scope=2;
+		scope=0;
 		displayname= "[JP] Titan Mk.II";
 		hiddenSelections[] = {"Camo1"};
 		hiddenSelectionsTextures[] = {"RD501_Jumppack\textures\cdv21_501_v2.paa"};
@@ -164,7 +164,7 @@ class CfgVehicles
 	{
 		displayname= "[JP] Titan Mk.II B";
 		hiddenSelectionsTextures[] = {"SWOP_clones\data\spec\Spec2_co.paa"};
-	}
+	};
 
 	class macro_jumppackClass(neutral,titan_mkMCCCXXXVII):macro_jumppackClass(neutral,titan_mkII)
 	{
@@ -174,7 +174,7 @@ class CfgVehicles
 		{
 			{"LEET Jump",{1337,7,1,0,1,1}}
 		};
-	}
+	};
 
 
 	
