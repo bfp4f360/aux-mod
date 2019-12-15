@@ -52,6 +52,7 @@ class CfgWeapons
 	};
 
 	NEW_501_Pilot_HELM(exose,Exose,pilots\Exose.paa)
+	// NEW_501_Pilot_HELM(gothic,Gothic,pilots\Gothic.paa)
 	NEW_501_Pilot_HELM(jackson,Jackson,pilots\Jackson.paa)
 	NEW_501_Pilot_HELM(jaisus,Jaisus,pilots\Jaisus.paa)
 	//NEW_501_Pilot_HELM(keryl,Keryl,pilots\Keryl.paa)
@@ -79,7 +80,7 @@ class CfgWeapons
 		hiddenSelectionsMaterials[]=
 		{
 			"",
-			"\501st_Helmets\AB\data\white_glow.rvmat"//"swop_clones\data\helmpilot.rvmat"//  \501st_Helmets\AB\data\white_glow.rvmat
+			"\501st_Helmets\AB\data\red_glow.rvmat"//"swop_clones\data\helmpilot.rvmat"//  \501st_Helmets\AB\data\white_glow.rvmat
 		};
 	};
 	 

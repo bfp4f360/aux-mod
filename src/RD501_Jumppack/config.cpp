@@ -82,7 +82,7 @@ class CfgVehicles
 
 	class  macro_jumppackClass(neutral,cdv_21):macro_jumppackClass(neutral,base)
 	{
-		scope=0;
+		scope=2;
 		
 		displayname= "[JP] CDV-21" ;
 		hiddenSelections[] = {"Camo1"};
@@ -95,7 +95,7 @@ class CfgVehicles
 		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio = 1;
 
-		maximumLoad = 750;
+		maximumLoad = 700;
 
 	};
 
@@ -117,7 +117,7 @@ class CfgVehicles
 
 	class macro_jumppackClass(neutral,jt21_LTU):macro_jumppackClass(neutral,cdv_21)
 	{
-		scope=0;
+		scope=2;
 		displayname= "[JP] JT-21 LTU";
 		maximumload = 0;
 		macro_energyCap=4;
@@ -137,7 +137,7 @@ class CfgVehicles
 
 	class macro_jumppackClass(neutral,titan_mkII):macro_jumppackClass(neutral,base)
 	{
-		scope=0;
+		scope=2;
 		displayname= "[JP] Titan Mk.II";
 		hiddenSelections[] = {"Camo1"};
 		hiddenSelectionsTextures[] = {"RD501_Jumppack\textures\cdv21_501_v2.paa"};
@@ -196,6 +196,13 @@ class CfgVehicles
 	{
 		displayName = "[JP] CDV-21 '212th'";
 		hiddenSelectionsTextures[] = {"RD501_Jumppack\textures\212th.paa"};
+
+	};
+
+	class macro_jumppackClass(neutral,101st):macro_jumppackClass(neutral,cdv_21)
+	{
+		displayName = "[JP] CDV-21 '101st'";
+		hiddenSelectionsTextures[] = {"RD501_Jumppack\textures\101st.paa"};
 
 	};
 

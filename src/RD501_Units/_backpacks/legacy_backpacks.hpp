@@ -93,24 +93,24 @@ class RD501_SWOP_B_WoodBackpack_RTdv_Base: RD501_LR_Base
 
 //base backpacks
 class B_Carryall_base;
-class CAA_InvisBag: B_Carryall_base
-{
-	scope = 0;
-	maximumload = 1;
-	mass = 5;
-};
-class EG_InvisBag: CAA_InvisBag
-{
-	scope = 0;
-	maximumload = 1;
-	mass = 30;
-};
-class EG_InvisBagMain: CAA_InvisBag
-{
-	scope = 0;
-	maximumload = 1;
-	mass = 30;
-};
+// class CAA_InvisBag: B_Carryall_base
+// {
+// 	scope = 0;
+// 	maximumload = 1;
+// 	mass = 1000;
+// };
+// class EG_InvisBag: CAA_InvisBag
+// {
+// 	scope = 0;
+// 	maximumload = 1;
+// 	mass = 30;
+// };
+// class EG_InvisBagMain: CAA_InvisBag
+// {
+// 	scope = 0;
+// 	maximumload = 1;
+// 	mass = 30;
+// };
 class RD501_InvisBag: Bag_Base
 {
 	scope = 2;

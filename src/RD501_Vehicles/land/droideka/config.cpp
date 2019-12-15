@@ -29,9 +29,7 @@ class CfgPatches
 			macro_new_vehicle(droideka,camo),
 			macro_new_vehicle(droideka,support),
 			macro_new_vehicle(droideka,normal),
-			macro_new_vehicle(droideka,TEST),
-			macro_new_vehicle(droideka,TEST2),
-			macro_new_vehicle(droideka,TEST3)
+			macro_new_vehicle(droideka,TEST)
 		};
 		weapons[]=
 		{
@@ -108,8 +106,9 @@ class CfgVehicles
 	class macro_new_vehicle(droideka,TEST) :SWOP_Droideka
 	{
 		scope=2;
-		armor = 900;
+		armor = 1000;
 		displayName = "TEST - Ekka 1";
+		armorStructural = 3;
 		class EventHandlers: DefaultEventhandlers {}; 
 
 		faction = macro_cis_faction
@@ -120,7 +119,7 @@ class CfgVehicles
 		{
 			class HitGun
 			{
-				armor = 4;
+				armor = 360;
 				material = -1;
 				name = "gun";
 				visual = "autonomous_unhide";
@@ -129,57 +128,11 @@ class CfgVehicles
 			};
 			class HitTurret: HitGun
 			{
-				armor = 4;
+				armor = 360;
 			};
 		};
 
 	};
 
-	class macro_new_vehicle(droideka,TEST2) :macro_new_vehicle(droideka,TEST)
-	{
-		armor = 500;
-		displayName = "TEST - Ekka 2";
-		scope = 0;
-		class HitPoints
-		{
-			class HitGun
-			{
-				armor = 3;
-				material = -1;
-				name = "gun";
-				visual = "autonomous_unhide";
-				passThrough = 0;
-				radius = 0.2;
-			};
-			class HitTurret: HitGun
-			{
-				armor = 2;
-			};
-		};
-	};
-
-	class macro_new_vehicle(droideka,TEST3) :macro_new_vehicle(droideka,TEST)
-	{
-		armor = 600;
-		displayName = "TEST - Ekka 3";
-		socpe = 0;
-		class HitPoints
-		{
-			class HitGun
-			{
-				armor = 4;
-				material = -1;
-				name = "gun";
-				visual = "autonomous_unhide";
-				passThrough = 0;
-				radius = 0.2;
-			};
-			class HitTurret: HitGun
-			{
-				armor = 3;
-			};
-		};
-		
-	};
 
 };

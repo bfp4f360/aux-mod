@@ -7,8 +7,8 @@ class macro_new_uniform_skin_class(opfor,B2_Armor): SWOP_B2_superdroid
         macro_unit_skin_textures\CIS\B2\rocket\ReskinB2_legs.paa
     };
 
-    armor = 22;
-	armorStructural = 30;
+    armor = 18;
+	armorStructural = 32;
 };
 
 class macro_new_uniform_skin_class(opfor,B2_Aqua): SWOP_B2_superdroid

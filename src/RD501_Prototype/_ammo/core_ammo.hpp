@@ -69,7 +69,7 @@ class macro_new_ammo(DC_15a_le):macro_new_ammo(Republic_Universal_Ammo)
 {
     hit = 75;
     coefGravity=0.05;	
-    caliber = 1;
+    caliber = 0.4;
     tracerScale = 3;
 };
 
