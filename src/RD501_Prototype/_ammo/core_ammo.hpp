@@ -148,9 +148,10 @@ class macro_new_ammo(40mm_AP_GL): G_40mm_HE
 	explosionSoundEffect = "DefaultExplosion";
 	simulation = "shotShell";
 	model = "\GeonFighter\LaserGeon.p3d";
-	hit = 300;
+	hit = 450;
 	indirectHit = 5;
 	indirectHitRange = 0.5;
+    caliber = 5;
 
 	warheadName = "HE";
 	visibleFire = 1;
@@ -160,12 +161,12 @@ class macro_new_ammo(40mm_AP_GL): G_40mm_HE
 	timeToLive =10;
 	dangerRadiusHit = 60;
 	suppressionRadiusHit = 24;
-	explosive = 0.0001;
+	explosive = 0.0;
 	cost = 10;
 	deflecting = 5;
 	airFriction = -0.001;
 
-	fuseDistance = .5;
+	fuseDistance = .1;
 	// whistleDist = 16;
 	// typicalSpeed = 185;
 	// caliber = 5;

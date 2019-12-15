@@ -25,11 +25,15 @@ class CfgPatches
 			macro_new_unit_class(opfor,B2_droid_Rocket),
 			macro_new_unit_class(opfor,B2_super_droid_Rocket),
 			macro_new_unit_class(opfor,B2_aqua),
+			macro_new_unit_class(opfor,B2_droid_Test),
 
 			macro_new_uniform_class(opfor,B2_Armor),
 			macro_new_uniform_class(opfor,B2_Aqua),
+			macro_new_uniform_class(opfor,B2_Armor_Test),
+
 			macro_new_uniform_skin_class(opfor,B2_Rocket),
-			macro_new_uniform_skin_class(opfor,B2_Aqua)
+			macro_new_uniform_skin_class(opfor,B2_Aqua),
+			macro_new_uniform_skin_class(opfor,B2_Test)
 			
 		};
 		weapons[]=
@@ -71,6 +75,30 @@ class cfgWeapons
 			mass = 400;
 		};
 	};
+
+
+	class macro_new_uniform_class(opfor,B2_Armor_Test): Uniform_Base
+	{
+		author = "SWOP";
+		scope = 2;
+		displayName = "B2 battledroid (TEST B2)";
+		picture = "\SWOP_droids\data\ico\B2ico.paa";
+		nakedUniform = "U_BasicBody";
+		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		class ItemInfo: UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = macro_new_uniform_skin_class(opfor,B2_Test); //ties to @2
+			armor = 100;
+			armorStructural = 20;//30;//20;
+			explosionShielding = 0.001;
+			impactDamageMultiplier = 0.001;
+			modelSides[] = {6};
+			containerClass = "Supply100";
+			mass = 400;
+		};
+	};
+
 
 	class macro_new_uniform_class(opfor,B2_Aqua):SWOP_B2_superdroid_F_Spec
 	{
@@ -139,7 +167,6 @@ class CfgVehicles
 
 		//ties to @1
 		uniformClass = macro_new_uniform_class(opfor,B2_Armor);
-		
 
 	};
 	class macro_new_unit_class(opfor,B2_super_droid_Rocket) : macro_new_unit_class(opfor,B2_droid_Rocket)
@@ -150,6 +177,22 @@ class CfgVehicles
 	
 		
 	};
+
+	class  macro_new_unit_class(opfor,B2_droid_Test): macro_new_unit_class(opfor,B2_droid_Standard)
+	{
+		
+		displayname = "B2 (TEST)";
+		author= "RD501";
+		magazines[] = {"SWOP_B2rocket_Mag", "SWOP_B2rocket_Mag", "SWOP_B2rocket_Mag", "SWOP_B2rocket_Mag", "SWOP_B2rocket_Mag", "SWOP_B2rocket_Mag", "SWOP_B2rocket_Mag", "SWOP_B2rocket_Mag", "SWOP_B2rocket_Mag", "SWOP_B2rocket_Mag", "SWOP_B2rocket_Mag", "SWOP_B2rocket_Mag", "SWOP_B2rocket_Mag", "SWOP_B2rocket_Mag", "SWOP_B2rocket_Mag", "SWOP_B2rocket_Mag", "SWOP_B2rocket_Mag", "SWOP_B2rocket_Mag", "SWOP_B2rocket_Mag", "SWOP_B2rocket_Mag"};
+		respawnMagazines[] = {"SWOP_B2rocket_Mag", "SWOP_B2rocket_Mag", "SWOP_B2rocket_Mag", "SWOP_B2rocket_Mag", "SWOP_B2rocket_Mag", "SWOP_B2rocket_Mag", "SWOP_B2rocket_Mag", "SWOP_B2rocket_Mag", "SWOP_B2rocket_Mag", "SWOP_B2rocket_Mag", "SWOP_B2rocket_Mag", "SWOP_B2rocket_Mag", "SWOP_B2rocket_Mag", "SWOP_B2rocket_Mag", "SWOP_B2rocket_Mag", "SWOP_B2rocket_Mag", "SWOP_B2rocket_Mag", "SWOP_B2rocket_Mag", "SWOP_B2rocket_Mag", "SWOP_B2rocket_Mag"};
+
+		//ties to @1
+		uniformClass = macro_new_uniform_class(opfor,B2_Armor_Test);
+		
+
+	};
+
+	
 
 	class  macro_new_unit_class(opfor,B2_aqua): macro_new_unit_class(opfor,B2_droid_Standard)
 	{

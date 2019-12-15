@@ -23,4 +23,10 @@ if (isServer) then {
 			[_unit] spawn macro_fnc_name(remove_attached_objects)
 			
 	}];
+
+	_vic addMPEventHandler  ["MPKilled", {
+		params ["_unit", "_killer", "_instigator", "_useEffects"];
+			[_unit] spawn macro_fnc_name(remove_attached_objects)
+			
+	}];
 };

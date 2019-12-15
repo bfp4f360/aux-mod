@@ -100,6 +100,8 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName = "Moveable Droideka";
+		hiddenSelections[] = {"Camo1"};
+		hiddenSelectionsTextures[] = {"SW_CloneWarsWeapons\Droideka\DroidikaOK_co.paa"};
 		
 	};
 
