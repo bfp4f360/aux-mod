@@ -1,5 +1,6 @@
 #include "config_macros.hpp" // my config macro lib
 #include "../RD501_main/config_macros.hpp"
+
 class CfgPatches
 {
 	class macro_patch_name(weapon_prototypes)
@@ -112,11 +113,7 @@ class CfgAmmo
 	// 	//caliber = 3.8;
 	// };
 
-	
-
 	#include "_ammo/flares.hpp"
-
-	
 
 	// class  macro_new_ammo(test_sub_deplopy):G_40mm_HE
 	// {

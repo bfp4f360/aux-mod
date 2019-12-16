@@ -13,18 +13,18 @@ class Republic_GL_Magazine_Well
         macro_new_mag(proto_HE_GL,3),
         macro_new_mag(proto_AP_GL,2),
 
-        macro_new_mag(flare_white,3),
+        macro_new_mag(proto_flare_white,3),
 
-        macro_new_mag(flare_red,3),
-        macro_new_mag(flare_green,3),
-        macro_new_mag(flare_blue,3),
+        macro_new_mag(proto_flare_red,3),
+        macro_new_mag(proto_flare_green,3),
+        macro_new_mag(proto_flare_blue,3),
 
-        macro_new_mag(flare_cyan,3),
-        macro_new_mag(flare_purple,3),
-        macro_new_mag(flare_yellow,3),
-        macro_new_mag(flare_orange,3),
+        macro_new_mag(proto_flare_cyan,3),
+        macro_new_mag(proto_flare_purple,3),
+        macro_new_mag(proto_flare_yellow,3),
+        macro_new_mag(proto_flare_orange,3),
         
-        macro_new_mag(flare_cir,3),
+        macro_new_mag(proto_flare_cir,3),
     
 
         "3Rnd_Smoke_Grenade_shell",

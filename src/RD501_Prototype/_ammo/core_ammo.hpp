@@ -65,7 +65,7 @@ class macro_new_ammo(Republic_Universal_Ammo):SWOP_DC15ABlasterRifle_L_Ammo
     
 };
 
-class macro_new_ammo(DC_15a_le):macro_new_ammo(Republic_Universal_Ammo)
+class macro_new_ammo(proto_DC_15a_le):macro_new_ammo(Republic_Universal_Ammo)
 {
     hit = 75;
     coefGravity=0.05;	
@@ -93,14 +93,14 @@ class macro_new_ammo(DC_15a_le):macro_new_ammo(Republic_Universal_Ammo)
 
 // };
 
-class macro_new_ammo(DC_15a_mod0):macro_new_ammo(Republic_Universal_Ammo)
+class macro_new_ammo(proto_DC_15a_mod0):macro_new_ammo(Republic_Universal_Ammo)
 {
     hit = 16;//9//14;
     coefGravity=0.08;
     tracerScale = 0.5;
 };
 
-class macro_new_ammo(DC_15s):macro_new_ammo(Republic_Universal_Ammo)
+class macro_new_ammo(proto_DC_15s):macro_new_ammo(Republic_Universal_Ammo)
 {
     hit = 12;//6;
     coefGravity=0.3;
@@ -108,7 +108,7 @@ class macro_new_ammo(DC_15s):macro_new_ammo(Republic_Universal_Ammo)
     tracerScale = 0.5;
 };
 
-class macro_new_ammo(z6_proto):macro_new_ammo(Republic_Universal_Ammo)
+class macro_new_ammo(proto_z6):macro_new_ammo(Republic_Universal_Ammo)
 {
     hit = 32;
     coefGravity=0.5;
@@ -116,7 +116,7 @@ class macro_new_ammo(z6_proto):macro_new_ammo(Republic_Universal_Ammo)
 };
 
 
-class macro_new_ammo(40mm_HE_GL): G_40mm_HE
+class macro_new_ammo(proto_40mm_HE_GL): G_40mm_HE
 {
 	explosionSoundEffect = "DefaultExplosion";
 	
@@ -143,7 +143,7 @@ class macro_new_ammo(40mm_HE_GL): G_40mm_HE
 	caliber = 4;
 };
 
-class macro_new_ammo(40mm_AP_GL): G_40mm_HE
+class macro_new_ammo(proto_40mm_AP_GL): G_40mm_HE
 {
 	explosionSoundEffect = "DefaultExplosion";
 	simulation = "shotShell";

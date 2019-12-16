@@ -1,4 +1,4 @@
-    class macro_new_weapon(DC,15a_LE_stageI):SCI_DC15XM//SWOP_DC15ABlasterRifle_mod1
+    class macro_new_weapon(DC,15a_LE_proto):SCI_DC15XM//SWOP_DC15ABlasterRifle_mod1
 	{
 		weaponPoolAvailable = 1;
 		
@@ -11,15 +11,15 @@
 		// };
 		dlc = "RD501";
 		author= "RD501";
-		baseWeapon = macro_new_weapon(DC,15a_LE_stageI);
+		baseWeapon = macro_new_weapon(DC,15a_LE_proto);
 
 		//changes
 		muzzles[] = {"this"};
 		magazineWell[]={Republic_Universal_Magazine_Well};
-		magazines[]={macro_new_mag(DC15a_LE,20)};
+		magazines[]={macro_new_mag(proto_DC15a_LE,20)};
 		//initSpeed = -1.5;
 		picture = "\SW_CloneWarsWeapons\DCrifles\icons\DC15A.paa";
-		displayName="[Stage I] DC15A Long Engagement Rifle";
+		displayName="[PROTOTYPE] DC15A Long Engagement Rifle";
 		macro_ace_heating
 		canShootInWater = 1;
 		recoil =  macro_new_recoil(dc15a_rifle)

@@ -1,4 +1,4 @@
-    class macro_new_weapon(DC,15s_stageI):SCI_arifle_DC15S_F//SWOP_DC15
+    class macro_new_weapon(DC,15s_proto):SCI_arifle_DC15S_F//SWOP_DC15
 	{
 		
 
@@ -10,7 +10,7 @@
 		dlc = "RD501";
 
 		author= "RD501";
-		baseWeapon = macro_new_weapon(DC,15s_stageI);
+		baseWeapon = macro_new_weapon(DC,15s_proto);
 
 		
 		//changes
@@ -67,8 +67,8 @@
 			};
 		};
 		magazineWell[]={Republic_Universal_Magazine_Well};
-		magazines[]={macro_new_mag(DC15s,100)};
-		displayName="[Stage I] DC15s Carbine";
+		magazines[]={macro_new_mag(proto_DC15s,100)};
+		displayName="[PROTOTYPE] DC15s Carbine";
 		canShootInWater = 1;
 		macro_ace_heating
 		modes[] = {"FullAuto", "Single"};

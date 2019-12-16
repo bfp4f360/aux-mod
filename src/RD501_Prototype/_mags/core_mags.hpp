@@ -24,9 +24,9 @@ class macro_new_mag(Republic_Universal_Magazine,30): CA_Magazine
 // 	picture = "\SW_ExtraWeapons\PICKUPS\UI\icons\energycell_X_ca.paa";
 // };
 
-class macro_new_mag(DC15a_LE,20): macro_new_mag(Republic_Universal_Magazine,30)
+class macro_new_mag(proto_DC15a_LE,20): macro_new_mag(Republic_Universal_Magazine,30)
 {
-    ammo = macro_new_ammo(DC_15a_le)
+    ammo = macro_new_ammo(proto_DC_15a_le)
     initSpeed = 1000;//666.66;
     displayName = "20Rnd DC-15A LE Magazine";
     descriptionShort = "20rnd Magazine";
@@ -46,9 +46,9 @@ class macro_new_mag(DC15a_LE,20): macro_new_mag(Republic_Universal_Magazine,30)
 //     picture = "\SW_ExtraWeapons\PICKUPS\UI\icons\energycell_X_ca.paa";
 // };
 
-class macro_new_mag(DC15a_mod_0,200): macro_new_mag(Republic_Universal_Magazine,30)
+class macro_new_mag(proto_DC15a_mod_0,200): macro_new_mag(Republic_Universal_Magazine,30)
 {
-    ammo = macro_new_ammo(DC_15a_mod0)
+    ammo = macro_new_ammo(proto_DC_15a_mod0)
     initSpeed = 700;
     displayName = "200Rnd DC-15A Mod 0 Magazine";
     descriptionShort = "200rnd Magazine";
@@ -59,9 +59,9 @@ class macro_new_mag(DC15a_mod_0,200): macro_new_mag(Republic_Universal_Magazine,
     ACE_isBelt = 1;
 };
 
-class macro_new_mag(DC15s,100): macro_new_mag(Republic_Universal_Magazine,30)
+class macro_new_mag(proto_DC15s,100): macro_new_mag(Republic_Universal_Magazine,30)
 {
-    ammo = macro_new_ammo(DC_15s)
+    ammo = macro_new_ammo(proto_DC_15s)
     initSpeed = 450;
     displayName = "100Rnd DC-15S Carbine Magazine";
     descriptionShort = "100rnd Magazine";
@@ -71,9 +71,9 @@ class macro_new_mag(DC15s,100): macro_new_mag(Republic_Universal_Magazine,30)
     tracersEvery = 4;
 };
 
-class macro_new_mag(z6_proto,300): macro_new_mag(Republic_Universal_Magazine,30)
+class macro_new_mag(proto_z6,300): macro_new_mag(Republic_Universal_Magazine,30)
 {
-    ammo = macro_new_ammo(z6_proto)
+    ammo = macro_new_ammo(proto_z6)
     initSpeed = 500;
     displayName = "300Rnd Z6 Drum";
     descriptionShort = "300rnd Drum";
@@ -92,7 +92,7 @@ class macro_new_mag(proto_HE_GL,3): 1Rnd_HE_Grenade_shell
 	displayName = "3Rnd HE DC-15A Grenades";
 	displayNameShort = "3Rnd HE DC-15A";
 	picture = MACRO_TEXTURE_PATH\icons\HE_GL.paa
-	ammo = macro_new_ammo(40mm_HE_GL);
+	ammo = macro_new_ammo(proto_40mm_HE_GL);
 	count = 3;
 	initSpeed = 85;
 	nameSound = "";
@@ -108,7 +108,7 @@ class macro_new_mag(proto_AP_GL,2): 1Rnd_HE_Grenade_shell
 	displayName = "2 Rnd AP DC-15A Grenades";
 	displayNameShort = "2 Rnd AP DC-15A";
 	picture = MACRO_TEXTURE_PATH\icons\AP_GL.paa
-	ammo = macro_new_ammo(40mm_AP_GL)
+	ammo = macro_new_ammo(proto_40mm_AP_GL)
 	initSpeed = 85;//120;
 	count = 2;
 	nameSound = "";

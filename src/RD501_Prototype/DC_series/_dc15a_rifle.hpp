@@ -1,4 +1,4 @@
-    class macro_new_weapon(DC,15a_stageI):SCI_arifle_DC15A_F//SWOP_DC15ABlasterRifle // RD501_DC_15a_base
+    class macro_new_weapon(DC,15a_proto):SCI_arifle_DC15A_F//SWOP_DC15ABlasterRifle // RD501_DC_15a_base
 	{
 		weaponPoolAvailable = 1;
 		
@@ -8,14 +8,14 @@
 
 		dlc = "RD501";
 		author= "RD501";
-		baseWeapon = macro_new_weapon(DC,15a_stageI);
+		baseWeapon = macro_new_weapon(DC,15a_proto);
 
 		//changes
 		picture = "\SW_CloneWarsWeapons\DCrifles\icons\DC15A.paa";
 		muzzles[] = {"this"};
 		magazineWell[]={Republic_Universal_Magazine_Well};
 		magazines[]={};
-		displayName=  "[Stage I] DC15A Rifle";
+		displayName=  "[PROTOTYPE] DC15A Rifle";
 		macro_ace_heating
 		canShootInWater = 1;
 		recoil =  macro_new_recoil(dc15a_rifle)

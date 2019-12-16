@@ -13,7 +13,7 @@ class CfgPatches
 		requiredVersion=0.1;
 		units[]={};
 		weapons[]={
-			macro_new_weapon(z6,stageI)
+			macro_new_weapon(proto,z6)
 		};
 	};
 };
@@ -38,7 +38,7 @@ class cfgWeapons
 		};
 	};
 
-	class macro_new_weapon(z6,stageI):SCI_arifle_z6_F
+	class macro_new_weapon(proto,z6):SCI_arifle_z6_F
 	{
 		
 		scope=2;
@@ -51,7 +51,7 @@ class cfgWeapons
 		picture = "\SW_CloneWarsWeapons\SW_Z6\UI\z6.paa";
 		UiPicture = "\SW_CloneWarsWeapons\SW_Z6\UI\z6.paa";
 		magazineWell[]={Republic_Universal_Magazine_Well};
-		magazines[]={macro_new_mag(z6_proto,300)};
+		magazines[]={macro_new_mag(proto_z6,300)};
 		modelOptics="sci_weaponsMain\Data\A3_2d_optic.p3d";
 		class OpticsModes
 		{
@@ -102,12 +102,12 @@ class cfgWeapons
 				distanceZoomMax=300;
 			};
 		};
-		baseWeapon = macro_new_weapon(z6,stageI)
+		baseWeapon = macro_new_weapon(proto,z6)
 		modes[] = {"FullAuto1"};
 		macro_ace_heating
 		recoil = macro_new_recoil(z6)//"recoil_pdw";
 		// initSpeed=-1.2;
-		displayName="[Stage I] Z6";
+		displayName="[PROTOTYPE] Z6";
 		muzzles[] = {"this"};//SixBarrleBlast
 		class FullAuto1:FullAuto
 		{	

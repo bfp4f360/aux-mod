@@ -1,4 +1,4 @@
-    class macro_new_weapon(DC,15a_mod0_stageI):SCI_arifle_VALKEN38A_F//SWOP_DC15ABlasterRifle_mod0
+    class macro_new_weapon(DC,15a_mod0_proto):SCI_arifle_VALKEN38A_F//SWOP_DC15ABlasterRifle_mod0
 	{
 		weaponPoolAvailable = 1;
 		scope=2;
@@ -9,13 +9,13 @@
 		muzzles[] = {"this"};
 		picture = "\SW_CloneWarsWeapons\DCrifles\icons\DC15A.paa";
 		magazineWell[]={Republic_Universal_Magazine_Well};
-		magazines[]={macro_new_mag(DC15a_mod_0,200)};
+		magazines[]={macro_new_mag(proto_DC15a_mod_0,200)};
 		modes[] = {"fullauto","fastauto"};
 		recoil = macro_new_recoil(dc15a_mod_0)
 		recoilProne = macro_new_recoil(dc15a_mod_0_prone)
-		displayName="[Stage I] DC15A Mod 0 LSD";
+		displayName="[PROTOTYPE] DC15A Mod 0 LSD";
 		author ="namenai";
-		baseWeapon = macro_new_weapon(DC,15a_mod0_stageI);
+		baseWeapon = macro_new_weapon(DC,15a_mod0_proto);
 		// initSpeed = -0.50;
 		class fullauto:fullauto
 		{
