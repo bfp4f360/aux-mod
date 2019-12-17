@@ -2,7 +2,7 @@ class macro_new_mag(proto_shotgun_test,20): 2Rnd_12Gauge_Pellets
 {
     author = "RD501";
     scope = 2;
-    displayName = "Z6 6 Barrel Blast Mag";
+    displayName = "[PROTOTYPE] Z6 6 Barrel Blast Mag";
     displayNameShort = "Pellets";
     descriptionShort = "Pellets";
     picture = "\a3\Weapons_F_Enoch\MagazineProxies\data\UI\icon_2rnd_12gauge_CA.paa";
@@ -19,7 +19,7 @@ class macro_new_mag(proto_shotgun_test,2): macro_new_mag(proto_shotgun_test,20)
 {
     count = 2;
     ammo = macro_new_ammo(proto_shotgun_submunition_carbine)
-    displayName = "DC-15s Carbine I.C.E Shot Mag";
+    displayName = "[PROTOTYPE] DC-15s Carbine I.C.E Shot Mag";
     mass = 40;
 }
 
@@ -27,6 +27,6 @@ class macro_new_mag(proto_dc15_gl_shotgun,2): macro_new_mag(proto_shotgun_test,2
 {
     count = 2;
     ammo = macro_new_ammo(proto_shotgun_submunition_carbine)
-    displayName = "DC-15A Shotgun Round";
+    displayName = "[PROTOTYPE] DC-15A Shotgun Round";
     mass = 40;
 }
