@@ -226,6 +226,11 @@
 				weapon = macro_new_weapon(DC,15a);
 				count = 10;
 			};
+			class _xx_RD501_DC15_Carbine
+			{
+				weapon = macro_new_weapon(DC,15s);
+				count = 10;
+			};
 			class _xx_SWOP_DC15ABlasterRifle_mod1_RD501
 			{
 				weapon =  macro_new_weapon(DC,15a_LE);

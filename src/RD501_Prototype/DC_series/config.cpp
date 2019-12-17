@@ -19,6 +19,7 @@ class CfgPatches
 			macro_new_weapon(DC,15a_mod0_stageI),
 
 			macro_new_weapon(DC,15s_stageI),
+			"RD501_TEST_LE_GUN"
 
 			//macro_new_weapon(DC,verision_checker)
 		};
@@ -76,6 +77,11 @@ class cfgWeapons
 	{	
 		class Single;
 	};
+
+	class RD501_TEST_LE_GUN:SCI_arifle_DC15LE_F
+	{
+		scope = 2;
+	}
 	#include "_dc15a_gl.hpp"
 
 	#include "_dc15a_rifle.hpp"
