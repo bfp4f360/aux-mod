@@ -52,9 +52,11 @@ class CfgWeapons
 	};
 
 	NEW_501_Pilot_HELM(exose,Exose,pilots\Exose.paa)
+	// NEW_501_Pilot_HELM(gothic,Gothic,pilots\Gothic.paa)
 	NEW_501_Pilot_HELM(jackson,Jackson,pilots\Jackson.paa)
 	NEW_501_Pilot_HELM(jaisus,Jaisus,pilots\Jaisus.paa)
 	//NEW_501_Pilot_HELM(keryl,Keryl,pilots\Keryl.paa)
+	NEW_501_Pilot_HELM(kaj,Kaj,pilots\Kaj.paa)
 	NEW_501_Pilot_HELM(kitty,Kitty,pilots\kitty.paa)
 	NEW_501_Pilot_HELM(koop,Koop,pilots\Koop.paa)
 	NEW_501_Pilot_HELM(kushiban,Kushiban,pilots\Kushiban.paa)
@@ -78,7 +80,7 @@ class CfgWeapons
 		hiddenSelectionsMaterials[]=
 		{
 			"",
-			"\501st_Helmets\AB\data\white_glow.rvmat"//"swop_clones\data\helmpilot.rvmat"//  \501st_Helmets\AB\data\white_glow.rvmat
+			"\501st_Helmets\AB\data\red_glow.rvmat"//"swop_clones\data\helmpilot.rvmat"//  \501st_Helmets\AB\data\white_glow.rvmat
 		};
 	};
 	 
@@ -165,8 +167,9 @@ class CfgWeapons
 		subItems[] = {macro_new_weapon(nvg_integrated,pilot_test),"G_B_Diving"};
 	};
 
-	
+	NEW_WARDEN_HELM(flog,Flog,warden\Flog.paa)
 	NEW_WARDEN_HELM(wirtimus,Wirtimus,warden\Wirtimus.paa)
+	
 
 
 

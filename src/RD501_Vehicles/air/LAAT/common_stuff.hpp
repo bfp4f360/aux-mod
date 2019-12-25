@@ -224,27 +224,32 @@
 			class _xx_SWOP_DC15AGL_RD501
 			{
 				weapon = macro_new_weapon(DC,15a);
-				count = 1;
+				count = 10;
+			};
+			class _xx_RD501_DC15_Carbine
+			{
+				weapon = macro_new_weapon(DC,15s);
+				count = 10;
 			};
 			class _xx_SWOP_DC15ABlasterRifle_mod1_RD501
 			{
 				weapon =  macro_new_weapon(DC,15a_LE);
-				count = 1;
+				count = 10;
 			};
 			class _xx_SWOP_DC15ABlasterRifle_mod0_RD501
 			{
 				weapon = macro_new_weapon(DC,15a_mod_0_rifle)
-				count = 1;
+				count = 10;
 			};
 			class _xx_SWOP_Z6Blaster
 			{
 				weapon = macro_new_weapon_nofam(Z6)
-				count = 1;
+				count = 10;
 			};
 			class _xx_RocketHH15Clone_RD501
 			{
 				weapon = macro_new_weapon(hh,15)
-				count = 1;
+				count = 10;
 			};
 		};
 		class TransportMagazines
@@ -252,37 +257,22 @@
 			class _xx_SWOP_DC15ABlasterRifle_Full_Mag
 			{
 				magazine = macro_new_mag(DC15a_High,15)
-				count = 5;
+				count = 15;
 			};
 			class _xx_SWOP_DC15ABlasterRifle_Mag
 			{
 				magazine = macro_new_mag(DC15a_Med,30)
-				count = 10;
+				count = 20;
 			};
 			class _xx_SWOP_DC15ABlasterRifle_Low_Mag
 			{
 				magazine = macro_new_mag(DC15a_Low,60)
-				count = 5;
+				count = 20;
 			};
-			class _xx_DCStun_Mag
+			class _xx_DC15s_Carbine
 			{
-				magazine = "DCStun_Mag";
-				count = 5;
-			};
-			class _xx_ACE_HuntIR_M203
-			{
-				magazine = "ACE_HuntIR_M203";
-				count = 3;
-			};
-			class _xx_5Rnd_HE_Grenade_DC15A
-			{
-				magazine = macro_new_mag(HE_GL,3)
-				count = 10;
-			};
-			class _xx_1Rnd_AT_Grenade_DC15A
-			{
-				magazine = macro_new_mag(AT_GL,2)
-				count = 10;
+				magazine = macro_new_mag(DC15s,60)
+				count = 30;
 			};
 			class _xx_300Rnd_BlasterLaser_Belt
 			{
@@ -299,6 +289,31 @@
 				magazine = macro_new_mag(DC15a_box_mag,240);
 				count = 10;
 			};
+
+			class _xx_DCStun_Mag
+			{
+				magazine = "DCStun_Mag";
+				count = 15;
+			};
+
+			class _xx_ACE_HuntIR_M203
+			{
+				magazine = "ACE_HuntIR_M203";
+				count = 310;
+			};
+
+			class _xx_5Rnd_HE_Grenade_DC15A
+			{
+				magazine = macro_new_mag(HE_GL,3)
+				count = 10;
+			};
+			class _xx_1Rnd_AT_Grenade_DC15A
+			{
+				magazine = macro_new_mag(AT_GL,2)
+				count = 10;
+			};
+
+			
 			class _xx_RocketHH15CloneHEATFF_Mag_RD501
 			{
 				magazine = macro_new_mag(RPS_AT,1);

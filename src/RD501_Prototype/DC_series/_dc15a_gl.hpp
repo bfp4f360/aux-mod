@@ -1,14 +1,14 @@
-    class macro_new_weapon(DC,15a_gl_stageI):SCI_arifle_DC15GL_F
+    class macro_new_weapon(DC,15a_gl_proto):SCI_arifle_DC15GL_F
 	{
 		dlc = "RD501";
 		author= "RD501";
-		baseWeapon = macro_new_weapon(DC,15a_gl_stageI);
+		baseWeapon = macro_new_weapon(DC,15a_gl_proto);
 		
 		//changes
 		picture = "\SW_CloneWarsWeapons\DCrifles\icons\DC15A.paa";
 		magazineWell[]={Republic_Universal_Magazine_Well};
-		magazines[]={};
-		displayName="[Stage I] DC15A GL Rifle";
+		magazines[]={macro_new_mag(Republic_Universal_Magazine,30)};
+		displayName="[PROTOTYPE] DC15A GL Rifle";
 		macro_ace_heating
 		canShootInWater = 1;
 		recoil =  macro_new_recoil(dc15a_rifle)
@@ -132,6 +132,7 @@
 			dispersion = macro_dc15a_acc
 			recoil = "recoil_single_mx";
 			recoilProne = "recoil_single_prone_mx";
+			textureType = "dual";
 		};
 		macro_dc15a_rifle_scope
 		class SCI_GL_F:SCI_GL_F

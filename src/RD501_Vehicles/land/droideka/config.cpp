@@ -28,7 +28,8 @@ class CfgPatches
 			macro_new_vehicle(droideka,base),
 			macro_new_vehicle(droideka,camo),
 			macro_new_vehicle(droideka,support),
-			macro_new_vehicle(droideka,normal)
+			macro_new_vehicle(droideka,normal),
+			macro_new_vehicle(droideka,TEST)
 		};
 		weapons[]=
 		{
@@ -59,6 +60,24 @@ class CfgVehicles
 		faction = macro_cis_faction
 		editorSubcategory = macro_editor_cat(heavy_armored_infantry)
 		vehicleClass = macro_editor_vehicle_type(heavy_armored_infantry)
+
+		class HitPoints
+		{
+			class HitGun
+			{
+				armor = 0.9;
+				material = -1;
+				name = "gun";
+				visual = "autonomous_unhide";
+				passThrough = 0;
+				radius = 0.2;
+			};
+			class HitTurret: HitGun
+			{
+				armor = 0.3;
+			};
+		};
+
 	};
 	class macro_new_vehicle(droideka,camo) : macro_new_vehicle(droideka,base)
 	{
@@ -81,7 +100,41 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName = "Moveable Droideka";
+		hiddenSelections[] = {"Camo1"};
+		hiddenSelectionsTextures[] = {"SW_CloneWarsWeapons\Droideka\DroidikaOK_co.paa"};
 		
 	};
+
+	class macro_new_vehicle(droideka,TEST) :SWOP_Droideka
+	{
+		scope=2;
+		armor = 1000;
+		displayName = "TEST - Ekka 1";
+		armorStructural = 3;
+		class EventHandlers: DefaultEventhandlers {}; 
+
+		faction = macro_cis_faction
+		editorSubcategory = macro_editor_cat(heavy_armored_infantry)
+		vehicleClass = macro_editor_vehicle_type(heavy_armored_infantry)
+
+		class HitPoints
+		{
+			class HitGun
+			{
+				armor = 360;
+				material = -1;
+				name = "gun";
+				visual = "autonomous_unhide";
+				passThrough = 0;
+				radius = 0.2;
+			};
+			class HitTurret: HitGun
+			{
+				armor = 360;
+			};
+		};
+
+	};
+
 
 };

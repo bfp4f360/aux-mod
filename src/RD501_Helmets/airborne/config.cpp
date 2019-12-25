@@ -82,6 +82,33 @@ class CfgWeapons
 	};
 	
 
+	class macro_new_helmet(airborne,purge_corporal): macro_new_helmet(airborne,purge)
+	{
+		displayName="Clone Airborne Purge Corporal";
+		hiddenSelectionsTextures[]=
+		{
+			"\RD501_Helmets\_textures\airborne\purge\purge_corporal.paa"
+		};
+	};
+
+	class macro_new_helmet(airborne,purge_sergeant): macro_new_helmet(airborne,purge)
+	{
+		displayName="Clone Airborne Purge Sergean";
+		hiddenSelectionsTextures[]=
+		{
+			"\RD501_Helmets\_textures\airborne\purge\purge_sergeant.paa"
+		};
+	};
+
+	class macro_new_helmet(airborne,purge_trooper): macro_new_helmet(airborne,purge)
+	{
+		displayName="Clone Airborne Purge Trooper";
+		hiddenSelectionsTextures[]=
+		{
+			"\RD501_Helmets\_textures\airborne\purge\purge_trooper.paa"
+		};
+	};
+
 
 
 

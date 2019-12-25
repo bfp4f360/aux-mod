@@ -51,7 +51,7 @@ class CfgVehicles
 		scope=2
 		
 		forceInGarage = 1;
-		displayName = "CIS Hover Droid";
+		displayName = "CIS Hover Droid MK.II";
 		armor = 0.1;
 		cost = 20000;
 		altFullForce = 1000;
@@ -59,6 +59,7 @@ class CfgVehicles
 		LODTurnedIn = -1;
 		hiddenselectionstextures[] = {"SW_CloneWarsWeapons\Recon\hover_droid_diff.paa"};
 		faction = macro_cis_faction
+
 		class EventHandlers {
             
             class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
@@ -86,7 +87,7 @@ class CfgVehicles
 		author = "RD501";
 		scope=2
 		forceInGarage = 1;
-		displayName = "Interrogation Droid";
+		displayName = "Interrogation Droid MK.II";
 		altFullForce = 1000;
 		altNoForce = 1100;
 
@@ -103,7 +104,7 @@ class CfgVehicles
 		author = "RD501";
 		scope=2
 		forceInGarage = 1;
-		displayName = "ID10 Droid";
+		displayName = "ID10 Droid MK.II";
 		altFullForce = 1000;
 		altNoForce = 1100;
 
@@ -119,7 +120,7 @@ class CfgVehicles
 		author = "RD501";
 		scope=2
 		forceInGarage = 1;
-		displayName = "Rebel ID10 Droid";
+		displayName = "Rebel ID10 Droid MK.II";
 		altFullForce = 1000;
 		altNoForce = 1100;
 
@@ -136,7 +137,7 @@ class CfgVehicles
 		author = "RD501";
 		scope=2
 		forceInGarage = 1;
-		displayName = "R-1 Recon Droid";
+		displayName = "R-1 Recon Droid MK.II";
 		altFullForce = 1000;
 		altNoForce = 1100;
 		faction = macro_republic_faction

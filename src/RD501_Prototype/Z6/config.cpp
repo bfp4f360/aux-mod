@@ -13,7 +13,7 @@ class CfgPatches
 		requiredVersion=0.1;
 		units[]={};
 		weapons[]={
-			macro_new_weapon(z6,stageI)
+			macro_new_weapon(proto,z6)
 		};
 	};
 };
@@ -38,7 +38,7 @@ class cfgWeapons
 		};
 	};
 
-	class macro_new_weapon(z6,stageI):SCI_arifle_z6_F
+	class macro_new_weapon(proto,z6):SCI_arifle_z6_F
 	{
 		
 		scope=2;
@@ -51,7 +51,7 @@ class cfgWeapons
 		picture = "\SW_CloneWarsWeapons\SW_Z6\UI\z6.paa";
 		UiPicture = "\SW_CloneWarsWeapons\SW_Z6\UI\z6.paa";
 		magazineWell[]={Republic_Universal_Magazine_Well};
-		magazines[]={macro_new_mag(z6_proto,300)};
+		magazines[]={macro_new_mag(proto_z6,300)};
 		modelOptics="sci_weaponsMain\Data\A3_2d_optic.p3d";
 		class OpticsModes
 		{
@@ -87,10 +87,10 @@ class cfgWeapons
 					"OpticsBlur5"
 				};
 				opticsDisablePeripherialVision=0.67000002;
-				opticsZoomMin = macro_scope_magnification(6);
+				opticsZoomMin = macro_scope_magnification(4);
 				opticsZoomMax = macro_scope_magnification(1);
-				opticsZoomInit = macro_scope_magnification(6);
-				discretefov[] = {macro_scope_magnification(6)};
+				opticsZoomInit = macro_scope_magnification(4);
+				discretefov[] = {macro_scope_magnification(4)};
 				memoryPointCamera="opticView";
 				visionMode[]=
 				{
@@ -102,13 +102,13 @@ class cfgWeapons
 				distanceZoomMax=300;
 			};
 		};
-		baseWeapon = macro_new_weapon(z6,stageI)
+		baseWeapon = macro_new_weapon(proto,z6)
 		modes[] = {"FullAuto1"};
 		macro_ace_heating
 		recoil = macro_new_recoil(z6)//"recoil_pdw";
 		// initSpeed=-1.2;
-		displayName="[Stage I] Z6 Kanonenjagdpanzer";
-		muzzles[] = {"this","SixBarrleBlast"};
+		displayName="[PROTOTYPE] Z6";
+		muzzles[] = {"this"};//SixBarrleBlast
 		class FullAuto1:FullAuto
 		{	
 			class BaseSoundModeType
@@ -137,34 +137,34 @@ class cfgWeapons
 			reloadTime = macro_z6_rof
 		};
 
-		class SixBarrleBlast: SCI_arifle_z6_F
-		{
-			displayName = "Z6 6 Barrel Barrage";
+		// class SixBarrleBlast: SCI_arifle_z6_F
+		// {
+		// 	displayName = "Z6 Six Barrel Barrage";
 			
-			magazines[] = {macro_new_mag(shotgun_test,10)};
+		// 	magazines[] = {macro_new_mag(shotgun_test,20)};
 			
-			modes[] = {"Single"};
-			class Single: Mode_SemiAuto
-			{
+		// 	modes[] = {"Single"};
+		// 	class Single: Mode_SemiAuto
+		// 	{
 				
-				sounds[] = {"StandardSound"};
-				class StandardSound
-				{
-					soundSetShot[] = {"Msbs65_01_Shotgun_Shot_SoundSet", "Msbs65_01_Shotgun_Tail_SoundSet"};
-				};
-				reloadTime = 0.2;
-				dispersion = 0.01245;
-				minRange = 2;
-				minRangeProbab = 0.95;
-				midRange = 30;
-				midRangeProbab = 0.95;
-				maxRange = 100;
-				maxRangeProbab = 0.3;
-				aiRateOfFire = 1;
-				aiRateOfFireDistance = 30;
-				autoFire = 1;
-			};
-		};
+		// 		sounds[] = {"StandardSound"};
+		// 		class StandardSound
+		// 		{
+		// 			soundSetShot[] = {"Msbs65_01_Shotgun_Shot_SoundSet", "Msbs65_01_Shotgun_Tail_SoundSet"};
+		// 		};
+		// 		reloadTime = 0.2;
+		// 		dispersion = 0.01245;
+		// 		minRange = 2;
+		// 		minRangeProbab = 0.95;
+		// 		midRange = 30;
+		// 		midRangeProbab = 0.95;
+		// 		maxRange = 100;
+		// 		maxRangeProbab = 0.3;
+		// 		aiRateOfFire = 1;
+		// 		aiRateOfFireDistance = 30;
+		// 		autoFire = 1;
+		// 	};
+		// };
 		// class overcharge_burst:FullAuto1
 		// {
 

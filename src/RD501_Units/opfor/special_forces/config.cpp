@@ -86,7 +86,51 @@ class cfgWeapons
 			mass = 40;
 		};
 	};
-	
+
+	// class macro_new_uniform_class(opfor,Manga_Snow): macro_new_uniform_class(opfor,Manga_Spec_Op)
+	// {
+	// 	displayName = "Magnadroid Snow Leopard";
+	// 	class ItemInfo: ItemInfo
+	// 	{
+	// 		uniformClass = macro_new_uniform_skin_class(opfor,Magna_white)
+	// 	}
+	// };	
+
+	// class macro_new_uniform_class(opfor,Manga_Aqua): macro_new_uniform_class(opfor,Manga_Spec_Op)
+	// {
+	// 	displayName = "Magnadroid Hydro";
+	// 	class ItemInfo: ItemInfo
+	// 	{
+	// 		uniformClass = macro_new_uniform_skin_class(opfor,Magna_blue)
+	// 	}
+	// };
+
+	// class macro_new_uniform_class(opfor,Manga_Royal): macro_new_uniform_class(opfor,Manga_Spec_Op)
+	// {
+	// 	displayName = "Magnadroid Royal";
+	// 	class ItemInfo: ItemInfo
+	// 	{
+	// 		uniformClass = macro_new_uniform_skin_class(opfor,Magna_purple)
+	// 	}
+	// };	
+
+	// class macro_new_uniform_class(opfor,Manga_Medic): macro_new_uniform_class(opfor,Manga_Spec_Op)
+	// {
+	// 	displayName = "Magnadroid Medic";
+	// 	class ItemInfo: ItemInfo
+	// 	{
+	// 		uniformClass = macro_new_uniform_skin_class(opfor,Magna_red)
+	// 	}
+	// };	
+
+	// class macro_new_uniform_class(opfor,Manga_Blitz): macro_new_uniform_class(opfor,Manga_Spec_Op)
+	// {
+	// 	displayName = "Magnadroid Blitzkreiger";
+	// 	class ItemInfo: ItemInfo
+	// 	{
+	// 		uniformClass = macro_new_uniform_skin_class(opfor,Magna_yellow)
+	// 	}
+	// };	
 
 };
 class DefaultEventhandlers;
@@ -97,6 +141,7 @@ class CfgVehicles
 	class SWOP_CIS_Base;
 	class B_Soldier_base_F;
 
+	// Skins
 	class macro_new_uniform_skin_class(opfor,Magna_Blackops): B_Soldier_base_F
 	{
 		author = "RD501";
@@ -110,6 +155,30 @@ class CfgVehicles
 		class EventHandlers :DefaultEventhandlers {};
 	};
 
+	// class macro_new_uniform_skin_class(opfor,Magna_white): macro_new_uniform_skin_class(opfor,Magna_Blackops)
+	// {
+	// 	hiddenSelectionsTextures[] = {macro_unit_skin_textures\CIS\magna\white.paa};
+	// };
+
+	// class macro_new_uniform_skin_class(opfor,Magna_blue): macro_new_uniform_skin_class(opfor,Magna_Blackops)
+	// {
+	// 	hiddenSelectionsTextures[] = {macro_unit_skin_textures\CIS\magna\blue.paa};
+	// };
+
+	// class macro_new_uniform_skin_class(opfor,Magna_purple): macro_new_uniform_skin_class(opfor,Magna_Blackops)
+	// {
+	// 	hiddenSelectionsTextures[] = {macro_unit_skin_textures\CIS\magna\purple.paa};
+	// };
+
+	// class macro_new_uniform_skin_class(opfor,Magna_red): macro_new_uniform_skin_class(opfor,Magna_Blackops)
+	// {
+	// 	hiddenSelectionsTextures[] = {macro_unit_skin_textures\CIS\magna\red.paa};
+	// };
+
+	// class macro_new_uniform_skin_class(opfor,Magna_yellow): macro_new_uniform_skin_class(opfor,Magna_Blackops)
+	// {
+	// 	hiddenSelectionsTextures[] = {macro_unit_skin_textures\CIS\magna\yellow.paa};
+	// };
 
 	class macro_new_uniform_skin_class(opfor,B1_Spec_Ops): SWOP_CIS_Base
 	{
@@ -128,6 +197,7 @@ class CfgVehicles
 		class EventHandlers :DefaultEventhandlers {};
 	};
 
+	// Units
 	class macro_new_unit_class(opfor,B1_spec_op): SWOP_CIS_B1_Base
 	{
 		scope = 2;
@@ -217,4 +287,34 @@ class CfgVehicles
 		cost = 800000;
 		//class EventHandlers :DefaultEventhandlers {};
 	};
+
+	// class macro_new_unit_class(opfor,magna_guard_snow): macro_new_unit_class(opfor,magna_guard_blackop)
+	// {
+	// 	displayName = "IG-101 MagnaGuard (Snow Leopard)";
+	// 	uniformClass = macro_new_uniform_class(opfor,Manga_Snow);
+	// };
+
+	// class macro_new_unit_class(opfor,magna_guard_aqua): macro_new_unit_class(opfor,magna_guard_blackop)
+	// {
+	// 	displayName = "IG-101 MagnaGuard (Aqua)";
+	// 	uniformClass = macro_new_uniform_class(opfor,Manga_Aqua);
+	// };
+
+	// class macro_new_unit_class(opfor,magna_guard_royal): macro_new_unit_class(opfor,magna_guard_blackop)
+	// {
+	// 	displayName = "IG-101 Royal MagnaGuard ";
+	// 	uniformClass = macro_new_uniform_class(opfor,Manga_Royal);
+	// };
+
+	// class macro_new_unit_class(opfor,magna_guard_medic): macro_new_unit_class(opfor,magna_guard_blackop)
+	// {
+	// 	displayName = "IG-101 MagnaGuard Medic";
+	// 	uniformClass = macro_new_uniform_class(opfor,Manga_Medic);
+	// };
+
+	// class macro_new_unit_class(opfor,magna_guard_blitz): macro_new_unit_class(opfor,magna_guard_blackop)
+	// {
+	// 	displayName = "IG-101 Blitzkrieger MagnaGuard";
+	// 	uniformClass = macro_new_uniform_class(opfor,Manga_Blitz);
+	// };
 };

@@ -120,6 +120,8 @@
 //----uniforms,units,vests
 	//wat we see in arsenal,weapon
 	#define macro_new_uniform_class(side,name) MODNAME##_##side##_uniform_##name
+	//vests
+	#define macro_new_vest_class(side,name) MODNAME##_##side##_vest_##name
 	//actualyt skin of uniforms,vehicle
 	#define macro_new_uniform_skin_class(side,name) MODNAME##_##side##_uniform_skin_##name
 	//wat we see in zeus,vehicle

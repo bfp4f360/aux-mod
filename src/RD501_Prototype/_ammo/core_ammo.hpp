@@ -9,13 +9,14 @@ class macro_new_ammo(Republic_Universal_Ammo):SWOP_DC15ABlasterRifle_L_Ammo
     indirectHitRange = 0.0;
     explosive = 0.0;
 
-    hit = 22;
+    hit = 27;
     waterFriction = -0.001;//
-    caliber = 2;
-    tracerScale = 1.1;
+    caliber = 1;
+    tracerScale = 1.0;
     tracerStartTime = 0;
-    tracerEndTime = 2;
+    tracerEndTime = 4;
     timeToLive = 4;
+
 
 
     // soundSetBulletFly[]= 
@@ -64,11 +65,12 @@ class macro_new_ammo(Republic_Universal_Ammo):SWOP_DC15ABlasterRifle_L_Ammo
     
 };
 
-class macro_new_ammo(DC_15a_le):macro_new_ammo(Republic_Universal_Ammo)
+class macro_new_ammo(proto_DC_15a_le):macro_new_ammo(Republic_Universal_Ammo)
 {
-    hit = 35;
+    hit = 75;
     coefGravity=0.05;	
-    caliber = 1;
+    caliber = 0.4;
+    tracerScale = 3;
 };
 
 // class macro_new_ammo(DC_15a_le_HE):G_40mm_HE
@@ -91,34 +93,37 @@ class macro_new_ammo(DC_15a_le):macro_new_ammo(Republic_Universal_Ammo)
 
 // };
 
-class macro_new_ammo(DC_15a_mod0):macro_new_ammo(Republic_Universal_Ammo)
+class macro_new_ammo(proto_DC_15a_mod0):macro_new_ammo(Republic_Universal_Ammo)
 {
-    hit = 9//14;
-    coefGravity=0.07;
+    hit = 16;//9//14;
+    coefGravity=0.08;
+    tracerScale = 0.5;
 };
 
-class macro_new_ammo(DC_15s):macro_new_ammo(Republic_Universal_Ammo)
+class macro_new_ammo(proto_DC_15s):macro_new_ammo(Republic_Universal_Ammo)
 {
-    hit = 6;
-    coefGravity=0.2;
+    hit = 12;//6;
+    coefGravity=0.3;
     caliber = 1;
+    tracerScale = 0.5;
 };
 
-class macro_new_ammo(z6_proto):macro_new_ammo(Republic_Universal_Ammo)
+class macro_new_ammo(proto_z6):macro_new_ammo(Republic_Universal_Ammo)
 {
-    hit = 25;
-    coefGravity=0.4;
+    hit = 32;
+    coefGravity=0.5;
+    tracerScale = 2;
 };
 
 
-class macro_new_ammo(40mm_HE_GL): G_40mm_HE
+class macro_new_ammo(proto_40mm_HE_GL): G_40mm_HE
 {
 	explosionSoundEffect = "DefaultExplosion";
 	
 	//model = "\A3\weapons_f\ammo\UGL_slug";
 	model = "SW_AV7\ion.p3d";
 	hit = 60;
-	indirectHit = 50;
+	indirectHit = 55;
 	indirectHitRange = 5;
 	warheadName = "HE";
 	visibleFire = 1;
@@ -138,29 +143,30 @@ class macro_new_ammo(40mm_HE_GL): G_40mm_HE
 	caliber = 4;
 };
 
-class macro_new_ammo(40mm_AP_GL): G_40mm_HE
+class macro_new_ammo(proto_40mm_AP_GL): G_40mm_HE
 {
 	explosionSoundEffect = "DefaultExplosion";
 	simulation = "shotShell";
 	model = "\GeonFighter\LaserGeon.p3d";
-	hit = 300;
+	hit = 450;
 	indirectHit = 5;
-	indirectHitRange = 1;
+	indirectHitRange = 0.5;
+    caliber = 5;
 
 	warheadName = "HE";
 	visibleFire = 1;
 	audibleFire = 30;
 	visibleFireTime = 3;
 
-	timeToLive =30;
+	timeToLive =10;
 	dangerRadiusHit = 60;
 	suppressionRadiusHit = 24;
-	explosive = 0.0001;
+	explosive = 0.0;
 	cost = 10;
 	deflecting = 5;
 	airFriction = -0.001;
 
-	fuseDistance = .5;
+	fuseDistance = .1;
 	// whistleDist = 16;
 	// typicalSpeed = 185;
 	// caliber = 5;

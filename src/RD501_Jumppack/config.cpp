@@ -95,7 +95,7 @@ class CfgVehicles
 		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio = 1;
 
-		maximumLoad = 750;
+		maximumLoad = 700;
 
 	};
 
@@ -164,7 +164,7 @@ class CfgVehicles
 	{
 		displayname= "[JP] Titan Mk.II B";
 		hiddenSelectionsTextures[] = {"SWOP_clones\data\spec\Spec2_co.paa"};
-	}
+	};
 
 	class macro_jumppackClass(neutral,titan_mkMCCCXXXVII):macro_jumppackClass(neutral,titan_mkII)
 	{
@@ -174,8 +174,10 @@ class CfgVehicles
 		{
 			{"LEET Jump",{1337,7,1,0,1,1}}
 		};
-	}
+	};
 
+
+	
 	class macro_jumppackClass(neutral,501st):macro_jumppackClass(neutral,cdv_21)
 	{
 		displayName = "[JP] CDV-21 '501st'";
@@ -183,10 +185,24 @@ class CfgVehicles
 
 	};
 
+	class macro_jumppackClass(neutral,purge):macro_jumppackClass(neutral,cdv_21)
+	{
+		displayName = "[JP] CDV-21 'Purge'";
+		hiddenSelectionsTextures[] = {"RD501_Jumppack\textures\purge.paa"};
+
+	};
+
 	class macro_jumppackClass(neutral,212th):macro_jumppackClass(neutral,cdv_21)
 	{
 		displayName = "[JP] CDV-21 '212th'";
 		hiddenSelectionsTextures[] = {"RD501_Jumppack\textures\212th.paa"};
+
+	};
+
+	class macro_jumppackClass(neutral,101st):macro_jumppackClass(neutral,cdv_21)
+	{
+		displayName = "[JP] CDV-21 '101st'";
+		hiddenSelectionsTextures[] = {"RD501_Jumppack\textures\101st.paa"};
 
 	};
 

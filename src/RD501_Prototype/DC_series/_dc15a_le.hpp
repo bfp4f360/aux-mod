@@ -1,4 +1,4 @@
-    class macro_new_weapon(DC,15a_LE_stageI):SCI_DC15XM//SWOP_DC15ABlasterRifle_mod1
+    class macro_new_weapon(DC,15a_LE_proto):SCI_DC15XM//SWOP_DC15ABlasterRifle_mod1
 	{
 		weaponPoolAvailable = 1;
 		
@@ -11,15 +11,15 @@
 		// };
 		dlc = "RD501";
 		author= "RD501";
-		baseWeapon = macro_new_weapon(DC,15a_LE_stageI);
+		baseWeapon = macro_new_weapon(DC,15a_LE_proto);
 
 		//changes
 		muzzles[] = {"this"};
 		magazineWell[]={Republic_Universal_Magazine_Well};
-		magazines[]={macro_new_mag(DC15a_LE,20)};
+		magazines[]={macro_new_mag(proto_DC15a_LE,20)};
 		//initSpeed = -1.5;
 		picture = "\SW_CloneWarsWeapons\DCrifles\icons\DC15A.paa";
-		displayName="[Stage I] DC15A Long Engagement Rifle";
+		displayName="[PROTOTYPE] DC15A Long Engagement Rifle";
 		macro_ace_heating
 		canShootInWater = 1;
 		recoil =  macro_new_recoil(dc15a_rifle)
@@ -27,11 +27,14 @@
 		opticsZoomMin= macro_scope_magnification(12);
 		opticsZoomMax= macro_scope_magnification(6);
 		opticsZoomInit= macro_scope_magnification(6);
+		//discretefov[] = {macro_scope_magnification(6),macro_scope_magnification(12),macro_scope_magnification(24),macro_scope_magnification(48)};
 		distanceZoomMin=100;
 		distanceZoomMax=2000;
 		maxZeroing=2000;
 		discreteInitIndex=0;
-		discreteDistance[]={100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600};	
+		discreteDistance[]={100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600};
+		modelOptics = "Scope\a180.p3d";	
+		
 
 		visionMode[]=
 		{

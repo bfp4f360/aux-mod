@@ -1,4 +1,4 @@
-    class macro_new_weapon(DC,15s_stageI):SCI_arifle_DC15S_F//SWOP_DC15
+    class macro_new_weapon(DC,15s_proto):SCI_arifle_DC15S_F//SWOP_DC15
 	{
 		
 
@@ -10,7 +10,7 @@
 		dlc = "RD501";
 
 		author= "RD501";
-		baseWeapon = macro_new_weapon(DC,15s_stageI);
+		baseWeapon = macro_new_weapon(DC,15s_proto);
 
 		
 		//changes
@@ -67,8 +67,8 @@
 			};
 		};
 		magazineWell[]={Republic_Universal_Magazine_Well};
-		magazines[]={macro_new_mag(DC15s,100)};
-		displayName="[Stage I] DC15s Carbine";
+		magazines[]={macro_new_mag(proto_DC15s,100)};
+		displayName="[PROTOTYPE] DC15s Carbine";
 		canShootInWater = 1;
 		macro_ace_heating
 		modes[] = {"FullAuto", "Single"};
@@ -78,7 +78,7 @@
 		opticsZoomMin=macro_scope_magnification(4);
 		opticsZoomMax=1.25;
 		opticsZoomInit=macro_scope_magnification(1);
-		muzzles[] = {"this","ShotgunBlast"};
+		muzzles[] = {"this"};//ShotgunBlast
 		class FullAuto:FullAuto
 		{
 			reloadTime = macro_dc15s_rof
@@ -143,33 +143,33 @@
 			};
 		};
 
-		class ShotgunBlast: SCI_arifle_DC15S_F
-		{
-			displayName = "DC-15s Super Blast";
+		// class ShotgunBlast: SCI_arifle_DC15S_F
+		// {
+		// 	displayName = "DC-15s I.O.N Blast";
 			
-			magazines[] = {macro_new_mag(shotgun_test,2)};
+		// 	magazines[] = {macro_new_mag(shotgun_test,2)};
 			
-			modes[] = {"Single"};
-			class Single: Mode_SemiAuto
-			{
+		// 	modes[] = {"Single"};
+		// 	class Single: Mode_SemiAuto
+		// 	{
 				
-				sounds[] = {"StandardSound"};
-				class StandardSound
-				{
-					soundSetShot[] = {"Msbs65_01_Shotgun_Shot_SoundSet", "Msbs65_01_Shotgun_Tail_SoundSet"};
-				};
-				reloadTime = 0.2;
-				dispersion = 0.01245;
-				minRange = 2;
-				minRangeProbab = 0.95;
-				midRange = 30;
-				midRangeProbab = 0.95;
-				maxRange = 100;
-				maxRangeProbab = 0.3;
-				aiRateOfFire = 1;
-				aiRateOfFireDistance = 30;
-			};
-		};
+		// 		sounds[] = {"StandardSound"};
+		// 		class StandardSound
+		// 		{
+		// 			soundSetShot[] = {"Msbs65_01_Shotgun_Shot_SoundSet", "Msbs65_01_Shotgun_Tail_SoundSet"};
+		// 		};
+		// 		reloadTime = 0.2;
+		// 		dispersion = 0.01245;
+		// 		minRange = 2;
+		// 		minRangeProbab = 0.95;
+		// 		midRange = 30;
+		// 		midRangeProbab = 0.95;
+		// 		maxRange = 100;
+		// 		maxRangeProbab = 0.3;
+		// 		aiRateOfFire = 1;
+		// 		aiRateOfFireDistance = 30;
+		// 	};
+		// };
 
 		class Single:FullAuto
 		{
