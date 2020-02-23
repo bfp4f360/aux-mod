@@ -1,1 +1,0 @@
-_id_loadout_cba_eh = ["loadout",RD501_jumppack_fnc_cba_loadout_eh] call CBA_fnc_addPlayerEventHandler;
