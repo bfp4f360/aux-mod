@@ -1,0 +1,10 @@
+Authority:  RD501_Aux_Mod
+Creation:   10/18/2019 12:50:22 PM (by DESKTOP-8L09N74\Namenai)
+
+== PRIVATE KEY ==
+File: C:\Program Files (x86)\Steam\steamapps\common\Arma 3 Tools\DSSignFile\RD501_Aux_Mod.biprivatekey
+MD5: 408F95C23AA264CB8207E48C11B0CD89
+== PUBLIC KEY ==
+File: C:\Program Files (x86)\Steam\steamapps\common\Arma 3 Tools\DSSignFile\RD501_Aux_Mod.bikey
+MD5: 0F835C0A07AB80ED10EFCC2B834BE341
+
