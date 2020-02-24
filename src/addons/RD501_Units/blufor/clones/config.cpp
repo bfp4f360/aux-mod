@@ -190,8 +190,7 @@ class cfgWeapons
 		hiddenSelectionsTextures[] = {TEXTUREPATH\Republic\clones\Infantry\acc\1st_lt_pauldron.paa};
 		hiddenSelectionsMaterials[]=
         {
-            "MRC\JLTS\characters\CloneArmor\data\clone_armor1_clean.rvmat",
-            "MRC\JLTS\characters\CloneArmor\data\clone_armor2_clean.rvmat"
+            "RD501_Units\textures\Republic\clones\mats\clone_vest_officer.rvmat"
         };
 		class ItemInfo: VestItem
 		{
@@ -202,8 +201,7 @@ class cfgWeapons
 			containerClass="Supply100";
 			hiddenSelectionsMaterials[]=
 			{
-				"MRC\JLTS\characters\CloneArmor\data\clone_armor1_clean.rvmat",
-				"MRC\JLTS\characters\CloneArmor\data\clone_armor2_clean.rvmat"
+				"RD501_Units\textures\Republic\clones\mats\clone_vest_officer.rvmat"
 			};
 			class HitpointsProtectionInfo
 			{
@@ -361,10 +359,18 @@ class cfgWeapons
 		model = "\MRC\JLTS\characters\CloneArmor\CloneVestReconNCO.p3d";
 		hiddenSelections[] = {"Camo1"};
 		hiddenSelectionsTextures[] = {TEXTUREPATH\Republic\clones\Infantry\acc\sr_nco_acc.paa};
+		hiddenSelectionsMaterials[]=
+        {
+        
+        };
 		class ItemInfo: ItemInfo
 		{
 			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestReconNCO.p3d";
 			containerClass="Supply100";
+			hiddenSelectionsMaterials[]=
+			{
+			
+			};
 		};
 	};
 	class macro_new_vest_class(501_inf,acc_1): macro_new_vest_class(501_inf,acc_9)
@@ -374,10 +380,18 @@ class cfgWeapons
 		model = "\MRC\JLTS\characters\CloneArmor\CloneVestRecon.p3d";
 		hiddenSelections[] = {"Camo1"};
 		hiddenSelectionsTextures[] = {TEXTUREPATH\Republic\clones\Infantry\acc\sr_nco_acc.paa};
+		hiddenSelectionsMaterials[]=
+		{
+		
+		};
 		class ItemInfo: ItemInfo
 		{
 			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestRecon.p3d";
 			containerClass="Supply100";
+			hiddenSelectionsMaterials[]=
+			{
+			
+			};
 		};
 	};
 	class macro_new_vest_class(501_inf,acc_2): macro_new_vest_class(501_inf,acc_9)
@@ -387,10 +401,18 @@ class cfgWeapons
 		model = "\MRC\JLTS\characters\CloneArmor\CloneVestReconNCO.p3d";
 		hiddenSelections[] = {"Camo1"};
 		hiddenSelectionsTextures[] = {"MRC\JLTS\characters\CloneArmor\data\Clone_vest_heavy_co.paa"};
+		hiddenSelectionsMaterials[]=
+		{
+		
+		};
 		class ItemInfo: ItemInfo
 		{
 			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestReconNCO.p3d";
 			containerClass="Supply100";
+			hiddenSelectionsMaterials[]=
+			{
+			
+			};
 		};
 	};
 	class macro_new_vest_class(501_inf,acc_4): macro_new_vest_class(501_inf,acc_9)
@@ -400,10 +422,20 @@ class cfgWeapons
 		model = "\MRC\JLTS\characters\CloneArmor\CloneVestReconOfficer.p3d";
 		hiddenSelections[] = {"Camo1","camo2"};
 		hiddenSelectionsTextures[] = {"MRC\JLTS\characters\CloneArmor\data\Clone_vest_officer_co.paa", "MRC\JLTS\characters\CloneArmor\data\Clone_vest_heavy_co.paa"};
+		hiddenSelectionsMaterials[]=
+		{
+			"RD501_Units\textures\Republic\clones\mats\clone_vest_officer.rvmat",
+			""
+		};
 		class ItemInfo: ItemInfo
 		{
 			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestReconOfficer.p3d";
 			containerClass="Supply100";
+			hiddenSelectionsMaterials[]=
+			{
+				"RD501_Units\textures\Republic\clones\mats\clone_vest_officer.rvmat",
+				""
+			};
 		};
 	};
 	class macro_new_vest_class(501_inf,acc_5): macro_new_vest_class(501_inf,acc_9)
@@ -413,11 +445,21 @@ class cfgWeapons
 		model = "\MRC\JLTS\characters\CloneArmor\CloneVestReconOfficer.p3d";
 		hiddenSelections[] = {"Camo1","camo2"};
 		hiddenSelectionsTextures[] = {TEXTUREPATH\Republic\clones\Infantry\acc\1st_lt_pauldron.paa, TEXTUREPATH\Republic\clones\Infantry\acc\sr_nco_acc.paa};
+		hiddenSelectionsMaterials[]=
+		{
+			"RD501_Units\textures\Republic\clones\mats\clone_vest_officer.rvmat",
+			""
+		};
 		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[]= {"camo1","camo2"};
 			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestReconOfficer.p3d";
 			containerClass="Supply100";
+			hiddenSelectionsMaterials[]=
+			{
+				"RD501_Units\textures\Republic\clones\mats\clone_vest_officer.rvmat",
+				""
+			};
 		};
 	};
 	class macro_new_vest_class(501_inf,acc_r1): macro_new_vest_class(501_inf,acc_9)
@@ -427,6 +469,10 @@ class cfgWeapons
 		model="\MRC\JLTS\characters\CloneArmor\CloneVestOfficer.p3d";
 		hiddenSelections[] = {"Camo1"};
 		hiddenSelectionsTextures[] = {TEXTUREPATH\Republic\clones\Infantry\acc\bn_rto_pauldron.paa};
+		hiddenSelectionsMaterials[]=
+		{
+			"RD501_Units\textures\Republic\clones\mats\clone_vest_officer.rvmat"
+		};
 		class ItemInfo: ItemInfo
 		{
 			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestOfficer.p3d";
@@ -434,6 +480,10 @@ class cfgWeapons
 			hiddenSelections[]=
 			{
 				"camo1"
+			};
+			hiddenSelectionsMaterials[]=
+			{
+				"RD501_Units\textures\Republic\clones\mats\clone_vest_officer.rvmat"
 			};
 		};
 	};
@@ -444,6 +494,10 @@ class cfgWeapons
 		model="\MRC\JLTS\characters\CloneArmor\CloneVestOfficer.p3d";
 		hiddenSelections[] = {"Camo1"};
 		hiddenSelectionsTextures[] = {TEXTUREPATH\Republic\clones\Infantry\acc\bn_medic_pauldron.paa};
+		hiddenSelectionsMaterials[]=
+		{
+			"RD501_Units\textures\Republic\clones\mats\clone_vest_officer.rvmat"
+		};
 		class ItemInfo: ItemInfo
 		{
 			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestOfficer.p3d";
@@ -451,6 +505,10 @@ class cfgWeapons
 			hiddenSelections[]=
 			{
 				"camo1"
+			};
+			hiddenSelectionsMaterials[]=
+			{
+				"RD501_Units\textures\Republic\clones\mats\clone_vest_officer.rvmat"
 			};
 		};
 	};
@@ -462,6 +520,11 @@ class cfgWeapons
 		model="\MRC\JLTS\characters\CloneArmor\CloneVestAirborne.p3d";
 		hiddenSelections[] = {"Camo1","Camo2"};
 		hiddenSelectionsTextures[] = {TEXTUREPATH\Republic\clones\ab\acc\ab_cadet_acc.paa, TEXTUREPATH\Republic\clones\ab\acc\ab_cpl_acc.paa};
+		hiddenSelectionsMaterials[]=
+		{
+			"RD501_Units\textures\Republic\clones\mats\clone_vest_officer.rvmat",
+			""
+		};
 		class ItemInfo: ItemInfo
 		{
 			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestAirborne.p3d";
@@ -470,6 +533,11 @@ class cfgWeapons
 			{
 				"camo1",
 				"camo2"
+			};
+			hiddenSelectionsMaterials[]=
+			{
+				"RD501_Units\textures\Republic\clones\mats\clone_vest_officer.rvmat",
+				""
 			};
 		};
 	};
@@ -480,6 +548,11 @@ class cfgWeapons
 		model="\MRC\JLTS\characters\CloneArmor\CloneVestAirborne.p3d";
 		hiddenSelections[] = {"Camo1","Camo2"};
 		hiddenSelectionsTextures[] = {TEXTUREPATH\Republic\clones\ab\acc\ab_sgt_acc.paa, TEXTUREPATH\Republic\clones\ab\acc\ab_cpl_acc.paa};
+		hiddenSelectionsMaterials[]=
+		{
+			"RD501_Units\textures\Republic\clones\mats\clone_vest_officer.rvmat",
+			""
+		};
 		class ItemInfo: ItemInfo
 		{
 			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestAirborne.p3d";
@@ -488,6 +561,11 @@ class cfgWeapons
 			{
 				"camo1",
 				"camo2"
+			};
+			hiddenSelectionsMaterials[]=
+			{
+				"RD501_Units\textures\Republic\clones\mats\clone_vest_officer.rvmat",
+				""
 			};
 		};
 	};
@@ -498,6 +576,11 @@ class cfgWeapons
 		model="\MRC\JLTS\characters\CloneArmor\CloneVestAirborneNCO.p3d";
 		hiddenSelections[] = {"Camo1","Camo2"};
 		hiddenSelectionsTextures[] = {TEXTUREPATH\Republic\clones\ab\acc\ab_sgt_acc.paa, TEXTUREPATH\Republic\clones\ab\acc\ab_cpl_acc.paa};
+		hiddenSelectionsMaterials[]=
+		{
+			"RD501_Units\textures\Republic\clones\mats\clone_vest_officer.rvmat",
+			""
+		};
 		class ItemInfo: ItemInfo
 		{
 			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestAirborneNCO.p3d";
@@ -506,6 +589,11 @@ class cfgWeapons
 			{
 				"camo1",
 				"camo2"
+			};
+			hiddenSelectionsMaterials[]=
+			{
+				"RD501_Units\textures\Republic\clones\mats\clone_vest_officer.rvmat",
+				""
 			};
 		};
 	};
@@ -516,6 +604,11 @@ class cfgWeapons
 		model="\MRC\JLTS\characters\CloneArmor\CloneVestAirborneNCO.p3d";
 		hiddenSelections[] = {"Camo1","Camo2"};
 		hiddenSelectionsTextures[] = {TEXTUREPATH\Republic\clones\ab\acc\ab_sgt_acc.paa, TEXTUREPATH\Republic\clones\ab\acc\heavy_accessories_co.paa};
+		hiddenSelectionsMaterials[]=
+		{
+			"RD501_Units\textures\Republic\clones\mats\clone_vest_officer.rvmat",
+			""
+		};
 		class ItemInfo: ItemInfo
 		{
 			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestAirborneNCO.p3d";
@@ -524,6 +617,11 @@ class cfgWeapons
 			{
 				"camo1",
 				"camo2"
+			};
+			hiddenSelectionsMaterials[]=
+			{
+				"RD501_Units\textures\Republic\clones\mats\clone_vest_officer.rvmat",
+				""
 			};
 		};
 	};
@@ -534,6 +632,10 @@ class cfgWeapons
 		model="\MRC\JLTS\characters\CloneArmor\CloneVestOfficer.p3d";
 		hiddenSelections[] = {"Camo1"};
 		hiddenSelectionsTextures[] = {TEXTUREPATH\Republic\clones\ab\acc\ab_ofc4_acc.paa};
+		hiddenSelectionsMaterials[]=
+		{
+			"RD501_Units\textures\Republic\clones\mats\clone_vest_officer.rvmat"
+		};
 		class ItemInfo: ItemInfo
 		{
 			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestOfficer.p3d";
@@ -541,6 +643,10 @@ class cfgWeapons
 			hiddenSelections[]=
 			{
 				"camo1"
+			};
+			hiddenSelectionsMaterials[]=
+			{
+				"RD501_Units\textures\Republic\clones\mats\clone_vest_officer.rvmat"
 			};
 		};
 	};
@@ -551,6 +657,10 @@ class cfgWeapons
 		model="\MRC\JLTS\characters\CloneArmor\CloneVestOfficer.p3d";
 		hiddenSelections[] = {"Camo1"};
 		hiddenSelectionsTextures[] = {TEXTUREPATH\Republic\clones\ab\acc\ab_ncoic_acc.paa};
+		hiddenSelectionsMaterials[]=
+		{
+			"RD501_Units\textures\Republic\clones\mats\clone_vest_officer.rvmat"
+		};
 		class ItemInfo: ItemInfo
 		{
 			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestOfficer.p3d";
@@ -558,6 +668,10 @@ class cfgWeapons
 			hiddenSelections[]=
 			{
 				"camo1"
+			};
+			hiddenSelectionsMaterials[]=
+			{
+				"RD501_Units\textures\Republic\clones\mats\clone_vest_officer.rvmat"
 			};
 		};
 	};
@@ -568,6 +682,10 @@ class cfgWeapons
 		model="\MRC\JLTS\characters\CloneArmor\CloneVestOfficer.p3d";
 		hiddenSelections[] = {"Camo1"};
 		hiddenSelectionsTextures[] = {TEXTUREPATH\Republic\clones\ab\acc\ab_ofc3_acc.paa};
+		hiddenSelectionsMaterials[]=
+		{
+			"RD501_Units\textures\Republic\clones\mats\clone_vest_officer.rvmat"
+		};
 		class ItemInfo: ItemInfo
 		{
 			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestOfficer.p3d";
@@ -575,6 +693,10 @@ class cfgWeapons
 			hiddenSelections[]=
 			{
 				"camo1"
+			};
+			hiddenSelectionsMaterials[]=
+			{
+				"RD501_Units\textures\Republic\clones\mats\clone_vest_officer.rvmat"
 			};
 		};
 	};
@@ -585,6 +707,10 @@ class cfgWeapons
 		model="\MRC\JLTS\characters\CloneArmor\CloneVestOfficer.p3d";
 		hiddenSelections[] = {"Camo1"};
 		hiddenSelectionsTextures[] = {TEXTUREPATH\Republic\clones\ab\acc\ab_ofc2_acc.paa};
+		hiddenSelectionsMaterials[]=
+		{
+			"RD501_Units\textures\Republic\clones\mats\clone_vest_officer.rvmat"
+		};
 		class ItemInfo: ItemInfo
 		{
 			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestOfficer.p3d";
@@ -592,6 +718,10 @@ class cfgWeapons
 			hiddenSelections[]=
 			{
 				"camo1"
+			};
+			hiddenSelectionsMaterials[]=
+			{
+				"RD501_Units\textures\Republic\clones\mats\clone_vest_officer.rvmat"
 			};
 		};
 	};
@@ -602,6 +732,10 @@ class cfgWeapons
 		model="\MRC\JLTS\characters\CloneArmor\CloneVestOfficer.p3d";
 		hiddenSelections[] = {"Camo1"};
 		hiddenSelectionsTextures[] = {TEXTUREPATH\Republic\clones\ab\acc\ab_ofc1_acc.paa};
+		hiddenSelectionsMaterials[]=
+		{
+			"RD501_Units\textures\Republic\clones\mats\clone_vest_officer.rvmat"
+		};
 		class ItemInfo: ItemInfo
 		{
 			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestOfficer.p3d";
@@ -609,6 +743,10 @@ class cfgWeapons
 			hiddenSelections[]=
 			{
 				"camo1"
+			};
+			hiddenSelectionsMaterials[]=
+			{
+				"RD501_Units\textures\Republic\clones\mats\clone_vest_officer.rvmat"
 			};
 		};
 	};
@@ -619,6 +757,11 @@ class cfgWeapons
 		model="\MRC\JLTS\characters\CloneArmor\CloneVestAirborneNCO.p3d";
 		hiddenSelections[] = {"Camo1","Camo2"};
 		hiddenSelectionsTextures[] = {TEXTUREPATH\Republic\clones\ab\acc\ab_sgt_acc.paa, TEXTUREPATH\Republic\clones\ab\acc\ab_rto_acc1.paa};
+		hiddenSelectionsMaterials[]=
+		{
+			"RD501_Units\textures\Republic\clones\mats\clone_vest_officer.rvmat",
+			""
+		};
 		class ItemInfo: ItemInfo
 		{
 			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestAirborneNCO.p3d";
@@ -627,6 +770,11 @@ class cfgWeapons
 			{
 				"camo1",
 				"camo2"
+			};
+			hiddenSelectionsMaterials[]=
+			{
+				"RD501_Units\textures\Republic\clones\mats\clone_vest_officer.rvmat",
+				""
 			};
 		};
 	};
@@ -637,6 +785,11 @@ class cfgWeapons
 		model="\MRC\JLTS\characters\CloneArmor\CloneVestAirborneNCO.p3d";
 		hiddenSelections[] = {"Camo1","Camo2"};
 		hiddenSelectionsTextures[] = {TEXTUREPATH\Republic\clones\ab\acc\ab_sgt_acc.paa, TEXTUREPATH\Republic\clones\ab\acc\ab_medic_acc1.paa};
+		hiddenSelectionsMaterials[]=
+		{
+			"RD501_Units\textures\Republic\clones\mats\clone_vest_officer.rvmat",
+			""
+		};
 		class ItemInfo: ItemInfo
 		{
 			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestAirborneNCO.p3d";
@@ -645,6 +798,11 @@ class cfgWeapons
 			{
 				"camo1",
 				"camo2"
+			};
+			hiddenSelectionsMaterials[]=
+			{
+				"RD501_Units\textures\Republic\clones\mats\clone_vest_officer.rvmat",
+				""
 			};
 		};
 	};
@@ -655,6 +813,11 @@ class cfgWeapons
 		model="\MRC\JLTS\characters\CloneArmor\CloneVestAirborneNCO.p3d";
 		hiddenSelections[] = {"Camo1","Camo2"};
 		hiddenSelectionsTextures[] = {TEXTUREPATH\Republic\clones\ab\acc\ab_sgt_acc.paa, TEXTUREPATH\Republic\clones\ab\acc\ab_rto_acc.paa};
+		hiddenSelectionsMaterials[]=
+		{
+			"RD501_Units\textures\Republic\clones\mats\clone_vest_officer.rvmat",
+			""
+		};
 		class ItemInfo: ItemInfo
 		{
 			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestAirborneNCO.p3d";
@@ -663,6 +826,11 @@ class cfgWeapons
 			{
 				"camo1",
 				"camo2"
+			};
+			hiddenSelectionsMaterials[]=
+			{
+				"RD501_Units\textures\Republic\clones\mats\clone_vest_officer.rvmat",
+				""
 			};
 		};
 	};
@@ -673,6 +841,11 @@ class cfgWeapons
 		model="\MRC\JLTS\characters\CloneArmor\CloneVestAirborneNCO.p3d";
 		hiddenSelections[] = {"Camo1","Camo2"};
 		hiddenSelectionsTextures[] = {TEXTUREPATH\Republic\clones\ab\acc\ab_sgt_acc.paa, TEXTUREPATH\Republic\clones\ab\acc\ab_medic_acc.paa};
+		hiddenSelectionsMaterials[]=
+		{
+			"RD501_Units\textures\Republic\clones\mats\clone_vest_officer.rvmat",
+			""
+		};
 		class ItemInfo: ItemInfo
 		{
 			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestAirborneNCO.p3d";
@@ -681,6 +854,11 @@ class cfgWeapons
 			{
 				"camo1",
 				"camo2"
+			};
+			hiddenSelectionsMaterials[]=
+			{
+				"RD501_Units\textures\Republic\clones\mats\clone_vest_officer.rvmat",
+				""
 			};
 		};
 	};
@@ -693,6 +871,10 @@ class cfgWeapons
 		model="\MRC\JLTS\characters\CloneArmor\CloneVestReconNCO.p3d";
 		hiddenSelections[] = {"Camo1"};
 		hiddenSelectionsTextures[] = {"MRC\JLTS\characters\CloneArmor\data\Clone_vest_heavy_co.paa"};
+		hiddenSelectionsMaterials[]=
+		{
+		
+		};
 		class ItemInfo: ItemInfo
 		{
 			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestReconNCO.p3d";
@@ -700,6 +882,10 @@ class cfgWeapons
 			hiddenSelections[]=
 			{
 				"camo1"
+			};
+			hiddenSelectionsMaterials[]=
+			{
+			
 			};
 		};
 	};
@@ -710,6 +896,11 @@ class cfgWeapons
 		model="\MRC\JLTS\characters\CloneArmor\CloneVestReconOfficer.p3d";
 		hiddenSelections[] = {"Camo1","Camo2"};
 		hiddenSelectionsTextures[] = {"MRC\JLTS\characters\CloneArmor\data\Clone_vest_officer_co.paa","MRC\JLTS\characters\CloneArmor\data\Clone_vest_heavy_co.paa"};
+		hiddenSelectionsMaterials[]=
+		{
+			"RD501_Units\textures\Republic\clones\mats\clone_vest_officer.rvmat",
+			""
+		};
 		class ItemInfo: ItemInfo
 		{
 			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestReconOfficer.p3d";
@@ -718,6 +909,11 @@ class cfgWeapons
 			{
 				"camo1",
 				"camo2"
+			};
+			hiddenSelectionsMaterials[]=
+			{
+				"RD501_Units\textures\Republic\clones\mats\clone_vest_officer.rvmat",
+				""
 			};
 		};
 	};
@@ -728,6 +924,10 @@ class cfgWeapons
 		model="\MRC\JLTS\characters\CloneArmor\CloneVestOfficer.p3d";
 		hiddenSelections[] = {"Camo1"};
 		hiddenSelectionsTextures[] = {TEXTUREPATH\Republic\clones\avi\acc\pilot_cx1_acc.paa};
+		hiddenSelectionsMaterials[]=
+		{
+			"RD501_Units\textures\Republic\clones\mats\clone_vest_officer.rvmat"
+		};
 		class ItemInfo: ItemInfo
 		{
 			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestOfficer.p3d";
@@ -735,6 +935,10 @@ class cfgWeapons
 			hiddenSelections[]=
 			{
 				"camo1"
+			};
+			hiddenSelectionsMaterials[]=
+			{
+				"RD501_Units\textures\Republic\clones\mats\clone_vest_officer.rvmat"
 			};
 		};
 	};
@@ -745,6 +949,10 @@ class cfgWeapons
 		model="\MRC\JLTS\characters\CloneArmor\CloneVestOfficer.p3d";
 		hiddenSelections[] = {"Camo1"};
 		hiddenSelectionsTextures[] = {TEXTUREPATH\Republic\clones\avi\acc\pilot_cx2_acc.paa};
+		hiddenSelectionsMaterials[]=
+		{
+			"RD501_Units\textures\Republic\clones\mats\clone_vest_officer.rvmat"
+		};
 		class ItemInfo: ItemInfo
 		{
 			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestOfficer.p3d";
@@ -752,6 +960,10 @@ class cfgWeapons
 			hiddenSelections[]=
 			{
 				"camo1"
+			};
+			hiddenSelectionsMaterials[]=
+			{
+				"RD501_Units\textures\Republic\clones\mats\clone_vest_officer.rvmat"
 			};
 		};
 	};
@@ -762,6 +974,10 @@ class cfgWeapons
 		model="\MRC\JLTS\characters\CloneArmor\CloneVestOfficer.p3d";
 		hiddenSelections[] = {"Camo1"};
 		hiddenSelectionsTextures[] = {TEXTUREPATH\Republic\clones\avi\acc\pilot_cx_acc.paa};
+		hiddenSelectionsMaterials[]=
+		{
+			"RD501_Units\textures\Republic\clones\mats\clone_vest_officer.rvmat"
+		};
 		class ItemInfo: ItemInfo
 		{
 			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestOfficer.p3d";
@@ -769,6 +985,10 @@ class cfgWeapons
 			hiddenSelections[]=
 			{
 				"camo1"
+			};
+			hiddenSelectionsMaterials[]=
+			{
+				"RD501_Units\textures\Republic\clones\mats\clone_vest_officer.rvmat"
 			};
 		};
 	};
@@ -780,6 +1000,10 @@ class cfgWeapons
 		model="\MRC\JLTS\characters\CloneArmor\CloneVestARCCadet.p3d";
 		hiddenSelections[] = {"Camo1"};
 		hiddenSelectionsTextures[] = {MRC\JLTS\characters\CloneArmor\data\Clone_vest_arc_co.paa};
+		hiddenSelectionsMaterials[]=
+		{
+			"RD501_Units\textures\Republic\clones\mats\clone_vest_arc.rvmat"
+		};
 		class ItemInfo: ItemInfo
 		{
 			uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestARCCadet.p3d";
@@ -787,6 +1011,10 @@ class cfgWeapons
 			hiddenSelections[]=
 			{
 				"camo1"
+			};
+			hiddenSelectionsMaterials[]=
+			{
+				"RD501_Units\textures\Republic\clones\mats\clone_vest_arc.rvmat"
 			};
 		};
 	};
@@ -797,6 +1025,10 @@ class cfgWeapons
 		model="\MRC\JLTS\characters\CloneArmor\CloneVestARC.p3d";
 		hiddenSelections[] = {"Camo1"};
 		hiddenSelectionsTextures[] = {TEXTUREPATH\Republic\clones\arc\acc\arc_acc_01.paa};
+		hiddenSelectionsMaterials[]=
+		{
+			"RD501_Units\textures\Republic\clones\mats\clone_vest_arc.rvmat"
+		};
 		class ItemInfo: ItemInfo
 		{
 			uniformmodel="\MRC\JLTS\characters\CloneArmor\CloneVestARC.p3d";
@@ -804,6 +1036,10 @@ class cfgWeapons
 			hiddenSelections[]=
 			{
 				"camo1"
+			};
+			hiddenSelectionsMaterials[]=
+			{
+				"RD501_Units\textures\Republic\clones\mats\clone_vest_arc.rvmat"
 			};
 		};
 	};
@@ -815,6 +1051,10 @@ class cfgWeapons
 		model="\MRC\JLTS\characters\CloneArmor\CloneVestKama.p3d";
 		hiddenSelections[] = {"Camo1"};
 		hiddenSelectionsTextures[] = {TEXTUREPATH\gcw\empire\rg\acc\rg_acc.paa};
+		hiddenSelectionsMaterials[]=
+		{
+			"RD501_Units\textures\Republic\clones\mats\clone_officer_vest.rvmat"
+		};
 		class ItemInfo: ItemInfo
 		{
 			uniformmodel="\MRC\JLTS\characters\CloneArmor\CloneVestKama.p3d";
@@ -822,6 +1062,10 @@ class cfgWeapons
 			hiddenSelections[]=
 			{
 				"camo1"
+			};
+			hiddenSelectionsMaterials[]=
+			{
+				"RD501_Units\textures\Republic\clones\mats\clone_officer_vest.rvmat"
 			};
 		};
 	};
