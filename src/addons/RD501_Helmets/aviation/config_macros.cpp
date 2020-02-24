@@ -4,7 +4,7 @@
 	{\
 		scope = 2;\
 		author = "RD501";\
-		displayName = Clone pilot helmet (501st '##displayname##');\
+		displayName = [501st] AVI HELM ('##displayname##');\
 		hiddenSelectionsTextures[] = {macro_custom_helmet_textures##\aviation\##texture};\
 		subItems[] = {"G_B_Diving"};\
 	};
@@ -14,9 +14,8 @@
 	{\
 		scope = 2;\
 		author = "RD501";\
-		displayName = Clone warden helmet (501st '##displayname##');\
+		displayName = [501st] WRDN HELM ('##displayname##');\
 		hiddenSelectionsTextures[] = {macro_custom_helmet_textures##\aviation\##texture};\
 		subItems[] = {"G_B_Diving"};\
 	};
-
 

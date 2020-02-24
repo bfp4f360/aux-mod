@@ -30,7 +30,7 @@ class CfgWeapons
 		weaponPoolAvailable = 1;       
 		ace_hearing_protection = 0.85; 		
 		ace_hearing_lowerVolume = 0;    
-		displayName = "Clone pilot helmet (501st legion)";
+		displayName = "[501st] PLT HELM (Base)";
 		picture = "\SWOP_clones\data\helmets\ico\ico_pilot.paa";
 		//model = "SWOP_clones\helmet\CloneHelmetPilot.p3d";
 
@@ -75,7 +75,7 @@ class CfgWeapons
 			};
 		};
 
-		subItems[] = {macro_new_weapon(nvg_integrated,pilot_test),"G_B_Diving"};
+		subItems[] = {"G_B_Diving"};
 	};
 
 	class macro_new_helmet(pilot,lum_base): macro_new_helmet(pilot,base)

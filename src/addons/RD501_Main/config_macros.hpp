@@ -158,6 +158,7 @@
 //---helmets
 	#define macro_custom_helmet_textures \RD501_Helmets\_textures
 	#define macro_new_helmet(group,name) MODNAME##_##group##_helmet_##name
+	#define macro_new_helmet_jlts(group,name) MODNAME##_##group##_helmet_##name
 
 	#define macro_clone_helmet_hitpoints\
 	class HitpointsProtectionInfo\

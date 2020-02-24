@@ -6,7 +6,6 @@
 			"RD501_Laat\textures\rvmats\laat_mk4_wings.rvmat",
 			"RD501_Laat\textures\rvmats\laat_mk4_fuselage.rvmat"
 		};
-        class ACE_SelfActions;
     };	
 	class macro_new_vehicle(laat,mk4_501st_cxc): rd501_laat_mk4_skin
 	{
@@ -21,7 +20,7 @@
 			"RD501_Laat\textures\rvmats\laat_mk4_wings.rvmat",
 			"RD501_Laat\textures\rvmats\laat_mk4_fuselage.rvmat"
 		};
-        class ACE_SelfActions;
+		#include "_interactions/mk4_cxc.hpp"
 	};
 	class macro_new_vehicle(laat,mk4_501st_cxx): rd501_laat_mk4_skin
 	{
@@ -36,7 +35,7 @@
 			"RD501_Laat\textures\rvmats\laat_mk4_wings.rvmat",
 			"RD501_Laat\textures\rvmats\laat_mk4_fuselage.rvmat"
 		};
-        class ACE_SelfActions;
+		#include "_interactions/mk4_cxx.hpp"
 	};
 		class macro_new_vehicle(laat,mk4_501st_cxp): rd501_laat_mk4_skin
 	{
@@ -51,7 +50,7 @@
 			"RD501_Laat\textures\rvmats\laat_mk4_wings.rvmat",
 			"RD501_Laat\textures\rvmats\laat_mk4_fuselage.rvmat"
 		};
-        class ACE_SelfActions;
+		#include "_interactions/mk4_cxp.hpp"
 	};
 		class macro_new_vehicle(laat,mk4_501st_cxs): rd501_laat_mk4_skin
 	{
@@ -66,7 +65,7 @@
 			"RD501_Laat\textures\rvmats\laat_mk4_wings.rvmat",
 			"RD501_Laat\textures\rvmats\laat_mk4_fuselage.rvmat"
 		};
-        class ACE_SelfActions;
+		#include "_interactions/mk4_cxs.hpp"
 	};
 		class macro_new_vehicle(laat,mk4_501st_cx): rd501_laat_mk4_skin
 	{
@@ -81,5 +80,5 @@
 			"RD501_Laat\textures\rvmats\laat_mk4_wings.rvmat",
 			"RD501_Laat\textures\rvmats\laat_mk4_fuselage.rvmat"
 		};
-        class ACE_SelfActions;
+		#include "_interactions/mk4_cx.hpp"
 	};
