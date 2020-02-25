@@ -25,7 +25,15 @@ class CfgWeapons
 	class macro_new_helmet(pilot,base):itemCore
 	{
 		displayname = Clone Pilot Base Model;
-		hiddenSelectionsTextures[] = {"SWOP_clones\data\helmetsOther\clonePilotHelmet.paa"};
+		hiddenSelectionsTextures[]=
+        {
+            "RD501_Helmets\_textures\aviation\clonePilotHelmet_co.paa"
+        };
+        hiddenSelectionsMaterials[]=
+        {
+            "RD501_Helmets\_materials\aviation\clonePilotHelmet.rvmat",
+            "RD501_Helmets\_materials\aviation\clonePilotHelmet.rvmat"
+        };
 		class ItemInfo;
 	};
 

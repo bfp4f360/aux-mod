@@ -42,12 +42,12 @@ class CfgWeapons
 
 		hiddenSelectionsTextures[]=
         {
-            "RD501_Helmets_textures\aviation\clonePilotHelmet_co.paa"
+            "RD501_Helmets\_textures\aviation\clonePilotHelmet_co.paa"
         };
         hiddenSelectionsMaterials[]=
         {
-            "RD501_Helmets_materials\aviation\clonePilotHelmet.rvmat",
-            "RD501_Helmets_materials\aviation\clonePilotHelmet.rvmat"
+            "RD501_Helmets\_materials\aviation\clonePilotHelmet.rvmat",
+            "RD501_Helmets\_materials\aviation\clonePilotHelmet.rvmat"
         };
 
 
