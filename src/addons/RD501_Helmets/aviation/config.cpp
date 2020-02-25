@@ -31,8 +31,8 @@ class CfgWeapons
         };
         hiddenSelectionsMaterials[]=
         {
-            "RD501_Helmets\_materials\aviation\clonePilotHelmet.rvmat",
-            "RD501_Helmets\_materials\aviation\clonePilotHelmet.rvmat"
+            "",
+            ""
         };
 		class ItemInfo;
 	};
