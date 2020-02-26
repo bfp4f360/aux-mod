@@ -1018,13 +1018,63 @@ class cfgWeapons
 			};
 		};
 	};
-	class macro_new_vest_class(501_arc,acc_2): macro_new_vest_class(501_inf,acc_9)
+	class macro_new_vest_class(501_arc,acc_3): macro_new_vest_class(501_inf,acc_9)
 	{
 		displayname = "[501st] ARC ACC 02"
 		picture="\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestARC_ui_ca.paa";
 		model="\MRC\JLTS\characters\CloneArmor\CloneVestARC.p3d";
 		hiddenSelections[] = {"Camo1"};
-		hiddenSelectionsTextures[] = {TEXTUREPATH\Republic\clones\arc\acc\arc_acc_01.paa};
+		hiddenSelectionsTextures[] = {TEXTUREPATH\Republic\clones\arc\acc\arc_acc_02.paa};
+		hiddenSelectionsMaterials[]=
+		{
+			"RD501_Units\textures\Republic\clones\mats\clone_vest_arc.rvmat"
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformmodel="\MRC\JLTS\characters\CloneArmor\CloneVestARC.p3d";
+			containerClass="Supply100";
+			hiddenSelections[]=
+			{
+				"camo1"
+			};
+			hiddenSelectionsMaterials[]=
+			{
+				"RD501_Units\textures\Republic\clones\mats\clone_vest_arc.rvmat"
+			};
+		};
+	};
+	class macro_new_vest_class(501_arc,acc_4): macro_new_vest_class(501_inf,acc_9)
+	{
+		displayname = "[501st] ARC ACC 03"
+		picture="\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestARC_ui_ca.paa";
+		model="\MRC\JLTS\characters\CloneArmor\CloneVestARC.p3d";
+		hiddenSelections[] = {"Camo1"};
+		hiddenSelectionsTextures[] = {TEXTUREPATH\Republic\clones\arc\acc\arc_acc_03.paa};
+		hiddenSelectionsMaterials[]=
+		{
+			"RD501_Units\textures\Republic\clones\mats\clone_vest_arc.rvmat"
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformmodel="\MRC\JLTS\characters\CloneArmor\CloneVestARC.p3d";
+			containerClass="Supply100";
+			hiddenSelections[]=
+			{
+				"camo1"
+			};
+			hiddenSelectionsMaterials[]=
+			{
+				"RD501_Units\textures\Republic\clones\mats\clone_vest_arc.rvmat"
+			};
+		};
+	};
+	class macro_new_vest_class(501_arc,acc_5): macro_new_vest_class(501_inf,acc_9)
+	{
+		displayname = "[501st] ARC ACC 04"
+		picture="\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestARC_ui_ca.paa";
+		model="\MRC\JLTS\characters\CloneArmor\CloneVestARC.p3d";
+		hiddenSelections[] = {"Camo1"};
+		hiddenSelectionsTextures[] = {TEXTUREPATH\Republic\clones\arc\acc\arc_acc_04.paa};
 		hiddenSelectionsMaterials[]=
 		{
 			"RD501_Units\textures\Republic\clones\mats\clone_vest_arc.rvmat"
@@ -1069,6 +1119,23 @@ class cfgWeapons
 			};
 		};
 	};
+	//
+	class macro_new_vest_class(501_invis,vest): macro_new_vest_class(501_inf,acc_9)
+	{
+		displayname = "[501st] Nanoweave Under Armour"
+		picture = "\SWOP_sith\data\impguardpalliumicon_x_ca.paa";
+		model="RD501_Units\nothing.p3d";
+		hiddenSelections[] = {""};
+		hiddenSelectionsTextures[] = {""};
+		hiddenSelectionsMaterials[]={""};
+        class ItemInfo: ItemInfo
+        {
+            uniformModel="RD501_Units\nothing.p3d";
+			containerClass="Supply100";
+			hiddenSelections[]={""};
+			hiddenSelectionsMaterials[]={""};
+        };
+    };
 };
 
 class DefaultEventhandlers;
@@ -5031,16 +5098,6 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {TEXTUREPATH\Republic\clones\avi\pilot_cx_armor_upper.paa,TEXTUREPATH\Republic\clones\avi\pilot_cx_armor_lower.paa};
 	};
 	//
-	class macro_new_uniform_skin_class(501_arc,01): macro_new_uniform_skin_class(501_inf,recruit)
-	{
-		author = "RD501";
-		scope = 2;
-		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-		nakedUniform = "U_BasicBody";
-		hiddenSelections[] = {"Camo1","Camo2"};
-		hiddenSelectionsTextures[] = {TEXTUREPATH\Republic\clones\arc\arc_armour_upper.paa,TEXTUREPATH\Republic\clones\arc\arc_armour_lower.paa};
-	};
-	//
 	class macro_new_uniform_skin_class(empire_rg,boi): macro_new_uniform_skin_class(501_inf,recruit)
 	{
 		author = "RD501";
@@ -5049,6 +5106,25 @@ class CfgVehicles
 		nakedUniform = "U_BasicBody";
 		hiddenSelections[] = {"Camo1","Camo2"};
 		hiddenSelectionsTextures[] = {TEXTUREPATH\gcw\empire\rg\rg_armour_upper.paa,TEXTUREPATH\gcw\empire\rg\rg_armour_lower.paa};
+	};
+	//
+	class macro_new_uniform_skin_class(501_arc,01): macro_new_uniform_skin_class(501_inf,recruit)
+	{
+		author = "RD501";
+		scope = 2;
+		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
+		nakedUniform = "U_BasicBody";
+		hiddenSelections[] = {"Camo1","Camo2"};
+		hiddenSelectionsTextures[] = {TEXTUREPATH\Republic\clones\arc\arc_armour_upper_01.paa,TEXTUREPATH\Republic\clones\arc\arc_armour_lower.paa};
+	};
+	class macro_new_uniform_skin_class(501_arc,02): macro_new_uniform_skin_class(501_inf,recruit)
+	{
+		author = "RD501";
+		scope = 2;
+		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
+		nakedUniform = "U_BasicBody";
+		hiddenSelections[] = {"Camo1","Camo2"};
+		hiddenSelectionsTextures[] = {TEXTUREPATH\Republic\clones\arc\arc_armour_upper.paa,TEXTUREPATH\Republic\clones\arc\arc_armour_lower.paa};
 	};
 };
 	

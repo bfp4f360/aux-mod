@@ -253,6 +253,43 @@ class CfgWeapons
 			};
 		};
 	};
+	class macro_new_helmet(arc,base_jlts) : itemCore
+	{
+		scope = 2;
+		author = "RD501";
+		weaponPoolAvailable = 1;       
+
+		ace_hearing_protection = 0.85; 		
+		ace_hearing_lowerVolume = 0;    
+
+		displayName = "[501st] ARC HELM (Base)";
+		picture="\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
+		model = "\MRC\JLTS\characters\CloneArmor\CloneHelmetP2.p3d";
+		hiddenSelections[] = {"Camo1"};
+		hiddenSelectionsTextures[] = {"RD501_Units\textures\republic\clones\arc\arc_helmet.paa"};
+		hiddenSelectionsMaterials[]= {"RD501_Helmets\_materials\clone_helmet_p2.rvmat"};
+		class ItemInfo: HeadgearItem
+		{
+			mass = 30;
+			uniformmodel = "\MRC\JLTS\characters\CloneArmor\CloneHelmetP2.p3d";
+			hiddenSelectionsMaterials[]= {"RD501_Helmets\_materials\clone_helmet_p2.rvmat"};
+			modelSides[] = {6};
+			hiddenSelections[] = {"Camo1"};
+			material = -1;
+			explosionShielding = 2.2;
+			minimalHit = 0.01;
+			passThrough = 0.01;
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitpointName = "HitHead";
+					armor = 50;
+					passThrough = 0.6;
+				};
+			};
+		};
+	};
 
 	//AB
 	class macro_new_helmet(airborne,base): H_HelmetSpecB
@@ -323,7 +360,6 @@ class CfgWeapons
 		scope = 2;
 		author = "RD501";
 		weaponPoolAvailable = 1;       
-
 		ace_hearing_protection = 0.85; 		
 		ace_hearing_lowerVolume = 0;   
 
@@ -332,6 +368,7 @@ class CfgWeapons
 		model="\MRC\JLTS\characters\CloneArmor\CloneHelmetP2.p3d";
 		hiddenSelections[] = {"Camo1"};
 		hiddenSelectionsTextures[] = {"\RD501_Helmets\_textures\jlts\inf\recruit_helmet.paa"};
+		hiddenSelectionsMaterials[]= {"RD501_Helmets\_materials\clone_helmet_p2.rvmat"};
 		class ItemInfo: HeadgearItem
 		{
 			mass = 30;
@@ -367,6 +404,7 @@ class CfgWeapons
 		model="\MRC\JLTS\characters\CloneArmor\CloneHelmetP2.p3d";
 		hiddenSelections[] = {"Camo1"};
 		hiddenSelectionsTextures[] = {"\RD501_Helmets\_textures\jlts\inf\cadet_helmet.paa"};
+		hiddenSelectionsMaterials[]= {"RD501_Helmets\_materials\clone_helmet_p2.rvmat"};
 		class ItemInfo: HeadgearItem
 		{
 			mass = 30;
@@ -402,6 +440,7 @@ class CfgWeapons
 		model="\MRC\JLTS\characters\CloneArmor\CloneHelmetP2.p3d";
 		hiddenSelections[] = {"Camo1"};
 		hiddenSelectionsTextures[] = {"\RD501_Helmets\_textures\jlts\inf\trooper_helmet.paa"};
+		hiddenSelectionsMaterials[]= {"RD501_Helmets\_materials\clone_helmet_p2.rvmat"};
 		class ItemInfo: HeadgearItem
 		{
 			mass = 30;
@@ -437,6 +476,7 @@ class CfgWeapons
 		model="\MRC\JLTS\characters\CloneArmor\CloneHelmetP2.p3d";
 		hiddenSelections[] = {"Camo1"};
 		hiddenSelectionsTextures[] = {"\RD501_Helmets\_textures\jlts\inf\strooper_helmet.paa"};
+		hiddenSelectionsMaterials[]= {"RD501_Helmets\_materials\clone_helmet_p2.rvmat"};
 		class ItemInfo: HeadgearItem
 		{
 			mass = 30;
@@ -472,6 +512,7 @@ class CfgWeapons
 		model="\MRC\JLTS\characters\CloneArmor\CloneHelmetP2.p3d";
 		hiddenSelections[] = {"Camo1"};
 		hiddenSelectionsTextures[] = {"\RD501_Helmets\_textures\jlts\inf\vtrooper_helmet.paa"};
+		hiddenSelectionsMaterials[]= {"RD501_Helmets\_materials\clone_helmet_p2.rvmat"};
 		class ItemInfo: HeadgearItem
 		{
 			mass = 30;
@@ -507,6 +548,7 @@ class CfgWeapons
 		model="\MRC\JLTS\characters\CloneArmor\CloneHelmetP2.p3d";
 		hiddenSelections[] = {"Camo1"};
 		hiddenSelectionsTextures[] = {"\RD501_Helmets\_textures\jlts\inf\nco_helmet.paa"};
+		hiddenSelectionsMaterials[]= {"RD501_Helmets\_materials\clone_helmet_p2.rvmat"};
 		class ItemInfo: HeadgearItem
 		{
 			mass = 30;
@@ -539,6 +581,7 @@ class CfgWeapons
 		ace_hearing_lowerVolume = 0;    
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {"\RD501_Helmets\_textures\jlts\ab\ab_helmet_trooper.paa"};
+		hiddenSelectionsMaterials[]= {"RD501_Helmets\_materials\clone_helmet_ab.rvmat"};
 		class ItemInfo: HeadgearItem
 		{
 			mass = 10;
@@ -568,6 +611,7 @@ class CfgWeapons
 		ace_hearing_lowerVolume = 0;    
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {"\RD501_Helmets\_textures\jlts\ab\ab_helmet_vtrooper.paa"};
+		hiddenSelectionsMaterials[]= {"RD501_Helmets\_materials\clone_helmet_ab.rvmat"};
 		class ItemInfo: HeadgearItem
 		{
 			mass = 10;
@@ -597,6 +641,7 @@ class CfgWeapons
 		ace_hearing_lowerVolume = 0;    
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {"MRC\JLTS\characters\CloneArmor\data\Clone_Helmet_AB_co.paa"};
+		hiddenSelectionsMaterials[]= {"RD501_Helmets\_materials\clone_helmet_ab.rvmat"};
 		class ItemInfo: HeadgearItem
 		{
 			mass = 10;
