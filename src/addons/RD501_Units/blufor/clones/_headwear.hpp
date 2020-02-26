@@ -82,7 +82,8 @@ class rd501_JLTS_CloneNVGRange: JLTS_CloneNVGRange
     visionMode[]=
     {
         "Normal",
-        "NVG"
+        "NVG",
+        "TI"
     };
 };
 class rd501_JLTS_CloneNVGRange_arc: JLTS_CloneNVGRange
@@ -103,7 +104,8 @@ class rd501_JLTS_CloneNVGRange_down: JLTS_CloneNVGRange
     visionMode[]=
     {
         "Normal",
-        "NVG"
+        "NVG",
+        "TI"
     };
     class ItemInfo: ItemInfo
     {
