@@ -596,3 +596,22 @@ class macro_new_uniform_class(empire_rg,boi): macro_new_uniform_class(501_inf,re
 		containerClass = "Supply100";
 	};
 };
+//
+class macro_new_uniform_class(501_arc,01): macro_new_uniform_class(501_inf,recruit)
+{
+	displayName = "[501st] ARC ARMR 01";
+	class ItemInfo: ItemInfo
+	{
+		uniformClass = macro_new_uniform_skin_class(501_arc,01);
+		containerClass = "Supply100";
+	};
+};
+class macro_new_uniform_class(501_arc,02): macro_new_uniform_class(501_inf,recruit)
+{
+	displayName = "[501st] ARC ARMR 02";
+	class ItemInfo: ItemInfo
+	{
+		uniformClass = macro_new_uniform_skin_class(501_arc,02);
+		containerClass = "Supply100";
+	};
+};
