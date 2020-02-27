@@ -42,6 +42,7 @@ class CfgWeapons
 	NEW_501_AB_HELM_JLTS(501st_Solaire_helmet,Solaire,Solaire.paa)
 	NEW_501_AB_HELM_JLTS(501st_Tallon_helmet,Tallon,Tallon.paa)
 	NEW_501_AB_HELM_JLTS(501st_Tuff_helmet,Tuff,Tuff.paa)
+	NEW_501_AB_HELM_JLTS(501st_Raykan_helmet,Raykan,Raykan.paa)
 
 	class macro_new_helmet(airborne,purge): macro_new_helmet(airborne,lum_base)
 	{

@@ -79,6 +79,7 @@ class rd501_JLTS_CloneNVGRange: JLTS_CloneNVGRange
 {
     displayname = "[501st] Clone Viewfinder Antenna (Toggle)";
     modelOptics="";
+    hiddenSelectionsTextures[] = {"RD501_Units\textures\Republic\clones\clone_rangefinder.paa"};
     visionMode[]=
     {
         "Normal",
@@ -101,6 +102,7 @@ class rd501_JLTS_CloneNVGRange_down: JLTS_CloneNVGRange
 {
     displayname = "[501st] Clone Viewfinder Antenna (Active)";
     modelOptics="";
+    hiddenSelectionsTextures[] = {"RD501_Units\textures\Republic\clones\clone_rangefinder.paa"};
     visionMode[]=
     {
         "Normal",
@@ -123,6 +125,7 @@ class rd501_JLTS_CloneNVGRange_down_arc: rd501_JLTS_CloneNVGRange_down
 {
     displayname = "[501st] ARC Viewfinder Antenna (Active)"
     modelOptics="";
+    hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\CloneArmor\data\Clone_nvg_range_co.paa"};
     visionMode[]=
     {
         "Normal",

@@ -904,7 +904,7 @@ class CfgVehicles
 	class RD501_JLTS_Clone_jumppack_mc: JLTS_Clone_jumppack_mc
 	{
 		scope=2;
-		displayname = "[501st] AB Jumppack (MC)";
+		displayname = "[501st] AB Jumppack 01";
 		tf_encryptionCode="tf_west_radio_code";
 		tf_subtype="digital_lr";
 		tf_range=35000;
@@ -957,7 +957,7 @@ class CfgVehicles
 	class RD501_JLTS_Clone_jumppack: JLTS_Clone_jumppack
 	{
 		scope=2;
-		displayname = "[501st] AB Jumppack (JLTS)";
+		displayname = "[501st] Jumppack (JLTS)";
 		tf_encryptionCode="tf_west_radio_code";
 		tf_subtype="digital_lr";
 		tf_range=35000;
@@ -1006,13 +1006,56 @@ class CfgVehicles
 			}
 		};
 	};
-
-	// class macro_jumppackClass(neutral,hq):macro_jumppackClass(neutral,base)
-	// {
-	// 	displayName = "JT-21 Acklay HQ";
-	// 	hiddenSelectionsTextures[] = {"RD501_Jumppack\textures\acklay_skin_set\ack_hq.paa"};
-
-	// };
+	class RD501_JLTS_Clone_jumppack_mc_2: RD501_JLTS_Clone_jumppack_mc
+	{
+		displayname = "[501st] AB Jumppack 02";
+		hiddenSelectionsTextures[] = {"RD501_Jumppack\textures\acklay_skin_set\mc_blue.paa"};
+	};
+	class RD501_JLTS_Clone_jumppack_hq_1: RD501_JLTS_Clone_jumppack_mc
+	{
+		displayname = "[501st] AB Jumppack (HQ 1)";
+		hiddenSelectionsTextures[] = {"RD501_Jumppack\textures\acklay_skin_set\hq_1.paa"};
+	};
+	class RD501_JLTS_Clone_jumppack_mc_hq_2: RD501_JLTS_Clone_jumppack_mc
+	{
+		displayname = "[501st] AB Jumppack (HQ 2)";
+		hiddenSelectionsTextures[] = {"RD501_Jumppack\textures\acklay_skin_set\hq_2.paa"};
+	};
+	class RD501_JLTS_Clone_jumppack_mc_2: RD501_JLTS_Clone_jumppack_mc
+	{
+		displayname = "[501st] AB Jumppack (HQ 6)";
+		hiddenSelectionsTextures[] = {"RD501_Jumppack\textures\acklay_skin_set\hq_6.paa"};
+	};
+	class RD501_JLTS_Clone_jumppack_mc_1_1: RD501_JLTS_Clone_jumppack_mc
+	{
+		displayname = "[501st] AB Jumppack (1-1)";
+		hiddenSelectionsTextures[] = {"RD501_Jumppack\textures\acklay_skin_set\1_1.paa"};
+	};
+	class RD501_JLTS_Clone_jumppack_mc_1_2: RD501_JLTS_Clone_jumppack_mc
+	{
+		displayname = "[501st] AB Jumppack (1-2)";
+		hiddenSelectionsTextures[] = {"RD501_Jumppack\textures\acklay_skin_set\1_2.paa"};
+	};
+	class RD501_JLTS_Clone_jumppack_mc_1_3: RD501_JLTS_Clone_jumppack_mc
+	{
+		displayname = "[501st] AB Jumppack (1-3)";
+		hiddenSelectionsTextures[] = {"RD501_Jumppack\textures\acklay_skin_set\1_3.paa"};
+	};
+	class RD501_JLTS_Clone_jumppack_mc_2_1: RD501_JLTS_Clone_jumppack_mc
+	{
+		displayname = "[501st] AB Jumppack (2-1)";
+		hiddenSelectionsTextures[] = {"RD501_Jumppack\textures\acklay_skin_set\2_1.paa"};
+	};
+	class RD501_JLTS_Clone_jumppack_mc_2_2: RD501_JLTS_Clone_jumppack_mc
+	{
+		displayname = "[501st] AB Jumppack (2-2)";
+		hiddenSelectionsTextures[] = {"RD501_Jumppack\textures\acklay_skin_set\2_2.paa"};
+	};
+	class RD501_JLTS_Clone_jumppack_mc_2_3: RD501_JLTS_Clone_jumppack_mc
+	{
+		displayname = "[501st] AB Jumppack (2-3)";
+		hiddenSelectionsTextures[] = {"RD501_Jumppack\textures\acklay_skin_set\2_3.paa"};
+	};							
 };
 
 class CfgWeapons
