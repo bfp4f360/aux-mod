@@ -33,7 +33,6 @@
 			macro_new_weapon(wynd,lgm),
 			macro_new_weapon(wynd,a2a),
 			macro_new_weapon(wynd,agm),
-			macro_new_weapon(bomb,cluster),
 			macro_basic_air_weapons,
 			"SmokeLauncher"
 			//macro_new_weapon(cannon,laat)
@@ -47,9 +46,7 @@
 			// macro_new_mag(laat_cannon,100),
 			// macro_new_mag(laat_cannon,100),
 			macro_new_mag(generic_aircraft_cannon_green,1000),
-			macro_new_mag(generic_aircraft_cannon_green,1000),
 			macro_new_mag(a2a,4),
-			macro_new_mag(agm,6),
 			macro_new_mag(agm,6),
 			macro_new_mag(agm,6),
 			macro_new_mag(lgm,4),
@@ -57,7 +54,6 @@
 			"SmokeLauncherMag",
 			"SmokeLauncherMag",
 			"SmokeLauncherMag",
-			macro_new_mag(cluster_bomb,2)
 		};
 	
 

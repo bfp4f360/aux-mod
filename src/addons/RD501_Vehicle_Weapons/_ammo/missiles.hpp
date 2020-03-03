@@ -2,12 +2,12 @@
 	{
 		displayName = "Zephyr A2A";
 		displayNameShort = "Zephyr A2A";
-		//effectFly = "RD501_Effect_Violet";
-		//effectsFire = "RD501_Effect_Violet";
-		//effectsMissileInit = "RD501_laat_PylonBackEffectsFFAR";
-		//effectsMissile = "RD501_FX_Missile_AA_Violet";
+		effectFly = "RD501_Effect_Violet";
+		effectsFire = "RD501_Effect_Violet";
+		effectsMissileInit = "RD501_laat_PylonBackEffectsFFAR";
+		effectsMissile = "RD501_FX_Missile_AA_Violet";
 		muzzleEffect = "";
-		//effectsSmoke = "RD501_Effect_Violet";
+		effectsSmoke = "RD501_Effect_Violet";
 		soundFly[] = {"\xt\SWrocketloop.ogg",3,1,800};
 		lockedTargetSound[] = {"TIE\LockedOn_2.ogg",0.7,1};
 		lockingTargetSound[] = {"TIE\Locking_Beep1.ogg",1,1};
@@ -23,16 +23,16 @@
 		maneuvrability = 40;
 	};
 	
-	class macro_new_ammo(agm) : M_PG_AT//Missile_AGM_02_F
+	class macro_new_ammo(agm) : Missile_AGM_02_F//M_PG_AT
 	{
 		displayName = "Torrent AGM";	
 		displayNameShort = "Torrent AGM";
-		//effectFly = "RD501_Effect_Violet";
-		//effectsFire = "RD501_Effect_Violet";
-		//effectsMissileInit = "RD501_laat_PylonBackEffectsFFAR";
-		//effectsMissile = "RD501_FX_Missile_AA_Violet";
+		effectFly = "RD501_Effect_Violet";
+		effectsFire = "RD501_Effect_Violet";
+		effectsMissileInit = "RD501_laat_PylonBackEffectsFFAR";
+		effectsMissile = "RD501_FX_Missile_AA_Violet";
 		muzzleEffect = "";
-		//effectsSmoke = "RD501_Effect_Violet";
+		effectsSmoke = "RD501_Effect_Violet";
 		soundfly[] = {"\xt\SWionrocketloop.ogg",3,1,800};
 		lockedTargetSound[] = {"TIE\LockedOn_2.ogg",0.7,1};
 		lockingTargetSound[] = {"TIE\Locking_Beep1.ogg",1,1};
@@ -57,12 +57,12 @@
 	{
 		displayName = "Hurricane UGM";	
 		displayNameShort = "Hurricane UGM";
-		//effectFly = "RD501_Effect_Violet";
-		//effectsFire = "RD501_Effect_Violet";
-		//effectsMissileInit = "RD501_laat_PylonBackEffectsFFAR";
-		//effectsMissile = "RD501_FX_Missile_AA_Violet";
+		effectFly = "RD501_Effect_Violet";
+		effectsFire = "RD501_Effect_Violet";
+		effectsMissileInit = "RD501_laat_PylonBackEffectsFFAR";
+		effectsMissile = "RD501_FX_Missile_AA_Violet";
 		muzzleEffect = "";
-		//effectsSmoke = "RD501_Effect_Violet";
+		effectsSmoke = "RD501_Effect_Violet";
 		soundfly[] = {"\xt\SWionrocketloop.ogg",3,1,800};
 		model = "\SWOP_Main\Effects\Tracer\laserred";
 		tracerColor[] = {"blue"};
@@ -79,19 +79,19 @@
 	{
 		displayName = "Flashfire WGM";	
 		displayNameShort = "Flashfire WGM";
-		//effectFly = "RD501_Effect_Violet";
-		//effectsFire = "RD501_Effect_Violet";
-		//effectsMissileInit = "RD501_laat_PylonBackEffectsFFAR";
-		//effectsMissile = "RD501_FX_Missile_AA";
+		effectFly = "RD501_Effect_Violet";
+		effectsFire = "RD501_Effect_Violet";
+		effectsMissileInit = "RD501_laat_PylonBackEffectsFFAR";
+		effectsMissile = "RD501_FX_Missile_AA";
 		muzzleEffect = "";
-		//effectsSmoke = "RD501_Effect_Violet";
+		effectsSmoke = "RD501_Effect_Violet";
 		soundfly[] = {"\xt\SWionrocketloop.ogg",3,1,800};
 		model = "\SWOP_Main\Effects\Tracer\laserblue";
 		tracerColor[] = {"blue"};
 		brightness = 20000;
 		lightColor[] = {0, 0, 1, 1};
 		triggerTime = 0.1;
-		thrustTime = 13;
+		thrustTime = 3;
 		hit = 3000;
 		indirectHit = 100;
 		indirectHitRange = 5;
@@ -103,10 +103,15 @@
 	{
 		displayName = "Spyker G2A";
 		displayNameShort = "Spyker G2A";
-		//effectsMissile = "RD501_FX_Missile_AA_Violet";
-		hit = 1000;
+		effectsMissile = "RD501_FX_Missile_AA_Violet";
+		hit = 2000;
 		indirecthit = 100;
 		missileLockMaxDistance = 7000;
+		cmimmunity = 100;
+		thrustTime = 30;
+		thrust = 100;
+		maxSpeed = 450;
+		maneuvrability = 2;
 	};
 	class macro_new_ammo(spartan) : ammo_Missile_rim162
 	{
@@ -114,16 +119,17 @@
 		airLock = 1; 
 		cost = 50;
 		displayNameShort = "Wasp G2A";
-		//effectsMissile = "RD501_FX_Missile_AA_Violet";
+		effectsMissile = "RD501_FX_Missile_AA_Violet";
 		hit = 100;
 		indirecthit = 100;
 		allowAgainstInfantry=1;
-		manueuvrability = 2;
+		manueuvrability = 86;
 		explosionTime = 4;
-		timeToLive = 4;
+		timeToLive = 8;
 		cmimmunity = 0;
 		aiAmmoUsageFlags = "64 + 128 + 256 + 512";
 		missileLockMaxDistance = 4000;
+		missileLockMaxSpeed = 1200;
 	};
 
 	class macro_new_ammo(backflip):ammo_Missile_rim116

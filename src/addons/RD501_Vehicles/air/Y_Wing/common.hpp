@@ -18,8 +18,7 @@
 					
 					macro_basic_air_weapons,
 					macro_new_weapon(voltic,y_wing),
-					macro_new_weapon(generic,republic_aircraft_cannon),
-					macro_new_weapon(backflip,aa)
+					macro_new_weapon(generic,republic_aircraft_cannon)
 				};
 				magazines[] = {
 				
@@ -30,15 +29,7 @@
 					macro_new_mag(voltic,200),
 					macro_new_mag(voltic,200),
 					macro_new_mag(voltic,200),
-					macro_new_mag(voltic,200),
-					macro_new_mag(backflip,8),
-					macro_new_mag(backflip,8),
-					macro_new_mag(backflip,8),
-					macro_new_mag(backflip,8),
-					macro_new_mag(backflip,8),
-					macro_new_mag(backflip,8),
-					macro_new_mag(backflip,8)
-				
+					macro_new_mag(voltic,200)
 				};
 
 			};

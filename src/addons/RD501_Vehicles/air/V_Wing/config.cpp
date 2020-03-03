@@ -78,6 +78,18 @@ class CfgVehicles
 		faction = macro_republic_faction
 		editorSubcategory = macro_editor_cat_air(Republic_vtol)
 		vehicleClass = macro_editor_vehicle_type_air(Republic)
+
+				visualTarget = 1; 
+		visualTargetSize = 1;
+		reportOwnPosition = true;
+		radarTargetSize = 1;
+		radarTarget = 1;
+		nvTarget = 1;
+		laserTarget = 1;
+		laserScanner = 0;
+		irTarget = 1;
+		irTargetSize = 1;
+		countermeasureActivationRadius = 2000;
 		
 		class Eventhandlers
 		{

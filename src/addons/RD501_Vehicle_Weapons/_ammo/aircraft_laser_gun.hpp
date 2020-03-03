@@ -36,9 +36,9 @@ class macro_new_ammo(generic_aircraft_laser_gun_red) : B_35mm_AA_Tracer_Red
     muzzleEffect = "";
     deflecting = 0;
     initTime = 0;
+    weaponLockSystem = 0; 
     gravityFactor = 0;
     ACE_caliber=0.1;
-    weaponLockSystem = "1 + 2 4 + 8 + 16";
     class Components
     {
         class SensorsManagerComponent
@@ -264,7 +264,7 @@ class macro_new_ammo(generic_aircraft_laser_gun_purple) : macro_new_ammo(generic
 class macro_new_ammo(generic_aircraft_laser_gun_praetorian): macro_new_ammo(generic_aircraft_laser_gun_purple)
 {
     hit = 15;
-    indirectHit = 7;
+    indirectHit = 1;
     indirectHitRange = 0.5;
     explosive = 0.2;
 };

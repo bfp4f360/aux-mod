@@ -48,8 +48,8 @@ class CfgWeapons
 
 	class macro_new_weapon(wynd,a2a) : missiles_ASRAAM
 	{
-		displayName = "Wynd (AA)";
-		displayNameShort = "Wynd System";
+		displayName = "Zephyr (AA)";
+		displayNameShort = "Zephyr";
 		magazines[] = {macro_new_mag(a2a,4)};
 		soundFly[] = {"\xt\SWrocketloop.ogg",3,1,800};
 		lockedTargetSound[] = {"TIE\LockedOn_2.ogg",0.7,1};
@@ -57,8 +57,8 @@ class CfgWeapons
 	};
 	class macro_new_weapon(wynd,agm) : missiles_DAGR//Missile_AGM_02_Plane_CAS_01_F
 	{
-		displayName = "Wynd (AGM)";
-		displayNameShort = "Wynd System";
+		displayName = "Torrent (AGM)";
+		displayNameShort = "Torrent";
 		canLock = 2;
 		magazines[] = {macro_new_mag(agm,6) };
 		soundfly[] = {"\xt\SWionrocketloop.ogg",3,1,800};
@@ -67,16 +67,16 @@ class CfgWeapons
 	};
 	class macro_new_weapon(wynd,ugm) : Rocket_04_AP_Plane_CAS_01_F
 	{
-		displayName = "Wynd (UGM)";
-		displayNameShort = "Wynd System";
+		displayName = "Hurricane (UGM)";
+		displayNameShort = "Hurricane";
 		soundfly[] = {"\xt\SWionrocketloop.ogg",3,1,800};
 		magazines[] = {macro_new_mag(ugm,10)};
 		autoFire=true;
 	};
 	class macro_new_weapon(wynd,lgm) : missiles_Jian
 	{
-		displayName = "Wynd (LGM)";
-		displayNameShort = "Wynd System";
+		displayName = "Flashfire (LGM)";
+		displayNameShort = "Flashfire";
 		soundfly[] = {"\xt\SWionrocketloop.ogg",3,1,800};
 		magazines[] = {macro_new_mag(lgm,4)};
 	};

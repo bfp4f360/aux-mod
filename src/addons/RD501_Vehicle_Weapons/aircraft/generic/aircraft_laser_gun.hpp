@@ -29,10 +29,10 @@
 			
 			
 			flashSize = 1;
-			dispersion = 0.015;
+			dispersion = 0.012;
 			autoFire=true;
 			aiRateOfFire = 0.001;
-			reloadTime=0.13; 
+			reloadTime=0.06; 
 
 			aiRateOfFireDispersion = 0.0;
 			aiRateOfFireDistance = 0;
@@ -48,7 +48,7 @@
 			weaponLockSystem = 0;
 			lockAcquire = 1;
 			FCSMaxLeadSpeed = 1000;
-			burst = 1;//30;
+			burst = 30;//30;
 		};
 	};
 

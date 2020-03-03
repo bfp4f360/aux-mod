@@ -32,7 +32,7 @@ class CfgWeapons
 
 	class macro_new_weapon(turret,laat_ball_turret):Cannon_Portableun
 	{
-		displayName = 'Ball Turret "BeamRider Mk-III"';
+		displayName = "BeamRider Mk-III";
 		magazines[] = {macro_new_mag(laat_ball_turret,200)};
 
 		stabilizedInAxes = 3;
@@ -54,7 +54,7 @@ class CfgWeapons
 				soundClosure[] = {};
 			};
 			displayName = "Laat Ball Turret";
-			reloadTime = 0.09;
+			reloadTime = 0.0009;
 			//sounds[] = {"StandardSound"};
 			class StandardSound
 			{
@@ -65,7 +65,7 @@ class CfgWeapons
 			};
 			autoFire = 1;
 			recoil = "Empty";
-			dispersion = 0.0013;
+			dispersion = 0;
 			showToPlayer = 1;
 			burst = 1;
 			ballisticscomputer = 1;

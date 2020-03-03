@@ -77,6 +77,17 @@ class CfgVehicles
 		scopeCurator=2;
 		forceInGarage = 1;
 		#include "common_delta.hpp"	
+				visualTarget = 1; 
+		visualTargetSize = 1;
+		reportOwnPosition = true;
+		radarTargetSize = 1;
+		radarTarget = 1;
+		nvTarget = 1;
+		laserTarget = 1;
+		laserScanner = 0;
+		irTarget = 1;
+		irTargetSize = 1;
+		countermeasureActivationRadius = 2000;
 
 		
 	};

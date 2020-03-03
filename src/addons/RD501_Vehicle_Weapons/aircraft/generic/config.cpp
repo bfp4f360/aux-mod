@@ -53,12 +53,14 @@ class CfgWeapons
 	{
 		magazineWell[] = {macro_new_magwell(generic_aircraft_cannon)};
 		ballisticsComputer = "1+4";
-		displayName = "Aircraft Laser Cannon";
+		displayName = "Laser Cannon";
+		burst = 1;
 		class LowROF: LowROF
 		{
 			textureType = "fullAuto";
 			burst = 1;
-			reloadTime=0.08; 
+			reloadTime=0.04; 
+			dispersion=0;
 			class StandardSound
 			{
 				begin1[] = {"XT\sounds\laser.ogg",1,1,3000};

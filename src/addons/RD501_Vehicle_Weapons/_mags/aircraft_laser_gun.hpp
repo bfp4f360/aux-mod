@@ -31,7 +31,7 @@
 	class macro_new_mag(generic_aircraft_gun_preatorian,1000): macro_new_mag(generic_aircraft_gun,1000)
 	{
 		displayNameShort = "Plasma Cores (Preatorian)";
-		displayName = "Plasma Cores (Shaving Cream)";
+		displayName = "Plasma Cores";
 		ammo = macro_new_ammo(generic_aircraft_laser_gun_praetorian)
 	};
 
@@ -39,5 +39,5 @@
 	{
 		ammo = macro_new_ammo(generic_kannon)
 		displayNameShort = "Coaxium Shells";
-		count = "100";
+		count = "30";
 	};

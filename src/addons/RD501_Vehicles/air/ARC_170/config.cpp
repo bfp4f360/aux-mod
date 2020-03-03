@@ -77,7 +77,7 @@ class CfgVehicles
 		scope=2;
 		scopeCurator=2;
 		side=1;
-		displayName = "ARC-180B";
+		displayName = "ARC-170";
 		forceInGarage = 1;
 
 		faction = macro_republic_faction
@@ -85,10 +85,23 @@ class CfgVehicles
 		vehicleClass = macro_editor_vehicle_type_air(Republic)
 
 
+		visualTarget = 1; 
+		visualTargetSize = 1;
+		reportOwnPosition = true;
+		radarTargetSize = 1;
+		radarTarget = 1;
+		nvTarget = 1;
+		laserTarget = 1;
+		laserScanner = 0;
+		irTarget = 1;
+		irTargetSize = 1;
+		countermeasureActivationRadius = 2000;
+
+
 		// model = "RD501_Vehicles\air\ARC_170\xt.p3d"
 		// hiddenSelections[] = {"camo1"};
 		// hiddenSelectionsTextures[] = {"ywing\Y-Wing_Body_co.paa"};
-		armor = 300;
+		armor = 500;
 		vtol=4;
 		
 		scopeCurator=2;
@@ -139,12 +152,10 @@ class CfgVehicles
 		magazines[] = {
 			
 			macro_new_mag(generic_aircraft_cannon_green,1000),
-			macro_new_mag(generic_aircraft_cannon_green,1000),
 			macro_new_mag(a2a,4),
 			macro_new_mag(agm,6),
 			macro_new_mag(ugm,10),
 			macro_basic_air_mags,
-			macro_new_mag(Kannon,100),
 			macro_new_mag(Kannon,100)
 		};
 
@@ -160,17 +171,13 @@ class CfgVehicles
 				showCrewAim = 4;
 				canUseScanner = 1;
 				weapons[] = {
-					macro_new_weapon(generic,kannon),
 					macro_basic_air_weapons,
 					macro_new_weapon(generic,republic_aircraft_cannon)
 				};
 				magazines[] = {
 				
 					macro_basic_air_mags,
-					macro_new_mag(generic_aircraft_cannon_green,1000),
-					macro_new_mag(generic_aircraft_cannon_green,1000),
-					macro_new_mag(Kannon,100),
-					macro_new_mag(Kannon,100)	
+					macro_new_mag(generic_aircraft_cannon_green,1000)
 				};
 				
 				memoryPointLRocket = "muzzle_tail";
@@ -271,19 +278,19 @@ class CfgVehicles
 
 				weapons[] = {
 					//macro_new_weapon(generic,republic_aircraft_cannon),
-					macro_new_weapon(bomb,SDB),
-					macro_new_weapon(bomb,cluster),
-					macro_new_weapon(bomb,LGB),
-					macro_basic_air_weapons
+					//macro_new_weapon(bomb,SDB),
+					//macro_new_weapon(bomb,cluster),
+					//macro_new_weapon(bomb,LGB),
+					//macro_basic_air_weapons
 					
 				};
 				magazines[] = {
 					
 					//macro_new_mag(generic_aircraft_cannon_green,1000),
-					macro_basic_air_mags,
-					macro_new_mag(sdb_bomb,4),
-					macro_new_mag(cluster_bomb,4),
-					macro_new_mag(lgb_bomb,4)
+					//macro_basic_air_mags,
+					//macro_new_mag(sdb_bomb,4),
+					//macro_new_mag(cluster_bomb,4),
+					//macro_new_mag(lgb_bomb,4)
 				};
 			
 			

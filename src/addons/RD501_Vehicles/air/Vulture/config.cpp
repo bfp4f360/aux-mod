@@ -51,7 +51,7 @@ class CfgVehicles
 		displayName="Vulture Droid Mk.II";
 	    altFullForce = 6000;
 	    altNoForce = 9000;
-		armor = 200;
+		armor = 500;
 		forceInGarage=1;
 		
 		airBrakeFrictionCoef = 80.4;

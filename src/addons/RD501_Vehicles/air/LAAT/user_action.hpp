@@ -1,6 +1,6 @@
 
 
-	class ThrusterEngage
+	/*class ThrusterEngage
 	{
 		displayName = "<t color='#4C9900'>[Impulsor On]</t>";
 		displayNameDefault = "<t color='#4C9900'>[Impulsor On]</t>";
@@ -13,6 +13,19 @@
 		statement = "this execVM ""\LAAT\initTE.sqf""";
 	
 	};
+
+	class ThrusterDisngage: ThrusterEngage
+	{
+		priority = 21;
+		displayName = "<t color='#FF9933'>[RepulsorBrake On]</t>";
+		displayNameDefault = "<t color='#FF9933'>[RepulsorBrake On]</t>";
+		textToolTip = "<t color='#FF9933'>[RepulsorBrake On]</t>";
+		condition = "((this getvariable [""impulsorStatus"",false]) AND (player == driver this) AND (alive this))";
+		statement = "this execVM ""\LAAT\initTD.sqf""";
+	
+	};*/
+
+
 	class ThrusterEngage_spam: ThrusterEngage
 	{
 		displayName = "";
@@ -27,16 +40,7 @@
 		shortcut="User19"
 	};
 
-	class ThrusterDisngage: ThrusterEngage
-	{
-		priority = 21;
-		displayName = "<t color='#FF9933'>[RepulsorBrake On]</t>";
-		displayNameDefault = "<t color='#FF9933'>[RepulsorBrake On]</t>";
-		textToolTip = "<t color='#FF9933'>[RepulsorBrake On]</t>";
-		condition = "((this getvariable [""impulsorStatus"",false]) AND (player == driver this) AND (alive this))";
-		statement = "this execVM ""\LAAT\initTD.sqf""";
-	
-	};
+
 
 	class ThrusterDisngage_spam: ThrusterEngage
 	{

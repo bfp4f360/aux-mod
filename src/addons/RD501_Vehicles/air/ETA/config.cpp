@@ -176,6 +176,18 @@ class CfgVehicles
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsMaterials[] = {"eta2\eta2main.rvmat","Delta7\Delta7astro.rvmat"};
 		hiddenSelectionsTextures[] = {"eta2\t_yodasstarfighter_co.paa","eta2\t_yodasstarfighter_r2d2_co.paa"};
+
+				visualTarget = 1; 
+		visualTargetSize = 1;
+		reportOwnPosition = true;
+		radarTargetSize = 1;
+		radarTarget = 1;
+		nvTarget = 1;
+		laserTarget = 1;
+		laserScanner = 0;
+		irTarget = 1;
+		irTargetSize = 1;
+		countermeasureActivationRadius = 2000;
 		class pilotCamera
 		{
 			class OpticsIn

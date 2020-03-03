@@ -52,7 +52,17 @@ class CfgVehicles
 		forceInGarage = 1;
 		displayName="CIS Archer AA"
 		crew = "SWOP_CIS_droid_crew";
-		
+		visualTarget = 0; 
+		visualTargetSize = 0;
+		reportOwnPosition = true;
+		radarTargetSize = 0;
+		radarTarget = 0;
+		nvTarget = 0;
+		laserTarget = 0;
+		laserScanner = 0;
+		irTarget = 0;
+		irTargetSize = 0;
+		countermeasureActivationRadius = 2000;
 		hiddenSelections[] = {"Camo1", "Camo2", "Camo3", "Camo4", "Camo5", "CamoSlat"};
 		textureList[] = {};
 		hiddenSelectionsTextures[] = 
@@ -74,8 +84,8 @@ class CfgVehicles
 		{
 			class MainTurret: MainTurret
 			{
-				weapons[] = {"SmokeLauncher","missiles_SAAMI",macro_new_weapon(generic,preatorian_gun_opfor)};
-				magazines[] = {"SmokeLauncherMag","4Rnd_70mm_SAAMI_missiles","4Rnd_70mm_SAAMI_missiles",macro_new_mag(generic_aircraft_gun_preatorian,1000),macro_new_mag(generic_aircraft_gun_preatorian,1000)};
+				weapons[] = {"SmokeLauncher",macro_new_weapon(swarm,aa),macro_new_weapon(generic,preatorian_gun_opfor)};
+				magazines[] = {"SmokeLauncherMag",macro_new_mag(spartan,21),macro_new_mag(spartan,21),macro_new_mag(generic_aircraft_gun_preatorian,1000),macro_new_mag(generic_aircraft_gun_preatorian,1000)};
 			};
 		};
 	};
@@ -151,8 +161,8 @@ class CfgVehicles
 			};
 			class mainturret: mainturret
 			{
-				weapons[] = {macro_new_weapon(generic,preatorian_gun_opfor),"missiles_titan_AA"};
-				magazines[] = {"4Rnd_Titan_long_missiles","4Rnd_Titan_long_missiles",macro_new_mag(generic_aircraft_gun_preatorian,1000),macro_new_mag(generic_aircraft_gun_preatorian,1000)};
+				weapons[] = {macro_new_weapon(generic,preatorian_gun_opfor),macro_new_weapon(tyrant,aa)};
+				magazines[] = {macro_new_ammo(centurion),macro_new_ammo(centurion),macro_new_mag(generic_aircraft_gun_preatorian,1000),macro_new_mag(generic_aircraft_gun_preatorian,1000)};
 			};
 		};
 	};

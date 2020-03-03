@@ -80,7 +80,6 @@ class CfgVehicles
 		irScanGround = 1; 
 		laserScanner = 1;
 		weaponLockSystem = "0"; 
-		nvScanner = 1;
 		radarTarget = 0;
 		receiveRemoteTargets = true;
 		reportRemoteTargets = true;
@@ -90,6 +89,18 @@ class CfgVehicles
 		side = 0;
 		editorPreview = "";
 		author = "RD501";
+
+		visualTarget = 0; 
+		visualTargetSize = 0;
+		reportOwnPosition = true;
+		radarTargetSize = 0;
+		radarTarget = 0;
+		nvTarget = 0;
+		laserTarget = 0;
+		laserScanner = 0;
+		irTarget = 0;
+		irTargetSize = 0;
+		countermeasureActivationRadius = 2000;
 
 		faction = macro_cis_faction
 		editorSubcategory = macro_editor_cat(AA)
@@ -330,8 +341,8 @@ class CfgVehicles
 		side = 1;
 		displayName = "Laser Cannons (Blufor)";
 		faction = macro_republic_faction
-		editorSubcategory = macro_editor_cat(AA)
-		vehicleClass = macro_editor_vehicle_type(AA)
+		//editorSubcategory = macro_editor_cat(AA)
+		//vehicleClass = macro_editor_vehicle_type(AA)
 		//faction = "RD501Faction";
 		hiddenSelectionsTextures[] = 
 		{
@@ -481,8 +492,8 @@ class CfgVehicles
 		displayName = "Laser Cannons (PURPLEE)";
 
 		faction = macro_cis_faction
-		editorSubcategory = macro_editor_cat(AA)
-		vehicleClass = macro_editor_vehicle_type(AA)
+	//	editorSubcategory = macro_editor_cat(AA)
+	//	vehicleClass = macro_editor_vehicle_type(AA)
 
 		class Turrets: Turrets
 		{
