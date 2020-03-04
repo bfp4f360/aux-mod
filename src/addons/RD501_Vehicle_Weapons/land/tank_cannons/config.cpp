@@ -224,64 +224,7 @@ class CfgWeapons
 		};
 	};
 
-	class macro_new_weapon(mynock_cannon,td) : macro_new_weapon(aat_cannon,king)
-	{
-		
-		displayName = "Quantum Accelerator";
-		dlc = "RD501";
-		author= "RD501";
 
-		magazines[] = {
-			macro_new_mag(mynock_mbt_td,3),
-		};
-
-		ballisticsComputer = 4;
-		canLock = 2;
-		weaponLockDelay = 3.5;
-		weaponLockSystem = 8;
-		ace_overpressure_angle = 360;
-		ace_overpressure_range = 10;
-		ace_overpressure_damage = 100;
-
-		magazineReloadTime = 6;
-
-		modes[] = {"manual","close"};
-		class manual: manual
-		{
-			sounds[] = {"StandardSound"};
-			class StandardSound
-			{
-				begin1[] = {"AAT\sounds\aat1.ogg", 2, 1, 1000};
-				begin2[] = {"AAT\sounds\aat2.ogg", 2, 1, 1000};
-				begin3[] = {"AAT\sounds\aat3.ogg", 2, 1, 1000};
-				soundBegin[] = {"begin1", 1, "begin2", 1, "begin3", 1};
-			};
-			recoil = "empty";
-			weaponSoundEffect = "DefaultRifle";
-			soundContinuous = 0;
-			reloadTime = 8;
-			magazineReloadTime = 8;
-			autoReload = 1;
-			ballisticsComputer = 1;
-			canLock = 2;
-			autoFire = 0;
-			dispersion = 0;
-		};
-		class close: manual
-		{
-			showToPlayer = 0;
-			aiRateOfFire = .5;
-			aiRateOfFireDistance = 10000;
-			minRange = 0;
-			minRangeProbab = 0.35;
-			midRange = 500;
-			midRangeProbab = 0.78;
-			maxRange = 10000;
-			maxRangeProbab = 1.0;
-			aiDispersionCoefX = 2;
-			aiDispersionCoefY = 2;
-		};
-	};
 
 	class macro_new_weapon(atte,mbt):macro_new_weapon(saber_gun,mbt)
 	{
