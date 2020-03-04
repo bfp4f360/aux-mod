@@ -154,7 +154,7 @@ class CfgVehicles
 			init ="ACE_maxWeightCarry = 20000;ACE_maxWeightDrag = 20000;";
 		};
 			
-	};
+	};hiddenSelectionsTextures[] = {"SW_SpeederBike\SpeederbikeCIV_co.paa"};
 
 	class macro_new_vehicle(resuppy_box,small_ammo): SWOP_BOX_BASE
 	{
