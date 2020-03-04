@@ -18,9 +18,10 @@
 	{
 		hit = 45;
 		indirecthit = 20;
-		indirecthitrange = 1;
+		indirecthitrange = 0;
+		ExplosionEffects = "SWOP_LaserExploSmall";
 		caliber = 1;
-		explosive = 0.7;
+		explosive = 0;
 	};
 	class macro_new_ammo(generic_aircraft_laser_cannon_blue) : macro_new_ammo(generic_aircraft_laser_gun_blue)
 	{

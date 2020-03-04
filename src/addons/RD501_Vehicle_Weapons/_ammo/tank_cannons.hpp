@@ -116,6 +116,33 @@
 		allowAgainstInfantry = 1;
 		timeToLive=10;
 	};
+	class macro_new_ammo(mynock_mbt_td): macro_new_ammo(aat_king)//AAT_Laser
+	{
+		displayname = "Tankbuster Shell"
+		warheadName = "Tankbuster Shell"
+		hit = 100000;
+		indirectHit = 0;
+		indirectHitRange = 0;
+		visibleFire = 42;
+		audibleFire = 42;
+		explosionSoundEffect = "DefaultExplosion";
+		explosive = 0;
+		cost = 22;
+		CraterEffects = "ATMissileCrater";
+		explosionEffects = "IEDMineSmallExplosion";
+		model = "SW_AV7\ion.p3d";		
+		effectFly = "SWOP_BlueLaserEffect";
+		tracerStartTime = 0;
+		tracerEndTime = 10;
+		airFriction = 0;
+		muzzleEffect = "";
+		caliber = 10;
+		tracerScale = 100;
+		typicalSpeed = 600;
+		aiAmmoUsageFlags = "64 + 128 + 256 + 512";
+		allowAgainstInfantry = 1;
+		timeToLive=20;
+	};
 	class macro_new_ammo(atte):ATTE_Laser
 	{
 		hit = 1600;
