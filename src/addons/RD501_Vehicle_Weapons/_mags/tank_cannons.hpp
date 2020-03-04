@@ -52,17 +52,6 @@
 		muzzleImpulseFactor = 0;
 		maxLeadSpeed = 600;
 	};
-	class macro_new_mag(mynock_mbt_TD,3): macro_new_mag(aat_mbt,10)
-	{
-		displayName = "Tankbuster Shell";
-		displayNameShort = "Tankbuster Shell";
-		ammo = macro_new_ammo(mynock_mbt_ap)
-		count = 3;
-		tracersEvery = 1;
-		initSpeed = 1300;
-		muzzleImpulseFactor = 0;
-		maxLeadSpeed = 600;
-	};
 	class 10000Rnd_Laser_Cannon_ATTE;
 	class macro_new_mag(atte_mbt,10): 10000Rnd_Laser_Cannon_ATTE
 	{

@@ -303,7 +303,7 @@ class CfgAmmo
 	class macro_new_ammo(laat_cannon): TurboLaser_Laserx2//TurboLaser_Laserx2//SW_SpeederBikeCanon_Ammo//swop_bywingCannonammo//LAAT_Laser
 	{
 	
-		explosive = 0.5;
+		explosive = 1;
 		hit = 1000;
 		indirectHit =500;
 		indirectHitRange = 10;
@@ -314,12 +314,13 @@ class CfgAmmo
 		//effectFly = "SWOP_blueLaserEffect";
 		CraterEffects = "ExploAmmoLaserCrater";
 		explosionSoundEffect = "DefaultExplosion";
-		ExplosionEffects = "ExploAmmoExplosion";
+		ExplosionEffects = "MortarExplosion";
 		//model = "\tie\tracer_blue";
 		model = "\TIE\tracer_green.p3d";
 		effectFly = "SWOP_greenLaserEffect";
 		//explosionSoundEffect = "DefaultExplosion";
 		//CraterEffects = "ExploAmmoLaserCrater";
+		ExplosionEffects = "HEShellExplosion";
 		aiAmmoUsageFlags = "64 + 128 + 256 + 512";
 		allowAgainstInfantry = 1;
 		cost = 1;

@@ -208,8 +208,8 @@ class CfgVehicles
 		{
 			class MainTurret: MainTurret
 			{
-				weapons[] = {macro_new_weapon(mynock_cannon,td), macro_new_weapon(generic,plasma_aircraft_cannon)};
-				magazines[] = {macro_new_mag(mynock_mbt_td,3), macro_new_mag(mynock_mbt_td,3), macro_new_mag(mynock_mbt_td,3),  macro_new_mag(mynock_mbt_td,3), macro_new_mag(mynock_mbt_td,3), macro_new_mag(mynock_mbt_td,3), macro_new_mag(generic_aircraft_cannon_plasma_red,1000), macro_new_mag(generic_aircraft_cannon_plasma_red,1000)};
+				weapons[] = {macro_new_weapon(mynock_cannon,mbt), macro_new_weapon(generic,plasma_aircraft_cannon)};
+				magazines[] = {macro_new_mag(mynock_mbt_ap,12), macro_new_mag(mynock_mbt_ap,12), macro_new_mag(mynock_mbt_ap,12),  macro_new_mag(mynock_mbt_he,12), macro_new_mag(mynock_mbt_he,12), macro_new_mag(mynock_mbt_he,12), macro_new_mag(generic_aircraft_cannon_plasma_red,1000), macro_new_mag(generic_aircraft_cannon_plasma_red,1000)};
 				class Turrets: Turrets
 				{
 					class CommanderOptics: CommanderOptics
@@ -273,6 +273,14 @@ class CfgVehicles
 		forceInGarage = 1;
 		displayName="Republic Courser"
 		crew = "SWOP_Clonetrooper_P1";
+		
+		hiddenSelections[] = {"Camo1","Camo2","Camo3"};
+		hiddenSelectionsTextures[] = 
+		{
+			"\RD501_Vehicles\textures\LAAT\krayt_black_red\laatkraytbodyblackred.paa",
+			"\RD501_Vehicles\textures\LAAT\krayt_black_red\laatkraytbodyblackred.paa",
+			"\RD501_Vehicles\textures\LAAT\krayt_black_red\laatkraytbodyblackred.paa"
+		};
 
 		faction = macro_republic_faction
 		editorSubcategory = macro_editor_cat(Transport)
