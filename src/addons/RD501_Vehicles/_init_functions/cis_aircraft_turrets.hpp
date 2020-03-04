@@ -25,7 +25,7 @@
     class macro_new_vehicle(HMP,gunship) {
         class turret_script {
             
-            init = [_this select 0,macro_single_quote(macro_new_vehicle(Praetorian_Variant,opfor)),[0,5,-1.5]] [_this select 0,macro_single_quote(macro_new_vehicle(Praetorian_Variant,opfor)),[5,0,-1.5]] [_this select 0,macro_single_quote(macro_new_vehicle(Praetorian_Variant,opfor)),[-5,0,-1.5]] spawn macro_fnc_name(apply_aircraft_turrets);
+            init = [_this select 0,macro_single_quote(macro_new_vehicle(Praetorian_Variant,opfor)),[0,5,-1.5]] spawn macro_fnc_name(apply_aircraft_turrets);
         };
     };
 
