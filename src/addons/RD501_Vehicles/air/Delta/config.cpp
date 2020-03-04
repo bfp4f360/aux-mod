@@ -52,7 +52,7 @@ class CfgVehicles
 	};
 	class macro_new_vehicle(delta,7a_Mk2):swop_delta7a
 	{	
-		displayName = "CS Delta-7A Mk.II";
+		displayName = "CS-M Delta-7A Mk.II";
 		scope = 2;
 		scopeCurator=2;
 		forceInGarage = 1;
@@ -72,7 +72,7 @@ class CfgVehicles
 
 	class macro_new_vehicle(delta,7b_Mk2):swop_delta7b_anakin
 	{	
-		displayName = "CS Delta-7B (Yellow) Mk.II";
+		displayName = "CS-M Delta-7B (Yellow) Mk.II";
 		scope = 2;
 		scopeCurator=2;
 		forceInGarage = 1;
@@ -95,7 +95,7 @@ class CfgVehicles
 	class macro_new_vehicle(delta,7a_Mk2_red) : macro_new_vehicle(delta,7b_Mk2)
 	{
 		forceInGarage = 0;
-		Displayname = "CS Delta-7B (Red) Mk.II"
+		Displayname = "CS-M Delta-7B (Red) Mk.II"
 		hiddenSelections[] = {"camo1","camo2","camo3"};
 		hiddenSelectionsMaterials[] = {"delta7\Delta7wedge_obi.rvmat","delta7\Delta7back_obi.rvmat","delta7\Delta7astro.rvmat"};
 		hiddenSelectionsTextures[] = {"delta7\tx_delta7_wedge_obi.paa","delta7\tx_delta7_back_obi.paa","delta7\tx_delta7_astromech_obi.paa"};
@@ -103,7 +103,7 @@ class CfgVehicles
 	class macro_new_vehicle(delta,7a_Mk2_blue) : macro_new_vehicle(delta,7b_Mk2)
 	{
 		forceInGarage = 0;
-		displayname = "CS Delta-7B (Black) Mk.II";
+		displayname = "CS-M Delta-7B (Black) Mk.II";
 		hiddenSelections[] = {"camo1", "camo2", "camo3"};
 		hiddenSelectionsTextures[] = {"\A3\boat_f\Boat_Armed_01\data\Boat_Armed_01_ext_co.paa", "\A3\boat_f\Boat_Armed_01\data\Boat_Armed_01_ext_co.paa", "\A3\boat_f\Boat_Armed_01\data\Boat_Armed_01_ext_co.paa"};
 	};

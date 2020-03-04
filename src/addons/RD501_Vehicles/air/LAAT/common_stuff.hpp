@@ -1,5 +1,9 @@
 
-	class EventHandlers : DefaultEventhandlers {};
+	class EventHandlers : DefaultEventhandlers 
+	{
+		//init = "_this execVM "RD501_Main\functions\autocrate\autocrate.sqf"; _this execVM "RD501_Main\functions\vehicle_lift\laat_lift_3.sqf";";
+		init = "[_this select 0] execVM 'RD501_Main\functions\autocrate\autocrate.sqf';[_this select 0] execVM 'RD501_Main\functions\vehicle_lift\laat_lift_3.sqf';";
+	};
 	
 	faction = macro_republic_faction
 	editorSubcategory = macro_editor_cat_air(Republic_heli)
@@ -9,7 +13,7 @@
 	slingLoadMaxCargoMass = 5000000000;
 
 	//dmg properties
-		armor=600;
+		armor=800;
 		crewCrashProtection=0;
 		epeImpulseDamageCoef=0;
 
@@ -46,6 +50,7 @@
 			// macro_new_mag(laat_cannon,100),
 			// macro_new_mag(laat_cannon,100),
 			macro_new_mag(generic_aircraft_cannon_green,1000),
+			macro_new_mag(a2a,4),
 			macro_new_mag(a2a,4),
 			macro_new_mag(agm,6),
 			macro_new_mag(agm,6),

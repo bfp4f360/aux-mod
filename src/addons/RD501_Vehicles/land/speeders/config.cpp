@@ -76,7 +76,23 @@ class CfgVehicles
 			class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
 		};
 	};
-	
+	class sw_barc;
+	class rd501_sw_barc: sw_barc
+	{
+		author = "Zatama";
+		displayname = "Barc Speeder"
+		ace_cargo_size = 2;
+		ace_cargo_canLoad = 1;
+		faction = macro_republic_faction;
+		editorSubcategory = macro_editor_cat(Transport);
+		vehicleClass = macro_editor_vehicle_type(Transport);
+		weapons[] = {macro_new_weapon(generic,plasma_aircraft_cannon)};
+		magazines[] = {macro_new_mag(generic_aircraft_cannon_plasma_red,1000),macro_new_mag(generic_aircraft_cannon_plasma_red,1000)};
+		class EventHandlers
+		{
+			init = "[_this select 0] execVM 'rd501_vehicles\land\speeders\barc_mass.sqf';";
+		}
+	}
 
 
 };

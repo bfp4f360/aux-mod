@@ -209,30 +209,6 @@ class CfgVehicles
 							viewDistanceLimitCoef = -1;             
 						};					
 					};
-					class ActiveRadarSensorComponent: SensorTemplateActiveRadar
-					{
-						typeRecognitionDistance = 16000;
-						angleRangeHorizontal 	= 360;
-						angleRangeVertical 		= 360;
-						groundNoiseDistanceCoef = -1;
-						maxGroundNoiseDistance 	= 1600;
-						minSpeedThreshold 		= 0;
-						maxSpeedThreshold 		= 2000;
-						class AirTarget
-						{
-							minRange = 0; 
-							maxRange = 16000;                                              
-							objectDistanceLimitCoef = -1; 
-							viewDistanceLimitCoef = -1;             						
-						};
-						class GroundTarget
-						{
-							minRange = 0; 
-							maxRange = 16000;                                              
-							objectDistanceLimitCoef = -1; 
-							viewDistanceLimitCoef = -1;             
-						};					
-					};
 					class PassiveRadarSensorComponent: SensorTemplatePassiveRadar
 					{
 						typeRecognitionDistance = 16000;
@@ -339,7 +315,7 @@ class CfgVehicles
 	class  macro_new_vehicle(Praetorian_Variant,blufor) :  macro_new_vehicle(Praetorian_Variant,normal)
 	{
 		side = 1;
-		displayName = "Laser Cannons (Blufor)";
+		displayName = "Laser Turret (AA)";
 		faction = macro_republic_faction
 		//editorSubcategory = macro_editor_cat(AA)
 		//vehicleClass = macro_editor_vehicle_type(AA)
@@ -427,7 +403,7 @@ class CfgVehicles
 		displayName = "Laser Cannons (republic)";
 		side = 1;
 
-		faction = macro_republic_faction
+		faction = 
 		editorSubcategory = macro_editor_cat(AA)
 		vehicleClass = macro_editor_vehicle_type(AA)
 		class Turrets: Turrets
@@ -491,7 +467,7 @@ class CfgVehicles
 	{
 		displayName = "Laser Cannons (PURPLEE)";
 
-		faction = macro_cis_faction
+		faction = "";
 	//	editorSubcategory = macro_editor_cat(AA)
 	//	vehicleClass = macro_editor_vehicle_type(AA)
 

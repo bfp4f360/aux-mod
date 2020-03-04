@@ -319,6 +319,5 @@ class CfgVehicles
 				count = 0;
 			}; 
 		};
-	};
-		
+	};		
 };

@@ -1,6 +1,6 @@
 
 
-	/*class ThrusterEngage
+	class ThrusterEngage
 	{
 		displayName = "<t color='#4C9900'>[Impulsor On]</t>";
 		displayNameDefault = "<t color='#4C9900'>[Impulsor On]</t>";
@@ -23,7 +23,7 @@
 		condition = "((this getvariable [""impulsorStatus"",false]) AND (player == driver this) AND (alive this))";
 		statement = "this execVM ""\LAAT\initTD.sqf""";
 	
-	};*/
+	};
 
 
 	class ThrusterEngage_spam: ThrusterEngage

@@ -1036,7 +1036,7 @@ class CfgVehicles
 		irTargetSize = 1;
 		countermeasureActivationRadius = 2000;
 		
-		armor=400;
+		armor=800;
 		
 		#include "common.hpp"
 		class EventHandlers

@@ -84,10 +84,193 @@ class CfgVehicles
 		{
 			class MainTurret: MainTurret
 			{
-				weapons[] = {"SmokeLauncher",macro_new_weapon(swarm,aa),macro_new_weapon(generic,preatorian_gun_opfor)};
-				magazines[] = {"SmokeLauncherMag",macro_new_mag(spartan,21),macro_new_mag(spartan,21),macro_new_mag(generic_aircraft_gun_preatorian,1000),macro_new_mag(generic_aircraft_gun_preatorian,1000)};
+				weapons[] = {"SmokeLauncher","missiles_SAAMI",macro_new_weapon(generic,preatorian_gun_opfor)};
+				magazines[] = {"SmokeLauncherMag","4Rnd_70mm_SAAMI_missiles","4Rnd_70mm_SAAMI_missiles",macro_new_mag(generic_aircraft_gun_preatorian,1000),macro_new_mag(generic_aircraft_gun_preatorian,1000)};
 			};
 		};
+		class components: Components
+		{
+			class SensorsManagerComponent
+			{
+				class components
+				{
+					class IRSensorComponent
+					{
+						typeRecognitionDistance = 16000;
+						angleRangeHorizontal 	= 360;
+						angleRangeVertical 		= 360;
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance 	= 1600;
+						minSpeedThreshold 		= 0;
+						maxSpeedThreshold 		= 2000;
+						maxFogSeeThrough= -1; 
+						nightRangeCoef = 1; 
+						class AirTarget
+						{
+							minRange = 0; 
+							maxRange = 16000;                                              
+							objectDistanceLimitCoef = -1; 
+							viewDistanceLimitCoef = -1; 
+							maxFogSeeThrough= -1; 
+							nightRangeCoef = 1; 				
+						};
+						class GroundTarget
+						{
+							minRange = 0; 
+							maxRange = 16000;                                              
+							objectDistanceLimitCoef = -1; 
+							viewDistanceLimitCoef = -1;   
+							maxFogSeeThrough= -1; 
+							nightRangeCoef = 1; 	
+						};
+					};
+					class NVSensorComponent
+					{
+						typeRecognitionDistance = 16000;
+						angleRangeHorizontal 	= 360;
+						angleRangeVertical 		= 360;
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance 	= 1600;
+						minSpeedThreshold 		= 0;
+						maxSpeedThreshold 		= 2000;
+						class AirTarget
+						{
+							minRange = 0; 
+							maxRange = 16000;                                              
+							objectDistanceLimitCoef = -1; 
+							viewDistanceLimitCoef = -1;             						
+						};
+						class GroundTarget
+						{
+							minRange = 0; 
+							maxRange = 16000;                                              
+							objectDistanceLimitCoef = -1; 
+							viewDistanceLimitCoef = -1;             
+						};					
+					};
+					class LaserSensorComponent
+					{
+						typeRecognitionDistance = 16000;
+						angleRangeHorizontal 	= 360;
+						angleRangeVertical 		= 360;
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance 	= 1600;
+						minSpeedThreshold 		= 0;
+						maxSpeedThreshold 		= 2000;
+						class AirTarget
+						{
+							minRange = 0; 
+							maxRange = 16000;                                              
+							objectDistanceLimitCoef = -1; 
+							viewDistanceLimitCoef = -1;             						
+						};
+						class GroundTarget
+						{
+							minRange = 0; 
+							maxRange = 16000;                                              
+							objectDistanceLimitCoef = -1; 
+							viewDistanceLimitCoef = -1;             
+						};					
+					};
+					class PassiveRadarSensorComponent
+					{
+						typeRecognitionDistance = 16000;
+						angleRangeHorizontal 	= 360;
+						angleRangeVertical 		= 360;
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance 	= 1600;
+						minSpeedThreshold 		= 0;
+						maxSpeedThreshold 		= 2000;
+						class AirTarget
+						{
+							minRange = 0; 
+							maxRange = 16000;                                              
+							objectDistanceLimitCoef = -1; 
+							viewDistanceLimitCoef = -1;             						
+						};
+						class GroundTarget
+						{
+							minRange = 0; 
+							maxRange = 16000;                                              
+							objectDistanceLimitCoef = -1; 
+							viewDistanceLimitCoef = -1;             
+						};					
+					};
+					class VisualSensorComponent
+					{
+						typeRecognitionDistance = 16000;
+						angleRangeHorizontal 	= 360;
+						angleRangeVertical 		= 360;
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance 	= 1600;
+						minSpeedThreshold 		= 0;
+						maxSpeedThreshold 		= 2000;
+						class AirTarget
+						{
+							minRange = 0; 
+							maxRange = 16000;                                              
+							objectDistanceLimitCoef = -1; 
+							viewDistanceLimitCoef = -1;             						
+						};
+						class GroundTarget
+						{
+							minRange = 0; 
+							maxRange = 16000;                                              
+							objectDistanceLimitCoef = -1; 
+							viewDistanceLimitCoef = -1;             
+						};					
+					};
+					class ManSensorComponent
+					{
+						typeRecognitionDistance = 16000;
+						angleRangeHorizontal 	= 360;
+						angleRangeVertical 		= 360;
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance 	= 1600;
+						minSpeedThreshold 		= 0;
+						maxSpeedThreshold 		= 2000;
+						class AirTarget
+						{
+							minRange = 0; 
+							maxRange = 16000;                                              
+							objectDistanceLimitCoef = -1; 
+							viewDistanceLimitCoef = -1;             						
+						};
+						class GroundTarget
+						{
+							minRange = 0; 
+							maxRange = 16000;                                              
+							objectDistanceLimitCoef = -1; 
+							viewDistanceLimitCoef = -1;             
+						};					
+					};
+					class DataLinkSensorComponent
+					{
+						typeRecognitionDistance = 16000;
+						angleRangeHorizontal 	= 360;
+						angleRangeVertical 		= 360;
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance 	= 1600;
+						minSpeedThreshold 		= 0;
+						maxSpeedThreshold 		= 2000;
+						class AirTarget
+						{
+							minRange = 0; 
+							maxRange = 16000;                                              
+							objectDistanceLimitCoef = -1; 
+							viewDistanceLimitCoef = -1;             						
+						};
+						class GroundTarget
+						{
+							minRange = 0; 
+							maxRange = 16000;                                              
+							objectDistanceLimitCoef = -1; 
+							viewDistanceLimitCoef = -1;             
+						};					
+					};
+				};
+			};
+		};	
 	};
 	class macro_new_vehicle(Scorpion,CIS):I_LT_01_Cannon_F
 	{
@@ -124,6 +307,214 @@ class CfgVehicles
 				magazines[] = {"SmokeLauncherMag",macro_new_mag(aat_mbt,50), macro_new_mag(aat_mbt,50),"1000Rnd_Laser_Cannon_EWEBSWBF","1000Rnd_Laser_Cannon_EWEBSWBF"};
 			};
 		};
+
+		class components: Components
+		{
+			class SensorsManagerComponent
+			{
+				class components
+				{
+					class IRSensorComponent
+					{
+						typeRecognitionDistance = 16000;
+						angleRangeHorizontal 	= 360;
+						angleRangeVertical 		= 360;
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance 	= 1600;
+						minSpeedThreshold 		= 0;
+						maxSpeedThreshold 		= 2000;
+						maxFogSeeThrough= -1; 
+						nightRangeCoef = 1; 
+						class AirTarget
+						{
+							minRange = 0; 
+							maxRange = 16000;                                              
+							objectDistanceLimitCoef = -1; 
+							viewDistanceLimitCoef = -1; 
+							maxFogSeeThrough= -1; 
+							nightRangeCoef = 1; 				
+						};
+						class GroundTarget
+						{
+							minRange = 0; 
+							maxRange = 16000;                                              
+							objectDistanceLimitCoef = -1; 
+							viewDistanceLimitCoef = -1;   
+							maxFogSeeThrough= -1; 
+							nightRangeCoef = 1; 	
+						};
+					};
+					class NVSensorComponent
+					{
+						typeRecognitionDistance = 16000;
+						angleRangeHorizontal 	= 360;
+						angleRangeVertical 		= 360;
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance 	= 1600;
+						minSpeedThreshold 		= 0;
+						maxSpeedThreshold 		= 2000;
+						class AirTarget
+						{
+							minRange = 0; 
+							maxRange = 16000;                                              
+							objectDistanceLimitCoef = -1; 
+							viewDistanceLimitCoef = -1;             						
+						};
+						class GroundTarget
+						{
+							minRange = 0; 
+							maxRange = 16000;                                              
+							objectDistanceLimitCoef = -1; 
+							viewDistanceLimitCoef = -1;             
+						};					
+					};
+					class LaserSensorComponent
+					{
+						typeRecognitionDistance = 16000;
+						angleRangeHorizontal 	= 360;
+						angleRangeVertical 		= 360;
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance 	= 1600;
+						minSpeedThreshold 		= 0;
+						maxSpeedThreshold 		= 2000;
+						class AirTarget
+						{
+							minRange = 0; 
+							maxRange = 16000;                                              
+							objectDistanceLimitCoef = -1; 
+							viewDistanceLimitCoef = -1;             						
+						};
+						class GroundTarget
+						{
+							minRange = 0; 
+							maxRange = 16000;                                              
+							objectDistanceLimitCoef = -1; 
+							viewDistanceLimitCoef = -1;             
+						};					
+					};
+					class ActiveRadarSensorComponent
+					{
+						typeRecognitionDistance = 16000;
+						angleRangeHorizontal 	= 360;
+						angleRangeVertical 		= 360;
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance 	= 1600;
+						minSpeedThreshold 		= 0;
+						maxSpeedThreshold 		= 2000;
+						class AirTarget
+						{
+							minRange = 0; 
+							maxRange = 16000;                                              
+							objectDistanceLimitCoef = -1; 
+							viewDistanceLimitCoef = -1;             						
+						};
+						class GroundTarget
+						{
+							minRange = 0; 
+							maxRange = 16000;                                              
+							objectDistanceLimitCoef = -1; 
+							viewDistanceLimitCoef = -1;             
+						};					
+					};
+					class PassiveRadarSensorComponent
+					{
+						typeRecognitionDistance = 16000;
+						angleRangeHorizontal 	= 360;
+						angleRangeVertical 		= 360;
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance 	= 1600;
+						minSpeedThreshold 		= 0;
+						maxSpeedThreshold 		= 2000;
+						class AirTarget
+						{
+							minRange = 0; 
+							maxRange = 16000;                                              
+							objectDistanceLimitCoef = -1; 
+							viewDistanceLimitCoef = -1;             						
+						};
+						class GroundTarget
+						{
+							minRange = 0; 
+							maxRange = 16000;                                              
+							objectDistanceLimitCoef = -1; 
+							viewDistanceLimitCoef = -1;             
+						};					
+					};
+					class VisualSensorComponent
+					{
+						typeRecognitionDistance = 16000;
+						angleRangeHorizontal 	= 360;
+						angleRangeVertical 		= 360;
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance 	= 1600;
+						minSpeedThreshold 		= 0;
+						maxSpeedThreshold 		= 2000;
+						class AirTarget
+						{
+							minRange = 0; 
+							maxRange = 16000;                                              
+							objectDistanceLimitCoef = -1; 
+							viewDistanceLimitCoef = -1;             						
+						};
+						class GroundTarget
+						{
+							minRange = 0; 
+							maxRange = 16000;                                              
+							objectDistanceLimitCoef = -1; 
+							viewDistanceLimitCoef = -1;             
+						};					
+					};
+					class ManSensorComponent
+					{
+						typeRecognitionDistance = 16000;
+						angleRangeHorizontal 	= 360;
+						angleRangeVertical 		= 360;
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance 	= 1600;
+						minSpeedThreshold 		= 0;
+						maxSpeedThreshold 		= 2000;
+						class AirTarget
+						{
+							minRange = 0; 
+							maxRange = 16000;                                              
+							objectDistanceLimitCoef = -1; 
+							viewDistanceLimitCoef = -1;             						
+						};
+						class GroundTarget
+						{
+							minRange = 0; 
+							maxRange = 16000;                                              
+							objectDistanceLimitCoef = -1; 
+							viewDistanceLimitCoef = -1;             
+						};					
+					};
+					class DataLinkSensorComponent
+					{
+						typeRecognitionDistance = 16000;
+						angleRangeHorizontal 	= 360;
+						angleRangeVertical 		= 360;
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance 	= 1600;
+						minSpeedThreshold 		= 0;
+						maxSpeedThreshold 		= 2000;
+						class AirTarget
+						{
+							minRange = 0; 
+							maxRange = 16000;                                              
+							objectDistanceLimitCoef = -1; 
+							viewDistanceLimitCoef = -1;             						
+						};
+						class GroundTarget
+						{
+							minRange = 0; 
+							maxRange = 16000;                                              
+							objectDistanceLimitCoef = -1; 
+							viewDistanceLimitCoef = -1;             
+						};					
+					};
+				};
+			};
+		};	
 	};
 	class macro_new_vehicle(Tarantula,CIS):B_APC_Tracked_01_AA_F
 	{
@@ -161,9 +552,216 @@ class CfgVehicles
 			};
 			class mainturret: mainturret
 			{
-				weapons[] = {macro_new_weapon(generic,preatorian_gun_opfor),macro_new_weapon(tyrant,aa)};
-				magazines[] = {macro_new_ammo(centurion),macro_new_ammo(centurion),macro_new_mag(generic_aircraft_gun_preatorian,1000),macro_new_mag(generic_aircraft_gun_preatorian,1000)};
+				weapons[] = {macro_new_weapon(generic,preatorian_gun_opfor),"missiles_titan_AA"};
+				magazines[] = {"4Rnd_Titan_long_missiles","4Rnd_Titan_long_missiles",macro_new_mag(generic_aircraft_gun_preatorian,1000),macro_new_mag(generic_aircraft_gun_preatorian,1000)};
 			};
 		};
+		class components: Components
+		{
+			class SensorsManagerComponent
+			{
+				class components
+				{
+					class IRSensorComponent
+					{
+						typeRecognitionDistance = 16000;
+						angleRangeHorizontal 	= 360;
+						angleRangeVertical 		= 360;
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance 	= 1600;
+						minSpeedThreshold 		= 0;
+						maxSpeedThreshold 		= 2000;
+						maxFogSeeThrough= -1; 
+						nightRangeCoef = 1; 
+						class AirTarget
+						{
+							minRange = 0; 
+							maxRange = 16000;                                              
+							objectDistanceLimitCoef = -1; 
+							viewDistanceLimitCoef = -1; 
+							maxFogSeeThrough= -1; 
+							nightRangeCoef = 1; 				
+						};
+						class GroundTarget
+						{
+							minRange = 0; 
+							maxRange = 16000;                                              
+							objectDistanceLimitCoef = -1; 
+							viewDistanceLimitCoef = -1;   
+							maxFogSeeThrough= -1; 
+							nightRangeCoef = 1; 	
+						};
+					};
+					class NVSensorComponent
+					{
+						typeRecognitionDistance = 16000;
+						angleRangeHorizontal 	= 360;
+						angleRangeVertical 		= 360;
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance 	= 1600;
+						minSpeedThreshold 		= 0;
+						maxSpeedThreshold 		= 2000;
+						class AirTarget
+						{
+							minRange = 0; 
+							maxRange = 16000;                                              
+							objectDistanceLimitCoef = -1; 
+							viewDistanceLimitCoef = -1;             						
+						};
+						class GroundTarget
+						{
+							minRange = 0; 
+							maxRange = 16000;                                              
+							objectDistanceLimitCoef = -1; 
+							viewDistanceLimitCoef = -1;             
+						};					
+					};
+					class LaserSensorComponent
+					{
+						typeRecognitionDistance = 16000;
+						angleRangeHorizontal 	= 360;
+						angleRangeVertical 		= 360;
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance 	= 1600;
+						minSpeedThreshold 		= 0;
+						maxSpeedThreshold 		= 2000;
+						class AirTarget
+						{
+							minRange = 0; 
+							maxRange = 16000;                                              
+							objectDistanceLimitCoef = -1; 
+							viewDistanceLimitCoef = -1;             						
+						};
+						class GroundTarget
+						{
+							minRange = 0; 
+							maxRange = 16000;                                              
+							objectDistanceLimitCoef = -1; 
+							viewDistanceLimitCoef = -1;             
+						};					
+					};
+					class ActiveRadarSensorComponent
+					{
+						typeRecognitionDistance = 16000;
+						angleRangeHorizontal 	= 360;
+						angleRangeVertical 		= 360;
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance 	= 1600;
+						minSpeedThreshold 		= 0;
+						maxSpeedThreshold 		= 2000;
+						class AirTarget
+						{
+							minRange = 0; 
+							maxRange = 16000;                                              
+							objectDistanceLimitCoef = -1; 
+							viewDistanceLimitCoef = -1;             						
+						};
+						class GroundTarget
+						{
+							minRange = 0; 
+							maxRange = 16000;                                              
+							objectDistanceLimitCoef = -1; 
+							viewDistanceLimitCoef = -1;             
+						};					
+					};
+					class PassiveRadarSensorComponent
+					{
+						typeRecognitionDistance = 16000;
+						angleRangeHorizontal 	= 360;
+						angleRangeVertical 		= 360;
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance 	= 1600;
+						minSpeedThreshold 		= 0;
+						maxSpeedThreshold 		= 2000;
+						class AirTarget
+						{
+							minRange = 0; 
+							maxRange = 16000;                                              
+							objectDistanceLimitCoef = -1; 
+							viewDistanceLimitCoef = -1;             						
+						};
+						class GroundTarget
+						{
+							minRange = 0; 
+							maxRange = 16000;                                              
+							objectDistanceLimitCoef = -1; 
+							viewDistanceLimitCoef = -1;             
+						};					
+					};
+					class VisualSensorComponent
+					{
+						typeRecognitionDistance = 16000;
+						angleRangeHorizontal 	= 360;
+						angleRangeVertical 		= 360;
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance 	= 1600;
+						minSpeedThreshold 		= 0;
+						maxSpeedThreshold 		= 2000;
+						class AirTarget
+						{
+							minRange = 0; 
+							maxRange = 16000;                                              
+							objectDistanceLimitCoef = -1; 
+							viewDistanceLimitCoef = -1;             						
+						};
+						class GroundTarget
+						{
+							minRange = 0; 
+							maxRange = 16000;                                              
+							objectDistanceLimitCoef = -1; 
+							viewDistanceLimitCoef = -1;             
+						};					
+					};
+					class ManSensorComponent
+					{
+						typeRecognitionDistance = 16000;
+						angleRangeHorizontal 	= 360;
+						angleRangeVertical 		= 360;
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance 	= 1600;
+						minSpeedThreshold 		= 0;
+						maxSpeedThreshold 		= 2000;
+						class AirTarget
+						{
+							minRange = 0; 
+							maxRange = 16000;                                              
+							objectDistanceLimitCoef = -1; 
+							viewDistanceLimitCoef = -1;             						
+						};
+						class GroundTarget
+						{
+							minRange = 0; 
+							maxRange = 16000;                                              
+							objectDistanceLimitCoef = -1; 
+							viewDistanceLimitCoef = -1;             
+						};					
+					};
+					class DataLinkSensorComponent
+					{
+						typeRecognitionDistance = 16000;
+						angleRangeHorizontal 	= 360;
+						angleRangeVertical 		= 360;
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance 	= 1600;
+						minSpeedThreshold 		= 0;
+						maxSpeedThreshold 		= 2000;
+						class AirTarget
+						{
+							minRange = 0; 
+							maxRange = 16000;                                              
+							objectDistanceLimitCoef = -1; 
+							viewDistanceLimitCoef = -1;             						
+						};
+						class GroundTarget
+						{
+							minRange = 0; 
+							maxRange = 16000;                                              
+							objectDistanceLimitCoef = -1; 
+							viewDistanceLimitCoef = -1;             
+						};					
+					};
+				};
+			};
+		};	
 	};
 };

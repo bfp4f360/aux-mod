@@ -101,7 +101,7 @@ class CfgVehicles
 		// model = "RD501_Vehicles\air\ARC_170\xt.p3d"
 		// hiddenSelections[] = {"camo1"};
 		// hiddenSelectionsTextures[] = {"ywing\Y-Wing_Body_co.paa"};
-		armor = 500;
+		armor = 800;
 		vtol=4;
 		
 		scopeCurator=2;
@@ -109,7 +109,7 @@ class CfgVehicles
 
 	    altNoForce = 19000;
 		driverIsCommander = true;
-		enableManualFire = 1;
+		enableManualFire = 0;
 
 		memoryPointGun[] = {"cannon1","cannon2",""};
 		muzzleEnd[] = {"cannon1","cannon2",""};

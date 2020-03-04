@@ -94,7 +94,7 @@ class CfgVehicles
 		class Eventhandlers
 		{
 			fired = "_this call (uinamespace getvariable 'BIS_fnc_effectFired');";
-			init = "[_this select 0] execVM '\Vwing\init.sqf';[_this select 0] execVM '\Vwing\initturbine.sqf';";
+			init = "[_this select 0] execVM '\Vwing\init.sqf';[_this select 0] execVM '\Vwing\initturbine.sqf';[_this select 0] execVM 'rd501_vehicles\air\v_wing\vwing_mass.sqf';";
 			killed = "_this call (uinamespace getvariable 'BIS_fnc_effectKilled');";
 			class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
 		};

@@ -75,7 +75,7 @@ class CfgWeapons
 			};
 		};
 
-		subItems[] = {"G_B_Diving"};
+		subItems[] = {"G_B_Diving","ItemcTabHCam"};
 	};
 
 	class macro_new_helmet(pilot,lum_base): macro_new_helmet(pilot,base)
@@ -87,7 +87,7 @@ class CfgWeapons
 			"",
 			"\501st_Helmets\AB\data\white_glow.rvmat"//"swop_clones\data\helmpilot.rvmat"//  \501st_Helmets\AB\data\white_glow.rvmat
 		};
-		subItems[] = {macro_new_weapon(nvg_integrated,pilot_test),"G_B_Diving"};
+		subItems[] = {"G_B_Diving","ItemcTabHCam"};
 	};
 
 	class macro_new_helmet(pilot,gold): itemCore//RD501_501st_Pilot_Base
@@ -100,7 +100,7 @@ class CfgWeapons
 		displayName = "Clone pilot helmet (501st legion) Gold";
 		picture = "\SWOP_clones\data\helmets\ico\ico_pilot.paa";
 		//model = "SWOP_clones\helmet\CloneHelmetPilot.p3d";
-
+		subItems[] = {"G_B_Diving","ItemcTabHCam"};
 		model = "\501st_helmets\AB\AB_helmet_p1.p3d";	
 		hiddenSelections[] = {
 			"camo1",
@@ -151,7 +151,7 @@ class CfgWeapons
 		scope = 2;
 		author = "RD501";
 		weaponPoolAvailable = 1;       
-
+		subItems[] = {"G_B_Diving","ItemcTabHCam"};
 		ace_hearing_protection = 0.85; 		
 		ace_hearing_lowerVolume = 0;   
 
@@ -187,7 +187,7 @@ class CfgWeapons
 		scope = 0;
 		author = "RD501";
 		weaponPoolAvailable = 1;       
-
+		subItems[] = {"G_B_Diving","ItemcTabHCam"};
 		ace_hearing_protection = 0.85; 		
 		ace_hearing_lowerVolume = 0;    
 
@@ -223,7 +223,7 @@ class CfgWeapons
 		scope = 2;
 		author = "RD501";
 		weaponPoolAvailable = 1;       
-
+		subItems[] = {"G_B_Diving","ItemcTabHCam"};
 		ace_hearing_protection = 0.85; 		
 		ace_hearing_lowerVolume = 0;    
 
@@ -258,10 +258,10 @@ class CfgWeapons
 		scope = 2;
 		author = "RD501";
 		weaponPoolAvailable = 1;       
-
+		subItems[] = {"G_B_Diving"};
 		ace_hearing_protection = 0.85; 		
 		ace_hearing_lowerVolume = 0;    
-
+		subItems[] = {"G_B_Diving","ItemcTabHCam"};
 		displayName = "[501st] ARC HELM (Base)";
 		picture="\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneHelmetP2.p3d";
@@ -298,7 +298,7 @@ class CfgWeapons
 		scope = 2;
 		displayName = "Clone airborne helmet";
 		model = "\501st_helmets\AB\AB_helmet.p3d";
-
+		subItems[] = {"G_B_Diving","ItemcTabHCam"};
 		ace_hearing_protection = 0.85; 		
 		ace_hearing_lowerVolume = 0;    
 
@@ -362,7 +362,7 @@ class CfgWeapons
 		weaponPoolAvailable = 1;       
 		ace_hearing_protection = 0.85; 		
 		ace_hearing_lowerVolume = 0;   
-
+		subItems[] = {"G_B_Diving","ItemcTabHCam"};
 		displayName = "[501st] INF HELM 01 (Base)";
 		picture="\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
 		model="\MRC\JLTS\characters\CloneArmor\CloneHelmetP2.p3d";
@@ -395,10 +395,10 @@ class CfgWeapons
 		scope = 2;
 		author = "RD501";
 		weaponPoolAvailable = 1;       
-
+		
 		ace_hearing_protection = 0.85; 		
 		ace_hearing_lowerVolume = 0;   
-
+		subItems[] = {"G_B_Diving","ItemcTabHCam"};
 		displayName = "[501st] INF HELM 02 (Cadet)";
 		picture="\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
 		model="\MRC\JLTS\characters\CloneArmor\CloneHelmetP2.p3d";
@@ -431,7 +431,7 @@ class CfgWeapons
 		scope = 2;
 		author = "RD501";
 		weaponPoolAvailable = 1;       
-
+		subItems[] = {"G_B_Diving","ItemcTabHCam"};
 		ace_hearing_protection = 0.85; 		
 		ace_hearing_lowerVolume = 0;   
 
@@ -467,7 +467,7 @@ class CfgWeapons
 		scope = 2;
 		author = "RD501";
 		weaponPoolAvailable = 1;       
-
+		subItems[] = {"G_B_Diving","ItemcTabHCam"};
 		ace_hearing_protection = 0.85; 		
 		ace_hearing_lowerVolume = 0;   
 
@@ -502,6 +502,7 @@ class CfgWeapons
 	{
 		author = "RD501";
 		scope = 2;
+		subItems[] = {"G_B_Diving","ItemcTabHCam"};
 		displayName = "[501st] AB HELM 02 (Trooper)";
 		model="\MRC\JLTS\characters\CloneArmor\CloneHelmetAB.p3d";
 		picture="\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetAB_ui_ca.paa";
@@ -533,6 +534,7 @@ class CfgWeapons
 		author = "RD501";
 		scope = 2;
 		displayName = "[501st] AB HELM 03 (Vet. Trooper)";
+		subItems[] = {"G_B_Diving","ItemcTabHCam"};
 		model="\MRC\JLTS\characters\CloneArmor\CloneHelmetAB.p3d";
 		picture="\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetAB_ui_ca.paa";
 		ace_hearing_protection = 0.85; 		
@@ -563,6 +565,7 @@ class CfgWeapons
 		author = "RD501";
 		scope = 2;
 		displayName = "[501st] AB HELM 01 (Base)";
+		subItems[] = {"G_B_Diving","ItemcTabHCam"};
 		model="\MRC\JLTS\characters\CloneArmor\CloneHelmetAB.p3d";
 		picture="\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetAB_ui_ca.paa";
 		ace_hearing_protection = 0.85; 		

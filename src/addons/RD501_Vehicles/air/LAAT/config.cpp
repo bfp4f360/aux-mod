@@ -100,7 +100,7 @@ class CfgVehicles
 		#include "ace_stuff.hpp"
 		#include "flight_model.hpp"
 		#include "common_stuff.hpp"
-
+	
 		class UserActions
 		{
 			#include "user_action.hpp"
@@ -159,7 +159,8 @@ class CfgVehicles
 		#include "ace_stuff.hpp"
 		#include "flight_model.hpp"
 		#include "common_stuff.hpp"
-		
+
+
 		class UserActions
 		{
 			#include "user_action.hpp"
@@ -232,7 +233,7 @@ class CfgVehicles
 		maximumLoad = 5000000000;
 		slingLoadMaxCargoMass = 5000000000;
 
-		#include "flight_model.hpp"
+		//#include "flight_model.hpp"
 		// cyclicAsideForceCoef = 1*1;
 		// cyclicForwardForceCoef = 1*4;
 		// backRotorForceCoef =1*1;
@@ -276,6 +277,7 @@ class CfgVehicles
 			"300Rnd_CMFlare_Chaff_Magazine",
 			"300Rnd_CMFlare_Chaff_Magazine",
 			"300Rnd_CMFlare_Chaff_Magazine",
+			macro_new_mag(a2a,4),
 			macro_new_mag(a2a,4),
 			"SmokeLauncherMag",
 			macro_new_mag(laat_cannon,100),

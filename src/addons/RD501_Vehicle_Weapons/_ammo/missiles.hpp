@@ -7,6 +7,7 @@
 		effectsMissileInit = "RD501_laat_PylonBackEffectsFFAR";
 		effectsMissile = "RD501_FX_Missile_AA_Violet";
 		muzzleEffect = "";
+		cmimmunity = 0.6;
 		effectsSmoke = "RD501_Effect_Violet";
 		soundFly[] = {"\xt\SWrocketloop.ogg",3,1,800};
 		lockedTargetSound[] = {"TIE\LockedOn_2.ogg",0.7,1};
@@ -22,7 +23,7 @@
 		cameraViewAvailable = 1; 
 		maneuvrability = 40;
 	};
-	
+	class Missile_AGM_02_F;
 	class macro_new_ammo(agm) : Missile_AGM_02_F//M_PG_AT
 	{
 		displayName = "Torrent AGM";	
@@ -91,7 +92,7 @@
 		brightness = 20000;
 		lightColor[] = {0, 0, 1, 1};
 		triggerTime = 0.1;
-		thrustTime = 3;
+		thrustTime = 6;
 		hit = 3000;
 		indirectHit = 100;
 		indirectHitRange = 5;
@@ -107,7 +108,7 @@
 		hit = 2000;
 		indirecthit = 100;
 		missileLockMaxDistance = 7000;
-		cmimmunity = 100;
+		cmimmunity = 1;
 		thrustTime = 30;
 		thrust = 100;
 		maxSpeed = 450;
