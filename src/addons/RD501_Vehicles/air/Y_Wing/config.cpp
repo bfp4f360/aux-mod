@@ -312,7 +312,7 @@ class CfgVehicles
 			"SmokeLauncherMag",
 			"Laserbatteries"
 		};
-		armor=800;
+		armor=550;
 		class Sounds: Sounds
 		{
 			class EngineExt

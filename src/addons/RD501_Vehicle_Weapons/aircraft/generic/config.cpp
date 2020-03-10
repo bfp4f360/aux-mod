@@ -31,7 +31,8 @@ class CfgPatches
 			macro_new_weapon(generic,purple_aircraft_cannon),
 			macro_new_weapon(generic,plasma_aircraft_cannon),
 			macro_new_weapon(generic,preatorian_gun_opfor),
-			macro_new_weapon(aa_gun,aa_gun_base)
+			macro_new_weapon(aa_gun,aa_gun_base),
+			macro_new_weapon(generic,blue_dual_aircraft_laser)
 		};
 	};
 };
@@ -96,16 +97,28 @@ class CfgWeapons
 		{
 			class StandardSound
 			{
-				begin1[] = {"vulture\tridroid\tridroid_gun1.ogg",0.6,1,3000};
-				begin2[] = {"vulture\tridroid\tridroid_gun2.ogg",0.6,1,3000};
-				begin3[] = {"vulture\tridroid\tridroid_gun3.ogg",0.6,1,3000};
-				begin4[] = {"vulture\tridroid\tridroid_gun4.ogg",0.6,1,3000};
-				begin5[] = {"vulture\tridroid\tridroid_gun5.ogg",0.6,1,3000};
+				begin1[] = {"SW_RebelWeapons\A300\A280CFE1.ogg",1.1,1,1800};
+				begin2[] = {"SW_RebelWeapons\A300\A280CFE2.ogg",1.1,1,1800};
+				begin3[] = {"SW_RebelWeapons\A300\A280CFE3.ogg",1.1,1,1800};
+				begin4[] = {"SW_RebelWeapons\A300\A280CFE4.ogg",1.1,1,1800};
+				begin5[] = {"SW_RebelWeapons\A300\A280CFE5.ogg",1.1,1,1800};
 				soundBegin[] = {"begin1",0.2,"begin2",0.2,"begin3",0.2,"begin4",0.2,"begin5",0.2};
 			};
 		};
 	};
-
+	class macro_new_weapon(generic,blue_dual_aircraft_laser) : macro_new_weapon(generic,republic_aircraft_cannon)
+	{
+		displayName = "Aircraft Laser Gun";
+		magazines[] = {macro_new_mag(generic_aircraft_gun_dual_blue,1000)};
+		class LowROF: LowROF
+		{
+			class StandardSound
+			{
+				begin1[] = {"rd501_vehicle_weapons\_sounds\New_Laat_2.ogg",1,1,2500};
+				soundBegin[] = {"begin1",1};
+			};
+		};
+	};
 	class macro_new_weapon(generic,cis_aircraft_cannon) : macro_new_weapon(generic,rebel_aircraft_cannon)
 	{
 		class LowROF: LowROF

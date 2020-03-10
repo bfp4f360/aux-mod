@@ -31,28 +31,3 @@
 		displayName = "Flashfire WGM";	
 		displayNameShort = "Flashfire WGM";
 	};
-
-	class macro_new_mag(centurion,8) : magazine_Missile_rim162_x8
-	{
-		displayName = macro_new_ammo(centurion)
-		ammo = "RD501_Centurion_Missile";
-		displayNameShort = "Spyker G2A";
-	};
-	class macro_new_mag(spartan,21) : magazine_Missile_rim162_x8
-	{
-		displayName = macro_new_ammo(spartan)
-		cost = 50;
-		ammo = "RD501_Spartan_Missile";
-		displayNameShort = "Wasp G2A";
-		count = 21;
-	};
-
-	class macro_new_mag(backflip,8):magazine_Missile_rim116_x21
-	{
-
-		displayName = "OHM X38 Backflip";
-		displayNameShort = "OHM Backflip";
-		descriptionShort = "OHM Missile X39";
-		ammo = macro_new_ammo(backflip)
-		count = 8;
-	};

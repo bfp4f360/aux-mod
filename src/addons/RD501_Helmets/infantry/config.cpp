@@ -25,6 +25,8 @@ class CfgWeapons
 	class macro_new_helmet(infantry,base);
 	class macro_new_helmet(infantry,lum_base);
 	class macro_new_helmet_jlts(infantry,jlts_recruit);
+
+	NEW_501_Inf_Helm_JLTS(Pilot,Pilot,Pilot.paa)
 	
 	NEW_501_Inf_Helm_JLTS(Archaic,Archaic,Archaic.paa)
 	NEW_501_Inf_Helm_JLTS(Blade,Blade,Blade.paa)

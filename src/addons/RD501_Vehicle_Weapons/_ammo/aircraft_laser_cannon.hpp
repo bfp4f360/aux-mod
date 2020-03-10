@@ -9,7 +9,7 @@
 	};
 	class macro_new_ammo(generic_aircraft_laser_cannon_plasma_red) : macro_new_ammo(generic_aircraft_laser_gun_red)
 	{
-		hit = 45;
+		hit = 150;
 		indirecthit = 20;
 		indirecthitrange = 0;
 		ExplosionEffects = "SWOP_LaserExploSmall";
@@ -18,7 +18,7 @@
 	};
 	class macro_new_ammo(generic_aircraft_laser_cannon_plasma_blue) : macro_new_ammo(generic_aircraft_laser_gun_blue)
 	{
-		hit = 45;
+		hit = 150;
 		indirecthit = 20;
 		indirecthitrange = 0;
 		ExplosionEffects = "SWOP_LaserExploSmall";
@@ -51,4 +51,11 @@
 		caliber = 1;
 		explosive = 0.6;
 		ExplosionEffects = "SWOP_LaserExploSmall";
+	};
+	class macro_new_ammo(generic_aircraft_laser_cannon_dual_blue) : macro_new_ammo(generic_aircraft_laser_cannon_blue)
+	{
+		tracerColor[] = {"Blue"};
+		muzzleEffect = "";
+		effectFly = "SWOP_BlueLaserEffect";
+		model = "\tie\tracer_blue";
 	};

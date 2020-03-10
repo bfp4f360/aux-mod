@@ -19,6 +19,7 @@
 		ammo = macro_new_ammo(generic_aircraft_laser_cannon_blue)
 	};
 
+
 	class macro_new_mag(generic_aircraft_cannon_plasma_red,1000): macro_new_mag(generic_aircraft_gun,1000)
 	{
 		displayNameShort = "Plasma Cores";

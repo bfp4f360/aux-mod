@@ -6,7 +6,7 @@ class macro_new_ammo(generic_aircraft_laser_gun_red) : B_35mm_AA_Tracer_Red
     soundSetBulletFly[] = {"-"};
     soundSetSonicCrack[] = {"-"};
     airLock = 1;
-    hit = 150;
+    hit = 200;
     indirectHit = 0;
     indirectHitRange = 0;
     caliber = 1;
@@ -31,7 +31,7 @@ class macro_new_ammo(generic_aircraft_laser_gun_red) : B_35mm_AA_Tracer_Red
     suppressionRadiusHit = 14;
     craterEffects = "ImpactEffectsMedium";
     craterShape = "";
-	ExplosionEffects = "-";
+	explosionEffects = "ExploAmmoLaserCannon";//ExplosionEffects = "SWOP_LaserExploSmall";
     effectFly = "SWOP_RedLaserEffect";
     airFriction = 0;
     muzzleEffect = "";
@@ -40,9 +40,9 @@ class macro_new_ammo(generic_aircraft_laser_gun_red) : B_35mm_AA_Tracer_Red
     weaponLockSystem = 0; 
     gravityFactor = 0;
     ACE_caliber=1;
-    supersonicCrackFar[] = {"-",1,1,200}; //supersonicCrackFar[] = {"SWOP_Main\FlyBy\cracks\blastersoniccrack9.ogg",1,1,200};
-    supersonicCrackNear[] = {"-",1,1,200}; //supersonicCrackNear[] = {"SWOP_Main\FlyBy\cracks\blastersoniccrack2.ogg",1,1,200};
-    class Components
+    SoundSetExplosion[] = {"CAA_SC_Bullet_FlyBy_SoundSet"}; // SWOP_SC_blaster_SoundSet | SWOP_HEAVYBullet_FlyBy_SoundSet | CAA_SC_Bullet_FlyBy_SoundSet | SWOP_155mm_Shot_SoundSet
+
+   class Components
     {
         class SensorsManagerComponent
         {

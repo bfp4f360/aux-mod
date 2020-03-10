@@ -101,7 +101,7 @@ class CfgVehicles
 		// model = "RD501_Vehicles\air\ARC_170\xt.p3d"
 		// hiddenSelections[] = {"camo1"};
 		// hiddenSelectionsTextures[] = {"ywing\Y-Wing_Body_co.paa"};
-		armor = 300;
+		armor = 500;
 		vtol=4;
 		
 		scopeCurator=2;

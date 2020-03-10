@@ -33,7 +33,7 @@
 
 	//Weapons
 		weapons[] = {
-			macro_new_weapon(generic,republic_aircraft_cannon),
+			macro_new_weapon(generic,blue_dual_aircraft_laser),
 			macro_new_weapon(wynd,lgm),
 			macro_new_weapon(wynd,a2a),
 			macro_new_weapon(wynd,agm),
@@ -49,7 +49,7 @@
 			// macro_new_mag(laat_cannon,100),
 			// macro_new_mag(laat_cannon,100),
 			// macro_new_mag(laat_cannon,100),
-			macro_new_mag(generic_aircraft_cannon_green,1000),
+			macro_new_mag(generic_aircraft_gun_dual_blue,1000),
 			macro_new_mag(a2a,4),
 			macro_new_mag(agm,6),
 			macro_new_mag(agm,6),
@@ -299,7 +299,7 @@
 			class _xx_ACE_HuntIR_M203
 			{
 				magazine = "ACE_HuntIR_M203";
-				count = 310;
+				count = 10;
 			};
 
 			class _xx_5Rnd_HE_Grenade_DC15A

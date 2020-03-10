@@ -1059,7 +1059,12 @@ class CfgVehicles
 	{
 		displayname = "[501st] AB Jumppack (2-3)";
 		hiddenSelectionsTextures[] = {"RD501_Jumppack\textures\acklay_skin_set\2_3.paa"};
-	};							
+	};		
+	class RD501_JLTS_Clone_jumppack_mc_avi: RD501_JLTS_Clone_jumppack_mc
+	{
+		displayname = "[501st] AVI Jumppack";
+		hiddenSelectionsTextures[] = {"RD501_Jumppack\textures\razor.paa"};
+	};						
 };
 
 class CfgWeapons
