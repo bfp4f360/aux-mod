@@ -3,7 +3,7 @@
 		displayNameShort = "Plasma Cores (Red)";
 		displayName = "Plasma Cores (Red)";
 		ammo = macro_new_ammo(generic_aircraft_laser_gun_red);
-		count = 1000;
+		count = 1200;
 		tracersEvery = 1;
 		initSpeed = 1036;
 		maxLeadSpeed = 300;

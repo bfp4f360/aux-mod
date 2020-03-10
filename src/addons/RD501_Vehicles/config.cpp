@@ -195,22 +195,37 @@ class Extended_Init_EventHandlers
              init = [_this select 0] spawn macro_fnc_name(warden_tow);
         };
     };  
-
     class O_SWOP_AAT_1
     {
         class lock_me_in_hamachi
         {
             init = [_this select 0] spawn macro_fnc_name(aatInit);
         }
-    }
-	
+    };
 	class macro_new_vehicle(laat,cargo_Mk2)
 	{
 		class laatc_lift
 		{
 			init = [_this select 0] spawn macro_fnc_name(vehicle_lift);
 		};
-	};  		
+	};  
+    class macro_new_vehicle(HMP,gunship)
+    {
+        class turret1 
+        {
+            init = [_this select 0,macro_single_quote(macro_new_vehicle(Praetorian_Variant,opfor)),[0,5,-.5]] spawn macro_fnc_name(apply_aircraft_turrets);
+        };
+
+        class turret2 
+        {
+            init = [_this select 0,macro_single_quote(macro_new_vehicle(Praetorian_Variant,opfor)),[5,0,-.5]] spawn macro_fnc_name(apply_aircraft_turrets);
+        };
+
+        class turret3 
+        {
+            init = [_this select 0,macro_single_quote(macro_new_vehicle(Praetorian_Variant,opfor)),[-5,0,-.5]] spawn macro_fnc_name(apply_aircraft_turrets);
+        };
+    };	
 
     
 

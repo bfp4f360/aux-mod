@@ -26,7 +26,8 @@ class CfgPatches
 		requiredVersion=0.1;
 		units[]=
 		{
-			"SW_SPCIS"
+			"SW_SPCIS",
+			"rd501_sw_barc"
 		};
 		weapons[]=
 		{

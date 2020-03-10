@@ -13,7 +13,7 @@
 	slingLoadMaxCargoMass = 5000000000;
 
 	//dmg properties
-		armor=800;
+		armor=600;
 		crewCrashProtection=0;
 		epeImpulseDamageCoef=0;
 
@@ -50,7 +50,6 @@
 			// macro_new_mag(laat_cannon,100),
 			// macro_new_mag(laat_cannon,100),
 			macro_new_mag(generic_aircraft_cannon_green,1000),
-			macro_new_mag(a2a,4),
 			macro_new_mag(a2a,4),
 			macro_new_mag(agm,6),
 			macro_new_mag(agm,6),
@@ -127,7 +126,7 @@
 				minFov=0.425;//"(30 / 120)";
 				maxFov=0.425;//"(30 / 120)";
 				directionStabilized=1;
-				thermalMode[]={0,1};
+				thermalMode[] = {0,1,2,3,4,5};
 				visionMode[]=
 				{
 					"Normal",

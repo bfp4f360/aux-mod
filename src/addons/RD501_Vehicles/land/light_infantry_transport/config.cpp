@@ -66,7 +66,10 @@ class CfgVehicles
 		editorSubcategory = macro_editor_cat(Transport)
 		vehicleClass = macro_editor_vehicle_type(Transport)
 
-		class EventHandlers :DefaultEventhandlers {};
+		class EventHandlers
+		{
+			init = "[_this select 0] execVM 'RD501_Vehicle\_init_functions\wheel_dmg.sqf';";
+		};
 
 		#include "sounds.hpp"
 	};
@@ -83,7 +86,10 @@ class CfgVehicles
 		faction = macro_republic_faction
 		editorSubcategory = macro_editor_cat(Transport)
 		vehicleClass = macro_editor_vehicle_type(Transport)
-
+		class EventHandlers
+		{
+			init = "[_this select 0] execVM 'RD501_Vehicle\_init_functions\wheel_dmg.sqf';";
+		};
 		hiddenSelectionsTextures[] = 
 		{
 			macro_vehicle_textures\Tempest\Rep_Temp_Ext.paa,

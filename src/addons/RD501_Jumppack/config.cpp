@@ -132,21 +132,25 @@ class CfgVehicles
 	class macro_jumppackClass(neutral,jt21_LTU):macro_jumppackClass(neutral,cdv_21)
 	{
 		scope=2;
-		displayname= "[JP] JT-21 LTU";
+		displayname= "[JP] MRD LTU";
 		maximumload = 0;
 		macro_energyCap=4;
 		macro_rechargeRate=0;
-
+		maximumload = 50;
 		macro_types_of_jumps = 
 		{
 			{"Short Jump",{12,5,1,0,1,0}}
 		};
 
-		model = "SWOP_clones\JT12.p3d";
-		hiddenSelections[] = {"Camo1"};
-		hiddenSelectionsTextures[] = {"RD501_Jumppack\textures\JT_21.paa"};
-
-
+		model="\MRC\JLTS\characters\CloneArmor\CloneJumppack.p3d";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\MRC\JLTS\characters\CloneArmor\data\Clone_jumppack_co.paa"
+		};
 	};
 
 	class macro_jumppackClass(neutral,titan_mkII):macro_jumppackClass(neutral,base)

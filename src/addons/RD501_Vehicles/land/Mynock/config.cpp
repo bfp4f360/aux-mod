@@ -71,7 +71,10 @@ class CfgVehicles
 		faction = macro_republic_faction
 		editorSubcategory = macro_editor_cat(Tank)
 		vehicleClass = macro_editor_vehicle_type(Tank)
-
+		class TransportBackpacks;
+		class TransportItems;
+		class TransportWeapons;
+		class TransportMagazines;
 		class EventHandlers :DefaultEventhandlers {};
 		class Turrets: Turrets
 		{
@@ -88,7 +91,7 @@ class CfgVehicles
 					};
 				};
 			};
-		}
+		};
 	};
 
 	class macro_new_vehicle(Claymore,Republic):B_MBT_01_TUSK_F
@@ -115,7 +118,10 @@ class CfgVehicles
 		faction = macro_republic_faction
 		editorSubcategory = macro_editor_cat(Tank)
 		vehicleClass = macro_editor_vehicle_type(Tank)
-
+		class TransportBackpacks;
+		class TransportItems;
+		class TransportWeapons;
+		class TransportMagazines;
 		class EventHandlers :DefaultEventhandlers {};
 		class Turrets: Turrets
 		{
@@ -132,7 +138,7 @@ class CfgVehicles
 					};
 				};
 			};
-		}
+		};
 	};
 	class macro_new_vehicle(Warhammer,Republic):I_MBT_03_cannon_F
 	{	
@@ -158,7 +164,10 @@ class CfgVehicles
 		faction = macro_republic_faction
 		editorSubcategory = macro_editor_cat(Tank)
 		vehicleClass = macro_editor_vehicle_type(Tank)
-
+		class TransportBackpacks;
+		class TransportItems;
+		class TransportWeapons;
+		class TransportMagazines;
 		class EventHandlers :DefaultEventhandlers {};
 		class Turrets: Turrets
 		{
@@ -175,7 +184,7 @@ class CfgVehicles
 					};
 				};
 			};
-		}
+		};
 	};
 	
 	class macro_new_vehicle(Glaive,Republic):B_AFV_Wheeled_01_up_cannon_F
@@ -202,15 +211,20 @@ class CfgVehicles
 		faction = macro_republic_faction
 		editorSubcategory = macro_editor_cat(APC)
 		vehicleClass = macro_editor_vehicle_type(APC)
-
-		class EventHandlers :DefaultEventhandlers {};
+		class TransportBackpacks;
+		class TransportItems;
+		class TransportWeapons;
+		class TransportMagazines;
+		class EventHandlers :DefaultEventhandlers 
+		{
+			init = "[_this select 0] execVM 'RD501_Vehicle\_init_functions\wheel_dmg.sqf';";
+		};
 		class Turrets: Turrets
 		{
 			class MainTurret: MainTurret
 			{
-				weapons[] = {macro_new_weapon(mynock_cannon,mbt), macro_new_weapon(generic,plasma_aircraft_cannon)};
-				magazines[] = {macro_new_mag(mynock_mbt_ap,12), macro_new_mag(mynock_mbt_ap,12), macro_new_mag(mynock_mbt_ap,12),  macro_new_mag(mynock_mbt_he,12), macro_new_mag(mynock_mbt_he,12), macro_new_mag(mynock_mbt_he,12), macro_new_mag(generic_aircraft_cannon_plasma_red,1000), macro_new_mag(generic_aircraft_cannon_plasma_red,1000)};
-				class Turrets: Turrets
+				weapons[] = {macro_new_weapon(mynock_cannon,td), macro_new_weapon(generic,plasma_aircraft_cannon)};
+				magazines[] = {macro_new_mag(mynock_mbt_td,12), macro_new_mag(mynock_mbt_td,12), macro_new_mag(mynock_mbt_td,12),  macro_new_mag(mynock_mbt_td,12), macro_new_mag(mynock_mbt_td,12), macro_new_mag(mynock_mbt_td,12), macro_new_mag(generic_aircraft_cannon_plasma_red,1000), macro_new_mag(generic_aircraft_cannon_plasma_red,1000)};				class Turrets: Turrets
 				{
 					class CommanderOptics: CommanderOptics
 					{
@@ -219,7 +233,7 @@ class CfgVehicles
 					};
 				};
 			};
-		}
+		};
 	};	
 	class macro_new_vehicle(Longbow,Republic):O_APC_Tracked_02_AA_F
 	{
@@ -245,7 +259,10 @@ class CfgVehicles
 		faction = macro_republic_faction
 		editorSubcategory = macro_editor_cat(AA)
 		vehicleClass = macro_editor_vehicle_type(AA)
-
+		class TransportBackpacks;
+		class TransportItems;
+		class TransportWeapons;
+		class TransportMagazines;
 		class EventHandlers :DefaultEventhandlers {};
 		class Turrets: Turrets
 		{
@@ -273,20 +290,15 @@ class CfgVehicles
 		forceInGarage = 1;
 		displayName="Republic Courser"
 		crew = "SWOP_Clonetrooper_P1";
-		
-		hiddenSelections[] = {"Camo1","Camo2","Camo3"};
-		hiddenSelectionsTextures[] = 
-		{
-			"\RD501_Vehicles\textures\LAAT\krayt_black_red\laatkraytbodyblackred.paa",
-			"\RD501_Vehicles\textures\LAAT\krayt_black_red\laatkraytbodyblackred.paa",
-			"\RD501_Vehicles\textures\LAAT\krayt_black_red\laatkraytbodyblackred.paa"
-		};
-
+		//hiddenSelections[] = {"Camo1","Camo2","Camo3"};
+		//hiddenSelectionsTextures[] = 
+		//{
+		//	"\RD501_Vehicles\textures\LAAT\krayt_black_red\laatkraytbodyblackred.paa",
+		//	"\RD501_Vehicles\textures\LAAT\krayt_black_red\laatkraytbodyblackred.paa",
+		//	"\RD501_Vehicles\textures\LAAT\krayt_black_red\laatkraytbodyblackred.paa"
+		//};
 		faction = macro_republic_faction
 		editorSubcategory = macro_editor_cat(Transport)
 		vehicleClass = macro_editor_vehicle_type(Transport)
-
-		class EventHandlers :DefaultEventhandlers {};
-
 	};	
 };

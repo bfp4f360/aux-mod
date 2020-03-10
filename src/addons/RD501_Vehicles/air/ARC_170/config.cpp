@@ -101,7 +101,7 @@ class CfgVehicles
 		// model = "RD501_Vehicles\air\ARC_170\xt.p3d"
 		// hiddenSelections[] = {"camo1"};
 		// hiddenSelectionsTextures[] = {"ywing\Y-Wing_Body_co.paa"};
-		armor = 800;
+		armor = 300;
 		vtol=4;
 		
 		scopeCurator=2;
@@ -387,7 +387,7 @@ class CfgVehicles
 					maxFov=0.42;//"(30 / 120)";
 					directionStabilized = 1;
 					visionMode[] = {"Normal","NVG", "Ti"};
-					thermalMode[] = {0, 1,7};
+					thermalMode[] = {0,1,2,3,4,5};
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
 					opticsPPEffects[] = {"OpticsCHAbera2", "OpticsBlur2"};
 				};
@@ -680,6 +680,7 @@ class CfgVehicles
 		class EventHandlers : DefaultEventhandlers 
 		{
 			killed = "_this call (uinamespace getvariable 'BIS_fnc_effectKilled');";
+			init = "[_this select 0] execVM 'rd501_vehicles\air\arc_170\arc_mass.sqf';";
 			fired = "_this call (uinamespace getvariable 'BIS_fnc_effectFired');";
 		};
 	};

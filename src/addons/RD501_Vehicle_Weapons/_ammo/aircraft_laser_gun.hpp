@@ -3,14 +3,14 @@ class macro_new_ammo(generic_aircraft_laser_gun_red) : B_35mm_AA_Tracer_Red
     aiAmmoUsageFlags = "64 + 128 + 256 + 512"; 
     allowAgainstInfantry = 1;
     cmImmunity = 1;
-    soundSetBulletFly[] = {"SWOP_HEAVYBullet_FlyBy_SoundSet"};
-    soundSetSonicCrack[] = {"SWOP_SC_blaster_SoundSet"};
+    soundSetBulletFly[] = {"-"};
+    soundSetSonicCrack[] = {"-"};
     airLock = 1;
-    hit = 90;
-    indirectHit = 55;
-    indirectHitRange = 2;
+    hit = 150;
+    indirectHit = 0;
+    indirectHitRange = 0;
     caliber = 1;
-    explosive = 0.9;
+    explosive = 0;
     cost = 1;
     model = "\SWOP_Main\Effects\Tracer\laserred";
     tracerScale = 1;
@@ -29,8 +29,9 @@ class macro_new_ammo(generic_aircraft_laser_gun_red) : B_35mm_AA_Tracer_Red
     dangerRadiusHit = 40;
     suppressionRadiusBulletClose = 10;
     suppressionRadiusHit = 14;
-    craterEffects = "";
-    explosionEffects = "ExploAmmoExplosion";
+    craterEffects = "ImpactEffectsMedium";
+    craterShape = "";
+	ExplosionEffects = "-";
     effectFly = "SWOP_RedLaserEffect";
     airFriction = 0;
     muzzleEffect = "";
@@ -38,7 +39,9 @@ class macro_new_ammo(generic_aircraft_laser_gun_red) : B_35mm_AA_Tracer_Red
     initTime = 0;
     weaponLockSystem = 0; 
     gravityFactor = 0;
-    ACE_caliber=0.1;
+    ACE_caliber=1;
+    supersonicCrackFar[] = {"-",1,1,200}; //supersonicCrackFar[] = {"SWOP_Main\FlyBy\cracks\blastersoniccrack9.ogg",1,1,200};
+    supersonicCrackNear[] = {"-",1,1,200}; //supersonicCrackNear[] = {"SWOP_Main\FlyBy\cracks\blastersoniccrack2.ogg",1,1,200};
     class Components
     {
         class SensorsManagerComponent
@@ -263,10 +266,11 @@ class macro_new_ammo(generic_aircraft_laser_gun_purple) : macro_new_ammo(generic
 };
 class macro_new_ammo(generic_aircraft_laser_gun_praetorian): macro_new_ammo(generic_aircraft_laser_gun_purple)
 {
-    hit = 15;
-    indirectHit = 1;
-    indirectHitRange = 0.5;
-    explosive = 0.2;
+    hit = 75;
+    caliber = 1;
+    indirectHit = 0;
+    indirectHitRange = 0;
+    explosive = 0;
 };
 
 class macro_new_ammo(generic_kannon) : macro_new_ammo(generic_aircraft_laser_gun_red)

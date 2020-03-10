@@ -123,7 +123,7 @@
 		{
 			class StandardSound
 			{
-				begin1[] = {"SWOP_vehiclecommon\Speeder\Speederbike\Sounds\canon",1.5,1,2500};
+				begin1[] = {"rd501_vehicle_weapons\_sounds\laser_cannon\laser_cannon_shot.ogg",1.5,1,2500};
 				soundBegin[] = {"begin1",1};
 			};
 		};

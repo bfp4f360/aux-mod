@@ -70,10 +70,18 @@ class CfgWeapons
 	NEW_501_Inf_Helm_JLTS(Muzzer,Muzzer,Muzzer.paa)
 	NEW_501_Inf_Helm_JLTS(Biscuit,Biscuit,Biscuit.paa)
 	NEW_501_Inf_Helm_JLTS(Goldarp,Goldarp,Goldarp.paa)
+	NEW_501_Inf_Helm_JLTS(Strill,Strill,Strill.paa)
+	NEW_501_Inf_Helm_JLTS(Husky,Husky,Husky.paa)
+	NEW_501_Inf_Helm_JLTS(Parrott,Parrott,Parrott.paa)
+	NEW_501_Inf_Helm_JLTS(Jay,Jay,Jay.paa)
+	NEW_501_Inf_Helm_JLTS(Drifter,Drifter,Drifter.paa)
+	NEW_501_Inf_Helm_JLTS(Weiss,Weiss,Weiss.paa)
+	NEW_501_Inf_Helm_JLTS(Sam,Sam,Sam.paa)
+
 
 	NEW_501_ARC_Helm_JLTS(Habivi,Habivi,Habivi.paa)
 	NEW_501_ARC_Helm_JLTS(Jink,Jink,Jink.paa)
 	NEW_501_ARC_Helm_JLTS(Brennan,Brennan,Brennan.paa)
+	NEW_501_ARC_Helm_JLTS(Korvus,Korvus,Korvus.paa)
 	NEW_501_ARC_Helm_JLTS(Darkstar,Darkstar,Darkstar.paa)
-	//NEW_501_ARC_Helm_JLTS(Korvus,Korvus,Korvus.paa)
 };

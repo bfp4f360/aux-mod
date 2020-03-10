@@ -70,10 +70,23 @@ class CfgWeapons
 	NEW_501_Pilot_HELM(kushiban,Kushiban,pilots\Kushiban.paa)
 	NEW_501_Pilot_HELM(orange,Orange,pilots\orange.paa)
 	NEW_501_Pilot_HELM(nocturnal,Warbird,pilots\Nocturnal.paa)
-	NEW_501_Pilot_HELM(scuba,Scuba,pilots\scuba_helm.paa)
 	NEW_501_Pilot_HELM(aspect,Aspect,pilots\Aspect.paa)
 	NEW_501_Pilot_HELM(gothic,Gothic,pilots\Gothic.paa)
 	NEW_501_Pilot_HELM(shnuffles,Shnuffles,pilots\Shnuffles.paa)
+
+	class macro_new_helmet(pilot,scuba): macro_new_helmet(pilot,base)
+	{
+		scope = 2;
+		displayName = "[501st] AVI HELM ('Scuba')";
+		hiddenSelectionsTextures[] = {macro_custom_helmet_textures\aviation\pilots\scuba_helm.paa};
+		subItems[] = {"G_B_Diving"};
+		hiddenSelectionsMaterials[]=
+		{
+			"",
+			"\501st_Helmets\AB\data\white_glow.rvmat"
+			//"\501st_Helmets\AB\data\red_glow.rvmat"//"swop_clones\data\helmpilot.rvmat"//"\501st_Helmets\AB\data\white_glow.rvmat"
+		};
+	};
 
 	class macro_new_helmet(pilot,casskun): macro_new_helmet(pilot,base)
 	{

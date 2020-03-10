@@ -72,28 +72,6 @@ class SWOP_Clonetrooper_helmet: itemCore
 		macro_clone_helmet_hitpoints
 	};
 };
-class SWOP_Clonetrooper_ECHO_helmet: itemCore
-{
-	scope = 2;
-	author = "SWOP";
-	weaponPoolAvailable = 1;       
-	macro_ace_hearing_helmet_setting   
-	displayName = "Clonetrooper helmet (501st 'Echo')";
-	picture = "\SWOP_clones\data\helmets\ico\Ico_helm.paa";
-	model = "SWOP_clones\helmet\cloneHelmet.p3d";
-	hiddenSelections[] = {"Camo1"};
-	hiddenSelectionsTextures[] = {"SWOP_clones\data\f_e\e\echo_helmet_co.paa"};
-	class ItemInfo: HeadgearItem
-	{
-		mass = 30;
-		uniformmodel = "SWOP_clones\helmet\cloneHelmet.p3d";
-		modelSides[] = {6};
-		hiddenSelections[] = {"Camo1"};
-		material = -1;
-		macro_clone_other_armor_values
-		macro_clone_helmet_hitpoints
-	};
-};
 class SWOP_CloneShadowtrooper_helmet: itemCore
 {
 	scope = 2;
@@ -226,28 +204,6 @@ class SWOP_Clonetcadet_helmet: itemCore
 		macro_clone_helmet_hitpoints
 	};
 };
-class SWOP_Clonetrooper_501Kitty_helmet: itemCore
-{
-	scope = 2;
-	author = "SWOP";
-	weaponPoolAvailable = 1;       
-	macro_ace_hearing_helmet_setting   
-	displayName = "Clonetrooper helmet (501st 'Kitty')";
-	picture = "\SWOP_clones\data\helmets\ico\Ico_helm_501.paa";
-	model = "SWOP_clones\helmet\cloneHelmetLumVisor.p3d";
-	hiddenSelections[] = {"Camo1"};
-	hiddenSelectionsTextures[] = {"SWOP_clones\data\helmetsOther\HelmetPhaseII_501st_Kitty_co.paa"};
-	class ItemInfo: HeadgearItem
-	{
-		mass = 30;
-		uniformmodel = "SWOP_clones\helmet\cloneHelmetLumVisor.p3d";
-		modelSides[] = {6};
-		hiddenSelections[] = {"Camo1"};
-		material = -1;
-		macro_clone_other_armor_values
-		macro_clone_helmet_hitpoints
-	};
-};
 class SWOP_Clonetrooper_rainbow_helmet: itemCore
 {
 	scope = 2;
@@ -263,28 +219,6 @@ class SWOP_Clonetrooper_rainbow_helmet: itemCore
 	{
 		mass = 30;
 		uniformmodel = "SWOP_clones\helmet\cloneHelmetLumVisorRed.p3d";
-		modelSides[] = {6};
-		hiddenSelections[] = {"Camo1"};
-		material = -1;
-		macro_clone_other_armor_values
-		macro_clone_helmet_hitpoints
-	};
-};
-class SWOP_Clonetrooper_Kaser_helmet: itemCore
-{
-	scope = 2;
-	author = "SWOP";
-	weaponPoolAvailable = 1;       
-	macro_ace_hearing_helmet_setting   
-	displayName = "Clonetrooper helmet (501st 'Kaser')";
-	picture = "\SWOP_clones\data\helmets\ico\Ico_helm_501.paa";
-	model = "SWOP_clones\helmet\cloneHelmetLumVisor.p3d";
-	hiddenSelections[] = {"Camo1"};
-	hiddenSelectionsTextures[] = {"SWOP_clones\data\helmetsOther\Helmet_Kaser_co.paa"};
-	class ItemInfo: HeadgearItem
-	{
-		mass = 30;
-		uniformmodel = "SWOP_clones\helmet\cloneHelmetLumVisor.p3d";
 		modelSides[] = {6};
 		hiddenSelections[] = {"Camo1"};
 		material = -1;
@@ -529,6 +463,73 @@ class SWOP_Clonetrooper_501_seashelmet: itemCore
 	{
 		mass = 30;
 		uniformmodel = "SWOP_clones\helmet\cloneHelmet.p3d";
+		modelSides[] = {6};
+		hiddenSelections[] = {"Camo1"};
+		material = -1;
+		macro_clone_other_armor_values
+		macro_clone_helmet_hitpoints
+	};
+};
+/*
+class SWOP_Clonetrooper_ECHO_helmet: itemCore
+{
+	scope = 2;
+	author = "SWOP";
+	weaponPoolAvailable = 1;       
+	macro_ace_hearing_helmet_setting   
+	displayName = "Clonetrooper helmet (501st 'Echo')";
+	picture = "\SWOP_clones\data\helmets\ico\Ico_helm.paa";
+	model = "SWOP_clones\helmet\cloneHelmet.p3d";
+	hiddenSelections[] = {"Camo1"};
+	hiddenSelectionsTextures[] = {"SWOP_clones\data\f_e\e\echo_helmet_co.paa"};
+	class ItemInfo: HeadgearItem
+	{
+		mass = 30;
+		uniformmodel = "SWOP_clones\helmet\cloneHelmet.p3d";
+		modelSides[] = {6};
+		hiddenSelections[] = {"Camo1"};
+		material = -1;
+		macro_clone_other_armor_values
+		macro_clone_helmet_hitpoints
+	};
+};
+class SWOP_Clonetrooper_501Kitty_helmet: itemCore
+{
+	scope = 2;
+	author = "SWOP";
+	weaponPoolAvailable = 1;       
+	macro_ace_hearing_helmet_setting   
+	displayName = "Clonetrooper helmet (501st 'Kitty')";
+	picture = "\SWOP_clones\data\helmets\ico\Ico_helm_501.paa";
+	model = "SWOP_clones\helmet\cloneHelmetLumVisor.p3d";
+	hiddenSelections[] = {"Camo1"};
+	hiddenSelectionsTextures[] = {"SWOP_clones\data\helmetsOther\HelmetPhaseII_501st_Kitty_co.paa"};
+	class ItemInfo: HeadgearItem
+	{
+		mass = 30;
+		uniformmodel = "SWOP_clones\helmet\cloneHelmetLumVisor.p3d";
+		modelSides[] = {6};
+		hiddenSelections[] = {"Camo1"};
+		material = -1;
+		macro_clone_other_armor_values
+		macro_clone_helmet_hitpoints
+	};
+};
+class SWOP_Clonetrooper_Kaser_helmet: itemCore
+{
+	scope = 2;
+	author = "SWOP";
+	weaponPoolAvailable = 1;       
+	macro_ace_hearing_helmet_setting   
+	displayName = "Clonetrooper helmet (501st 'Kaser')";
+	picture = "\SWOP_clones\data\helmets\ico\Ico_helm_501.paa";
+	model = "SWOP_clones\helmet\cloneHelmetLumVisor.p3d";
+	hiddenSelections[] = {"Camo1"};
+	hiddenSelectionsTextures[] = {"SWOP_clones\data\helmetsOther\Helmet_Kaser_co.paa"};
+	class ItemInfo: HeadgearItem
+	{
+		mass = 30;
+		uniformmodel = "SWOP_clones\helmet\cloneHelmetLumVisor.p3d";
 		modelSides[] = {6};
 		hiddenSelections[] = {"Camo1"};
 		material = -1;
@@ -1482,6 +1483,7 @@ class SWOP_Clonetrooper_501bobs_helmet: itemCore
 		macro_clone_helmet_hitpoints
 	};
 };
+*/
 class SWOP_Clonetrooper_9_helmet: itemCore
 {
 	scope = 2;
@@ -1526,6 +1528,7 @@ class SWOP_Clonetrooper_9drak_helmet: itemCore
 		macro_clone_helmet_hitpoints
 	};
 };
+/*
 class SWOP_Clonetrooper_scar_helmet: itemCore
 {
 	scope = 2;
@@ -1570,6 +1573,7 @@ class SWOP_Clonetrooper_9scar_helmet: itemCore
 		macro_clone_helmet_hitpoints
 	};
 };
+*/
 class SWOP_Clonetrooper_9wook_helmet: itemCore
 {
 	scope = 2;

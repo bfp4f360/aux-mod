@@ -152,7 +152,8 @@ class CfgVehicles
 		crewExplosionProtection = 0;
 		crewCrashProtection = 0;
 		slingLoadMemoryPoint = "slingLoad0";
-
+		angleRangeHorizontal = 360;
+		angleRangeVertical = 360;
 		
 
 		//typing hard

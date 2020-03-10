@@ -436,6 +436,7 @@ class RD501_JLTS_Clone_RTO_pack: JLTS_Clone_RTO_pack
 	maximumload=700;
 	tf_range=35000;
 	Displayname="[501st] Radio Pack (Small)"
+	hiddenSelectionsTextures[] = {"rd501_units\textures\republic\clones\LR_Small.paa"};
 };
 class RD501_JLTS_Clone_LR_attachment: JLTS_Clone_LR_attachment
 {

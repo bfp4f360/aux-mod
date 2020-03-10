@@ -78,7 +78,10 @@ class CfgVehicles
 				magazines[] = {"SmokeLauncherMag","SmokeLauncherMag","SmokeLauncherMag","SmokeLauncherMag","SmokeLauncherMag","SmokeLauncherMag"};
 			};
 		};
-		class EventHandlers: DefaultEventhandlers {}; 
+		class EventHandlers
+		{
+			init = "[_this select 0] execVM 'RD501_Vehicle\_init_functions\wheel_dmg.sqf';";
+		};
 	};
 
 	class macro_new_vehicle(marid,MkII_Dark_CIS):macro_new_vehicle(marid,MkII_CIS)

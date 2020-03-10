@@ -1,2 +1,2 @@
 params["_this"];
-_this setmass 16000;
+_this setmass 45000;

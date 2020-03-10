@@ -206,7 +206,7 @@ class CfgVehicles
 					maxFov=0.42;//"(30 / 120)";
 					directionStabilized = 1;
 					visionMode[] = {"Normal","NVG", "Ti"};
-					thermalMode[] = {0, 1,7};
+					thermalMode[] = {0,1,2,3,4,5};
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
 					opticsPPEffects[] = {"OpticsCHAbera2", "OpticsBlur2"};
 				};

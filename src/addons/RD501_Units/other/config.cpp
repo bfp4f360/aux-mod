@@ -25,7 +25,8 @@ class CfgPatches
 			macro_new_glass(phase2_hud),
 			macro_new_glass(phase2_hud_snow),
 			macro_new_glass(phase1_hud),
-			macro_new_glass(acklay_hud)
+			macro_new_glass(acklay_hud),
+			macro_new_glass(dark_mask_2)
 		};
 	};
 };
@@ -34,6 +35,8 @@ class CfgGlasses
 {
 	class G_B_Diving;
 	class G_Diving;
+	class g_balaclava_ti_blk_f;
+	class g_balaclava_blk;
 
 	class macro_new_glass(Diving_Goggles): G_B_Diving
 	{
@@ -106,5 +109,9 @@ class CfgGlasses
 		ace_dustPath = "";
 		ACE_OverlayCracked = macro_unit_skin_textures\glasses\HudAcklay.paa;
 	}
-
+	class macro_new_glass(dark_mask_2):g_balaclava_blk
+	{
+		Displayname="Stealth Balaclava (Dark)"
+		hiddenSelectionsTextures[] = {"rd501_units\textures\glasses\dark_mask_2.paa"};
+	}
 };

@@ -43,6 +43,9 @@ class CfgWeapons
 	NEW_501_AB_HELM_JLTS(501st_Tallon_helmet,Tallon,Tallon.paa)
 	NEW_501_AB_HELM_JLTS(501st_Tuff_helmet,Tuff,Tuff.paa)
 	NEW_501_AB_HELM_JLTS(501st_Raykan_helmet,Raykan,Raykan.paa)
+	NEW_501_AB_HELM_JLTS(501st_Scard_helmet,Scard,Scard.paa)
+	NEW_501_AB_HELM_JLTS(501st_Needles_helmet,Needles,Needles.paa)
+	NEW_501_AB_HELM_JLTS(501st_Iroh_helmet,Iroh,Iroh.paa)
 
 	class macro_new_helmet(airborne,purge): macro_new_helmet(airborne,lum_base)
 	{

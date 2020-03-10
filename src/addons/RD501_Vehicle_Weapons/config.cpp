@@ -303,27 +303,29 @@ class CfgAmmo
 	class macro_new_ammo(laat_cannon): TurboLaser_Laserx2//TurboLaser_Laserx2//SW_SpeederBikeCanon_Ammo//swop_bywingCannonammo//LAAT_Laser
 	{
 	
-		explosive = 1;
+		explosive = 0.5;
 		hit = 1000;
-		indirectHit =500;
+		indirectHit =800;
 		indirectHitRange = 10;
 		caliber = 1;
 		timeToLive=9;	
 		ACE_caliber=1;
-		//explosionEffects = "SWOP_LaserExploSmall";
-		//effectFly = "SWOP_blueLaserEffect";
-		CraterEffects = "ExploAmmoLaserCrater";
+		CraterEffects = "ATRocketCrater";
 		explosionSoundEffect = "DefaultExplosion";
-		ExplosionEffects = "MortarExplosion";
-		//model = "\tie\tracer_blue";
+		ExplosionEffects = "ExploAmmoExplosion";
 		model = "\TIE\tracer_green.p3d";
 		effectFly = "SWOP_greenLaserEffect";
-		//explosionSoundEffect = "DefaultExplosion";
-		//CraterEffects = "ExploAmmoLaserCrater";
-		ExplosionEffects = "HEShellExplosion";
 		aiAmmoUsageFlags = "64 + 128 + 256 + 512";
 		allowAgainstInfantry = 1;
 		cost = 1;
+		soundSetBulletFly[] = {"SWOP_HEAVYBullet_FlyBy_SoundSet"};
+		soundHit1[] = {"A3\Sounds_F\arsenal\weapons\Launchers\Titan\Explosion_titan_missile_01",2.51189,1,2000};
+		soundHit2[] = {"A3\Sounds_F\arsenal\weapons\Launchers\Titan\Explosion_titan_missile_02",2.51189,1,2000};
+		soundHit3[] = {"A3\Sounds_F\arsenal\weapons\Launchers\Titan\Explosion_titan_missile_03",2.51189,1,2000};
+		SoundSetExplosion[] = {"Shell155mm_Exp_SoundSet","Shell155mm_Tail_SoundSet","Explosion_Debris_SoundSet"};
+		soundSetSonicCrack[] = {"bulletSonicCrack_SoundSet","bulletSonicCrackTail_SoundSet"};
+		supersonicCrackFar[] = {"A3\Sounds_F\weapons\Explosion\supersonic_crack_50meters",0.223872,1,150};
+		supersonicCrackNear[] = {"A3\Sounds_F\weapons\Explosion\supersonic_crack_close",0.316228,1,50};
 	};
 
 	class swop_bywingCannonammo;
@@ -357,7 +359,7 @@ class CfgAmmo
 	
 		cost = 1;
 	
-		CraterEffects = "ExploAmmoLaserCrater";
+		CraterEffects = "-";
 		CraterWaterEffects = "ImpactEffectsWaterHE";
 		ExplosionEffects ="SWOP_LaserExploSmallblue2";
 		soundHit1[] = {"SWOP_Main\FlyBy\impactosheavy\impactosheavy1.ogg", 1.2, 1, 50};

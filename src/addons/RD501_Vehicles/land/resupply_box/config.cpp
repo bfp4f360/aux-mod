@@ -46,7 +46,7 @@ class CfgVehicles
 {
 	class plp_ct_HighSecContBlack;
 	class SWOP_BOX_BASE;
-	class plp_ctm_HighSecBigBlack;
+		class plp_ct_HighSecBigBlack;
 
 	class macro_new_vehicle(resuppy_box,platoon_medical): plp_ct_HighSecContBlack
 	{
@@ -154,7 +154,7 @@ class CfgVehicles
 			init ="ACE_maxWeightCarry = 20000;ACE_maxWeightDrag = 20000;";
 		};
 			
-	};hiddenSelectionsTextures[] = {"SW_SpeederBike\SpeederbikeCIV_co.paa"};
+	};
 
 	class macro_new_vehicle(resuppy_box,small_ammo): SWOP_BOX_BASE
 	{
@@ -194,7 +194,7 @@ class CfgVehicles
         	#include "ammo_small_weap.hpp"
         };
 	};
-	class macro_new_vehicle(resuppy_box,small_joint): plp_ctm_HighSecBigBlack
+	class macro_new_vehicle(resuppy_box,small_joint): plp_ct_HighSecBigBlack
 	{
 		author = "RD501";
 		class SimpleObject
