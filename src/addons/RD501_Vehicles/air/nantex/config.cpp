@@ -94,7 +94,7 @@ class CfgVehicles
 		class EventHandlers:DefaultEventhandlers
 		{
 			fired = "_this call (uinamespace getvariable 'BIS_fnc_effectFired');";
-			init = "[_this select 0] execVM '\GeonFighter\init.sqf';[_this select 0] execVM '\GeonFighter\initturbine.sqf';";
+			init = "[_this select 0] execVM '\GeonFighter\init.sqf';[_this select 0] execVM '\GeonFighter\initturbine.sqf';[_this select 0] execVM 'rd501_vehicles\_init_functions\cis_aircraft_mass.sqf';";
 			killed = "_this call (uinamespace getvariable 'BIS_fnc_effectKilled');";
 		
             

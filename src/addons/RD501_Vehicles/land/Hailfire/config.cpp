@@ -35,12 +35,18 @@ class CfgPatches
 };
 class CfgVehicles
 {
-    class SWOP_Hailfire;
-	class macro_new_vehicle(hailfire,cis): SWOP_Hailfire
+    class O_SWOP_Hailfire_1;
+	class macro_new_vehicle(hailfire,cis): O_SWOP_Hailfire_1
 	{
-        faction = macro_cis_faction
-		editorSubcategory = macro_editor_cat(arty)
-		vehicleClass = macro_editor_vehicle_type(arty)
+		scope=2;
+		side=0;
+		scopeCurator=2;
+		forceInGarage = 1;
+		faction = macro_cis_faction
+		editorSubcategory = macro_editor_cat(APC)
+		vehicleClass = macro_editor_vehicle_type(APC)
+		crew = "SWOP_CIS_droid_crew";
         displayname = "Hailfire Droid";
+		init = "[_this select 0] execVM 'rd501_vehicles\land\hailfire\hailfire_mass.sqf';";
     };
 };

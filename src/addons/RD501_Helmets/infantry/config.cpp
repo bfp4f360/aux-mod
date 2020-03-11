@@ -81,7 +81,7 @@ class CfgWeapons
 	NEW_501_Inf_Helm_JLTS(Sam,Sam,Sam.paa)
 	NEW_501_Inf_Helm_JLTS(Grady,Grady,Grady.paa)
 	NEW_501_Inf_Helm_JLTS(Leon,Leon,Leon.paa)
-	NEW_501_INF_Helm_JLTS(Delta,Delta,Delta.paa)
+	NEW_501_Inf_Helm_JLTS(Delta,Delta,Delta.paa)
 	
 	NEW_501_ARC_Helm_JLTS(Halo,Halo,Halo.paa)
 	NEW_501_ARC_Helm_JLTS(Habivi,Habivi,Habivi.paa)

@@ -217,7 +217,7 @@ class CfgVehicles
 		class TransportMagazines;
 		class EventHandlers :DefaultEventhandlers 
 		{
-			init = "[_this select 0] execVM 'RD501_Vehicle\_init_functions\wheel_dmg.sqf';";
+			init = "[_this select 0] execVM 'RD501_Vehicles\_init_functions\wheel_dmg.sqf';";
 		};
 		class Turrets: Turrets
 		{

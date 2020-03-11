@@ -68,7 +68,7 @@ class CfgVehicles
 
 		class EventHandlers
 		{
-			init = "[_this select 0] execVM 'RD501_Vehicle\_init_functions\wheel_dmg.sqf';";
+			init = "[_this select 0] execVM 'RD501_Vehicles\_init_functions\wheel_dmg.sqf';";
 		};
 
 		#include "sounds.hpp"
@@ -88,7 +88,7 @@ class CfgVehicles
 		vehicleClass = macro_editor_vehicle_type(Transport)
 		class EventHandlers
 		{
-			init = "[_this select 0] execVM 'RD501_Vehicle\_init_functions\wheel_dmg.sqf';";
+			init = "[_this select 0] execVM 'RD501_Vehicles\_init_functions\wheel_dmg.sqf';";
 		};
 		hiddenSelectionsTextures[] = 
 		{

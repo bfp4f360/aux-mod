@@ -94,14 +94,12 @@ class CfgVehicles
 		
 		weapons[] = {
 			macro_basic_air_weapons,
-			"SWOP_Cannon_Vulture", "SWOP_Cannon_Vulture_FAST", "energy_torpedo_w",
 			macro_new_weapon(generic,cis_aircraft_cannon)
 		};
 		magazines[] = {
 			macro_basic_air_mags,
 			macro_new_mag(generic_aircraft_cannon_red,1000),
 			macro_new_mag(generic_aircraft_cannon_red,1000),
-			"1000Rnd_SWOP_Cannon_Vulture", "1000Rnd_SWOP_Cannon_Vulture", "10Rnd_SWOP_Cannon_Vulture", "10Rnd_SWOP_Cannon_Vulture", "10Rnd_SWOP_Cannon_Vulture", "energy_torpedo_mag"
 		};
 		
 	};

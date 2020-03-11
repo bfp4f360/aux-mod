@@ -1,8 +1,4 @@
-#include "../../config_macros.hpp"
-
-params[
-	["_this"]
-];
+params ["_this"];
 
 _this addEventHandler ["HandleDamage",
 {

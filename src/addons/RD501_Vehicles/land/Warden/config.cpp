@@ -26,7 +26,8 @@ class CfgPatches
 		requiredVersion=0.1;
 		units[]=
 		{
-			macro_new_vehicle(warden_tank,mobile)
+			macro_new_vehicle(warden_tank,mobile),
+			macro_new_vehicle(warden_tank,field)
 		};
 		weapons[]=
 		{
@@ -97,12 +98,12 @@ class CfgVehicles
 		scope = 2;
 		side = 1;
 		hiddenSelections[] = {"camo1", "camo2", "camo3", "camo4", "CamoNet"};
-		hiddenSelectionsTextures[] =
+		hiddenSelectionsTextures[]=
 		{
-			macro_vehicle_textures\warden\Warden_AVRE_Body.paa,
-			macro_vehicle_textures\warden\Warden_AVRE_EXT2.paa,
-			macro_vehicle_textures\warden\Warden_AVRE_RCWS.paa,
-			macro_vehicle_textures\warden\Warden_AVRE_CRV.paa,
+			"RD501_Vehicles\textures\warden\overseer_ext1_cream_blue_co.paa",
+			"RD501_Vehicles\textures\warden\overseer_ext2_cream_blue_co.paa",
+			"RD501_Vehicles\textures\warden\overseer_turret_cream_co.paa",
+			"RD501_Vehicles\textures\warden\overseer_ext3_cream_blue_co.paa",
 			"a3\Armor_F\Data\camonet_NATO_Desert_CO.paa"
 		};
 		forceInGarage =1;
@@ -119,8 +120,8 @@ class CfgVehicles
 				magazines[] = {
 				
 					macro_basic_air_mags,
-					macro_new_mag(generic_aircraft_cannon_plasma_red,1000),
-					macro_new_mag(generic_aircraft_cannon_plasma_red,1000)
+					macro_new_mag(generic_aircraft_cannon_plasma_blue,1000),
+					macro_new_mag(generic_aircraft_cannon_plasma_blue,1000)
 				};
 			};
 			class CommanderOptics: CommanderOptics
@@ -439,4 +440,25 @@ class CfgVehicles
 
 		class EventHandlers : DefaultEventhandlers {};
 	};
+	class macro_new_vehicle(warden_tank,field):macro_new_vehicle(warden_tank,mobile)
+	{
+		displayName = "Republic Overseer ASV Turbo";
+		enginePower = 2400;
+		gearBox[] = {-7,0,11,8,5.7,4.2};
+		maxSpeed = 120;
+		maxOmega = 500;
+		peakTorque = 7400;
+		torqueCurve[] = {[0.291667,0.540541],[0.416667,0.675676],[0.583333,0.810811],[0.666667,0.891892],[0.75,0.972973],[0.833333,1.02703],[0.916667,1],[1,0.945946]};
+		engineMOI = 1;
+		armor = 100;
+		hiddenSelections[] = {"camo1", "camo2", "camo3", "camo4", "CamoNet"};
+		hiddenSelectionsTextures[]=
+		{
+			"RD501_Vehicles\textures\warden\overseer_ext1_black_blue_co.paa",
+			"RD501_Vehicles\textures\warden\overseer_ext2_black_blue_co.paa",
+			"RD501_Vehicles\textures\warden\trebuchet_turret_mynock_co.paa",
+			"RD501_Vehicles\textures\warden\overseer_ext3_black_blue_co.paa",
+			"a3\Armor_F\Data\camonet_NATO_Desert_CO.paa"
+		};
+	}
 };
