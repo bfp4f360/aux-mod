@@ -47,6 +47,6 @@ class CfgVehicles
 		vehicleClass = macro_editor_vehicle_type(APC)
 		crew = "SWOP_CIS_droid_crew";
         displayname = "Hailfire Droid";
-		init = "[_this select 0] execVM 'rd501_vehicles\land\hailfire\hailfire_mass.sqf';";
+		init = "[_this select 0] execVM 'RD501_Vehicles\land\Hailfire\hailfire_mass.sqf';";
     };
 };

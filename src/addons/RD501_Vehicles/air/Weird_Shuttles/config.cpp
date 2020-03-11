@@ -26,7 +26,8 @@ class CfgPatches
 		units[]=
 		{
 			"sh_flyable",
-			macro_new_vehicle(shuttle,Millenium_Falcon)
+			macro_new_vehicle(shuttle,Millenium_Falcon),
+			"techno_union"
 		};
 		weapons[]=
 		{
@@ -43,6 +44,7 @@ class CfgVehicles
 {
 	class Plane;
 	class Xarc;
+	class Strategic;
 	class swop_lambda:Xarc
 	{
 		class ACE_SelfActions;
@@ -172,4 +174,19 @@ class CfgVehicles
 		};
 	};
 	
+	class techno_union : Strategic
+	{
+		scope = 2;  
+		scopeCurator = 2;                                                          // public
+		model = "\RD501_Vehicles\static\technounion\techno_union.p3d";                     // our p3d model.
+		placement = vertical;
+		mapSize = 3;    
+		author="Spartan163";                                                      // Icon size in the editor.
+		displayName = "Techno Union Frigate";                                         // List Name in the editor.
+		vehicleClass = "Coop_Structure";                                          // Faction Class.
+		faction = "RD501FactionOpfor";                                                     // Faction
+		icon = "\RD501_Vehicles\static\technounion\dataTechnoU\TechnoU.paa";
+		cost = 0;
+		armor = 8000;
+	};
 };

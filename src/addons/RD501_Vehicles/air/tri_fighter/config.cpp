@@ -98,7 +98,7 @@ class CfgVehicles
 	
 
 		class EventHandlers {
-			init="[_this select 0] execVM '\vulture\inittri.sqf';[_this select 0] execVM '\vulture\initturbine.sqf';[_this select 0] execVM 'rd501_vehicles\_init_functions\cis_aircraft_mass.sqf';";
+			init="[_this select 0] execVM '\vulture\inittri.sqf';[_this select 0] execVM '\vulture\initturbine.sqf';[_this select 0] execVM 'RD501_Vehicles\_init_functions\cis_aircraft_mass.sqf';";
             class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
         };
 	};
