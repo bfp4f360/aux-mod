@@ -79,7 +79,7 @@ class CfgVehicles
 		side=1;
 		displayName = "ARC-170";
 		forceInGarage = 1;
-
+		ballisticsComputer = 1+8;
 		faction = macro_republic_faction
 		editorSubcategory = macro_editor_cat_air(Republic_vtol)
 		vehicleClass = macro_editor_vehicle_type_air(Republic)
@@ -258,9 +258,9 @@ class CfgVehicles
 			
 
 
-				ballisticsComputer = 1;
+				ballisticsComputer = 1+8;
 	
-	
+				
 
 
 				allowTabLock = 1;
@@ -297,12 +297,12 @@ class CfgVehicles
 				memoryPointGun = "kulas";
 				muzzleEnd[] = {"cannon1","cannon2"};
 				muzzlePos[] = {"cannon1","cannon2"};
-				controllable=1;
+				controllable=0;
 				gunBeg = "gun_begin";
 				gunEnd = "gun_end";
-				primary = 1;
-				primaryGunner = 1;
-				enableManualFire = 1;
+				primary = 0;
+				primaryGunner = 0;
+				enableManualFire = 0;
 
 				class Viewoptics
 				{

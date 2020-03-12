@@ -306,12 +306,13 @@ class CfgAmmo
 		explosive = 0.5;
 		hit = 1000;
 		indirectHit =800;
-		indirectHitRange = 10;
+		indirectHitRange = 6;
 		caliber = 1;
 		timeToLive=9;	
 		ACE_caliber=1;
 		craterEffects = "ImpactEffectsMedium";
 		explosionSoundEffect = "DefaultExplosion";
+		
 		ExplosionEffects = "ExploAmmoExplosion";
 		model = "\TIE\tracer_green.p3d";
 		effectFly = "SWOP_greenLaserEffect";
@@ -319,10 +320,7 @@ class CfgAmmo
 		allowAgainstInfantry = 1;
 		cost = 1;
 		soundSetBulletFly[] = {"SWOP_HEAVYBullet_FlyBy_SoundSet"};
-		soundHit1[] = {"A3\Sounds_F\arsenal\weapons\Launchers\Titan\Explosion_titan_missile_01",2.51189,50,2000};
-		soundHit2[] = {"A3\Sounds_F\arsenal\weapons\Launchers\Titan\Explosion_titan_missile_02",2.51189,50,2000};
-		soundHit3[] = {"A3\Sounds_F\arsenal\weapons\Launchers\Titan\Explosion_titan_missile_03",2.51189,50,2000};
-		SoundSetExplosion[] = {"Shell155mm_Exp_SoundSet","Shell155mm_Tail_SoundSet","Explosion_Debris_SoundSet"};
+		SoundSetExplosion[] = {"Mortar_Exp_SoundSet","Mortar_Tail_SoundSet","Explosion_Debris_SoundSet"};
 		soundSetSonicCrack[] = {"bulletSonicCrack_SoundSet","bulletSonicCrackTail_SoundSet"};
 		supersonicCrackFar[] = {"\ca\Weapons\Data\Sound\supersonic_crack_50meters.wss", 1, 50};
 		supersonicCrackNear[] = {"\ca\Weapons\Data\Sound\supersonic_crack_close.wss", 1, 50};

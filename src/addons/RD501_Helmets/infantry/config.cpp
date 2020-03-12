@@ -79,7 +79,6 @@ class CfgWeapons
 	NEW_501_Inf_Helm_JLTS(Drifter,Drifter,Drifter.paa)
 	NEW_501_Inf_Helm_JLTS(Weiss,Weiss,Weiss.paa)
 	NEW_501_Inf_Helm_JLTS(Sam,Sam,Sam.paa)
-	NEW_501_Inf_Helm_JLTS(Grady,Grady,Grady.paa)
 	NEW_501_Inf_Helm_JLTS(Leon,Leon,Leon.paa)
 	NEW_501_Inf_Helm_JLTS(Delta,Delta,Delta.paa)
 	

@@ -22,7 +22,7 @@
 		waterEffect = "";//HeliWater
 
 	//Targeting stuff
-		ballisticsComputer = 1;
+		ballisticsComputer = 1+8;
 		//show all crosshairs
 		showCrewAim = 4;
 		showAllTargets = 2;

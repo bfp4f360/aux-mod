@@ -48,6 +48,7 @@ class CfgWeapons
 	NEW_501_AB_HELM_JLTS(501st_Iroh_helmet,Iroh,Iroh.paa)
 	NEW_501_AB_HELM_JLTS(501st_Navo_helmet,Navo,Navo.paa)
 	NEW_501_AB_HELM_JLTS(501st_Jaeger_helmet,Jaeger,Jaeger.paa)
+	NEW_501_AB_HELM_JLTS(501st_Grady_helmet,Grady,Grady.paa)
 
 	class macro_new_helmet(airborne,purge): macro_new_helmet(airborne,lum_base)
 	{

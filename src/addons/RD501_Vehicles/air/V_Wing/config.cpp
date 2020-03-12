@@ -78,8 +78,8 @@ class CfgVehicles
 		faction = macro_republic_faction
 		editorSubcategory = macro_editor_cat_air(Republic_vtol)
 		vehicleClass = macro_editor_vehicle_type_air(Republic)
-
-				visualTarget = 1; 
+		ballisticsComputer = 1+8;
+		visualTarget = 1; 
 		visualTargetSize = 1;
 		reportOwnPosition = true;
 		radarTargetSize = 1;
@@ -94,11 +94,10 @@ class CfgVehicles
 		class Eventhandlers
 		{
 			fired = "_this call (uinamespace getvariable 'BIS_fnc_effectFired');";
-			init = "[_this select 0] execVM '\Vwing\init.sqf';[_this select 0] execVM '\Vwing\initturbine.sqf';[_this select 0] execVM 'rd501_vehicles\air\v_wing\vwing_mass.sqf';";
+			init = "[_this select 0] execVM '\Vwing\init.sqf';[_this select 0] execVM '\Vwing\initturbine.sqf';[_this select 0] execVM 'RD501_Vehicles\air\V_Wing\vwing_mass.sqf';";
 			killed = "_this call (uinamespace getvariable 'BIS_fnc_effectKilled');";
 			class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
 		};
-	
 		//flight model
 			maxSpeed = 4000;
 			aileronSensitivity = 0.5;//1.7;

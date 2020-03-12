@@ -77,7 +77,7 @@ class CfgVehicles
 		forceInGarage = 1;
 		//dmg stuff
 		vtol = 4;
-
+		ballisticsComputer = 1+8;
 		airBrakeFrictionCoef = 80.4;
 		armor = 200;
 		scope = 2;
@@ -177,7 +177,7 @@ class CfgVehicles
 		hiddenSelectionsMaterials[] = {"eta2\eta2main.rvmat","Delta7\Delta7astro.rvmat"};
 		hiddenSelectionsTextures[] = {"eta2\t_yodasstarfighter_co.paa","eta2\t_yodasstarfighter_r2d2_co.paa"};
 
-				visualTarget = 1; 
+		visualTarget = 1; 
 		visualTargetSize = 1;
 		reportOwnPosition = true;
 		radarTargetSize = 1;

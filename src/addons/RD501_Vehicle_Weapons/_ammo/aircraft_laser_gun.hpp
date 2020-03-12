@@ -29,7 +29,7 @@ class macro_new_ammo(generic_aircraft_laser_gun_red) : B_35mm_AA_Tracer_Red
     dangerRadiusHit = 40;
     suppressionRadiusBulletClose = 10;
     suppressionRadiusHit = 14;
-    craterEffects = "ImpactEffectsMedium";
+    craterEffects = "";
     craterShape = "";
 	explosionEffects = "ExploAmmoLaserCannon";//ExplosionEffects = "SWOP_LaserExploSmall";
     effectFly = "SWOP_RedLaserEffect";
@@ -40,7 +40,7 @@ class macro_new_ammo(generic_aircraft_laser_gun_red) : B_35mm_AA_Tracer_Red
     weaponLockSystem = 0; 
     gravityFactor = 0;
     ACE_caliber=1;
-    SoundSetExplosion[] = {"CAA_SC_Bullet_FlyBy_SoundSet"}; // SWOP_SC_blaster_SoundSet | SWOP_HEAVYBullet_FlyBy_SoundSet | CAA_SC_Bullet_FlyBy_SoundSet | SWOP_155mm_Shot_SoundSet
+    SoundSetExplosion[] = {"SWOP_HEAVYBullet_FlyBy_SoundSet"}; // SWOP_SC_blaster_SoundSet | SWOP_HEAVYBullet_FlyBy_SoundSet | CAA_SC_Bullet_FlyBy_SoundSet | SWOP_155mm_Shot_SoundSet
 
    class Components
     {

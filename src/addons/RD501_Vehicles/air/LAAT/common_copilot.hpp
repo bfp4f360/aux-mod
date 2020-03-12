@@ -1,4 +1,4 @@
-ballisticsComputer = 1;
+ballisticsComputer = 1+8;
 allowTabLock = 1;
 showCrewAim = 4;
 canUseScanner = 1;
