@@ -86,15 +86,15 @@ class CfgVehicles
 
 
 		visualTarget = 1; 
-		visualTargetSize = 1;
+		visualTargetSize = 10;
 		reportOwnPosition = true;
-		radarTargetSize = 1;
+		radarTargetSize = 10;
 		radarTarget = 1;
 		nvTarget = 1;
 		laserTarget = 1;
-		laserScanner = 0;
+		laserScanner = 1;
 		irTarget = 1;
-		irTargetSize = 1;
+		irTargetSize = 10;
 		countermeasureActivationRadius = 2000;
 
 
@@ -127,7 +127,7 @@ class CfgVehicles
 		rudderControlsSensitivityCoef = 4;
 
 		aileronSensitivity = 1*2;
-		gearsUpFrictionCoef = 25;
+		gearsUpFrictionCoef = 0;
 		elevatorSensitivity = 1*2;
 		airBrakeFrictionCoef = 80.4;
 		

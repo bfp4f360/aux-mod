@@ -115,7 +115,10 @@ class CfgWeapons
 			class StandardSound
 			{
 				begin1[] = {"rd501_vehicle_weapons\_sounds\New_Laat_2.ogg",1,1,2500};
-				soundBegin[] = {"begin1",1};
+				begin2[] = {"rd501_vehicle_weapons\_sounds\laat_cannon\shot1.ogg",1.1,1,2500};
+				begin3[] = {"rd501_vehicle_weapons\_sounds\laat_cannon\shot2.ogg",1.1,1,2500};
+				begin4[] = {"rd501_vehicle_weapons\_sounds\laat_cannon\shot3.ogg",1.1,1,2500};
+				soundBegin[] = {"begin1",0.2,"begin2",0.2,"begin3",0.2,"begin4",0.2};
 			};
 		};
 	};

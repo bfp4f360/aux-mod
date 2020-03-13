@@ -39,7 +39,7 @@
 	{
 		ammo = macro_new_ammo(generic_kannon)
 		displayNameShort = "Coaxium Shells";
-		count = "30";
+		count = "15";
 	};
 
 		class macro_new_mag(generic_aircraft_gun_dual_blue,1000): macro_new_mag(generic_aircraft_gun_blue,1000)

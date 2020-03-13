@@ -13,6 +13,9 @@ macro_prep_xeh(stretcher\carry_stretcher.sqf,carry_stretcher)
 macro_prep_xeh(attach_turrets\apply_turrets.sqf,apply_aircraft_turrets)
 macro_prep_xeh(attach_turrets\remove_attached_objects.sqf,remove_attached_objects)
 
+//Zatamas aircraft drones
+macro_prep_xeh(attach_drones\apply_drones.sqf,apply_aircraft_drone)
+
 //set mass 
 macro_prep_xeh(mass_changer\set_mass.sqf,set_mass)
 

@@ -17,7 +17,9 @@ class CfgPatches
 		units[]={};
 		weapons[]={
 			macro_new_weapon(hh,15),
-			macro_new_weapon(rps,6)
+			macro_new_weapon(rps,6),
+			macro_new_weapon(Launcher,PLX1),
+			macro_new_weapon(rd501,SWOP_B2gun)
 		};
 	};
 };
@@ -27,6 +29,8 @@ class cfgWeapons
 	class launch_RPG32_F;
 	class RocketHH15Clone;
 	class RocketRPS6_F;
+	class JLTS_PLX1_AT;
+	class SWOP_B2gun;
 
 	class macro_new_weapon(hh,15):RocketHH15Clone
 	{
@@ -58,5 +62,15 @@ class cfgWeapons
 		magazineWell[] += {macro_new_magwell(rocket_RPS)};
 	};
 
-};
+    class macro_new_weapon(Launcher,PLX1): JLTS_PLX1_AT
+    {
+		author= "RD501";
+		_generalMacro = macro_new_weapon(Launcher,PLX1)
+		scope = 2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		displayName = "Republic PLX1s";
+        handAnim[] = {"OFP2_ManSkeleton","RD501_Weapons\b2test.rtm"};
+    };
 
+};

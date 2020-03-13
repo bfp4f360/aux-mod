@@ -24,6 +24,7 @@ class CfgPatches
 
 class cfgWeapons 
 {
+	class SWOP_B2gun;
 	class Rifle_Long_Base_F;
 	class SWOP_BlasterRifle_Base:Rifle_Long_Base_F
 	{
@@ -67,7 +68,7 @@ class cfgWeapons
 		ACE_overheating_mrbs = DC15a_Overheat_mrbs
 		ACE_overheating_allowSwapBarrel = 1;
 		ACE_clearJamAction = "ReloadMagazine";
-
+		handAnim[] = {"OFP2_ManSkeleton","RD501_Weapons\b2test.rtm"};
 		modes[] = {"Single","FullAuto", "close", "short", "medium"};
 
 		class FullAuto:FullAuto
@@ -158,6 +159,17 @@ class cfgWeapons
 
 			};
 		};
+	};
+	class macro_new_weapon(rd501,SWOP_B2gun): SWOP_B2gun
+	{
+		author= "RD501";
+		_generalMacro = macro_new_weapon(rd501,SWOP_B2gun)
+		baseweapon = macro_new_weapon(rd501,SWOP_B2gun);
+		scope = 2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		displayName = "Republic B2 Blaster";
+        handAnim[] = {"OFP2_ManSkeleton","RD501_Weapons\b2test.rtm"};
 	};
 
 	class macro_new_weapon(DC,15s_shield_212):macro_new_weapon(DC,15s_shield)

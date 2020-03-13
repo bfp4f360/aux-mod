@@ -99,7 +99,7 @@ class CfgVehicles
 		//typing hard
 		#include "ace_stuff.hpp"
 		#include "flight_model.hpp"
-		#include "common_stuff.hpp"
+		#include "common_stuff_mk3.hpp"
 	
 		class UserActions
 		{
