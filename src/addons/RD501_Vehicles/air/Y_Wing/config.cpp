@@ -205,7 +205,6 @@ class CfgVehicles
 		weapons[] = {
 			macro_basic_air_weapons,
 			macro_new_weapon(voltic,y_wing),
-			macro_new_weapon(backflip,aa),
 			macro_new_weapon(wynd,agm),
 			macro_new_weapon(wynd,lgm),
 			//macro_new_weapon(wynd,ugm),
@@ -222,7 +221,6 @@ class CfgVehicles
 			macro_new_mag(voltic,200),
 			macro_new_mag(voltic,200),
 			macro_new_mag(voltic,200),
-			macro_new_mag(backflip,8),
 			macro_new_mag(agm,6),
 			macro_new_mag(agm,6),
 			macro_new_mag(agm,6),
