@@ -126,7 +126,7 @@ class Extended_Init_EventHandlers
 //Run once at a point in time before all the mission units and vehicles have their own init event handlers processed
 class Extended_PreInit_EventHandlers
 {
-	class XEH_Preinit
+	class RD501_PREINIT
 	{
 		init="call compile preprocessFileLineNumbers 'RD501_Main\XEH_preInit.sqf'";
 	};
@@ -134,7 +134,7 @@ class Extended_PreInit_EventHandlers
 
 //run once and after all the units and vehicles have had both their init event handlers and the code in the mission editor "init" lines processed
 class Extended_PostInit_EventHandlers {
-    class XEH_Postinit {
+    class RD501_POSTINIT {
         init = "call compile preprocessFileLineNumbers 'RD501_Main\XEH_postinit.sqf'";
     };
 };
