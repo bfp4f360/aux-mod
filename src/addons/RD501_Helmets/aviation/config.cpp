@@ -195,7 +195,7 @@ class CfgWeapons
 		subItems[] = {"G_B_Diving"};
 	};
 
-	NEW_WARDEN_HELM(flog,London,warden\Flog.paa)
+	NEW_WARDEN_HELM(flog,Flog,warden\Flog.paa)
 	NEW_WARDEN_HELM(wirtimus,Wirtimus,warden\Wirtimus.paa)
 	
 
