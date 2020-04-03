@@ -207,12 +207,10 @@ class CfgVehicles
 			macro_new_weapon(voltic,y_wing),
 			macro_new_weapon(wynd,agm),
 			macro_new_weapon(wynd,lgm),
-			//macro_new_weapon(wynd,ugm),
-			 macro_new_weapon(bomb,carpet_I),
-			// macro_new_weapon(bomb,cluster),
-			// macro_new_weapon(bomb,SDB),
-			
-			macro_new_weapon(bomb,LGB)
+			macro_new_weapon(bomb,SDB),
+			macro_new_weapon(bomb,LGB),
+			macro_new_weapon(bomb,cluster),
+			macro_new_weapon(bomb,carpet_I)
 		};
 		magazines[] = {
 			macro_basic_air_mags,
@@ -229,15 +227,11 @@ class CfgVehicles
 			macro_new_mag(lgm,4),
 			macro_new_mag(lgm,4),
 			macro_new_mag(lgm,4),
-			//macro_new_mag(ugm,10),
-			//macro_new_mag(carpet_I_bomb_mag,20),
-			//macro_new_mag(carpet_I_bomb_mag,20),
-			//macro_new_mag(carpet_I_bomb_mag,20),
-			//macro_new_mag(carpet_I_bomb_mag,20),
-			//macro_new_mag(carpet_I_bomb_mag,20),
-			//macro_new_mag(cluster_bomb,4),
-			//macro_new_mag(cluster_bomb,4),
-		 	//macro_new_mag(cluster_bomb,4),
+			macro_new_mag(carpet_I_bomb_mag,20),
+			macro_new_mag(carpet_I_bomb_mag,20),
+			macro_new_mag(cluster_bomb,4),
+			macro_new_mag(cluster_bomb,4),
+		 	macro_new_mag(cluster_bomb,4),
 			macro_new_mag(sdb_bomb,4),
 			macro_new_mag(sdb_bomb,4),
 			macro_new_mag(sdb_bomb,4),

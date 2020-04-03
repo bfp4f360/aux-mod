@@ -213,6 +213,7 @@ class CfgVehicles
 		editorSubcategory = macro_editor_cat(resupply)
 		vehicleClass = "Ammo";
 		editorCategory = macro_editor_cat(suppplies)
+		maxload=1000000000;
 		ace_cargo_size = 2;
 		ace_cargo_canLoad = 1;  
 		class TransportItems
