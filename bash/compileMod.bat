@@ -5,7 +5,8 @@ REM https://stackoverflow.com/questions/18462169/how-to-loop-through-array-in-ba
 set outputFolder=C:\Users\Namenai\Desktop\aux_test_local\addons
 set sourceFolder=C:\Users\Namenai\Documents\GitHub\aux-mod\src\addons
 
-set Arr[0]=RD501_AARF
+set Arr[0]=RD501_Droids
+REM set Arr[0]=RD501_AARF need to fix
 REM set Arr[1]=RD501_Droids
 REM set Arr[2]=RD501_End
 REM set Arr[3]=RD501_Helmets
@@ -28,7 +29,7 @@ set "x=0"
 :SymLoop
 if defined Arr[%x%] (
    
-    call Makepbo %sourceFolder%\%%Arr[%x%]%% C:\Users\Namenai\Desktop\aux_test_local\addons
+    call Makepbo -N %sourceFolder%\%%Arr[%x%]%% C:\Users\Namenai\Desktop\aux_test_local\addons
 
     set /a "x+=1"
     GOTO :SymLoop
