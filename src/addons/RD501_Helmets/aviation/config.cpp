@@ -112,7 +112,7 @@ class CfgWeapons
 			"\501st_Helmets\AB\data\red_glow.rvmat"//"swop_clones\data\helmpilot.rvmat"//  \501st_Helmets\AB\data\white_glow.rvmat
 		};
 	};
-	/*class macro_new_helmet(pilot,lord_krayt): macro_new_helmet(pilot,base)
+	class macro_new_helmet(pilot,lord_krayt): macro_new_helmet(pilot,base)
 	{
 		scope = 2;
 		displayName = "Clone pilot helmet (501st legion) Lord Krayt";
@@ -173,7 +173,7 @@ class CfgWeapons
 	// };
 
 
-*/
+
 	class 212th_Engineer_Helmet_501st;
 
 	class macro_new_helmet(warden,501st):212th_Engineer_Helmet_501st
