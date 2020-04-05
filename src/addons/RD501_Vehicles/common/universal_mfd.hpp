@@ -514,7 +514,7 @@ class MFD//color[]={"user0","user1","user2"}; alpha = "user3"
 				};
 			};	
 
-			class PlaneW
+			class PlaneW//heading indicator
 			{
 				clipTL[] = {0.0,1.0};
 				clipBR[] = {1.0,0.0};
