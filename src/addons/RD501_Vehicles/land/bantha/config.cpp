@@ -201,8 +201,8 @@ class CfgVehicles
 				{
 					class commanderoptics:commanderoptics
 					{
-						weapons[] = {"CMFlareLauncher","SmokeLauncher","SCI_arifle_VALKEN38A_F","Laserdesignator_vehicle"};
-						magazines[] = {"300Rnd_CMFlare_Chaff_Magazine","SmokeLauncherMag","SmokeLauncherMag","SmokeLauncherMag","SmokeLauncherMag","SmokeLauncherMag","SCI_200Rnd_VALKEN38SAW_mag","SCI_200Rnd_VALKEN38SAW_mag","SCI_200Rnd_VALKEN38SAW_mag","SCI_200Rnd_VALKEN38SAW_mag","SCI_200Rnd_VALKEN38SAW_mag","SCI_200Rnd_VALKEN38SAW_mag","SCI_200Rnd_VALKEN38SAW_mag","SCI_200Rnd_VALKEN38SAW_mag","SCI_200Rnd_VALKEN38SAW_mag","SCI_200Rnd_VALKEN38SAW_mag","SCI_200Rnd_VALKEN38SAW_mag","Laserbatteries"};
+						weapons[] = {"CMFlareLauncher","SmokeLauncher","212th_arifle_VALKEN38A_F","Laserdesignator_vehicle"};
+						magazines[] = {"300Rnd_CMFlare_Chaff_Magazine","SmokeLauncherMag","SmokeLauncherMag","SmokeLauncherMag","SmokeLauncherMag","SmokeLauncherMag","212th_200Rnd_VALKEN38SAW_mag","212th_200Rnd_VALKEN38SAW_mag","212th_200Rnd_VALKEN38SAW_mag","212th_200Rnd_VALKEN38SAW_mag","212th_200Rnd_VALKEN38SAW_mag","212th_200Rnd_VALKEN38SAW_mag","212th_200Rnd_VALKEN38SAW_mag","212th_200Rnd_VALKEN38SAW_mag","212th_200Rnd_VALKEN38SAW_mag","212th_200Rnd_VALKEN38SAW_mag","212th_200Rnd_VALKEN38SAW_mag","Laserbatteries"};
 					};
 				};
 			};
