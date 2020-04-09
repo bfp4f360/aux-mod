@@ -14,7 +14,7 @@ PixelShaderID = "Super";
 VertexShaderID = "Super";
 class Stage1
 {
-	texture = "212th_Engineer\ENGI_U\data\Camo1_NOHQ.paa";
+	texture = "212th\Armor\212th_Helms\textures\Engineer_Helm_NOHQ.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
@@ -50,7 +50,7 @@ class Stage3
 };
 class Stage4
 {
-	texture = "212th_Engineer\ENGI_U\data\Camo1_AS.paa";
+	texture = "212th\Armor\212th_Helms\textures\Engineer_Helm_AS.paa";
 	uvSource = "tex";
 	class uvTransform
 	{

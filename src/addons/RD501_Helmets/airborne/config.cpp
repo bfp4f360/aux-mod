@@ -62,7 +62,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\RD501_Helmets\_textures\airborne\Purge.paa"
+			"\RD501_Helmets\_textures\airborne\purge\purge.paa"
 		};
 	};
 	class macro_new_helmet(airborne,purge_corporal): macro_new_helmet(airborne,purge)

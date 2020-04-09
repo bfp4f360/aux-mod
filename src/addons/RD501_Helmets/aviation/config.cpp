@@ -186,7 +186,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			macro_custom_helmet_textures\aviation\warden\warden.paa
+			macro_custom_helmet_textures\aviation\warden\tempFix.paa //warden.paa
 		};
 		hiddenSelectionsMaterials[] = 
         {
@@ -195,8 +195,8 @@ class CfgWeapons
 		subItems[] = {"G_B_Diving"};
 	};
 
-	NEW_WARDEN_HELM(flog,Flog,warden\Flog.paa)
-	NEW_WARDEN_HELM(wirtimus,Wirtimus,warden\Wirtimus.paa)
+	NEW_WARDEN_HELM(flog,Flog,warden\tempFix.paa)//Flog.paa
+	NEW_WARDEN_HELM(wirtimus,Wirtimus,warden\tempFix.paa)//Wirtimus.paa
 	
 
 
