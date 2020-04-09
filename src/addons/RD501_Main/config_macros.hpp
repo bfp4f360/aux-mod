@@ -69,7 +69,7 @@
 	#define macro_grp_fnc_name(grp,title) MODNAME##_##grp##_fnc_##title
 
 	#define macro_preprocess_fnc(file)\
-	call compile preprocessFileLineNumbers 'COMPONENT##\##file'
+	call compileFinal preprocessFileLineNumbers 'COMPONENT##\##file'
 	
 
 
