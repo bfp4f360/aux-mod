@@ -40,28 +40,28 @@ class CfgVehicles
 	{
 		class turrets;
 	};
-	class SCI_APC_Wheeled_01_base_F : Wheeled_APC_F
+	class 212th_APC_Wheeled_01_base_F : Wheeled_APC_F
 	{
 		class Turrets: Turrets
 		{
 			class MainTurret;
 		};
 	}
-	class SCI_B_APC_Wheeled_01_base_F : SCI_APC_Wheeled_01_base_F
+	class 212th_B_APC_Wheeled_01_base_F : 212th_APC_Wheeled_01_base_F
 	{
 		class Turrets: Turrets
 		{
 			class MainTurret;
 		};
 	}
-	class SCI_B_APC_Wheeled_01_cannon_F : SCI_B_APC_Wheeled_01_base_F
+	class 212th_B_APC_Wheeled_01_cannon_F : 212th_B_APC_Wheeled_01_base_F
 	{
 		class Turrets: Turrets
 		{
 			class MainTurret;
 		};
 	};
-	class SCI_B_APC_Wheeled_01_cannon_F_OCimport_01 : SCI_B_APC_Wheeled_01_cannon_F
+	class 212th_B_APC_Wheeled_01_cannon_F_OCimport_01 : 212th_B_APC_Wheeled_01_cannon_F
 	{	
 		class HitPoints;
 		class Turrets: Turrets
@@ -73,7 +73,7 @@ class CfgVehicles
 			};
 		};
 	};
-	class SCI_B_APC_Wheeled_01_cannon_F_OCimport_02 : SCI_B_APC_Wheeled_01_cannon_F_OCimport_01 
+	class 212th_B_APC_Wheeled_01_cannon_F_OCimport_02 : 212th_B_APC_Wheeled_01_cannon_F_OCimport_01 
 	{	
 		class HitPoints: HitPoints
 		{
@@ -99,7 +99,7 @@ class CfgVehicles
 		};
 	};
 
-	class macro_new_vehicle(bantha,501st_MkI):SCI_B_APC_Wheeled_01_cannon_F_OCimport_02
+	class macro_new_vehicle(bantha,501st_MkI):212th_B_APC_Wheeled_01_cannon_F_OCimport_02
 	{
 		armor = 600;//320;
 		armorStructural = 5;
