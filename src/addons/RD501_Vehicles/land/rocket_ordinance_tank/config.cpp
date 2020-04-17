@@ -74,9 +74,9 @@ class CfgVehicles
 		textureList[] = {};
 		hiddenSelectionsTextures[] = 
 		{
-			macro_vehicle_textures\Fast_Infantry_Transport\FAT.paa,
-			macro_vehicle_textures\Fast_Infantry_Transport\FAT.paa,
-			macro_vehicle_textures\Fast_Infantry_Transport\FAT.paa
+			"FE_vehicles\textures\mbt01\mbt01_ext1_mynock_co.paa",
+			"FE_vehicles\textures\mbt01\catapult\catapult_ext2_mynock_co.paa",
+			"A3\Armor_F\Data\camonet_NATO_Green_CO.paa"
 		};
 	};
 	class macro_new_vehicle(rocket_ordinance_tank,CIS) : macro_new_vehicle(rocket_ordinance_tank,republic)

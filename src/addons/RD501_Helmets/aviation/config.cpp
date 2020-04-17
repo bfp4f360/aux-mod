@@ -73,6 +73,7 @@ class CfgWeapons
 	NEW_501_Pilot_HELM(aspect,Aspect,pilots\Aspect.paa)
 	NEW_501_Pilot_HELM(gothic,Gothic,pilots\Gothic.paa)
 	NEW_501_Pilot_HELM(shnuffles,Shnuffles,pilots\Shnuffles.paa)
+	NEW_501_Pilot_HELM(Floff,Floff,pilots\Floff.paa)
 
 	class macro_new_helmet(pilot,scuba): macro_new_helmet(pilot,base)
 	{
@@ -186,7 +187,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			macro_custom_helmet_textures\aviation\warden\tempFix.paa //warden.paa
+			macro_custom_helmet_textures\aviation\warden\Warden.paa
 		};
 		hiddenSelectionsMaterials[] = 
         {
@@ -195,10 +196,11 @@ class CfgWeapons
 		subItems[] = {"G_B_Diving"};
 	};
 
-	NEW_WARDEN_HELM(flog,Flog,warden\tempFix.paa)//Flog.paa
-	NEW_WARDEN_HELM(wirtimus,Wirtimus,warden\tempFix.paa)//Wirtimus.paa
-	
-
+	NEW_WARDEN_HELM(WardenPETTY,Warden_Petty,warden\WardenPETTY.paa)
+	NEW_WARDEN_HELM(WardenVeteran,Warden_Veteran,warden\WardenVeteran.paa)
+	NEW_WARDEN_HELM(WardenSENIOR,Warden_Senior,warden\WardenSENIOR.paa)
+	NEW_WARDEN_HELM(WardenCHIEF,Warden_Chief,warden\WardenCHIEF.paa)
+	NEW_WARDEN_HELM(WardenMASTERCHIEF,Warden_MC,warden\WardenMASTERCHIEF.paa)
 
 
 

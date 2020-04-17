@@ -28,6 +28,7 @@ class CfgPatches
 			macro_new_vehicle(T1000,Republic),
 			macro_new_vehicle(Claymore,Republic),
 			macro_new_vehicle(Warhammer,Republic),
+			macro_new_vehicle(Glaive,Mynock),
 			macro_new_vehicle(Glaive,Republic),
 			macro_new_vehicle(Longbow,Republic),
 			macro_new_vehicle(Courser,Republic)
@@ -60,12 +61,10 @@ class CfgVehicles
 		textureList[] = {};
 		hiddenSelectionsTextures[] = 
 		{
-			"\RD501_Vehicles\textures\LAAT\krayt_black_red\laatkraytbodyblackred.paa",
-			"\RD501_Vehicles\textures\LAAT\krayt_black_red\laatkraytbodyblackred.paa",
-			"\RD501_Vehicles\textures\LAAT\krayt_black_red\laatkraytbodyblackred.paa",
-			"\RD501_Vehicles\textures\LAAT\krayt_black_red\laatkraytbodyblackred.paa",
-			"\RD501_Vehicles\textures\LAAT\krayt_black_red\laatkraytbodyblackred.paa",
-			"\RD501_Vehicles\textures\LAAT\krayt_black_red\laatkraytbodyblackred.paa"
+			"FE_vehicles\textures\t1000\t1000_ext1_mynock_co.paa",
+			"FE_vehicles\textures\t1000\t1000_turret_mynock_co.paa",
+			"FE_vehicles\textures\t1000\t1000_ext2_mynock_co.paa",
+			"FE_vehicles\textures\grey.paa"
 		};
 
 		faction = macro_republic_faction
@@ -107,12 +106,10 @@ class CfgVehicles
 		textureList[] = {};
 		hiddenSelectionsTextures[] = 
 		{
-			"\RD501_Vehicles\textures\LAAT\krayt_black_red\laatkraytbodyblackred.paa",
-			"\RD501_Vehicles\textures\LAAT\krayt_black_red\laatkraytbodyblackred.paa",
-			"\RD501_Vehicles\textures\LAAT\krayt_black_red\laatkraytbodyblackred.paa",
-			"\RD501_Vehicles\textures\LAAT\krayt_black_red\laatkraytbodyblackred.paa",
-			"\RD501_Vehicles\textures\LAAT\krayt_black_red\laatkraytbodyblackred.paa",
-			"\RD501_Vehicles\textures\LAAT\krayt_black_red\laatkraytbodyblackred.paa"
+			"FE_vehicles\textures\mbt01\mbt01_ext1_mynock_co.paa",
+			"FE_vehicles\textures\mbt01\claymore\claymore_tower_mynock_co.paa",
+			"FE_vehicles\textures\mbt01\claymore\claymore_addons_mynock_co.paa",
+			"a3\Armor_F\Data\camonet_NATO_Desert_CO.paa"
 		};
 
 		faction = macro_republic_faction
@@ -153,12 +150,10 @@ class CfgVehicles
 		textureList[] = {};
 		hiddenSelectionsTextures[] = 
 		{
-			"\RD501_Vehicles\textures\LAAT\krayt_black_red\laatkraytbodyblackred.paa",
-			"\RD501_Vehicles\textures\LAAT\krayt_black_red\laatkraytbodyblackred.paa",
-			"\RD501_Vehicles\textures\LAAT\krayt_black_red\laatkraytbodyblackred.paa",
-			"\RD501_Vehicles\textures\LAAT\krayt_black_red\laatkraytbodyblackred.paa",
-			"\RD501_Vehicles\textures\LAAT\krayt_black_red\laatkraytbodyblackred.paa",
-			"\RD501_Vehicles\textures\LAAT\krayt_black_red\laatkraytbodyblackred.paa"
+			"FE_vehicles\textures\warhammer\warhammer_ext01_mynock_co.paa",
+			"FE_vehicles\textures\warhammer\warhammer_ext02_mynock_co.paa",
+			"FE_vehicles\textures\warhammer\warhammer_ext03_mynock_co.paa",
+			"A3\Armor_F\Data\camonet_AAF_Digi_Green_CO.paa"
 		};
 
 		faction = macro_republic_faction
@@ -187,25 +182,26 @@ class CfgVehicles
 		};
 	};
 	
-	class macro_new_vehicle(Glaive,Republic):B_AFV_Wheeled_01_up_cannon_F
+	class macro_new_vehicle(Glaive,Mynock):B_AFV_Wheeled_01_up_cannon_F
 	{	
 		scope=2;
 		side=1;
 		scopeCurator=2;
 		forceInGarage = 1;
-		displayName="Republic Glaive TD"
+		displayName="Republic Glaive TD (Mynock)"
 		crew = "SWOP_Clonetrooper_P1";
 		
 		hiddenSelections[] = {"Camo1", "Camo2", "Camo3", "Camo4", "Camo5", "CamoSlat"};
 		textureList[] = {};
 		hiddenSelectionsTextures[] = 
 		{
-			"\RD501_Vehicles\textures\LAAT\krayt_black_red\laatkraytbodyblackred.paa",
-			"\RD501_Vehicles\textures\LAAT\krayt_black_red\laatkraytbodyblackred.paa",
-			"\RD501_Vehicles\textures\LAAT\krayt_black_red\laatkraytbodyblackred.paa",
-			"\RD501_Vehicles\textures\LAAT\krayt_black_red\laatkraytbodyblackred.paa",
-			"\RD501_Vehicles\textures\LAAT\krayt_black_red\laatkraytbodyblackred.paa",
-			"\RD501_Vehicles\textures\LAAT\krayt_black_red\laatkraytbodyblackred.paa"
+			"FE_vehicles\textures\glaive\glaive_ext1_mynock_co.paa",
+			"FE_vehicles\textures\glaive\glaive_ext2_mynock_co.paa",
+			"FE_vehicles\textures\glaive\glaive_wheel_mynock_co.paa",
+			"FE_vehicles\textures\glaive\glaive_ext3_mynock_co.paa",
+			"FE_vehicles\textures\glaive\glaive_turret_mynock_co.paa",
+			"FE_vehicles\textures\grey.paa",
+			"FE_vehicles\textures\glaive\glaive_ext3_mynock_co.paa"
 		};
 
 		faction = macro_republic_faction
@@ -235,6 +231,20 @@ class CfgVehicles
 			};
 		};
 	};	
+	class macro_new_vehicle(Glaive,Republic): macro_new_vehicle(Glaive,Mynock)
+	{
+		displayName="Republic Glaive TD"
+		hiddenSelectionsTextures[]=
+		{
+			"FE_vehicles\textures\glaive\glaive_ext1_republic_co.paa",
+			"FE_vehicles\textures\glaive\glaive_ext2_republic_co.paa",
+			"FE_vehicles\textures\glaive\glaive_wheel_republic_co.paa",
+			"FE_vehicles\textures\glaive\glaive_ext3_republic_co.paa",
+			"FE_vehicles\textures\glaive\glaive_turret_republic_co.paa",
+			"FE_vehicles\textures\cream.paa",
+			"FE_vehicles\textures\glaive\glaive_ext3_republic_co.paa"
+		};
+	};
 	class macro_new_vehicle(Longbow,Republic):O_APC_Tracked_02_AA_F
 	{
 		scope=2;
@@ -248,12 +258,11 @@ class CfgVehicles
 		textureList[] = {};
 		hiddenSelectionsTextures[] = 
 		{
-			"\RD501_Vehicles\textures\LAAT\krayt_black_red\laatkraytbodyblackred.paa",
-			"\RD501_Vehicles\textures\LAAT\krayt_black_red\laatkraytbodyblackred.paa",
-			"\RD501_Vehicles\textures\LAAT\krayt_black_red\laatkraytbodyblackred.paa",
-			"\RD501_Vehicles\textures\LAAT\krayt_black_red\laatkraytbodyblackred.paa",
-			"\RD501_Vehicles\textures\LAAT\krayt_black_red\laatkraytbodyblackred.paa",
-			"\RD501_Vehicles\textures\LAAT\krayt_black_red\laatkraytbodyblackred.paa"
+			"FE_vehicles\textures\longbow\longbow_ext1_mynock_co.paa",
+			"FE_vehicles\textures\longbow\longbow_ext2_mynock_co.paa",
+			"FE_vehicles\textures\longbow\longbow_tower_mynock_co.paa",
+			"A3\Armor_F\Data\camonet_CSAT_HEX_Desert_CO.paa",
+			"FE_vehicles\textures\grey.paa",
 		};
 
 		faction = macro_republic_faction

@@ -49,7 +49,11 @@ class CfgWeapons
 	NEW_501_AB_HELM_JLTS(501st_Navo_helmet,Navo,Navo.paa)
 	NEW_501_AB_HELM_JLTS(501st_Jaeger_helmet,Jaeger,Jaeger.paa)
 	NEW_501_AB_HELM_JLTS(501st_Grady_helmet,Grady,Grady.paa)
-
+	NEW_501_AB_HELM_JLTS(501st_Exod_helmet,Exod,Exod.paa)
+	NEW_501_AB_HELM_JLTS(501st_Beat_helmet,Beat,Beat.paa)
+	NEW_501_AB_HELM_JLTS(501st_Dragneel_helmet,Dragneel,Dragneel.paa)
+	NEW_501_AB_HELM_JLTS(501st_Nobear_helmet,Nobear,Nobear.paa)
+	
 	class macro_new_helmet(airborne,purge): macro_new_helmet(airborne,lum_base)
 	{
 		scope=2;
