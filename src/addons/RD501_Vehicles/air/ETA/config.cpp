@@ -32,7 +32,8 @@ class CfgPatches
 			macro_new_vehicle(eta,yellow_Mk2),
 			macro_new_vehicle(eta,blue_Mk2),
 			macro_new_vehicle(eta,grey_Mk2),
-			macro_new_vehicle(eta,black_Mk2)
+			macro_new_vehicle(eta,black_Mk2),
+			macro_new_vehicle(eta,white_Mk2)
 		};
 		weapons[]=
 		{
@@ -328,5 +329,10 @@ class CfgVehicles
 	{
 		displayname = "ETA-3 (Black) Mk.II";
 		hiddenSelectionsTextures[] = {"\RD501_Vehicles\textures\LAAT\krayt_black_red\laatkraytbodyblackred.paa","\RD501_Vehicles\textures\LAAT\krayt_black_red\laatkraytbodyblackred.paa"};
+	};
+	class macro_new_vehicle(eta,white_Mk2) : macro_new_vehicle(eta,lime_Mk2)
+	{
+		displayname = "ETA-3 (N-7) Mk.II";
+		hiddenSelectionsTextures[] = {"\RD501_Vehicles\textures\eta\eta2_main_normandy_co.paa","\RD501_Vehicles\textures\eta\eta2_main_normandy_co.paa"};
 	};
 };

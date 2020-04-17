@@ -32,7 +32,8 @@ class CfgPatches
 			macro_new_vehicle(drone,Clone_Recon_Droid),
 			macro_new_vehicle(drone,Clone_Recon_Droid_ATTE),
 			macro_new_vehicle(drone,rep_stealth_fixedwing),
-			macro_new_vehicle(drone,cis_stealth_fixedwing)
+			macro_new_vehicle(drone,cis_stealth_fixedwing),
+			macro_new_vehicle(drone,razor_stealth_fixedwing)
 		};
 		weapons[]=
 		{
@@ -170,8 +171,8 @@ class CfgVehicles
 		author = "RD501";
 		faction = macro_republic_faction
 		hiddenSelections[] = {"camo1","camo2"};
-		//hiddenSelectionsMaterials[] = {"eta2\eta2main.rvmat","Delta7\Delta7astro.rvmat"};
-		hiddenSelectionsTextures[] = {"\RD501_Vehicles\textures\LAAT\krayt_black_red\laatkraytbodyblackred.paa",""};
+		hiddenSelectionsMaterials[] = {"\RD501_Vehicles\textures\sentinel\phantom_fuselage_01.rvmat","\RD501_Vehicles\textures\sentinel\phantom_fuselage_01.rvmat"};
+		hiddenSelectionsTextures[] = {"\RD501_Vehicles\textures\sentinel\phantom_fuselage_01_gar_co.paa",""};
 		weapons[] = {
 			macro_basic_air_weapons,
 			macro_new_weapon(generic,ion_aircraft_cannon)
@@ -327,7 +328,10 @@ class CfgVehicles
 		class ViewOptics:ViewOptics
 		{};
 	};
-
+	class macro_new_vehicle(drone,razor_stealth_fixedwing): macro_new_vehicle(drone,rep_stealth_fixedwing)
+	{
+		hiddenSelectionsTextures[] = {"\RD501_Vehicles\textures\sentinel\phantom_fuselage_01_razor_co.paa",""};
+	};
 	class macro_new_vehicle(drone,cis_stealth_fixedwing):B_UAV_05_F
 	{
 		displayname = "CIS Phantom";
@@ -338,8 +342,8 @@ class CfgVehicles
 		faction = macro_cis_faction
 		crew = "SWOP_CIS_droid_crew";
 		hiddenSelections[] = {"camo1","camo2"};
-		//hiddenSelectionsMaterials[] = {"eta2\eta2main.rvmat","Delta7\Delta7astro.rvmat"};
-		hiddenSelectionsTextures[] = {"awing\t_awing_03_cw.paa",""};
+		hiddenSelectionsMaterials[] = {"\RD501_Vehicles\textures\sentinel\phantom_fuselage_01.rvmat","\RD501_Vehicles\textures\sentinel\phantom_fuselage_01.rvmat"};
+		hiddenSelectionsTextures[] = {"\RD501_Vehicles\textures\sentinel\phantom_fuselage_01_cis_co",""};
 		weapons[] = {
 			macro_basic_air_weapons,
 			macro_new_weapon(generic,cis_aircraft_cannon)
