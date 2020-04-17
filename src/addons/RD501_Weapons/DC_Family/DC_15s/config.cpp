@@ -68,7 +68,6 @@ class cfgWeapons
 		ACE_overheating_mrbs = DC15a_Overheat_mrbs
 		ACE_overheating_allowSwapBarrel = 1;
 		ACE_clearJamAction = "ReloadMagazine";
-		handAnim[] = {"OFP2_ManSkeleton","RD501_Weapons\b2test.rtm"};
 		modes[] = {"Single","FullAuto", "close", "short", "medium"};
 
 		class FullAuto:FullAuto

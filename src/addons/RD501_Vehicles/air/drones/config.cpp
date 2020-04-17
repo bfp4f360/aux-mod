@@ -171,7 +171,7 @@ class CfgVehicles
 		author = "RD501";
 		faction = macro_republic_faction
 		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsMaterials[] = {"\RD501_Vehicles\textures\sentinel\phantom_fuselage_01.rvmat","\RD501_Vehicles\textures\sentinel\phantom_fuselage_01.rvmat"};
+		hiddenSelectionsMaterials[] = {"\RD501_Vehicles\textures\sentinel\phantom_fuselage_01.rvmat",""};
 		hiddenSelectionsTextures[] = {"\RD501_Vehicles\textures\sentinel\phantom_fuselage_01_gar_co.paa",""};
 		weapons[] = {
 			macro_basic_air_weapons,
@@ -342,7 +342,7 @@ class CfgVehicles
 		faction = macro_cis_faction
 		crew = "SWOP_CIS_droid_crew";
 		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsMaterials[] = {"\RD501_Vehicles\textures\sentinel\phantom_fuselage_01.rvmat","\RD501_Vehicles\textures\sentinel\phantom_fuselage_01.rvmat"};
+		hiddenSelectionsMaterials[] = {"\RD501_Vehicles\textures\sentinel\phantom_fuselage_01.rvmat",""};
 		hiddenSelectionsTextures[] = {"\RD501_Vehicles\textures\sentinel\phantom_fuselage_01_cis_co",""};
 		weapons[] = {
 			macro_basic_air_weapons,

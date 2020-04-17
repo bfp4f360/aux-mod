@@ -333,6 +333,6 @@ class CfgVehicles
 	class macro_new_vehicle(eta,white_Mk2) : macro_new_vehicle(eta,lime_Mk2)
 	{
 		displayname = "ETA-3 (N-7) Mk.II";
-		hiddenSelectionsTextures[] = {"\RD501_Vehicles\textures\eta\eta2_main_normandy_co.paa","\RD501_Vehicles\textures\eta\eta2_main_normandy_co.paa"};
+		hiddenSelectionsTextures[] = {"\RD501_Vehicles\textures\eta\eta2_main_normandy_co.paa","eta2\t_yodasstarfighter_r2d2_co.paa"};
 	};
 };
