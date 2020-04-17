@@ -2,18 +2,18 @@
 @ECHO OFF
 REM https://stackoverflow.com/questions/18462169/how-to-loop-through-array-in-batch
 
-set outputFolder=C:\Users\Namenai\Desktop\aux_test_local\addons
-set sourceFolder=C:\Users\Namenai\Documents\GitHub\aux-mod\src\addons
+set outputFolder=C:\Users\marcj\Documents\GitHub\aux-mod\src\addons
+set sourceFolder=C:\Users\marcj\Documents\GitHub\aux-mod\src\addons
 
 REM Folder of the addonBuilder.exe, needed so that the script can change directory to it
-set AddonBuilderPath=C:\Program Files (x86)\Steam\steamapps\common\Arma 3 Tools\AddonBuilder
-set tempFolder=C:\Users\Namenai\AppData\Local\Temp
+set AddonBuilderPath=D:\SteamLibrary\steamapps\common\Arma 3 Tools\AddonBuilder
+set tempFolder=C:\Users\marcj\AppData\Local\Temp
 
 REM Files to keep when building, like .hpp and shit
-set includeFile=C:\Users\Namenai\Documents\GitHub\aux-mod\bash\include.txt
+set includeFile=C:\Users\marcj\Documents\GitHub\aux-mod\bash\include.txt
 
 REM Sadly for the file below, the filepath can not have any spaces
-set keyFile=C:\Users\Namenai\Documents\GitHub\aux-mod\keys\RD501_Aux_Mod.biprivatekey
+set keyFile=C:\Users\marcj\Documents\GitHub\aux-mod\keys\RD501_Aux_Mod.biprivatekey
 
 REM List of all PBO's
 set Arr[0]=RD501_AARF

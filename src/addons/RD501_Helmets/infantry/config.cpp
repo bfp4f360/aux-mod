@@ -105,9 +105,10 @@ class CfgWeapons
 	NEW_501_Inf_Helm_JLTS(Slyder,Slyder,Slyder.paa)
 	NEW_501_Inf_Helm_JLTS(Tim,Tim,Tim.paa)
 	NEW_501_Inf_Helm_JLTS(Sticks,Sticks,Sticks.paa)
-	NEW_501_Inf_Helm_JLTS(Weepier,Weepier,Weepier.paa)	
-	NEW_501_INF_Helm_JLTS(Sense,Sense,Sense.paa)
-	NEW_501_INF_Helm_JLTS(Twine,Twine,Twine.paa)
+	NEW_501_Inf_Helm_JLTS(Weepier,Weepier,Weepier.paa)
+	NEW_501_Inf_Helm_JLTS(Sense,Sense,Sense.paa)
+	NEW_501_Inf_Helm_JLTS(Twine,Twine,Twine.paa)
+
 
 	NEW_501_ARC_Helm_JLTS(Rayne,Rayne,Rayne.paa)
 	NEW_501_ARC_Helm_JLTS(Halo,Halo,Halo.paa)

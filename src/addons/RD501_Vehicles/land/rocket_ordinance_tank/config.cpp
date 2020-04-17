@@ -74,8 +74,8 @@ class CfgVehicles
 		textureList[] = {};
 		hiddenSelectionsTextures[] = 
 		{
-			"FE_vehicles\textures\mbt01\mbt01_ext1_mynock_co.paa",
-			"FE_vehicles\textures\mbt01\catapult\catapult_ext2_mynock_co.paa",
+			"RD501_Vehicles\FE_vehicles\textures\mbt01\mbt01_ext1_mynock_co.paa",
+			"RD501_Vehicles\FE_vehicles\textures\mbt01\catapult\catapult_ext2_mynock_co.paa",
 			"A3\Armor_F\Data\camonet_NATO_Green_CO.paa"
 		};
 	};

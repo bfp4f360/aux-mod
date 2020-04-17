@@ -120,9 +120,9 @@ class CfgVehicles
 		textureList[] = {};
 		hiddenSelectionsTextures[] = 
 		{
-			"FE_vehicles\textures\mbt01\mbt01_ext1_mynock_co.paa",
-			"FE_vehicles\textures\mbt01\trebuchet\trebuchet_ext2_mynock_co.paa",
-			"FE_vehicles\textures\mbt01\trebuchet\trebuchet_turret_mynock_co.paa",
+			"RD501_Vehicles\FE_Vehicles\textures\mbt01\mbt01_ext1_mynock_co.paa",
+			"RD501_Vehicles\FE_Vehicles\textures\mbt01\trebuchet\trebuchet_ext2_mynock_co.paa",
+			"RD501_Vehicles\FE_Vehicles\textures\mbt01\trebuchet\trebuchet_turret_mynock_co.paa",
 			"A3\Armor_F\Data\camonet_NATO_Desert_CO.paa"
 		};
 
