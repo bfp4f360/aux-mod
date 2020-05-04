@@ -108,7 +108,10 @@ class CfgWeapons
 	NEW_501_Inf_Helm_JLTS(Weepier,Weepier,Weepier.paa)
 	NEW_501_Inf_Helm_JLTS(Sense,Sense,Sense.paa)
 	NEW_501_Inf_Helm_JLTS(Twine,Twine,Twine.paa)
-
+	NEW_501_INF_Helm_JLTS(Toast,Toast,Toast.paa)
+	NEW_501_INF_Helm_JLTS(Bishop,Bishop,Bishop.paa)
+	NEW_501_INF_Helm_JLTS(Fancy,Fancy,Fancy.paa)
+	NEW_501_INF_Helm_JLTS(Pro,Pro,Pro.paa)
 
 	NEW_501_ARC_Helm_JLTS(Rayne,Rayne,Rayne.paa)
 	NEW_501_ARC_Helm_JLTS(Halo,Halo,Halo.paa)

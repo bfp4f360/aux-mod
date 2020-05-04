@@ -159,17 +159,6 @@ class cfgWeapons
 			};
 		};
 	};
-	class macro_new_weapon(rd501,SWOP_B2gun): SWOP_B2gun
-	{
-		author= "RD501";
-		_generalMacro = macro_new_weapon(rd501,SWOP_B2gun)
-		baseweapon = macro_new_weapon(rd501,SWOP_B2gun);
-		scope = 2;
-		scopeCurator=2;
-		scopeArsenal=2;
-		displayName = "Republic B2 Blaster";
-        handAnim[] = {"OFP2_ManSkeleton","RD501_Weapons\b2test.rtm"};
-	};
 
 	class macro_new_weapon(DC,15s_shield_212):macro_new_weapon(DC,15s_shield)
 	{
