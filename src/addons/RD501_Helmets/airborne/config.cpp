@@ -58,6 +58,9 @@ class CfgWeapons
 	NEW_501_AB_HELM_JLTS(501st_Lava_helmet,Lava,Lava.paa)
 	NEW_501_AB_HELM_JLTS(501st_Ricochet_helmet,Ricochet,Ricochet.paa)
 	NEW_501_AB_HELM_JLTS(501st_Skittles_helmet,Skittles,Skittles.paa)
+	NEW_501_AB_HELM_JLTS(501st_Brandon_helmet,Brandon,Brandon.paa)
+	NEW_501_AB_HELM_JLTS(501st_Poseidon_helmet,Poseidon,Poseidon.paa)
+	NEW_501_AB_HELM_JLTS(501st_Power_helmet,Power,Power.paa)
 	
 	class macro_new_helmet(airborne,purge): macro_new_helmet(airborne,lum_base)
 	{

@@ -112,6 +112,12 @@ class CfgWeapons
 	NEW_501_Inf_Helm_JLTS(Bishop,Bishop,Bishop.paa)
 	NEW_501_Inf_Helm_JLTS(Fancy,Fancy,Fancy.paa)
 	NEW_501_Inf_Helm_JLTS(Pro,Pro,Pro.paa)
+	NEW_501_Inf_Helm_JLTS(Shape,Shape,Shape.paa)
+	NEW_501_Inf_Helm_JLTS(Klown,Klown,Klown.paa)
+	NEW_501_Inf_Helm_JLTS(Drammon,Drammon,Drammon.paa)
+	NEW_501_Inf_Helm_JLTS(Spectre,Spectre,Spectre.paa)
+	NEW_501_Inf_Helm_JLTS(Andromeda,Andromeda,Andromeda.paa)
+	NEW_501_Inf_Helm_JLTS(Oktapius,Oktapius,Oktapius.paa)
 
 	NEW_501_ARC_Helm_JLTS(Rayne,Rayne,Rayne.paa)
 	NEW_501_ARC_Helm_JLTS(Halo,Halo,Halo.paa)
