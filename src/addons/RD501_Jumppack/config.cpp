@@ -1025,7 +1025,7 @@ class CfgVehicles
 		displayname = "[501st] AB Jumppack (HQ 2)";
 		hiddenSelectionsTextures[] = {"RD501_Jumppack\textures\acklay_skin_set\hq_2.paa"};
 	};
-	class RD501_JLTS_Clone_jumppack_mc_2: RD501_JLTS_Clone_jumppack_mc
+	class RD501_JLTS_Clone_jumppack_mc_6: RD501_JLTS_Clone_jumppack_mc
 	{
 		displayname = "[501st] AB Jumppack (HQ 6)";
 		hiddenSelectionsTextures[] = {"RD501_Jumppack\textures\acklay_skin_set\hq_6.paa"};
