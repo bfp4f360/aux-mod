@@ -5293,6 +5293,79 @@ class CfgVehicles
 		hiddenSelections[] = {"Camo1","Camo2"};
 		hiddenSelectionsTextures[] = {TEXTUREPATH\Republic\clones\arc\arc_armour_upper.paa,TEXTUREPATH\Republic\clones\arc\arc_armour_lower.paa};
 	};
+	//
+	class macro_new_uniform_skin_class(501_utc,01): macro_new_uniform_skin_class(501_inf,recruit)
+	{
+		author = "RD501";
+		scope = 2;
+		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
+		nakedUniform = "U_BasicBody";
+		hiddenSelections[] = {"Camo1","Camo2"};
+		hiddenSelectionsTextures[] = {TEXTUREPATH\Republic\clones\utc\utc_blue_6_armor_upper.paa,TEXTUREPATH\Republic\clones\utc\utc_armor_lower.paa};
+	};
+	class macro_new_uniform_skin_class(501_utc,02): macro_new_uniform_skin_class(501_inf,recruit)
+	{
+		author = "RD501";
+		scope = 2;
+		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
+		nakedUniform = "U_BasicBody";
+		hiddenSelections[] = {"Camo1","Camo2"};
+		hiddenSelectionsTextures[] = {TEXTUREPATH\Republic\clones\utc\utc_green_6_armor_upper.paa,TEXTUREPATH\Republic\clones\utc\utc_armor_lower.paa};
+	};
+	class macro_new_uniform_skin_class(501_utc,03): macro_new_uniform_skin_class(501_inf,recruit)
+	{
+		author = "RD501";
+		scope = 2;
+		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
+		nakedUniform = "U_BasicBody";
+		hiddenSelections[] = {"Camo1","Camo2"};
+		hiddenSelectionsTextures[] = {TEXTUREPATH\Republic\clones\utc\utc_indigo_6_armor_upper.paa,TEXTUREPATH\Republic\clones\utc\utc_armor_lower.paa};
+	};
+	class macro_new_uniform_skin_class(501_utc,04): macro_new_uniform_skin_class(501_inf,recruit)
+	{
+		author = "RD501";
+		scope = 2;
+		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
+		nakedUniform = "U_BasicBody";
+		hiddenSelections[] = {"Camo1","Camo2"};
+		hiddenSelectionsTextures[] = {TEXTUREPATH\Republic\clones\utc\utc_orange_6_armor_upper.paa,TEXTUREPATH\Republic\clones\utc\utc_armor_lower.paa};
+	};
+	class macro_new_uniform_skin_class(501_utc,05): macro_new_uniform_skin_class(501_inf,recruit)
+	{
+		author = "RD501";
+		scope = 2;
+		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
+		nakedUniform = "U_BasicBody";
+		hiddenSelections[] = {"Camo1","Camo2"};
+		hiddenSelectionsTextures[] = {TEXTUREPATH\Republic\clones\utc\utc_pink_6_armor_upper.paa,TEXTUREPATH\Republic\clones\utc\utc_armor_lower.paa};
+	};
+	class macro_new_uniform_skin_class(501_utc,06): macro_new_uniform_skin_class(501_inf,recruit)
+	{
+		author = "RD501";
+		scope = 2;
+		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
+		nakedUniform = "U_BasicBody";
+		hiddenSelections[] = {"Camo1","Camo2"};
+		hiddenSelectionsTextures[] = {TEXTUREPATH\Republic\clones\utc\utc_red_6_armor_upper.paa,TEXTUREPATH\Republic\clones\utc\utc_armor_lower.paa};
+	};
+	class macro_new_uniform_skin_class(501_utc,07): macro_new_uniform_skin_class(501_inf,recruit)
+	{
+		author = "RD501";
+		scope = 2;
+		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
+		nakedUniform = "U_BasicBody";
+		hiddenSelections[] = {"Camo1","Camo2"};
+		hiddenSelectionsTextures[] = {TEXTUREPATH\Republic\clones\utc\utc_violet_6_armor_upper.paa,TEXTUREPATH\Republic\clones\utc\utc_armor_lower.paa};
+	};
+	class macro_new_uniform_skin_class(501_utc,08): macro_new_uniform_skin_class(501_inf,recruit)
+	{
+		author = "RD501";
+		scope = 2;
+		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
+		nakedUniform = "U_BasicBody";
+		hiddenSelections[] = {"Camo1","Camo2"};
+		hiddenSelectionsTextures[] = {TEXTUREPATH\Republic\clones\utc\utc_yellow_6_armor_upper.paa,TEXTUREPATH\Republic\clones\utc\utc_armor_lower.paa};
+	};
 };
 	
 	// class SCI_B_Clone_F :B_Soldier_base_F

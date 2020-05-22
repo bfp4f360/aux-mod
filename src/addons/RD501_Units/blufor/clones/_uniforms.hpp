@@ -615,3 +615,75 @@ class macro_new_uniform_class(501_arc,02): macro_new_uniform_class(501_inf,recru
 		containerClass = "Supply100";
 	};
 };
+class macro_new_uniform_class(501_utc,01): macro_new_uniform_class(501_inf,recruit)
+{
+	displayName = "[501st] UTC (Cyan)";
+	class ItemInfo: ItemInfo
+	{
+		uniformClass = macro_new_uniform_skin_class(501_utc,01);
+		containerClass = "Supply100";
+	};
+};
+class macro_new_uniform_class(501_utc,02): macro_new_uniform_class(501_inf,recruit)
+{
+	displayName = "[501st] UTC (Green)";
+	class ItemInfo: ItemInfo
+	{
+		uniformClass = macro_new_uniform_skin_class(501_utc,02);
+		containerClass = "Supply100";
+	};
+};
+class macro_new_uniform_class(501_utc,03): macro_new_uniform_class(501_inf,recruit)
+{
+	displayName = "[501st] UTC (Indigo)";
+	class ItemInfo: ItemInfo
+	{
+		uniformClass = macro_new_uniform_skin_class(501_utc,03);
+		containerClass = "Supply100";
+	};
+};
+class macro_new_uniform_class(501_utc,04): macro_new_uniform_class(501_inf,recruit)
+{
+	displayName = "[501st] UTC (Orange)";
+	class ItemInfo: ItemInfo
+	{
+		uniformClass = macro_new_uniform_skin_class(501_utc,04);
+		containerClass = "Supply100";
+	};
+};
+class macro_new_uniform_class(501_utc,05): macro_new_uniform_class(501_inf,recruit)
+{
+	displayName = "[501st] UTC (Pink)";
+	class ItemInfo: ItemInfo
+	{
+		uniformClass = macro_new_uniform_skin_class(501_utc,05);
+		containerClass = "Supply100";
+	};
+};
+class macro_new_uniform_class(501_utc,06): macro_new_uniform_class(501_inf,recruit)
+{
+	displayName = "[501st] UTC (Red)";
+	class ItemInfo: ItemInfo
+	{
+		uniformClass = macro_new_uniform_skin_class(501_utc,06);
+		containerClass = "Supply100";
+	};
+};
+class macro_new_uniform_class(501_utc,07): macro_new_uniform_class(501_inf,recruit)
+{
+	displayName = "[501st] UTC (Violet)";
+	class ItemInfo: ItemInfo
+	{
+		uniformClass = macro_new_uniform_skin_class(501_utc,07);
+		containerClass = "Supply100";
+	};
+};
+class macro_new_uniform_class(501_utc,08): macro_new_uniform_class(501_inf,recruit)
+{
+	displayName = "[501st] UTC (Yellow)";
+	class ItemInfo: ItemInfo
+	{
+		uniformClass = macro_new_uniform_skin_class(501_utc,08);
+		containerClass = "Supply100";
+	};
+};
