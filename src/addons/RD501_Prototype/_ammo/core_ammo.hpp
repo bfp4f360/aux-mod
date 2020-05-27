@@ -4,7 +4,8 @@ class macro_new_ammo(Republic_Universal_Ammo):SWOP_DC15ABlasterRifle_L_Ammo
     coefGravity=0.12;//0.050000001;
     cartridge = "FxCartridge_slug";
     effectFly = "SWOP_BlueLaserEffect";
-    model="sci_weaponsMain\Data\tracer_blue.p3d";
+    //model="sci_weaponsMain\Data\tracer_blue.p3d";
+    model = "212th\Weapons\212th_weaponsMain\Data\tracer_blue.p3d";
     indirectHit = 0.0;
     indirectHitRange = 0.0;
     explosive = 0.0;

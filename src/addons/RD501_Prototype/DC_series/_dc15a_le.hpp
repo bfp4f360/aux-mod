@@ -1,4 +1,4 @@
-    class macro_new_weapon(DC,15a_LE_proto):SCI_DC15XM//SWOP_DC15ABlasterRifle_mod1
+    class macro_new_weapon(DC,15a_LE_proto):212th_arifle_DC15LE_F//SCI_DC15XM//SWOP_DC15ABlasterRifle_mod1
 	{
 		weaponPoolAvailable = 1;
 		

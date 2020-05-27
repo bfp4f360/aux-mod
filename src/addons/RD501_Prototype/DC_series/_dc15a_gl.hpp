@@ -1,4 +1,4 @@
-    class macro_new_weapon(DC,15a_gl_proto):SCI_arifle_DC15GL_F
+    class macro_new_weapon(DC,15a_gl_proto):212th_arifle_DC15GL_F//SCI_arifle_DC15GL_F
 	{
 		dlc = "RD501";
 		author= "RD501";

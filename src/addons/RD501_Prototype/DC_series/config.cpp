@@ -43,42 +43,44 @@ class cfgWeapons
 	
 	
 	//212th dc15x
-	class SCI_dc15x_base;
-	class SCI_DC15XM:SCI_dc15x_base
+	class 212th_dc15x_base;
+	class 212th_DC15XM:212th_dc15x_base
 	{
 		class Single;
 	};
 
 	//212th valken
-	class SCI_arifle_VALKEN38A_Base_F;
-	class SCI_arifle_VALKEN38A_F:SCI_arifle_VALKEN38A_Base_F
+	class 212th_arifle_VALKEN38A_Base_F;
+	class 212th_arifle_VALKEN38A_F:212th_arifle_VALKEN38A_Base_F
 	{
 		class fullauto;
 	};
 
 	//212th Gl
-	class Rifle_Base_F;
-	class SCI_arifle_DC15GL_Base_F;
-	class SCI_arifle_DC15GL_F: SCI_arifle_DC15GL_Base_F
+	//class Rifle_Base_F;
+	class 212th_arifle_DC15GL_Base_F;
+	class 212th_arifle_DC15GL_F: 212th_arifle_DC15GL_Base_F
 	{
 		class Single;
 		class Burst;
 		class SCI_GL_F;
 	};
 
-	class SCI_arifle_DC15A_Base_F;
-	class SCI_arifle_DC15A_F:SCI_arifle_DC15A_Base_F
+	//rifle
+	class 212th_arifle_DC15A_Base_F;
+	class 212th_arifle_DC15A_F:212th_arifle_DC15A_Base_F
 	{
 		class Single;
 		class Burst;
 	};
 
-	class SCI_arifle_DC15LE_F: SCI_arifle_DC15A_Base_F
+	//212th LE
+	class 212th_arifle_DC15LE_F: 212th_arifle_DC15A_Base_F
 	{	
 		class Single;
 	};
 
-	class RD501_TEST_LE_GUN:SCI_arifle_DC15LE_F
+	class RD501_TEST_LE_GUN:212th_arifle_DC15LE_F
 	{
 		scope = 2;
 	}
@@ -91,8 +93,8 @@ class cfgWeapons
 	#include "_dc15a_mod0.hpp"
 
 
-	class SCI_arifle_DC15S_Base_F;
-	class SCI_arifle_DC15S_F: SCI_arifle_DC15S_Base_F
+	class 212th_arifle_DC15S_Base_F;
+	class 212th_arifle_DC15S_F: 212th_arifle_DC15S_Base_F
 	{
 		
 		class FullAuto;

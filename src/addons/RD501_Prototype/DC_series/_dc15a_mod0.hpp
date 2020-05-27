@@ -1,4 +1,4 @@
-    class macro_new_weapon(DC,15a_mod0_proto):SCI_arifle_VALKEN38A_F//SWOP_DC15ABlasterRifle_mod0
+    class macro_new_weapon(DC,15a_mod0_proto):212th_arifle_VALKEN38A_F//SCI_arifle_VALKEN38A_F//SWOP_DC15ABlasterRifle_mod0
 	{
 		weaponPoolAvailable = 1;
 		scope=2;

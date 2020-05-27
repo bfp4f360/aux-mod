@@ -24,11 +24,11 @@ class cfgWeapons
 	
 
 	class Rifle_Base_F;
-	class SCI_arifle_z6_Base_F:Rifle_Base_F
+	class 212th_arifle_z6_Base_F:Rifle_Base_F
 	{
 		class WeaponSlotsInfo;
 	};
-	class SCI_arifle_z6_F:SCI_arifle_z6_Base_F
+	class 212th_arifle_z6_F:212th_arifle_z6_Base_F//SCI_arifle_z6_Base_F
 	{
 		class FullAuto;
 		class Burst;
@@ -38,7 +38,7 @@ class cfgWeapons
 		};
 	};
 
-	class macro_new_weapon(proto,z6):SCI_arifle_z6_F
+	class macro_new_weapon(proto,z6):212th_arifle_z6_F
 	{
 		model="\MRC\JLTS\weapons\Z6\Z6.p3d";
 		selectionFireAnim="zasleh";

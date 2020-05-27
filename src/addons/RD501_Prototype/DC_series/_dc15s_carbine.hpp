@@ -1,4 +1,4 @@
-    class macro_new_weapon(DC,15s_proto):SCI_arifle_DC15S_F//SWOP_DC15
+    class macro_new_weapon(DC,15s_proto):212th_arifle_DC15S_F//SWOP_DC15
 	{
 		
 

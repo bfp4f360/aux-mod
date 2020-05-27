@@ -90,7 +90,7 @@ class cfgWeapons
 	{
 		scope=2;
 		scopeArsenal=2;
-		baseWeapon="JLTS_Z6";
+		baseWeapon=macro_new_weapon(Z6,RC_MRP);
 		author = RD501;
 		displayName="[MRP] Z6 Rotary Cannon";
 		magazineWell[]={Republic_Universal_Magazine_Well};
